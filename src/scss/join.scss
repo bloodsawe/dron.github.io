@@ -1,0 +1,51 @@
+@import "help/vars_and_mixins";
+
+.join {
+    @include flex(space-between,stretch,row);
+    margin-bottom: 120px!important;
+}
+
+.join__img {
+    width:48.73%;
+    height: 480px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (max-width:768px) {
+        width: 46%;
+    }
+    @media screen and (max-width:480px) {
+       display: none; 
+    }
+}
+
+.join-block {
+    @include flex(start, flex-start, column);
+    width: 38.58%;
+    padding-right: 50px;
+    @media screen and (max-width:768px) {
+        width: 49%; 
+        padding-right: 0;
+
+    }
+    @media screen and (max-width:480px) {
+        width: 100%; 
+        padding: 0;
+    }
+    &__title {
+        font-family: "TitilliumWebBold",serif;
+        font-size: 40px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+        span {
+            font-family: "TitilliumWebRegular",serif;
+        }
+    }
+    &__text {
+        font-family: "TitilliumWebRegular",serif;
+        font-size: 16px;
+        line-height: 2;
+        margin-bottom: 45px;
+    }
+}

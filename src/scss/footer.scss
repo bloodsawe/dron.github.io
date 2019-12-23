@@ -1,0 +1,150 @@
+@import "help/vars_and_mixins.scss";
+
+.footer {
+    background-color: $black;
+    padding:84px 0 50px;
+    .wrapper {
+        @include flex(flex-start,stretch,row);
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width:520px) {
+        padding: 0;
+    }
+}
+
+.block-subscribe {
+    &__title {
+        font-family: "TitilliumWebBold", serif;
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 35px;
+    }
+    &__form {
+        position: relative;
+    }
+    &__input {
+        min-width: 285px;
+        background: transparent;
+        border: 0px;
+        border-bottom: 1px solid $greyishbrown;
+        font-family: "TitilliumWebRegular", serif;
+        font-size: 14px;
+        line-height: 1.79;
+        color: #ffffff;
+        margin-bottom: 77px;
+        padding: 14px;
+    }
+    &__input:hover {
+        border-bottom: 1px solid $verylightpink;
+    }
+    &__input:focus {
+        outline: none;
+    }
+    &__submit {
+        position: absolute;
+        top: 13px;
+        right: 15px;
+        background: transparent;
+        border: none;
+    }
+    &__items {
+        font-family: "TitilliumWebRegular", serif;
+        font-size: 14px;
+        color: $verylightpink;
+        margin-bottom: 26px;
+        line-height: 2;
+        span {
+            color: $greyishbrown;
+        }
+    }
+}
+
+.block-info {
+    @include flex(space-between,stretch,row);
+    width: 56%;
+    margin-left: auto;
+    @media screen and (max-width:960px) {
+        flex-wrap:wrap;
+    }
+    @media screen and (max-width:768px) {
+        width: 40%;
+    }
+    @media screen and (max-width:540px) {
+        width:100%;
+        margin-bottom: 40px;
+    }
+    &__item {
+        @media screen and (max-width:960px) {
+            width:35%;
+        }
+    } 
+    &__title {
+        font-family: "TitilliumWebSemiBold", serif;
+        font-size: 16px;
+        color: $greyishbrown;
+        margin-bottom: 20px;
+    } 
+    &__link {
+        display: block;
+        font-family: "TitilliumWebSemiBold", serif;
+        font-size: 14px;
+        color: #ffffff;
+        margin-bottom: 19px;
+    } 
+}
+.block-link {
+    @include flex(space-between,stretch,row);
+    margin-left: auto;
+    width: 56%;
+    @media screen and (max-width:960px) {
+        width:100%;
+        margin-top: 80px;
+    }
+    @media screen and (max-width:540px) {
+        flex-wrap: wrap;
+    }
+    &__logo{
+        @media screen and (max-width:540px) {
+            order:1;
+            margin-bottom: 50px;
+        }
+    }
+    &__social{
+        @include flex(center,stretch,row);
+        @media screen and (max-width:540px) {
+            margin-bottom: 40px;
+        }  
+    }
+    &__items{
+        @include flex(center,center,row);
+        width: 54px;
+        height: 54px;
+        border: solid 2px $greyishbrown;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+}
+
+
+.subfooter {
+    background-color: #343434;
+    font-family: "TitilliumWebSemiBold", serif;
+    font-size: 12px;
+    color: #929292;
+    padding: 26px 0;
+    .wrapper {
+        @include flex(space-between,center,row);
+        @media screen and (max-width:540px) {
+            display:block;
+        }
+    }
+    &__copyright {
+        @media screen and (max-width:540px) {
+            margin-bottom: 10px;
+        }
+    }
+    &__links {
+        color: #929292;
+        margin-right: 20px;
+    }
+}

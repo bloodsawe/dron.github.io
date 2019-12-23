@@ -1,0 +1,119 @@
+@import "help/vars_and_mixins";
+
+.location {
+    background-color: $black;
+    height: 760px;
+    padding: 120px 0 100px;
+    @media screen and (max-width:480px) {
+        height: auto;
+        padding: 40px 0;
+    }
+    &-inner {
+        @include flex(space-between,flex-start,row);
+        height: 440px;
+        @media screen and (max-width:480px) {
+            @include flex(space-between,flex-start,column);
+            height: auto;
+        }
+    }
+}
+
+.location-description {
+    @include flex(space-between,flex-start,column);
+    width: 38%;
+    height: 100%;
+    z-index: 1;
+    @media screen and (max-width:768px) {
+        width: 58%;
+    }
+    @media screen and (max-width:480px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-family:"TitilliumWebBold",serif;
+        font-size: 40px;
+        line-height: 1.3;
+        color: #ffffff;
+        @media screen and (max-width:480px) {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        span {
+        font-family:"TitilliumWebRegular",serif;
+        font-weight: normal;
+        }
+    }
+    &__text {
+        font-family:"TitilliumWebBold",serif;
+        font-size: 18;
+        line-height: 1.56;
+        color: $verylightpink;
+    }
+}
+
+.location-block {
+    @include flex(space-between,flex-end,column);
+    width: 41%;
+    height: 100%;
+    z-index: 1;
+    @media screen and (max-width:480px) {
+        width: 100%;
+        display: block;
+    }
+    &__count {
+        @include flex(space-between,stretch,row);
+        flex-wrap: wrap;
+        @media screen and (max-width:768px) {
+           flex-direction: column;
+           flex-wrap: nowrap;
+        }
+        @media screen and (max-width:768px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__item {
+        width: 50%;
+        margin-bottom: 70px;
+        @media screen and (max-width:768px) {
+            margin-bottom: 14px;
+            width: 100%;
+         }
+        span {
+            font-family:"TitilliumWebSemiBold",serif;
+            font-size: 50px;
+            color: #ffffff;
+        }
+    }
+    &__text {
+        font-family:"TitilliumWebSemiBold",serif;
+        font-size: 16;
+        line-height: 1.5;
+        color: $browngrey;
+    }
+}
+
+@import "bourbon";
+
+$portsgreen: #c1d72e;
+
+@include keyframes(blink) {
+	0% {
+		stroke: rgba($portsgreen, 0.8);
+		stroke-width: 1;
+	} 
+	100% {
+	    stroke: rgba($portsgreen, 0.1);
+	    stroke-width: 15;
+	}
+}
+
+circle[fill="#c3d833"] {
+  padding: 20px;
+  position: relative;
+  @include animation(blink 1.5s infinite ease-out);
+}
+
+svg {
+    position: absolute;
+}

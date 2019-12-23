@@ -1,0 +1,25 @@
+//Цвета
+$sunyellow: #ffd12d;
+$sunflower: #ffca0f;
+$black: #282828;
+$greyishbrown: #505050;
+$browngrey: #b4b4b4;
+$verylightpink: #dcdcdc;
+
+@mixin flex ($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin font ($weight, $size, $line-height, $letter-spacing, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+
+
+

@@ -1,0 +1,70 @@
+@import "help/media_mixins.scss";
+@import "help/vars_and_mixins";
+@import "help/normalize.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+   html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+   body{line-height:1}
+   mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+   input,select{vertical-align:middle}
+    
+canvas{
+    display:block;
+    vertical-align:bottom;
+    position: absolute;
+    top: 0;
+}
+
+#particles-js{
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(255, 209, 45) 0px, rgb(239, 237, 211) 51%, rgb(210, 233, 255) 100%);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.body {
+    font-family: "TitilliumWeb", serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    @media screen and (max-width:1024px) {
+        width: 90%;
+    }
+}
+
+.main-button {
+    @include flex (center, center, row);
+    padding: 17px 24px;
+    background-color: $sunyellow;
+    border-radius: 36px;
+    border: solid 2px $sunyellow;
+    color: $black;
+    cursor: pointer;
+    &__text {
+        font-family: "TitilliumWebSemiBold",serif;
+        font-size: 14px;
+        padding-right: 48px;
+    }
+}
+.main-button:hover {
+    background-color: #ffd84b;
+}
+.main-button:focus {
+    background-color: #ffd84b;
+    border: 1px solid black;
+    outline: none;
+}
+
