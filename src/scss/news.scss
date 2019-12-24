@@ -75,6 +75,7 @@
     .slick-prev:hover,.slick-next:hover {
         border: solid 2px $sunyellow;
         background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+        cursor: pointer;
     }
     .slick-prev {
         right: 67px;

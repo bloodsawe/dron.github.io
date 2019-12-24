@@ -68,19 +68,23 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .banner-slider__item .main-button {
+  color: #ffffff;
   position: absolute;
   bottom: 11%;
   right: 13%;
   background: transparent;
   border: solid 2px #ffffff;
   color: #ffffff;
+}
+
+.banner-slider__item .main-button img.black {
+  display: none;
 }
 
 .banner-slider__item .main-button__text {
@@ -90,12 +94,22 @@
 }
 
 .banner-slider__item .main-button:hover {
-  background: transparent;
+  background-color: #ffd84b;
+  border: none;
+  color: black;
+}
+
+.banner-slider__item .main-button:hover img.white {
+  display: none;
+}
+
+.banner-slider__item .main-button:hover img.black {
+  display: block;
 }
 
 .banner-slider__item .main-button:focus {
-  background: transparent;
-  border: 2px solid #ffffff;
+  background-color: #ffd84b;
+  border: 2px solid black;
   outline: none;
 }
 
@@ -158,6 +172,7 @@
 .banner-slider .slick-next:hover {
   border: solid 2px #ffd12d;
   background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+  cursor: pointer;
 }
 
 .banner-slider .slick-prev {
@@ -1047,7 +1062,7 @@ footer {
 }
 
 .header-nav__link-insert:hover {
-  font-size: 16px;
+  color: black;
 }
 
 .header-nav__button {
@@ -1792,6 +1807,10 @@ canvas {
   font-family: "TitilliumWeb", serif;
 }
 
+a {
+  cursor: pointer;
+}
+
 .wrapper {
   width: 80%;
   margin: 0 auto;
@@ -1953,6 +1972,7 @@ canvas {
 .news-slider .slick-next:hover {
   border: solid 2px #ffd12d;
   background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+  cursor: pointer;
 }
 
 .news-slider .slick-prev {

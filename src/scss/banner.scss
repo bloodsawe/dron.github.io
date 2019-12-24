@@ -13,17 +13,20 @@
         display: flex!important;
         justify-content: center;
         align-items: center;
-        color: #ffffff;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         .main-button {
+            color: #ffffff;
             position: absolute;
             bottom: 11%;
             right: 13%;
             background: transparent;
             border: solid 2px #ffffff;
             color: #ffffff;
+            img.black {
+                display: none;
+            }
             &__text {
                 font-family: "TitilliumWebSemiBold",serif;
                 font-size: 14px;
@@ -34,11 +37,19 @@
             }
         }
         .main-button:hover {
-            background: transparent;
+            background-color: #ffd84b;
+            border: none;
+            color: black;
+            img.white{
+                display: none;
+            }
+            img.black{
+                display: block;
+            }   
         }
         .main-button:focus {
-            background:transparent;
-            border: 2px solid #ffffff;
+            background-color: #ffd84b;
+            border: 2px solid black;
             outline: none;
         }
     }
@@ -92,6 +103,7 @@
     .slick-prev:hover,.slick-next:hover {
         border: solid 2px $sunyellow;
         background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+        cursor: pointer;
     }
     .slick-prev {
         left: 164px;
