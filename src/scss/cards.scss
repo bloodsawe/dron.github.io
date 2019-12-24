@@ -33,6 +33,7 @@
             flex-wrap: wrap;
         }
         @media screen and (max-width: 480px) {
+            justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 20px;
         }
@@ -48,9 +49,8 @@
                 margin-bottom: 30px;
             }
             @media screen and (max-width: 480px) {
-                width: 90%;
+                width: 80%;
                 margin-bottom: 20px;
-    
             }
         }
         &__item:hover {

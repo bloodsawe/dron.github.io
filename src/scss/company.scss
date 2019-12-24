@@ -94,7 +94,10 @@
             display: flex!important;
             justify-content: center;
             align-items: center;
-            margin: 0 16px;
+            margin: 0 7px;
+            @media screen and (max-width:768px) {
+                margin: 0 5px;
+            }
         }
         &__item:hover {
             cursor: pointer;
@@ -127,3 +130,4 @@
         }
     }
 }
+

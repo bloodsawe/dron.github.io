@@ -20,6 +20,7 @@
         }
     }
     &-nav {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         @include flex ($justify:space-between, $align:center, $direction:row);
         height: 100%;
         cursor: pointer;
@@ -105,12 +106,16 @@
             }
             span:first-child {
                 top: 0;
+                transition:  .3s linear 0s;
             }
             span:nth-child(2) {
                 top: 9px;
+                opacity: 1;
+                transition: .2s;
             }
             span:last-child {
                 top: 17px;
+                transition:  .3s linear 0s;
             }
         }
     }
@@ -167,7 +172,7 @@
         transition:  .3s linear 0s;
     }
     span:nth-child(2) {
-        display: none;
+        opacity: 0;
     }
     span:last-child {
         top: 10px;
@@ -175,5 +180,6 @@
         transition:  .3s linear 0s;
     }
 }
+
 
 
