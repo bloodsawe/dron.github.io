@@ -10,6 +10,10 @@
         let svg = document.querySelector("svg");
         svg.setAttribute("viewBox", "300 0 200 320");
       };
+      if (window.matchMedia("(min-width: 1600px)").matches) {
+        let svg = document.querySelector("svg");
+        svg.setAttribute("viewBox", "0 0 1000 320");
+      };
     })
 
     for (var i = 0; i < xCords.length; i++) {

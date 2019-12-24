@@ -1,5 +1,7 @@
 @import "help/vars_and_mixins.scss";
-
+footer {
+    z-index: 2;
+}
 .footer {
     background-color: $black;
     padding:84px 0 50px;
@@ -90,6 +92,7 @@
         font-size: 14px;
         color: #ffffff;
         margin-bottom: 19px;
+        cursor: pointer;
     } 
 }
 .block-link {
