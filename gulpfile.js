@@ -92,11 +92,12 @@ gulp.task("styles", () => {
 
       .pipe(sourcemaps.init())
       //Указать stylus() , sass() или less()
-      .pipe(
-        sass({
-          includePaths: bourbon.includePaths
-        })
-      )
+      .pipe(sass({outputStyle: 'compact', includePaths: bourbon.includePaths}).on('error', sass.logError))
+      // .pipe(  
+      //   sass({
+      //     includePaths: bourbon.includePaths
+      //   })
+      // )
 
       //Объединение файлов в один
       .pipe(concat("style.css"))
@@ -113,12 +114,12 @@ gulp.task("styles", () => {
       .pipe(gcmq())
 
       //Минификация CSS
-      .pipe(
-        cleanCSS({ level: { 1: { specialComments: 0 } } }, details => {
-          console.log(`${details.name}: ${details.stats.originalSize}`);
-          console.log(`${details.name}: ${details.stats.minifiedSize}`);
-        })
-      )
+      // .pipe(
+      //   cleanCSS({ level: { 1: { specialComments: 0 } } }, details => {
+      //     console.log(`${details.name}: ${details.stats.originalSize}`);
+      //     console.log(`${details.name}: ${details.stats.minifiedSize}`);
+      //   })
+      // )
 
       //Добавление суфикса к сжатым файлам
       .pipe(rename({ suffix: ".min", prefix: "" }))
