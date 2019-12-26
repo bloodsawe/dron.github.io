@@ -57,10 +57,12 @@ a {
     border: solid 2px $sunyellow;
     color: $black;
     cursor: pointer;
+    width: 229px;
+    height: 55px;
     &__text {
         font-family: "TitilliumWebSemiBold",serif;
         font-size: 14px;
-        padding-right: 48px;
+        padding-right: 40px;
     }
 }
 .main-button:hover {

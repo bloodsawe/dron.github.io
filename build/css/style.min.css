@@ -1842,12 +1842,14 @@ a {
   border: solid 2px #ffd12d;
   color: #282828;
   cursor: pointer;
+  width: 229px;
+  height: 55px;
 }
 
 .main-button__text {
   font-family: "TitilliumWebSemiBold",serif;
   font-size: 14px;
-  padding-right: 48px;
+  padding-right: 40px;
 }
 
 .main-button:hover {
