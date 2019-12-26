@@ -95,7 +95,7 @@
 
 .banner-slider__item .main-button:hover {
   background-color: #ffd84b;
-  border: none;
+  border: 2px solid #ffd84b;
   color: black;
 }
 
@@ -109,7 +109,7 @@
 
 .banner-slider__item .main-button:focus {
   background-color: #ffd84b;
-  border: 2px solid black;
+  border: 2px solid #ffd84b;
   outline: none;
 }
 
