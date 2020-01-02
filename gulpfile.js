@@ -92,8 +92,13 @@ gulp.task("styles", () => {
 
       .pipe(sourcemaps.init())
       //Указать stylus() , sass() или less()
-      .pipe(sass({outputStyle: 'compact', includePaths: bourbon.includePaths}).on('error', sass.logError))
-      // .pipe(  
+      .pipe(
+        sass({ outputStyle: "compact", includePaths: bourbon.includePaths }).on(
+          "error",
+          sass.logError
+        )
+      )
+      // .pipe(
       //   sass({
       //     includePaths: bourbon.includePaths
       //   })
