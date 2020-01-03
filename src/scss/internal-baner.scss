@@ -1,0 +1,28 @@
+@import "help/vars_and_mixins";
+
+.internal-banner {
+    background-image: url(/img/bitmap.jpg);
+    min-height: 350px;
+    margin-bottom: 40px;
+    @include flex (center, center, column);
+    &__text {
+        font-family: "TitilliumWebBold",serif;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.15;
+        text-align: center;
+        color: #ffffff;
+        width: 53%;
+        @media screen and (max-width:960px) {
+            width:70%;
+        }
+        @media screen and (max-width:768px) {
+            width:79.5%;
+        }
+        @media screen and (max-width:480px) {
+            font-size: 34px;
+            line-height: 1.71;
+            width:98%;
+        }
+    }
+}

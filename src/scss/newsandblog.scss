@@ -1,0 +1,129 @@
+@import "help/vars_and_mixins";
+.blog-slider {
+    min-height: 400px;
+    margin-bottom: 60px;
+    @media screen and (max-width:1024px){
+        margin-bottom: 40px;
+    }
+    &__item {
+        position: relative;
+        width: 1439px;
+        height: 100%;
+        padding-top: 65px;
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .main-button {
+            color: #ffffff;
+            position: absolute;
+            bottom: 11%;
+            right: 13%;
+            background: transparent;
+            border: solid 2px #ffffff;
+            color: #ffffff;
+            img.black {
+                display: none;
+            }
+            &__text {
+                font-family: "TitilliumWebSemiBold",serif;
+                font-size: 14px;
+                padding-right: 48px;
+            }
+            @media screen and (max-width:480px) {
+                display: none;
+            }
+        }
+        .main-button:hover {
+            background-color: #ffd84b;
+            border: 2px solid #ffd84b;
+            color: black;
+            img.white{
+                display: none;
+            }
+            img.black{
+                display: block;
+            }   
+        }
+        .main-button:focus {
+            background-color: #ffd84b;
+            border: 2px solid #ffd84b;
+            outline: none;
+        }
+    }
+    &__container {
+        @include flex (center, center, column);
+        width: 37%;
+        @media screen and (max-width:768px) {
+            width:59.5%;
+        }
+        @media screen and (max-width:480px) {
+            width:98%;
+        }
+    }
+    &__title {
+        font-family: "TitilliumWebBold",serif;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.15;
+        text-align: center;
+        color: $white;
+        @media screen and (max-width:480px) {
+            font-size: 24px;
+            line-height: 1.33;
+        }
+    }
+    &__text {
+        font-family: "TitilliumWebRegular",serif;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.56;
+        margin-bottom: 18px;
+        color: $white;
+   @media screen and (max-width:480px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
+    .slick-prev,.slick-next {
+        position: absolute;
+        z-index: 1;
+        bottom: 11%;
+        width: 54px;
+        height: 54px;
+        border: solid 2px $verylightpink;
+        border-radius: 50%; 
+        background: transparent;
+        background: url(../img/arrow-right-s-line.svg) no-repeat center;
+    }
+    .slick-prev:hover,.slick-next:hover {
+        border: solid 2px $sunyellow;
+        background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+        cursor: pointer;
+    }
+    .slick-prev {
+        left: 164px;
+        transform: rotate(180deg);
+        @media screen and (max-width:960px) {
+            left: 93px;  
+        }
+        @media screen and (max-width:768px) {
+            left: 0%;  
+        }
+    }
+    .slick-next {
+        left: 228px;
+        @media screen and (max-width:960px) {
+           left: 161px; 
+        }
+        @media screen and (max-width:768px) {
+           left: 12%; 
+        }
+    }   
+}
