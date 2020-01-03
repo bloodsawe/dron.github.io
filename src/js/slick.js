@@ -152,3 +152,24 @@ $(function() {
     ]
   });
 });
+
+// blog-slider
+$(function() {
+  if ($(".blog-slider").length > 0) {
+  }
+  $(".blog-slider").slick({
+    slidesToShow: 1,
+    autoplay: false,
+    dots: false,
+    prevArrow: '<div class="slick-prev"></div>',
+    nextArrow: '<div class="slick-next"></div>',
+    responsive: [
+      {
+        breakpoint: 481,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
+  });
+});

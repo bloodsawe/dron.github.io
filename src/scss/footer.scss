@@ -59,6 +59,9 @@ footer {
             color: $greyishbrown;
         }
     }
+    &__link {
+        color: #ffffff;
+    }
 }
 
 .block-info {
@@ -93,12 +96,15 @@ footer {
         color: #ffffff;
         margin-bottom: 19px;
         cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
     } 
 }
 .block-link {
     @include flex(space-between,stretch,row);
     margin-left: auto;
     width: 56%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     @media screen and (max-width:960px) {
         width:100%;
         margin-top: 80px;

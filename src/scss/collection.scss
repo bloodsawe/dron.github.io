@@ -109,11 +109,19 @@
     }
 }
 
-@keyframes show{
+@keyframes up {
     from {
         bottom: -156px;
     }
     to {
         bottom: 0;
+    }
+}
+@keyframes down {
+    from {
+        top: -156px;
+    }
+    to {
+        top: 0;
     }
 }
