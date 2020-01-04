@@ -46,10 +46,8 @@ $(function() {
     });
     return;
   }
-  let sliderItem = document.querySelectorAll(".slider-block__item");
-  console.log('sliderItem: ', sliderItem);
   $(".slider-block").slick({
-    slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
+    slidesToShow: 9,
     slidesToScroll: 1,
     autoplay: false,
     dots: false,
@@ -62,32 +60,32 @@ $(function() {
       {
         breakpoint: 1600,
         settings: {
-          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1
+          slidesToShow: 9
         }
       },
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: sliderItem.length >= 7 ? 6 : sliderItem.length-1
+          slidesToShow: 7
         }
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: sliderItem.length >= 6 ? 5 : sliderItem.length-1
+          slidesToShow: 6
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: sliderItem.length >= 3 ? 2 : sliderItem.length-1
+          slidesToShow: 3
         }
       },
       {
-        breakpoint: 430,
+        breakpoint: 480,
         settings: {
           // rows: 2,
-          slidesToShow: sliderItem.length >= 3 ? 2 : sliderItem.length-1
+          slidesToShow: 3
         }
       }
     ]

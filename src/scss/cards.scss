@@ -68,6 +68,7 @@
             .cards-block__text{
                 display: block;
                 margin-bottom: 16px;
+                overflow: scroll;
             }
             .cards-block__button {
                 display: block;
@@ -87,11 +88,10 @@
             font-size: 14px;
             line-height: 1.71;
             height: 50%;
-            overflow: hidden;
+            // overflow: hidden;
         }
         &__img {
             height: 74%;
-
             display: flex;
             align-items: flex-end;
             img {
@@ -109,6 +109,7 @@
             padding: 19px 24px;
             border-bottom-left-radius: 18px;
             border-bottom-right-radius: 18px;
+
         }
         &__arrow {
             position: absolute;
