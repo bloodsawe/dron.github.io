@@ -12,6 +12,9 @@ footer {
     @media screen and (max-width:520px) {
         padding: 0;
     }
+    @media screen and (max-width:480px) {
+        padding-top: 36px;
+    }
 }
 
 .block-subscribe {

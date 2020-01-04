@@ -80,7 +80,7 @@
         cursor: pointer;
     }
     .slick-prev {
-        left: 164px;
+        left: 10%;
         transform: rotate(180deg);
         @media screen and (max-width:960px) {
             left: 93px;  
@@ -93,7 +93,7 @@
         }
     }
     .slick-next {
-        left: 228px;
+        left: 15%;
         @media screen and (max-width:960px) {
            left: 161px; 
         }
@@ -101,4 +101,32 @@
            left: 12%; 
         }
     }   
+}
+
+.filter {
+   min-height: 140px; 
+   background-color: $black;
+   @include flex(center,center,row);
+}
+
+.filter-block {
+    @include flex(space-between,center,row);
+    &__title {
+        font-family: "TitilliumWebBold",serif;
+        font-size: 24px;
+        line-height: 1.33;
+        color: #fff;
+    }
+    &__tabs {
+        @include flex(space-between,center,row);
+    }
+    &__item {
+        font-family: "TitilliumWebSemiBold",serif;
+        line-height: 1.5;
+        font-size: 16px;
+        color:$browngrey;
+    }
+    .search-form {
+        margin-left: auto;
+    }
 }
