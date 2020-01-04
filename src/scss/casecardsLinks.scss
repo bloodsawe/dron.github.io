@@ -1,0 +1,120 @@
+@import "help/vars_and_mixins";
+.casecards-links {
+  .join {
+    position: relative;
+    @include flex(start, center, row);
+    > a {
+      position: relative;
+      @include flex(start, center, row);
+    }
+    margin-bottom: 120px !important;
+    hr {
+      width: 100%;
+      position: absolute;
+      bottom: -61px;
+      left: 0;
+      background: #dcdcdc;
+    }
+    .join__img {
+      position: relative;
+      width: 41.5%;
+      height: 300px;
+      img {
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      .news-slider__block-categories {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.5s, opacity 0.5s linear;
+        position: absolute;
+        top: 85%;
+        left: 5%;
+        @media screen and (max-width: 768px) {
+          top: 80%;
+        }
+        @media screen and (max-width: 480px) {
+          top: 80%;
+          left: 0;
+        }
+      }
+      .news-slider__categories {
+        user-select: none;
+      }
+      @media screen and (max-width: 768px) {
+        width: 46%;
+      }
+      @media screen and (max-width: 480px) {
+        display: unset;
+        width: 100%;
+      }
+    }
+    .join__img:hover {
+      .news-slider__block-categories {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .join-block {
+      margin: 0 auto;
+      flex: unset;
+      width: 38.58%;
+      padding-right: 2px;
+      @media screen and (max-width: 768px) {
+        width: 49%;
+        padding-right: 0;
+      }
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        padding: 0;
+      }
+      &__title {
+        font-family: "TitilliumWebBold", serif;
+        font-size: 24px;
+        line-height: 1.33;
+        margin-bottom: 20px;
+        span {
+          font-family: "TitilliumWebRegular", serif;
+        }
+      }
+
+      &__text {
+        font-family: "TitilliumWebRegular", serif;
+        font-size: 16px;
+        line-height: 1.75;
+        margin-bottom: unset;
+        @media screen and (max-width: 480px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    a {
+      color: inherit;
+    }
+    @media screen and (max-width: 480px) {
+      flex-direction: column-reverse;
+    }
+  }
+  .loader {
+    padding-top: 30px !important;
+    margin-bottom: 100px !important;
+    #preloader {
+      height: 30px;
+      width: 30px;
+      //   margin: 40vh auto;
+      margin: 0 auto;
+      border: 5px solid rgba(255, 209, 45, 0.45);
+      border-top: 5px solid rgb(255, 209, 45);
+      border-radius: 50%;
+      animation: rotate 1s infinite linear;
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
