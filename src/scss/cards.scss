@@ -68,7 +68,7 @@
             .cards-block__text{
                 display: block;
                 margin-bottom: 16px;
-                overflow: scroll;
+                overflow-y: auto;
             }
             .cards-block__button {
                 display: block;
@@ -89,6 +89,13 @@
             line-height: 1.71;
             height: 50%;
             // overflow: hidden;
+        }
+        &__text::-webkit-scrollbar {
+            width: 5px;
+            background-color: #dcdcdc;
+        }
+        &__text::-webkit-scrollbar-thumb {
+            background-color: $sunyellow;
         }
         &__img {
             height: 74%;

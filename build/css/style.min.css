@@ -314,7 +314,7 @@
 .cards .cards-block__item:hover .cards-block__text {
   display: block;
   margin-bottom: 16px;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .cards .cards-block__item:hover .cards-block__button {
@@ -336,6 +336,15 @@
   font-size: 14px;
   line-height: 1.71;
   height: 50%;
+}
+
+.cards .cards-block__text::-webkit-scrollbar {
+  width: 5px;
+  background-color: #dcdcdc;
+}
+
+.cards .cards-block__text::-webkit-scrollbar-thumb {
+  background-color: #ffd12d;
 }
 
 .cards .cards-block__img {
