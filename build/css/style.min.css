@@ -912,6 +912,10 @@
   background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
 }
 
+main {
+  height: 60vh;
+}
+
 footer {
   z-index: 2;
 }
