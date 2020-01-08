@@ -68,7 +68,6 @@
             .cards-block__text{
                 display: block;
                 margin-bottom: 16px;
-                overflow-y: auto;
             }
             .cards-block__button {
                 display: block;
@@ -88,17 +87,11 @@
             font-size: 14px;
             line-height: 1.71;
             height: 50%;
-            // overflow: hidden;
-        }
-        &__text::-webkit-scrollbar {
-            width: 5px;
-            background-color: #dcdcdc;
-        }
-        &__text::-webkit-scrollbar-thumb {
-            background-color: $sunyellow;
+            overflow: hidden;
         }
         &__img {
             height: 74%;
+
             display: flex;
             align-items: flex-end;
             img {
@@ -116,7 +109,6 @@
             padding: 19px 24px;
             border-bottom-left-radius: 18px;
             border-bottom-right-radius: 18px;
-
         }
         &__arrow {
             position: absolute;

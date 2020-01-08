@@ -9,10 +9,6 @@
         height: auto;
         padding: 46px 0;
     }
-    @media screen and (max-width:480px) {
-        height: auto;
-        padding: 60px 0 33px;
-    }
     &-inner {
         @include flex(space-between,flex-start,row);
         height: 440px;
