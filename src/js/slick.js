@@ -174,6 +174,27 @@ $(function() {
   });
 });
 
+// casecards-slider
+$(function() {
+  if ($(".casecards-slider").length > 0) {
+  }
+  $(".casecards-slider").slick({
+    slidesToShow: 1,
+    autoplay: false,
+    dots: false,
+    prevArrow: '<div class="slick-prev"></div>',
+    nextArrow: '<div class="slick-next"></div>',
+    responsive: [
+      {
+        breakpoint: 481,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
+  });
+});
+
 //casecardsintern-slider
 $(function() {
   if ($(".intern .slider").length > 0) {

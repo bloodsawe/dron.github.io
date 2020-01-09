@@ -23,8 +23,15 @@
           <span></span>
         </div>
         <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="internalpage.html" class="header-nav__link">Services</a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Sectors
+          <li class="header-nav__item"><span class="header-nav__link">Services</span>
+              <ul class="header-nav__list-insert">
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">iHawk</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">UAV Data Collection</a>
+                </li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">UAV Consultancy</a></li>
+              </ul>
+          </li>
+          <li class="header-nav__item"><span class="header-nav__link">Sectors</span>
               <ul class="header-nav__list-insert">
                 <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Oil, Gas &
                     Petrochemical</a></li>
@@ -33,9 +40,23 @@
                 <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Power grid</a></li>
                 <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Construction</a></li>
               </ul>
-            </a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Resources</a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Company</a></li>
+            </li>
+          <li class="header-nav__item"><span class="header-nav__link">Resources</span>
+              <ul class="header-nav__list-insert">
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">iHawk Knowledge Hub</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">eBooks</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Case Studies</a></li>
+              </ul>
+          </li>
+          <li class="header-nav__item"><span class="header-nav__link">Company</span>
+              <ul class="header-nav__list-insert">
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">About</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">News & Blog</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Careers</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Team</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Contact</a></li>
+              </ul>
+          </li>
         </ul>
         <a class="header-nav__button" href="#">iHawk Login</a>
       </nav>
@@ -78,9 +99,126 @@
           <div class="filter-block__item">Blog</div>
         </div>
         <form class="search-form" action="">
-          <input type="text" placeholder="Search">
-          <button type="submit"><img src="img/search-line.svg" alt=""></button>
+          <input class="search-form__input" type="text" placeholder="Search">
+          <button class="search-form__button" type="submit"><i class="grey fas fa-search"></i><i class="yellow fas fa-search"></i></button>
         </form>
+      </div>
+    </section>
+    <section class="blog-cards wrapper">
+      <div class="line-block">
+        <div class="line-block__title">
+          Latest updates
+        </div>
+        <hr>
+      </div>
+      <div class="blog-cards__block">
+        <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
+          <div class="blog-cards__block-categories">
+            <div class="blog-cards__categories">Blog</div>
+            <div class="blog-cards__categories">Power generation</div>
+          </div>
+          <p class="blog-cards__text">A new revolution:
+            a pragmatic approach to blade intelligence & health</p>
+        </a>
+        <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
+          <div class="blog-cards__block-categories">
+            <div class="blog-cards__categories">News</div>
+            <div class="blog-cards__categories">Power grid</div>
+          </div>
+          <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
+        </a>
+        <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
+          <div class="blog-cards__block-categories">
+            <div class="blog-cards__categories">News</div>
+            <div class="blog-cards__categories">Power grid</div>
+          </div>
+          <p class="blog-cards__text">New technology and digitisation driving a transformation in plant asset management</p>
+        </a>
+      </div>
+      <div class="blog-cards__empty" >
+      </div>
+      <div class="blog-cards__empty" >
+      </div>
+      <div class="blog-cards__empty" >
+      </div>
+      <div class="line-block">
+        <div class="line-block__title">
+          December 2019
+        </div>
+        <hr>
+      </div>
+      <div class="blog-cards__block">
+        <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
+          <div class="blog-cards__block-categories">
+            <div class="blog-cards__categories">Blog</div>
+            <div class="blog-cards__categories">Power generation</div>
+          </div>
+          <p class="blog-cards__text">A new revolution:
+            a pragmatic approach to blade intelligence & health</p>
+        </a>
+        <a  href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
+          <div class="blog-cards__block-categories">
+            <div class="blog-cards__categories">Blog</div>
+            <div class="blog-cards__categories">Power generation</div>
+          </div>
+          <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
+        </a>
+        <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
+          <div class="blog-cards__block-categories">
+            <div class="blog-cards__categories">Blog</div>
+            <div class="blog-cards__categories">Construction</div>
+          </div>
+          <p class="blog-cards__text">New technology and digitisation driving a transformation in plant asset management</p>
+        </a>
+        <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
+          <div class="blog-cards__block-categories">
+            <div class="blog-cards__categories">Blog</div>
+            <div class="blog-cards__categories">Construction</div>
+          </div>
+          <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
+        </a>
+        <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
+          <div class="blog-cards__block-categories">
+            <div class="blog-cards__categories">Blog</div>
+            <div class="blog-cards__categories">Construction</div>
+          </div>
+          <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
+        </a>
+        <div class="blog-cards__empty" >
+        </div>
+        <div class="blog-cards__empty" >
+        </div>
+        <div class="blog-cards__empty" >
+        </div>
+      </div>
+      <div class="line-block">
+        <div class="line-block__title">
+          November 2019
+        </div>
+        <hr>
+      </div>
+      <div class="blog-cards__block">
+        <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
+          <div class="blog-cards__block-categories">
+            <div class="blog-cards__categories">Blog</div>
+            <div class="blog-cards__categories">Construction</div>
+          </div>
+          <p class="blog-cards__text">A new revolution:
+            a pragmatic approach to blade intelligence & health</p>
+        </a>
+        <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
+          <div class="blog-cards__block-categories">
+            <div class="blog-cards__categories">Blog</div>
+            <div class="blog-cards__categories">Construction</div>
+          </div>
+          <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
+        </a>
+        <div class="blog-cards__empty" >
+        </div>
+        <div class="blog-cards__empty" >
+        </div>
+        <div class="blog-cards__empty" >
+        </div>
       </div>
     </section>
   </main>
@@ -91,7 +229,7 @@
         <div class="block-subscribe">
           <h3 class="block-subscribe__title">Subscribe to our newsletter</h3>
           <form action="" class="block-subscribe__form">
-            <input class="block-subscribe__input" type="email" value="Enter your e-mail" name="" id="">
+            <input class="block-subscribe__input" type="email" placeholder="Enter your e-mail" name="" id="">
             <button type="submit" class="block-subscribe__submit">
               <img src="img/arrow-up-right-black.svg" alt="">
             </button>
@@ -99,15 +237,15 @@
           <div class="block-subscribe__address">
             <div class="block-subscribe__items">
               <span>Head office</span> <br>
-              EICA Ratho, 5th Floor
+              <a class="block-subscribe__link" href="#">EICA Ratho, 5th Floor</a> 
             </div>
             <div class="block-subscribe__items">
-              Edinburgh EH28 8AA <br>
-              United Kingdom
+            <a class="block-subscribe__link" href="#">Edinburgh EH28 8AA</a>   <br>
+            <a class="block-subscribe__link" href="#">United Kingdom</a>  
             </div>
             <div class="block-subscribe__items">
-              info@thecyberhawk.com <br>
-              +44 (0)131 370 2130
+          <a class="block-subscribe__link" href="mailto:info@thecyberhawk">info@thecyberhawk.com</a> <br>
+          <a class="block-subscribe__link" href="tel:+44 01313702130">+44 (0)131 370 2130</a class="block-subscribe__link">
             </div>
           </div>
         </div>
