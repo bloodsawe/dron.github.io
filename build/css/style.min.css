@@ -3737,6 +3737,20 @@ template {
   }
 }
 
+@media (max-width: 1024px) {
+  .casecards-slider__item .main-button {
+    right: 5%;
+  }
+
+  .casecards-slider__item .main-button {
+    right: 5%;
+  }
+
+  .blog-slider__item .main-button {
+    right: 5%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .animation-block {
     display: -webkit-box;
@@ -3844,20 +3858,6 @@ template {
 
   .blog-slider .slick-next {
     left: 14%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .casecards-slider__item .main-button {
-    right: 5%;
-  }
-
-  .casecards-slider__item .main-button {
-    right: 5%;
-  }
-
-  .blog-slider__item .main-button {
-    right: 5%;
   }
 }
 
