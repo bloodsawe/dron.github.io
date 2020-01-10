@@ -14,40 +14,116 @@
 <body class="casecards">
     <header>
         <div class="header wrapper">
-            <div class="header-logo">
-                <a href="#"><img src="/img/header-logo.svg" alt=""></a>
+          <div class="header-logo">
+            <a href="#"><img src="/img/header-logo.svg" alt=""></a>
+          </div>
+          <nav class="header-nav">
+            <div class="header-nav__burger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <nav class="header-nav">
-                <div class="header-nav__burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul class="header-nav__list">
-                    <li class="header-nav__item"><a href="#" class="header-nav__link">Services</a></li>
-                    <li class="header-nav__item"><a href="#" class="header-nav__link">Sectors
-                            <ul class="header-nav__list-insert">
-                                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Oil, Gas
-                                        &
-                                        Petrochemical</a></li>
-                                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Power
-                                        generation</a>
-                                </li>
-                                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Power
-                                        grid</a></li>
-                                <li class="header-nav__item-insert"><a href="#"
-                                        class="header-nav__link-insert">Construction</a></li>
-                            </ul>
-                        </a></li>
-                    <li class="header-nav__item"><a href="#" class="header-nav__link">Resources</a></li>
-                    <li class="header-nav__item"><a href="#" class="header-nav__link">Company</a></li>
-                </ul>
-                <a class="header-nav__button" href="#">iHawk Login</a>
-            </nav>
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><span class="header-nav__link">Services</span>
+                  <ul class="header-nav__list-insert">
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">iHawk</a></li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">UAV Data Collection</a>
+                    </li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">UAV Consultancy</a></li>
+                  </ul>
+              </li>
+              <li class="header-nav__item"><span class="header-nav__link">Sectors</span>
+                  <ul class="header-nav__list-insert">
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Oil, Gas &
+                        Petrochemical</a></li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Power generation</a>
+                    </li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Power grid</a></li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Construction</a></li>
+                  </ul>
+                </li>
+              <li class="header-nav__item"><span class="header-nav__link">Resources</span>
+                  <ul class="header-nav__list-insert">
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">iHawk Knowledge Hub</a></li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">eBooks</a></li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Case Studies</a></li>
+                  </ul>
+              </li>
+              <li class="header-nav__item"><span class="header-nav__link">Company</span>
+                  <ul class="header-nav__list-insert">
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">About</a></li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">News & Blog</a></li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Careers</a></li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Team</a></li>
+                    <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Contact</a></li>
+                  </ul>
+              </li>
+            </ul>
+            <a class="header-nav__button" href="#">iHawk Login</a>
+          </nav>
         </div>
-    </header>
+      </header>
 
     <main>
+    <section class="casecards-slider">
+        <div class="casecards-slider__item" style="background-image: url(/img/bitmap.jpg);">
+            <div class="casecards-slider__container">
+                <h1 class="casecards-slider__title">The power of digital transmission inspection reporting
+                </h1>
+            </div>
+            <a href="#" class="main-button">
+                <p class="main-button__text">Learn More </p>
+                <img class="white" src="/img/arrow-up-right.svg" alt="">
+                <img class="black" src="/img/arrow-up-right-black.svg" alt="">
+            </a>
+        </div>
+        <div class="casecards-slider__item" style="background-image: url(/img/group-4.jpg);">
+            <div class="casecards-slider__container">
+                <h1 class="casecards-slider__title">The power of digital transmission inspection reporting
+                </h1>
+            </div>
+            <a href="#" class="main-button">
+                <p class="main-button__text">Read More </p>
+                <img class="white" src="/img/arrow-up-right.svg" alt="">
+                <img class="black" src="img/arrow-up-right-black.svg" alt="">
+            </a>
+        </div>
+    </section>
+    <section class="case-filter">
+        <div class="case-filter-block wrapper">
+            <div class="case-filter-block__title">
+                Filter <br>
+                Case Studies
+            </div>
+            <div class="case-filter-block__tabs">
+                <div class="case-filter-block__item">
+                    Sector
+                    <div class="case-filter-block__list">
+                        Oil, Gas & Petrochemical
+                        <img src="img/arrow-drop-down-line.svg" alt="">
+                    </div>
+                </div>
+                <div class="case-filter-block__item">
+                    Service
+                    <div class="case-filter-block__list">
+                        Choose service
+                        <img src="img/arrow-drop-down-line.svg" alt="">
+                    </div>
+                </div>
+                <div class="case-filter-block__item">
+                    Region
+                    <div class="case-filter-block__list">
+                        Choose region
+                        <img src="img/arrow-drop-down-line.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <form class="search-form" action="">
+                <input class="search-form__input" type="text" placeholder="Search">
+                <button class="search-form__button" type="submit"><i class="grey fas fa-search"></i><i class="yellow fas fa-search"></i></button>
+            </form>
+        </div>
+    </section>
      <section class="content-container">
         <section class="join wrapper">
             <div class="join__img">
@@ -179,7 +255,7 @@
                 <div class="block-info__item">
                     <h4 class="block-info__title">Company</h4>
                     <a href="#" class="block-info__link">About</a>
-                    <a href="#" class="block-info__link">News & Blog</a>
+                    <a href="#" class="block-info__link">News & casecards</a>
                     <a href="#" class="block-info__link">Careers</a>
                     <a href="#" class="block-info__link">Team</a>
                     <a href="#" class="block-info__link">Contact</a>

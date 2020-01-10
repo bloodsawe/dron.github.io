@@ -37,8 +37,14 @@ canvas{
     font-family: "TitilliumWeb", serif;
 }
 
-a {
+a,button {
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+main {
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff);
 }
 
 .wrapper {
@@ -74,3 +80,68 @@ a {
     outline: none;
 }
 
+.search-form {
+    width: 250px;
+    height: 55px;
+    border-radius: 36px;
+    border: solid 2px $greyishbrown;
+    @include flex(space-around, center, row);
+    &__input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: $verylightpink;
+    }
+    &__input::-webkit-input-placeholder {
+        color: $verylightpink;
+        font-family: "TitilliumWebSemiBold",serif;
+        font-size: 14px;
+    }
+    &__button {
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 14px;
+        height: 14px;
+        .i {
+            font-size: 14px;
+        }
+        .yellow {
+            display: none;
+            color: $sunyellow;
+        }
+        .grey {
+            color: $greyishbrown;
+        }
+    }
+}
+.search-form:hover {
+    .yellow {
+        display: block;
+    }
+    .grey {
+        display: none;
+    }
+}
+
+.line-block {
+    @include flex(space-between, center, row);
+    margin-bottom: 40px;
+    &__title {
+      font-family: "TitilliumWebSemiBold", serif;
+      padding-right: 30px;
+      font-size: 18px;
+      line-height: 1.56;
+      color: $browngrey;
+    }
+    hr {
+    color: $verylightpink;
+      width: 75%;
+      @media screen and (max-width: 768px) {
+        width: 55%;
+      }
+      @media screen and (max-width: 480px) {
+        width: 44%;
+      }
+    }
+  }
