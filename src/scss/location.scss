@@ -21,6 +21,9 @@
             height: auto;
         }
     }
+    .main-button {
+        width: 209px;
+    }
 }
 
 .location-description {
@@ -121,8 +124,4 @@ circle[fill="#c3d833"] {
 
 svg {
     position: absolute;
-    // @media screen and (max-width:480px){
-    //     height: 456px;
-    //     left: -198px;
-    // }
 }

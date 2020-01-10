@@ -39,7 +39,7 @@
       visibility: hidden;
       opacity: 0;
       position: absolute;
-      margin-top: 138px;
+      top: 100px;
       z-index: 1;
       background: white;
       padding: 12px;
@@ -138,7 +138,7 @@
   .header-nav__item {
     height: auto;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   .header-nav.state_open .header-nav__list {
     display: block;

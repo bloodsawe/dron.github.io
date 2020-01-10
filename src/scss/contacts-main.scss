@@ -1,0 +1,278 @@
+@import "help/vars_and_mixins";
+
+.contacts-page {
+
+  .main {
+    overflow: hidden;
+    position: relative;
+
+    &-offices {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-title {
+        padding: 120px 0 10px 0 ;
+        max-width: 540px;
+        font-family: TitilliumWebBold;
+        @include font ($weight: 600, $size: 24px, $line-height: 1.58, $letter-spacing: normal, $color: $black);
+        text-align: center;
+      }
+      &-text {
+        font-family: TitilliumWebSemiBold;
+        max-width: 540px;
+        @include font ($weight: 600, $size: 18px, $line-height: 1.58, $letter-spacing: normal, $color: $black);
+        text-align: center;
+        padding-bottom: 280px;
+        @media screen and (max-width: 800px) {
+          padding-bottom: 80px;
+        }
+        @media screen and (max-width: 534px) {
+          padding-bottom: 20px;
+        }
+      }
+      &-list {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        &__item {
+          margin: 60px 0px 20px 0px;
+          width: 33.3%;
+          @media screen and (max-width: 800px) {
+            margin: 40px 0px 10px 0px;
+            width: 50%;  
+          }
+          @media screen and (max-width: 534px) {
+            margin: 20px 0px 0px 0px;
+            width: 100%;  
+          }
+          min-width: 240px;
+          height: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          &-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 220px;
+            &-name {
+              font-family: TitilliumWebRegular;
+              @include font ($weight: normal, $size: 24px, $line-height: 32px, $letter-spacing: normal, $color: $black);
+            }
+            &-town {
+              font-family: TitilliumWebBold;
+              @include font ($weight: normal, $size: 24px, $line-height: 32px, $letter-spacing: normal, $color: $black);
+              padding-bottom: 20px;
+            }
+            &-location, &-phone, &-mail {
+              font-family: TitilliumWebRegular;
+              @include font ($weight: normal, $size: 14px, $line-height: 24px, $letter-spacing: normal, $color: $black); 
+              a {
+                color: $black;
+              } 
+              max-width: 220px;
+            }
+          }
+        }
+      }
+    }
+
+    &-callback {
+      position: relative;
+      height: 420px;
+      background: url(../img/contacts-asnw-desctop.jpg) no-repeat center/cover;
+      @media screen and (max-width:768px) {
+        background: url(../img/contacts-asnw-tablet.jpg) no-repeat center/cover;
+      }
+      @media screen and (max-width:480px) {
+        height: 245px;
+        background: url(../img/contacts-asnw-mobile.jpg) no-repeat center/cover;
+      }
+      &-answ {
+        position: absolute;
+        width: 515px;
+        height: 350px;
+        top: -140px;
+        right: 0;
+        padding-top: 100px;
+        padding-left: 50px;
+        border-radius: 18px 0 0 18px;
+        background-color: $sunyellow;
+        @media screen and (max-width: 800px) {
+          width: 515px;
+          height: 300px; 
+          padding-top: 50px;
+        }
+        @media screen and (max-width: 534px) {
+          width: 305px;
+          height: 300px; 
+          &-text {
+            width: 240px;
+            font-size: 18px;
+          }
+        }
+        &-text {
+          position: absolute;
+          z-index: 2;
+          width: 300px;
+          font-family: TitilliumWebSemiBold;
+          font-size: 24px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.58;
+          letter-spacing: normal;
+          color: $black;
+          @media screen and (max-width: 534px) {
+            font-size: 18px;
+          }
+        }
+        &-img {
+          position: absolute;
+          margin-left: 200px;
+          margin-top: 90px;
+        }
+      }
+    }
+
+    &-feedback {
+      background-color: $black;
+      padding-top: 120px;
+      padding-bottom: 130px;
+      @media screen and (max-width: 900px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      &-title {
+        font-family: TitilliumWebSemiBold;
+        @include font ($weight: normal, $size: 40px, $line-height: 52px, $letter-spacing: normal, $color: $white);
+        text-align: center;
+        padding-bottom: 60px;
+        @media screen and (max-width: 899px) {
+          display: none;
+        }
+      }
+      &-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+        @media screen and (max-width: 900px) {
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: space-between;  
+        }
+        &-text {
+          font-family: TitilliumWebRegular;
+          @include font ($weight: normal, $size: 18px, $line-height: 28px, $letter-spacing: normal, $color: $browngrey);
+          max-width: 350px;
+          text-align: left;
+          margin-right: 50px;
+          &-title {
+            font-family: TitilliumWebSemiBold;
+            @include font ($weight: normal, $size: 40px, $line-height: 52px, $letter-spacing: normal, $color: $white);
+            text-align: left;
+            @media screen and (min-width: 900px) {
+              display: none;
+            }
+          }
+        }
+        ul { 
+          max-width: 635px; 
+          min-width: 580px;
+          @media screen and (max-width: 900px) {
+            max-width: 100%; 
+          }
+          @media screen and (max-width: 640px) {
+            max-width: 100%; 
+            min-width: 100%; 
+          }
+          
+        }
+        p { 
+          width: 285px; 
+          @media screen and (max-width: 640px) {
+            width: 100%; 
+          }
+        }
+        p:nth-child(5) {
+          width: 100%;
+          .main-feedback-container-form-input {
+            min-width: 100%;
+          }
+        }
+        p:nth-child(6) {
+          width: 100%;
+        }
+        &-form {
+          .main-button {
+            img {
+              width: 18px;
+              height: 9px;
+            }
+            width: 200px;
+          }
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          &-input {
+            min-width: 285px;
+            @media screen and (max-width: 640px) {
+              min-width: 100%; 
+            }
+            background: transparent;
+            border: 0px;
+            border-bottom: 1px solid $greyishbrown;
+            font-family: "TitilliumWebRegular", serif;
+            font-size: 14px;
+            line-height: 1.79;
+            color: #ffffff;
+            margin-bottom: 40px;
+            padding: 14px;
+          }
+          &-input:hover {
+            border-bottom: 1px solid $verylightpink;
+          }
+          &-input:focus {
+            outline: none;
+          }
+          &-agreetment-text {
+            font-family: TitilliumWebRegular;
+            @include font ($weight: normal, $size: 12px, $line-height: 16px, $letter-spacing: normal, $color: $browngrey);
+            padding-bottom: 40px;
+          }
+          
+
+          .inputfile {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+            
+            &-label {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                padding-right: 8px;
+              }
+              span {
+                font-family: TitilliumWebRegular;
+                @include font ($weight: normal, $size: 14px, $line-height: 24px, $letter-spacing: normal, $color: $browngrey);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

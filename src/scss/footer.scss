@@ -9,11 +9,8 @@ footer {
         @include flex(flex-start,stretch,row);
         flex-wrap: wrap;
     }
-    @media screen and (max-width:520px) {
-        padding: 0;
-    }
     @media screen and (max-width:480px) {
-        padding-top: 36px;
+        padding: 36px 0 50px;
     }
 }
 
