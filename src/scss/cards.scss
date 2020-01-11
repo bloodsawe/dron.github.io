@@ -39,11 +39,12 @@
         }
         &__item {
             position: relative;
-            padding: 28px 13px 0;
+            padding: 28px 0 0;
             border-radius: 18px;
             background-color: $sunyellow;
             width: 23%;
             height: 350px;
+            transition: all 0.6s linear;
             @media screen and (max-width: 768px) {
                 width: 47.68%;
                 margin-bottom: 30px;
@@ -81,6 +82,7 @@
             height: 26%;
             font-size: 24px;
             line-height: 1.17;
+            padding: 0 13px;
         }
         &__text {
             display: none;
@@ -88,7 +90,7 @@
             font-size: 14px;
             line-height: 1.71;
             height: 50%;
-            // overflow: hidden;
+            padding: 0 13px;
         }
         &__text::-webkit-scrollbar {
             width: 5px;
@@ -99,6 +101,7 @@
         }
         &__img {
             height: 74%;
+
             display: flex;
             align-items: flex-end;
             img {
@@ -116,7 +119,6 @@
             padding: 19px 24px;
             border-bottom-left-radius: 18px;
             border-bottom-right-radius: 18px;
-
         }
         &__arrow {
             position: absolute;

@@ -21,7 +21,7 @@
         .main-button {
             position: absolute;
             bottom: 11%;
-            right: 13%;
+            right: 10%;
             background: transparent;
             border: solid 2px #ffffff;
             color: #ffffff;
@@ -29,6 +29,9 @@
             padding: 17px 14px;
             img.black {
                 display: none;
+            }
+            @media (max-width:1024px) {
+                right: 5%;
             }
             @media (max-width:480px) {
                 right:auto;
@@ -82,23 +85,15 @@
     .slick-prev {
         left: 10%;
         transform: rotate(180deg);
-        @media screen and (max-width:960px) {
-            left: 93px;  
-        }
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:1024px) {
             left: 3%;  
         }
-        @media screen and (max-width:600px) {
-            left: 0%;  
-        }
+
     }
     .slick-next {
         left: 15%;
-        @media screen and (max-width:960px) {
-           left: 161px; 
-        }
-        @media screen and (max-width:768px) {
-           left: 12%; 
+        @media screen and (max-width:1024px) {
+           left: 14%; 
         }
     }   
 }
@@ -106,27 +101,130 @@
 .filter {
    min-height: 140px; 
    background-color: $black;
+   margin-bottom: 40px;
    @include flex(center,center,row);
 }
 
 .filter-block {
     @include flex(space-between,center,row);
+    @media (max-width:480px) {
+        flex-direction: column;
+    }
     &__title {
         font-family: "TitilliumWebBold",serif;
         font-size: 24px;
         line-height: 1.33;
         color: #fff;
+        margin-right: 69px;
+        @media (max-width:600px) {
+            margin-right: 19px;
+        }
+        @media (max-width:480px) {
+            display: none;
+        }
     }
     &__tabs {
         @include flex(space-between,center,row);
     }
     &__item {
+        cursor: pointer;
         font-family: "TitilliumWebSemiBold",serif;
         line-height: 1.5;
         font-size: 16px;
         color:$browngrey;
+        padding: 11px;
+        margin-right: 18px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        @media (max-width:600px) {
+            margin-right: 5px;
+        }
+        @media (max-width:480px) {
+            margin-bottom: 15px;
+        }
+    }
+    &__item:hover {
+        border-bottom: 4px solid $sunyellow;
+        color: #fff;
+    }
+    &__list {
+        font-family: "TitilliumWebRegular",serif;
+        font-size: 14px;
+        line-height: 1.71;
+        color: #fff;
+        position: relative;
+        img {
+            position: absolute;
+            left: -15px;
+            top: 9px;
+        }
     }
     .search-form {
         margin-left: auto;
+        @media (max-width:480px) {
+            margin: 0 auto;
+        }
     }
 }
+
+.blog-cards {
+    &__block {
+        @include flex(space-between, center,row);
+        flex-wrap: wrap;
+    }
+    &__item {
+        position: relative;
+        display: flex!important;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-direction: column;
+        height: 260px!important;
+        width: 32%;
+        margin-right: 1% ;
+        padding: 20px 20px 30px;
+        border-radius: 18px;
+        color: white;
+        margin-bottom: 40px;
+        @media (max-width:768px) {
+            width: 49%;
+            margin-right: 0.5% ;
+        }
+        @media (max-width:480px) {
+            width: 98%;
+            margin: 0 1%;
+            margin-bottom: 20px;
+        }
+    }
+    &__empty {
+        min-width: 32%;
+        height: 0;
+    }
+    &__item:focus {
+        outline: none;
+    }
+    &__block-categories {
+        @include flex(flex-end,center,row);
+        flex-wrap: wrap;
+    }
+    &__categories {
+        padding: 6px 12px;
+        margin-right: 8px;
+        margin-bottom: 2px;
+        border-radius: 6px;
+        color: white;
+        background-color: rgba(220, 220, 220, 0.5);
+        font-family: "TitilliumWebSemiBold",serif;
+        font-size: 12px;
+    }
+    &__categories:hover {
+        background-color: $sunyellow;
+        color: black;
+    }
+    &__text {
+        font-family: "TitilliumWebSemiBold",serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+
+
