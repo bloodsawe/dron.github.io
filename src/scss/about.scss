@@ -1,7 +1,9 @@
 @import "help/vars_and_mixins";
+
 .about-company {
     padding-top: 100px;
     margin-bottom: 120px;
+    overflow-x: hidden;
 }
 
 .about {
@@ -92,7 +94,7 @@
 }
 
 .video {
-    background-image: url(../img/bitmap-video.jpg);
+    background: url(../img/bitmap-video.jpg) no-repeat top/cover;
     margin-bottom: 80px;
     &-description {
         width: 50%;
@@ -108,6 +110,8 @@
 }
 
 .innovations {
+    margin-bottom: 80px;
+    overflow-x: hidden;
     &-block {
         @include flex(space-between, center, row);
         color: $black;
@@ -143,4 +147,94 @@
             left: -49px;
         }
     }
+}
+
+.our-awards {
+  background: url(../img/careers-copy.png) no-repeat center/cover;
+  height: 450px;
+  .video-description {
+    position: relative;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    &__text {
+      position: absolute;
+      //   position: relative;
+      // right: 8%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 410px;
+      height: 240px;
+      border-radius: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      background-image: linear-gradient(
+        to right,
+        rgb(255, 209, 45) 0%,
+        rgb(210, 233, 255) 100%
+      );
+      h1 {
+        font-family: "TitilliumWebSemiBold", serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.3;
+        letter-spacing: normal;
+        span {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.awards {
+    &__block {
+        @include flex(flex-start, start, row);
+    }
+    &__icon {
+        margin: 15px 30px 0 0;
+    }
+    &__dropdown {
+        position: relative;
+        width: 100%;
+        padding: 26px 0;
+        border-bottom: 2px solid $sunflower;
+        border-top: 2px solid $sunflower;
+    }
+    &__title {
+        font-family: "TitilliumWebSemiBold", serif;
+        font-size: 18px;
+        line-height: 1.56;
+        color: $black;
+        margin-bottom: 20px;
+    }
+    &__arrow {
+        position: absolute;
+        transform: rotate(90deg);
+        top: 28px;
+        right: 4px;
+    }
+    &__list {
+        padding-left: 17px;
+        display: none;
+    }
+    &__item {
+        font-family: "TitilliumWebSemiRegular", serif;
+        font-size: 16px;
+        line-height: 2;
+        color: $black;
+        list-style-type: square;
+        margin-bottom: 10px;
+    }
+
+}
+
+.active {
+    display: block;
 }
