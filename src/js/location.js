@@ -16386,7 +16386,7 @@ var yCords = [
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
-  if (document.querySelectorAll("section.location").length) {
+  if (document.querySelectorAll("section.location, section.main-feedback, section.main-offices").length) {
     if (window.matchMedia("(max-width: 480px)").matches) {
       let svg = document.querySelector("svg");
       svg.setAttribute("viewBox", "300 0 200 320");

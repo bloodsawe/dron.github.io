@@ -1,0 +1,190 @@
+@import "help/vars_and_mixins";
+.about-company {
+  padding-top: 100px;
+  margin-bottom: 120px;
+}
+
+.about {
+  @include flex(space-between, center, column);
+  position: relative;
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  &-header {
+    text-align: center;
+    color: $black;
+    width: 53%;
+    margin-bottom: 118px;
+    &__title {
+      font-family: "TitilliumWebBold", serif;
+      font-size: 40px;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-family: "TitilliumWebSemiBold", serif;
+      font-size: 18px;
+      line-height: 1.56;
+    }
+  }
+  &-inner {
+    @include flex(space-between, flex-end, row);
+  }
+  &-description {
+    color: $black;
+    width: 37%;
+    &__title {
+      font-family: "TitilliumWebSemiBold", serif;
+      font-size: 24px;
+      line-height: 1.58;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-family: "TitilliumWebRegular", serif;
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+  &-block {
+    @include flex(space-between, flex-end, column);
+    width: 47%;
+    height: 100%;
+    z-index: 1;
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      display: block;
+    }
+    &__count {
+      @include flex(space-between, stretch, row);
+      flex-wrap: wrap;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+    &__item {
+      width: 50%;
+      margin-top: 70px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 14px;
+        width: 100%;
+      }
+      span {
+        font-family: "TitilliumWebSemiBold", serif;
+        font-size: 50px;
+        color: $black;
+      }
+    }
+    &__text {
+      font-family: "TitilliumWebSemiBold", serif;
+      font-size: 16;
+      line-height: 1.5;
+      color: $black;
+      margin-top: 7px;
+    }
+  }
+}
+
+.video {
+  background-image: url(../img/bitmap-video.jpg);
+  margin-bottom: 80px;
+  &-description {
+    width: 50%;
+    padding: 80px 10%;
+    &__text {
+      font-family: "TitilliumWebSemiBold", serif;
+      font-size: 24px;
+      line-height: 1.58;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.our-awards {
+  background: url(../img/careers-copy.png) no-repeat center/cover;
+  height: 450px;
+  .video-description {
+    position: relative;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    &__text {
+      position: absolute;
+      //   position: relative;
+      // right: 8%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 410px;
+      height: 240px;
+      border-radius: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      background-image: linear-gradient(
+        to right,
+        rgb(255, 209, 45) 0%,
+        rgb(210, 233, 255) 100%
+      );
+      h1 {
+        font-family: "TitilliumWebSemiBold", serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.3;
+        letter-spacing: normal;
+        span {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.innovations {
+  &-block {
+    @include flex(space-between, center, row);
+    color: $black;
+    &__title {
+      font-family: "TitilliumWebBold", serif;
+      font-size: 40px;
+      line-height: 1.3;
+    }
+    &__text {
+      font-family: "TitilliumWebRegular", serif;
+      font-size: 16px;
+      line-height: 2;
+    }
+    &__description {
+      width: 39%;
+    }
+    &__square {
+      position: relative;
+      width: 350px;
+      height: 450px;
+      border-radius: 18px;
+      background-color: $black;
+    }
+    &__square_yellow {
+      background-color: $sunyellow;
+    }
+    &__img {
+      position: absolute;
+      top: 74px;
+      left: -183px;
+    }
+    &__img_position {
+      left: -49px;
+    }
+  }
+}
