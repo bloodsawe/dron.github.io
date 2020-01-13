@@ -1,11 +1,14 @@
 @import "help/vars_and_mixins";
+main.newsandblog {
+    background: none;
+}
 .blog-slider {
     min-height: 400px;
     &__item {
         position: relative;
         width: 1439px;
         height: 100%;
-        padding-top: 254px 354px;
+        padding: 254px 354px;
         display: flex!important;
         justify-content: center;
         align-items: center;

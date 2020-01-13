@@ -1,5 +1,6 @@
 @import "help/vars_and_mixins";
 .casecards {
+  background: none;
   .join {
     position: relative;
     @include flex(start, center, row);
