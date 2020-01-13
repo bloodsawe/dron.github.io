@@ -137,17 +137,22 @@ main {
       color: $browngrey;
     }
     hr {
-    color: $verylightpink;
-      width: 75%;
-      @media screen and (max-width: 768px) {
-        width: 55%;
-      }
-      @media screen and (max-width: 480px) {
-        width: 44%;
-      }
+        color: $verylightpink;
+        width: 75%;
+        @media screen and (max-width: 768px) {
+             width: 55%;
+        }
+        @media screen and (max-width: 480px) {
+            width: 44%;
+        }
     }
-  }
+}
 
-  input[type="submit"] {
-      cursor: pointer;
-  }
+input[type="submit"] {
+    cursor: pointer;
+}
+
+
+.active {
+    display: block;
+}
