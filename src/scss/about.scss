@@ -226,6 +226,7 @@ main.aboutUs {
         margin-bottom: 20px;
     }
     &__arrow {
+        cursor: pointer;
         position: absolute;
         transform: rotate(90deg);
         top: 28px;
