@@ -24,8 +24,15 @@
           <span></span>
         </div>
         <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="internalpage.html" class="header-nav__link">Services</a></li>
-          <li class="header-nav__item"><a href="newsandblog.html" class="header-nav__link">Sectors
+          <li class="header-nav__item"><span class="header-nav__link">Services</span>
+              <ul class="header-nav__list-insert">
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">iHawk</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">UAV Data Collection</a>
+                </li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">UAV Consultancy</a></li>
+              </ul>
+          </li>
+          <li class="header-nav__item"><span class="header-nav__link">Sectors</span>
               <ul class="header-nav__list-insert">
                 <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Oil, Gas &
                     Petrochemical</a></li>
@@ -34,9 +41,23 @@
                 <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Power grid</a></li>
                 <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Construction</a></li>
               </ul>
-            </a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Resources</a></li>
-          <li class="header-nav__item header-nav__item_margin"><a href="#" class="header-nav__link">Company</a></li>
+            </li>
+          <li class="header-nav__item"><span class="header-nav__link">Resources</span>
+              <ul class="header-nav__list-insert">
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">iHawk Knowledge Hub</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">eBooks</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Case Studies</a></li>
+              </ul>
+          </li>
+          <li class="header-nav__item"><span class="header-nav__link">Company</span>
+              <ul class="header-nav__list-insert">
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">About</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">News & Blog</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Careers</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Team</a></li>
+                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Contact</a></li>
+              </ul>
+          </li>
         </ul>
         <a class="header-nav__button" href="#">iHawk Login</a>
       </nav>
@@ -46,11 +67,10 @@
   
 
   <main class="contacts-page">
-
-    <section class="main-offices wrapper">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 700 320" enable-background="new 0 0 900 720" xml:space="preserve" id="worldmapOffices">
-      </svg>
+    </svg>
+    <section class="main-offices wrapper">
       <h1 class="main-offices-title">Global Offices</h1>
       <h2 class="main-offices-text">
         Cyberhawk is an international company, operating in over
@@ -124,9 +144,7 @@
     </section>
 
     <section class="main-feedback">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      viewBox="0 0 700 320" enable-background="new 0 0 900 720" xml:space="preserve" id="worldmapFeedback">
-      </svg>
+      <canvas id="map"></canvas>
       <div class="wrapper">
         <h1 class="main-feedback-title">Get in touch</h1>
         <div class="main-feedback-container">
@@ -160,7 +178,6 @@
             </form>
           </ul>
         </div>
-        
       </div>
     </section>
   </main>
@@ -171,23 +188,25 @@
         <div class="block-subscribe">
           <h3 class="block-subscribe__title">Subscribe to our newsletter</h3>
           <form action="" class="block-subscribe__form">
-            <input class="block-subscribe__input" type="email" placeholder="Enter your e-mail" name="" id="">
-            <button type="submit" class="block-subscribe__submit">
-              <img src="img/arrow-up-right-black.svg" alt="">
-            </button>
+  
+          <span><input class="block-subscribe__input" type="email" placeholder="Enter your e-mail" name="" id=""></span>
+          <div class="block-subscribe__arrow"></div>
+          <input type="submit" class="block-subscribe__submit" value="" />
+    
+    
           </form>
           <div class="block-subscribe__address">
             <div class="block-subscribe__items">
               <span>Head office</span> <br>
-              <a class="block-subscribe__link" href="#">EICA Ratho, 5th Floor</a>
+              <a class="block-subscribe__link" href="#">EICA Ratho, 5th Floor</a> 
             </div>
             <div class="block-subscribe__items">
-              <a class="block-subscribe__link" href="mailto:info@thecyberhawk">Edinburgh EH28 8AA</a> <br>
-              <a class="block-subscribe__link" href="tel:+44 01313702130">United Kingdom</a>
+            <a class="block-subscribe__link" href="#">Edinburgh EH28 8AA</a>   <br>
+            <a class="block-subscribe__link" href="#">United Kingdom</a>  
             </div>
             <div class="block-subscribe__items">
-              <a class="block-subscribe__link" href="#">info@thecyberhawk.com</a> <br>
-              <a class="block-subscribe__link" href="#">+44 (0)131 370 2130</a class="block-subscribe__link">
+          <a class="block-subscribe__link" href="mailto:info@thecyberhawk">info@thecyberhawk.com</a> <br>
+          <a class="block-subscribe__link" href="tel:+44 01313702130">+44 (0)131 370 2130</a class="block-subscribe__link">
             </div>
           </div>
         </div>
@@ -252,7 +271,11 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://kit.fontawesome.com/d0fa8037db.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script type="text/javascript" src="./js/main.min.js"></script>
+
+
 </body>
 
 </html>

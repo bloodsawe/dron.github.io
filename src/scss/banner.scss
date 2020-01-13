@@ -90,6 +90,9 @@
     &__img {
         height: 100%;
         width: 100%;
+        @media (min-width:1600px) {
+            width: 60%;
+        }
     }
     .slick-prev,.slick-next {
         position: absolute;

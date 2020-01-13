@@ -25,6 +25,8 @@ canvas{
     top: 0;
 }
 
+canvas#map{width:100%!important;height:100%!important;padding:0;margin:0;overflow: hidden;}
+
 #particles-js{
     height: 100%;
     background-image: linear-gradient(to right, rgb(255, 209, 45) 0px, rgb(239, 237, 211) 51%, rgb(210, 233, 255) 100%);

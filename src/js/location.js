@@ -16386,7 +16386,7 @@ var yCords = [
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
-  function worldMap(id) {
+  function worldMap(id, color) {
     if (document.querySelectorAll("section.location, section.main-feedback, section.main-offices").length) {
       if (window.matchMedia("(max-width: 480px)").matches) {
         let svg = document.querySelector("svg");
@@ -16424,13 +16424,12 @@ window.addEventListener("DOMContentLoaded", () => {
           newCircle.setAttribute("title", "" + areaTitle + "");
           $(id).append(newCircle);
         } else {
-          newCircle.setAttribute("fill", "#5c5c5c");
+          newCircle.setAttribute("fill", color);
           $(id).prepend(newCircle);
         }
       }
     }
   }
-  worldMap("#worldmap");
-  worldMap("#worldmapOffices");
-  worldMap("#worldmapFeedback");
+  worldMap("#worldmap","#5c5c5c");
+  worldMap("#worldmapOffices","#dcdcdc");
 });

@@ -141,6 +141,7 @@
     }
 
     &-feedback {
+      position: relative;
       background-color: $black;
       padding-top: 120px;
       padding-bottom: 130px;
@@ -153,11 +154,13 @@
         @include font ($weight: normal, $size: 40px, $line-height: 52px, $letter-spacing: normal, $color: $white);
         text-align: center;
         padding-bottom: 60px;
+        z-index: 1;
         @media screen and (max-width: 899px) {
           display: none;
         }
       }
       &-container {
+        z-index: 1;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -168,6 +171,7 @@
           align-items: space-between;  
         }
         &-text {
+          z-index: 1;
           font-family: TitilliumWebRegular;
           @include font ($weight: normal, $size: 18px, $line-height: 28px, $letter-spacing: normal, $color: $browngrey);
           max-width: 350px;
@@ -210,6 +214,7 @@
           width: 100%;
         }
         &-form {
+          z-index: 1;
           .main-button {
             img {
               width: 18px;
@@ -275,4 +280,11 @@
       }
     }
   }
+  svg#worldmapOffices {
+    z-index: -1;
+  }
+  svg#worldmapFeedback {
+    z-index: 0;
+  }
 }
+

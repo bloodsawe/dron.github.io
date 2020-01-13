@@ -427,6 +427,9 @@
   .slick-next {
       left: 15%;
       @media screen and (max-width:1024px) {
+         left: 12%; 
+      }
+      @media screen and (max-width:600px) {
          left: 14%; 
       }
   }   

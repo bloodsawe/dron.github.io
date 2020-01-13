@@ -93,6 +93,12 @@
       padding: 17px 23px;
       font-size: 14px;
       margin-left: 35px;
+      @media screen and (max-width: 768px) {
+          margin-left: 0;
+      }
+      @media screen and (max-width: 480px) {
+          display: none;
+      }
     }
     &__button:active,
     &__button:focus {
@@ -165,12 +171,6 @@
   }
   .header-nav__link {
     margin-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header-nav__button {
-    display: none;
   }
 }
 
