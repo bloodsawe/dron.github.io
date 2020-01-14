@@ -16428,7 +16428,6 @@ window.addEventListener("DOMContentLoaded", function () {
               areaTitle = "Hongkong";
               break;
           }
-
           newCircle.setAttribute("title", "" + areaTitle + "");
           $(id).append(newCircle);
         } else {
