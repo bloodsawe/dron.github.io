@@ -7,16 +7,24 @@
     }
     &__item {
         position: relative;
+        background-size: contain;
         width: 1439px;
-        height: 100%;
-        padding-top: 65px;
+        height: 600px!important;
+        padding-top: 120px;
         display: flex!important;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        @media (max-width: 768px ) {
+            padding-top: 95px;
+        }
+        @media screen and (max-width:600px) {
+            padding-top: 25px;
+        }
         .main-button {
+            width: 183px;
             color: #ffffff;
             position: absolute;
             bottom: 11%;
@@ -27,10 +35,13 @@
             img.black {
                 display: none;
             }
+            img.down {
+                transform: rotate(90deg);
+            }
             &__text {
                 font-family: "TitilliumWebSemiBold",serif;
                 font-size: 14px;
-                padding-right: 48px;
+                padding-right: 41px;
             }
             @media screen and (max-width:480px) {
                 display: none;
@@ -53,13 +64,25 @@
             outline: none;
         }
     }
-    &__container {
-        @include flex (center, center, column);
-        width: 37%;
-        @media screen and (max-width:768px) {
-            width:59.5%;
+    &__item_padding {
+        padding-top: 180px;
+        @media (max-width: 768px ) {
+            padding-top: 180px;
         }
-        @media screen and (max-width:480px) {
+        @media screen and (max-width:600px) {
+            padding-top: 180px;
+        }
+    }
+    &__container {
+        @include flex (flex-start, center, column);
+        width: 46%;
+        @media screen and (max-width:1300px) {
+            width:57%;
+        }
+        @media screen and (max-width:1024px) {
+            width:75%;
+        }
+        @media screen and (max-width:768px) {
             width:98%;
         }
     }
@@ -69,6 +92,7 @@
         font-weight: bold;
         line-height: 1.15;
         text-align: center;
+        margin:0 0 20px;
         color: $white;
         @media screen and (max-width:480px) {
             font-size: 24px;
@@ -113,20 +137,23 @@
     .slick-prev {
         left: 10%;
         transform: rotate(180deg);
-        @media screen and (max-width:960px) {
-            left: 93px;  
+        @media screen and (min-width:1441px) {
+            left: calc(50% - 1100px/2);  
         }
-        @media screen and (max-width:768px) {
-            left: 0%;  
+        @media screen and (max-width:1024px) {
+            left: 5%;  
         }
     }
     .slick-next {
-        left: 15%;
-        @media screen and (max-width:960px) {
-           left: 161px; 
+        left: 16%;
+        @media screen and (min-width:1441px) {
+            left: calc(54% - 1100px/2);  
         }
-        @media screen and (max-width:768px) {
-           left: 12%; 
+        @media screen and (max-width:1024px) {
+           left: 14%; 
+        }
+        @media screen and (max-width:600px) {
+           left: 17%; 
         }
     }   
 }

@@ -9,6 +9,10 @@
     #d2e9ff 100%
   );
   position: relative;
+  @media (max-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .animation-block {

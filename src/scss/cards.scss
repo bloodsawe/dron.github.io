@@ -33,7 +33,7 @@
             flex-wrap: wrap;
         }
         @media screen and (max-width: 480px) {
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
             margin-bottom: 20px;
         }

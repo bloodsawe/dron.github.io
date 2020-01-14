@@ -84,15 +84,15 @@ footer {
         flex-wrap:wrap;
     }
     @media screen and (max-width:768px) {
-        width: 40%;
+        width: 45%;
     }
-    @media screen and (max-width:540px) {
+    @media screen and (max-width:600px) {
         width:100%;
         margin-bottom: 40px;
     }
     &__item {
         @media screen and (max-width:960px) {
-            width:35%;
+            width:49%;
         }
     } 
     &__title {

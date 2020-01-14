@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelectorAll("section.animation").length > 0) {
     if (screen.availWidth >= 300) {
       var cn = new CanvasNest(document.querySelector("section.animation"), {
@@ -7,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         zIndex: 5
       });
     }
+
     if (screen.availWidth >= 786) {
       var cn = new CanvasNest(document.querySelector("section.animation"), {
         color: "105,105,105",
@@ -14,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         zIndex: 5
       });
     }
+
     if (screen.availWidth >= 1366) {
       var cn = new CanvasNest(document.querySelector("section.animation"), {
         color: "105,105,105",

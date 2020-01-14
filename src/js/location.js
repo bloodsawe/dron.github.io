@@ -1,3 +1,4 @@
+
 var xCords = [
   "171.8",
   "171.8",
@@ -16385,42 +16386,49 @@ var yCords = [
   "218.6"
 ];
 
-window.addEventListener("DOMContentLoaded", () => {
+
+window.addEventListener("DOMContentLoaded", function () {
   function worldMap(id, color) {
     if (document.querySelectorAll("section.location, section.main-feedback, section.main-offices").length) {
       if (window.matchMedia("(max-width: 480px)").matches) {
-        let svg = document.querySelector("svg");
-        svg.setAttribute("viewBox", "300 0 200 320");
+        var svg = document.querySelector("svg");
+        svg.setAttribute("viewBox", "330 0 170 320");
       }
+
       if (window.matchMedia("(min-width: 1600px)").matches) {
-        let svg = document.querySelector("svg");
-        svg.setAttribute("viewBox", "0 0 1000 320");
+        var _svg = document.querySelector("svg");
+
+        _svg.setAttribute("viewBox", "0 0 1000 320");
       }
+
       for (var i = 0; i < xCords.length; i++) {
-        var newCircle = document.createElementNS(
-          "http://www.w3.org/2000/svg",
-          "circle"
-        );
+        var newCircle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
         newCircle.setAttribute("cx", xCords[i]);
         newCircle.setAttribute("cy", yCords[i]);
         newCircle.setAttribute("r", "1");
+
         if (i === 994 || i === 1443 || i === 1604 || i === 5018) {
           var areaTitle;
           newCircle.setAttribute("fill", "#c3d833");
+
           switch (i) {
             case 994:
               areaTitle = "Markham, Ontario";
               break;
+
             case 1443:
               areaTitle = "London, Storbritannien";
               break;
+
             case 1604:
               areaTitle = "Göteborg, Sverige";
               break;
+
             case 5018:
               areaTitle = "Hongkong";
               break;
           }
+
           newCircle.setAttribute("title", "" + areaTitle + "");
           $(id).append(newCircle);
         } else {
@@ -16430,6 +16438,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-  worldMap("#worldmap","#5c5c5c");
-  worldMap("#worldmapOffices","#dcdcdc");
+
+  worldMap("#worldmap", "#5c5c5c");
+  worldMap("#worldmapOffices", "#dcdcdc");
 });
+

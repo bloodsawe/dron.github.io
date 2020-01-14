@@ -59,31 +59,31 @@ $(function() {
     centerMode: true,
     responsive: [
       {
-        breakpoint: 1600,
+        breakpoint: 1601,
         settings: {
           slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
         }
       },
       {
-        breakpoint: 1200,
+        breakpoint: 1201,
         settings: {
           slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
-          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
+          slidesToShow: sliderItem.length >= 7 ? 6 : sliderItem.length-1,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 481,
         settings: {
           slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
         }
