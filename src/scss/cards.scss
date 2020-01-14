@@ -26,7 +26,7 @@
         }
     }
     
-    .cards-block {
+    &-block {
         @include flex(space-between,stretch,row);
         margin-bottom: 120px;
         @media screen and (max-width: 768px) {
@@ -101,12 +101,25 @@
         }
         &__img {
             height: 74%;
-
+            width: 55%;
             display: flex;
             align-items: flex-end;
+            margin:0 auto;
             img {
                 width: 100%;
                 max-height:281px;
+            }
+            @media (max-width: 1600px) {
+                width: 75%;
+            }
+            @media (max-width: 1440px) {
+                width: 83%;
+            }
+            @media (max-width: 768px) {
+                width: 70%;
+            }
+            @media (max-width: 480px) {
+                width: 65%;
             }
         }
         &__button {

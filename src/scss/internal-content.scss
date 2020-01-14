@@ -1,5 +1,9 @@
 @import "help/vars_and_mixins";
 
+main.internal__page {
+    background: none;
+}
+
 .internal-content {
     @include flex(center, flex-start, column);
     width: 44%;

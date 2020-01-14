@@ -25,6 +25,7 @@ footer {
         position: relative;
     }
     &__input {
+        position: relative;
         min-width: 285px;
         background: transparent;
         border: 0px;
@@ -36,6 +37,14 @@ footer {
         margin-bottom: 77px;
         padding: 14px;
     }
+    &__arrow {
+        position: absolute;
+        background-image: url(../img/arrow-up-right-black.svg);
+        width: 19px;
+        height: 8px;
+        top:23px;
+        right: 0;
+    }
     &__input:hover {
         border-bottom: 1px solid $verylightpink;
     }
@@ -44,10 +53,13 @@ footer {
     }
     &__submit {
         position: absolute;
-        top: 13px;
-        right: 15px;
+        width: 19px;
+        height: 8px;
+        top: 23px;
+        right: 0;
         background: transparent;
         border: none;
+        outline: none;
     }
     &__items {
         font-family: "TitilliumWebRegular", serif;

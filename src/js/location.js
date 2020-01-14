@@ -16386,46 +16386,50 @@ var yCords = [
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
-  if (document.querySelectorAll("section.location").length) {
-    if (window.matchMedia("(max-width: 480px)").matches) {
-      let svg = document.querySelector("svg");
-      svg.setAttribute("viewBox", "300 0 200 320");
-    }
-    if (window.matchMedia("(min-width: 1600px)").matches) {
-      let svg = document.querySelector("svg");
-      svg.setAttribute("viewBox", "0 0 1000 320");
-    }
-    for (var i = 0; i < xCords.length; i++) {
-      var newCircle = document.createElementNS(
-        "http://www.w3.org/2000/svg",
-        "circle"
-      );
-      newCircle.setAttribute("cx", xCords[i]);
-      newCircle.setAttribute("cy", yCords[i]);
-      newCircle.setAttribute("r", "1");
-      if (i === 994 || i === 1443 || i === 1604 || i === 5018) {
-        var areaTitle;
-        newCircle.setAttribute("fill", "#c3d833");
-        switch (i) {
-          case 994:
-            areaTitle = "Markham, Ontario";
-            break;
-          case 1443:
-            areaTitle = "London, Storbritannien";
-            break;
-          case 1604:
-            areaTitle = "Göteborg, Sverige";
-            break;
-          case 5018:
-            areaTitle = "Hongkong";
-            break;
+  function worldMap(id, color) {
+    if (document.querySelectorAll("section.location, section.main-feedback, section.main-offices").length) {
+      if (window.matchMedia("(max-width: 480px)").matches) {
+        let svg = document.querySelector("svg");
+        svg.setAttribute("viewBox", "300 0 200 320");
+      }
+      if (window.matchMedia("(min-width: 1600px)").matches) {
+        let svg = document.querySelector("svg");
+        svg.setAttribute("viewBox", "0 0 1000 320");
+      }
+      for (var i = 0; i < xCords.length; i++) {
+        var newCircle = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "circle"
+        );
+        newCircle.setAttribute("cx", xCords[i]);
+        newCircle.setAttribute("cy", yCords[i]);
+        newCircle.setAttribute("r", "1");
+        if (i === 994 || i === 1443 || i === 1604 || i === 5018) {
+          var areaTitle;
+          newCircle.setAttribute("fill", "#c3d833");
+          switch (i) {
+            case 994:
+              areaTitle = "Markham, Ontario";
+              break;
+            case 1443:
+              areaTitle = "London, Storbritannien";
+              break;
+            case 1604:
+              areaTitle = "Göteborg, Sverige";
+              break;
+            case 5018:
+              areaTitle = "Hongkong";
+              break;
+          }
+          newCircle.setAttribute("title", "" + areaTitle + "");
+          $(id).append(newCircle);
+        } else {
+          newCircle.setAttribute("fill", color);
+          $(id).prepend(newCircle);
         }
-        newCircle.setAttribute("title", "" + areaTitle + "");
-        $("#worldmap").append(newCircle);
-      } else {
-        newCircle.setAttribute("fill", "#5c5c5c");
-        $("#worldmap").prepend(newCircle);
       }
     }
   }
+  worldMap("#worldmap","#5c5c5c");
+  worldMap("#worldmapOffices","#dcdcdc");
 });

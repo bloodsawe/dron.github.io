@@ -1,7 +1,7 @@
 @import "help/vars_and_mixins";
 
 .contacts-page {
-
+  background: none;
   .main {
     overflow: hidden;
     position: relative;
@@ -141,6 +141,7 @@
     }
 
     &-feedback {
+      position: relative;
       background-color: $black;
       padding-top: 120px;
       padding-bottom: 130px;
@@ -153,11 +154,13 @@
         @include font ($weight: normal, $size: 40px, $line-height: 52px, $letter-spacing: normal, $color: $white);
         text-align: center;
         padding-bottom: 60px;
+        z-index: 1;
         @media screen and (max-width: 899px) {
           display: none;
         }
       }
       &-container {
+        z-index: 1;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -168,6 +171,7 @@
           align-items: space-between;  
         }
         &-text {
+          z-index: 1;
           font-family: TitilliumWebRegular;
           @include font ($weight: normal, $size: 18px, $line-height: 28px, $letter-spacing: normal, $color: $browngrey);
           max-width: 350px;
@@ -194,85 +198,112 @@
           }
           
         }
-        p { 
-          width: 285px; 
-          @media screen and (max-width: 640px) {
-            width: 100%; 
+        .main-feedback-container-form {
+          p {
+            span { 
+              width: 285px; 
+              @media screen and (max-width: 640px) {
+                width: 100%; 
+              }
+            }
+            span:nth-child(5) {
+              width: 100%;
+              .main-feedback-container-form-input {
+                min-width: 100%;
+              }
+            }
+            span:nth-child(6) {
+              width: 100%;
+            }
           }
-        }
-        p:nth-child(5) {
-          width: 100%;
-          .main-feedback-container-form-input {
-            min-width: 100%;
-          }
-        }
-        p:nth-child(6) {
-          width: 100%;
         }
         &-form {
-          .main-button {
-            img {
-              width: 18px;
-              height: 9px;
-            }
-            width: 200px;
-          }
-          position: relative;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          &-input {
-            min-width: 285px;
-            @media screen and (max-width: 640px) {
-              min-width: 100%; 
-            }
-            background: transparent;
-            border: 0px;
-            border-bottom: 1px solid $greyishbrown;
-            font-family: "TitilliumWebRegular", serif;
-            font-size: 14px;
-            line-height: 1.79;
-            color: #ffffff;
-            margin-bottom: 40px;
-            padding: 14px;
-          }
-          &-input:hover {
-            border-bottom: 1px solid $verylightpink;
-          }
-          &-input:focus {
-            outline: none;
-          }
-          &-agreetment-text {
-            font-family: TitilliumWebRegular;
-            @include font ($weight: normal, $size: 12px, $line-height: 16px, $letter-spacing: normal, $color: $browngrey);
-            padding-bottom: 40px;
-          }
-          
-
-          .inputfile {
-            width: 0.1px;
-            height: 0.1px;
-            opacity: 0;
-            overflow: hidden;
-            position: absolute;
-            z-index: -1;
-            
-            &-label {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              img {
-                padding-right: 8px;
+          &-p {
+            z-index: 1;
+            .main-button {
+              font-family: "TitilliumWebSemiBold",serif;
+              font-size: 14px;
+              padding-right: 40px;
+              position: relative;
+              &__arrow {
+                position: absolute;
+                background-image: url(../img/arrow-up-right-black.svg);
+                width: 19px;
+                height: 8px;
+                top:23px;
+                right: 0;
               }
-              span {
+              img {
+                width: 18px;
+                height: 9px;
+              }
+              width: 200px;
+            }
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &-input {
+              min-width: 285px;
+              @media screen and (max-width: 640px) {
+                min-width: 100%; 
+              }
+              background: transparent;
+              border: 0px;
+              border-bottom: 1px solid $greyishbrown;
+              font-family: "TitilliumWebRegular", serif;
+              font-size: 14px;
+              line-height: 1.79;
+              color: #ffffff;
+              margin-bottom: 40px;
+              padding: 14px;
+            }
+            &-input:hover {
+              border-bottom: 1px solid $verylightpink;
+            }
+            &-input:focus {
+              outline: none;
+            }
+            &-agreetment-text {
+              font-family: TitilliumWebRegular;
+              @include font ($weight: normal, $size: 12px, $line-height: 16px, $letter-spacing: normal, $color: $browngrey);
+              padding-bottom: 40px;
+            }
+            
+
+            .apload {
+              width: 100px;
+              // height: 0.1px;
+              
+              // position: absolute;
+              // z-index: -1;
+              
+              &-file {
+                opacity: 0;
+                // overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                  padding-right: 8px;
+                }
                 font-family: TitilliumWebRegular;
                 @include font ($weight: normal, $size: 14px, $line-height: 24px, $letter-spacing: normal, $color: $browngrey);
               }
             }
           }
+          
         }
       }
     }
   }
+  svg#worldmapOffices {
+    z-index: -1;
+  }
+  svg#worldmapFeedback {
+    z-index: 0;
+  }
 }
+

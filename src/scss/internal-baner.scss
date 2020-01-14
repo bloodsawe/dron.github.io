@@ -1,7 +1,9 @@
 @import "help/vars_and_mixins";
 
 .internal-banner {
-    background-image: url(/img/bitmap.jpg);
+    // background: url(/img/bitmap.jpg) no-repeat top/cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 350px;
     margin-bottom: 40px;
     @include flex (center, center, column);
