@@ -27,7 +27,7 @@ footer {
     }
     &__input {
         position: relative;
-        min-width: 267px;
+        width: 267px;
         background: transparent;
         border: 0px;
         border-bottom: 1px solid $greyishbrown;
@@ -49,6 +49,7 @@ footer {
     &__input:hover {
         border-bottom: 1px solid $verylightpink;
     }
+    
     &__input:focus {
         outline: none;
     }

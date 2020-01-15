@@ -1,6 +1,9 @@
 @import "help/vars_and_mixins";
 .news {
     margin-bottom: 120px;
+    .main-button {
+        margin-left: 10px;
+    }
 }
 
 .news-block {
