@@ -16428,6 +16428,7 @@ window.addEventListener("DOMContentLoaded", function () {
               areaTitle = "Hongkong";
               break;
           }
+
           newCircle.setAttribute("title", "" + areaTitle + "");
           $(id).append(newCircle);
         } else {
@@ -16437,7 +16438,6 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
-
   worldMap("#worldmap", "#5c5c5c");
   worldMap("#worldmapOffices", "#dcdcdc");
 });

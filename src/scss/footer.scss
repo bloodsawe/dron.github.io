@@ -39,7 +39,7 @@ footer {
     }
     &__arrow {
         position: absolute;
-        background-image: url(../img/arrow-up-right-black.svg);
+        z-index: 0;
         width: 19px;
         height: 8px;
         top:23px;
@@ -52,6 +52,8 @@ footer {
         outline: none;
     }
     &__submit {
+        cursor: pointer;
+        z-index: 1;
         position: absolute;
         width: 19px;
         height: 8px;

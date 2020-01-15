@@ -1,0 +1,19 @@
+@import "help/vars_and_mixins";
+
+.services-collection-page {
+    background: #fff;
+    .callback {
+        background: url(../img/bitmap-services.jpg) no-repeat center/cover;
+    }
+    .callback-block {
+        &__text {
+            width: 43%;
+            @media screen and (max-width:1024px) {
+                width: 50%;
+            }
+            @media screen and (max-width:480px) {
+                font-size: 24px;
+            }
+        }
+    }
+}
