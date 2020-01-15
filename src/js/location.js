@@ -16390,13 +16390,13 @@ var yCords = [
 window.addEventListener("DOMContentLoaded", function () {
   function worldMap(id, color) {
     if (document.querySelectorAll("section.location, section.main-feedback, section.main-offices").length) {
-      if (window.matchMedia("(max-width: 480px)").matches) {
-        var svg = document.querySelector("svg");
-        svg.setAttribute("viewBox", "300 0 200 320");
-      }
       if (window.matchMedia("(max-width: 768px)").matches) {
         var svg = document.querySelector("svg");
         svg.setAttribute("viewBox", "150 50 450 300");
+      }
+      if (window.matchMedia("(max-width: 480px)").matches) {
+        var svg = document.querySelector("svg");
+        svg.setAttribute("viewBox", "300 0 200 320");
       }
 
       if (window.matchMedia("(min-width: 1600px)").matches) {
