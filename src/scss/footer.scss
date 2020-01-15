@@ -23,10 +23,11 @@ footer {
     }
     &__form {
         position: relative;
+        width: 285px;
     }
     &__input {
         position: relative;
-        min-width: 285px;
+        min-width: 267px;
         background: transparent;
         border: 0px;
         border-bottom: 1px solid $greyishbrown;
@@ -39,7 +40,7 @@ footer {
     }
     &__arrow {
         position: absolute;
-        z-index: 0;
+        // z-index: 0;
         width: 19px;
         height: 8px;
         top:23px;
@@ -53,15 +54,20 @@ footer {
     }
     &__submit {
         cursor: pointer;
-        z-index: 1;
+        // z-index: 1;
         position: absolute;
         width: 19px;
         height: 8px;
-        top: 23px;
+        height: 54px;
+        top: 0;
         right: 0;
         background: transparent;
+        background-image: url(../img/arrow-up-right-black.svg);
+        background-repeat: no-repeat;
+        background-position: center;
         border: none;
         outline: none;
+        border-bottom: 1px solid $greyishbrown;
     }
     &__items {
         font-family: "TitilliumWebRegular", serif;
