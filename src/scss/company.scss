@@ -2,6 +2,9 @@
 
 .company {
   margin-bottom: 101px !important;
+  @media (max-width: 480px) {
+    margin-bottom: 85px!important;
+  }
   .main-block {
     @include flex(space-between, start, row);
     margin-bottom: 76px;
@@ -77,10 +80,10 @@
         width: 70%;
       }
       @media screen and (max-width: 768px) {
-        width: 55%;
+        width: 57%;
       }
       @media screen and (max-width: 480px) {
-        width: 35%;
+        display: none;
       }
     }
   }

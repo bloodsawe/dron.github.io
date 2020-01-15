@@ -10,7 +10,7 @@
         background-size: contain;
         width: 1439px;
         height: 600px!important;
-        padding-top: 120px;
+        padding-top: 180px;
         display: flex!important;
         justify-content: center;
         align-items: flex-start;
@@ -64,15 +64,15 @@
             outline: none;
         }
     }
-    &__item_padding {
-        padding-top: 180px;
-        @media (max-width: 768px ) {
-            padding-top: 180px;
-        }
-        @media screen and (max-width:600px) {
-            padding-top: 180px;
-        }
-    }
+    // &__item_padding {
+    //     padding-top: 180px;
+    //     @media (max-width: 768px ) {
+    //         padding-top: 180px;
+    //     }
+    //     @media screen and (max-width:600px) {
+    //         padding-top: 180px;
+    //     }
+    // }
     &__container {
         @include flex (flex-start, center, column);
         width: 46%;
@@ -128,6 +128,9 @@
         border-radius: 50%; 
         background: transparent;
         background: url(../img/arrow-right-s-line.svg) no-repeat center;
+        @media (max-width: 480px) {
+            display: none!important;
+        }
     }
     .slick-prev:hover,.slick-next:hover {
         border: solid 2px $sunyellow;
@@ -157,6 +160,7 @@
         }
     }   
 }
+
 
 
 

@@ -8,14 +8,6 @@ $(function() {
     dots: false,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
-    responsive: [
-      {
-        breakpoint: 481,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
   });
 });
 
