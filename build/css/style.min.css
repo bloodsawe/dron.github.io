@@ -2144,6 +2144,7 @@ main.aboutUs {
 }
 
 .contacts-page .main-feedback-title {
+  position: relative;
   font-family: TitilliumWebSemiBold;
   font-size: 40px;
   font-weight: normal;
@@ -2200,27 +2201,28 @@ main.aboutUs {
 }
 
 .contacts-page .main-feedback-container ul {
+  z-index: 1;
   max-width: 635px;
   min-width: 580px;
 }
 
-.contacts-page .main-feedback-container p {
+.contacts-page .main-feedback-container .main-feedback-container-form p span {
   width: 285px;
 }
 
-.contacts-page .main-feedback-container p:nth-child(5) {
+.contacts-page .main-feedback-container .main-feedback-container-form p span:nth-child(5) {
   width: 100%;
 }
 
-.contacts-page .main-feedback-container p:nth-child(5) .main-feedback-container-form-input {
+.contacts-page .main-feedback-container .main-feedback-container-form p span:nth-child(5) .main-feedback-container-form-p-input {
   min-width: 100%;
 }
 
-.contacts-page .main-feedback-container p:nth-child(6) {
+.contacts-page .main-feedback-container .main-feedback-container-form p span:nth-child(6) {
   width: 100%;
 }
 
-.contacts-page .main-feedback-container-form {
+.contacts-page .main-feedback-container-form p {
   z-index: 1;
   position: relative;
   display: -webkit-box;
@@ -2241,16 +2243,7 @@ main.aboutUs {
   justify-content: space-between;
 }
 
-.contacts-page .main-feedback-container-form .main-button {
-  width: 200px;
-}
-
-.contacts-page .main-feedback-container-form .main-button img {
-  width: 18px;
-  height: 9px;
-}
-
-.contacts-page .main-feedback-container-form-input {
+.contacts-page .main-feedback-container-form p span input {
   min-width: 285px;
   background: transparent;
   border: 0px;
@@ -2263,15 +2256,15 @@ main.aboutUs {
   padding: 14px;
 }
 
-.contacts-page .main-feedback-container-form-input:hover {
+.contacts-page .main-feedback-container-form p span input:hover {
   border-bottom: 1px solid #dcdcdc;
 }
 
-.contacts-page .main-feedback-container-form-input:focus {
+.contacts-page .main-feedback-container-form p span input:focus {
   outline: none;
 }
 
-.contacts-page .main-feedback-container-form-agreetment-text {
+.contacts-page .main-feedback-container-form p span.main-feedback-container-form-p-agreetment-text {
   font-family: TitilliumWebRegular;
   font-size: 12px;
   font-weight: normal;
@@ -2281,7 +2274,77 @@ main.aboutUs {
   padding-bottom: 40px;
 }
 
-.contacts-page .main-feedback-container-form .inputfile {
+.contacts-page .main-feedback-container-form p span.upl-subm {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  height: 55px;
+}
+
+.contacts-page .main-feedback-container-form p span.upl-subm .btn-wrapper {
+  display: block;
+  width: 285px;
+  height: 100%;
+  position: relative;
+}
+
+.contacts-page .main-feedback-container-form p span.upl-subm .btn-wrapper .button-subm {
+  font-family: "TitilliumWebSemiBold",serif;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background-color: #ffd12d;
+  border-radius: 36px;
+  border: solid 2px #ffd12d;
+  color: #282828;
+  cursor: pointer;
+  width: 200px;
+  height: 55px;
+  width: 200px;
+}
+
+.contacts-page .main-feedback-container-form p span.upl-subm .btn-wrapper .button-subm__arrow {
+  position: absolute;
+  background-image: url(../img/arrow-up-right-black.svg);
+  width: 19px;
+  height: 8px;
+  top: 23px;
+  right: 24px;
+}
+
+.contacts-page .main-feedback-container-form p span.upl-subm .inputfile {
+  display: block;
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -2290,7 +2353,8 @@ main.aboutUs {
   z-index: -1;
 }
 
-.contacts-page .main-feedback-container-form .inputfile-label {
+.contacts-page .main-feedback-container-form p span.upl-subm .inputfile-label {
+  padding-left: 6px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2305,11 +2369,11 @@ main.aboutUs {
   align-items: center;
 }
 
-.contacts-page .main-feedback-container-form .inputfile-label img {
+.contacts-page .main-feedback-container-form p span.upl-subm .inputfile-label img {
   padding-right: 8px;
 }
 
-.contacts-page .main-feedback-container-form .inputfile-label span {
+.contacts-page .main-feedback-container-form p span.upl-subm .inputfile-label span {
   font-family: TitilliumWebRegular;
   font-size: 14px;
   font-weight: normal;
@@ -5459,11 +5523,11 @@ template {
     min-width: 100%;
   }
 
-  .contacts-page .main-feedback-container p {
+  .contacts-page .main-feedback-container .main-feedback-container-form p span {
     width: 100%;
   }
 
-  .contacts-page .main-feedback-container-form-input {
+  .contacts-page .main-feedback-container-form p span input {
     min-width: 100%;
   }
 }
