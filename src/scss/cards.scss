@@ -13,6 +13,7 @@
             width: 47.68%;
             @media screen and (max-width:480px) {
                 width: 90%;
+                font-size: 24px;
             }          
         }
         &__description {
@@ -33,7 +34,7 @@
             flex-wrap: wrap;
         }
         @media screen and (max-width: 480px) {
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
             margin-bottom: 20px;
         }
