@@ -11,6 +11,28 @@ $(function() {
   });
 });
 
+// document.addEventListener("DOMContentLoaded", function() {
+//   if ($(".banner-slider").length > 0) {
+//     $(".banner-slider").slick({
+//       slidesToShow: 1,
+//       autoplay: false,
+//       dots: false,
+//       prevArrow: '<div class="slick-prev"></div>',
+//       nextArrow: '<div class="slick-next"></div>'
+//     });
+//   }
+//   if (
+//     $(".banner-slider").length > 0 ||
+//     $(".casecards-slider").length > 0 ||
+//     $(".blog-slider").length > 0
+//   )
+//     document.querySelector(".slick-active .main-button").style.right =
+//       screen.availWidth -
+//       document.querySelector(".header-nav__button").getBoundingClientRect()
+//         .right +
+//       "px";
+// });
+
 // company-slider
 $(function() {
   $(".main-block__inner").slick({
