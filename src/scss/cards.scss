@@ -4,6 +4,7 @@
         @include flex(space-between,center,row);
         margin-bottom: 60px;
         @media screen and (max-width:480px) {
+            align-items: flex-start;
             flex-direction:column;
         }
         &__title {
@@ -51,7 +52,7 @@
                 margin-bottom: 30px;
             }
             @media screen and (max-width: 480px) {
-                width: 80%;
+                width: 88%;
                 margin-bottom: 20px;
             }
         }

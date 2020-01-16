@@ -3,11 +3,15 @@
 .company {
   margin-bottom: 101px !important;
   @media (max-width: 480px) {
-    margin-bottom: 85px!important;
+    margin-bottom: 45px!important;
   }
   .main-block {
     @include flex(space-between, start, row);
     margin-bottom: 76px;
+    @media screen and (min-width: 1024px) {
+      justify-content: space-evenly;
+      position: relative;
+    }
     @media screen and (max-width: 480px) {
       @include flex(space-between, stretch, column);
     }
@@ -17,6 +21,11 @@
       line-height: 1.15;
       width: 19%;
       margin: 0;
+      @media screen and (min-width: 1024px) {
+        position: absolute;
+        left: 0;
+        justify-self: flex-start;
+      }
       @media screen and (max-width: 1024px) {
         width: 49%;
       }
@@ -27,6 +36,10 @@
     &__inner {
       @include flex(space-between, start, row);
       width: 54%;
+      @media screen and (min-width: 1024px) {
+        margin-left: auto;
+        margin-right: 15%;
+      }
       @media screen and (max-width: 480px) {
         width: 90%;
       }
@@ -99,6 +112,7 @@
       margin: 0 7px;
       @media screen and (max-width: 768px) {
         // margin: 0 10px;
+        margin: 0;
       }
     }
     &__item:hover {
