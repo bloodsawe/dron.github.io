@@ -95,23 +95,6 @@ main.aboutUs {
 }
 
 .about-block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   width: 47%;
   height: 100%;
   z-index: 1;
@@ -151,6 +134,20 @@ main.aboutUs {
   color: #282828;
 }
 
+.about-block__item:nth-child(4) {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.about-block__item:nth-child(2) {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
 .about-block__text {
   font-family: "TitilliumWebSemiBold",serif;
   font-size: 16;
@@ -160,11 +157,23 @@ main.aboutUs {
 }
 
 .watch {
-  margin-bottom: 80px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .watch-description {
@@ -274,7 +283,7 @@ main.aboutUs {
 .our-awards .video-description__text {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 56%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -300,12 +309,14 @@ main.aboutUs {
 }
 
 .our-awards .video-description__text h1 {
-  font-family: "TitilliumWebSemiBold", serif;
+  font-family: "TitilliumWebRegular", serif;
+  font-weight: 100;
   font-size: 40px;
   line-height: 1.3;
 }
 
 .our-awards .video-description__text h1 span {
+  font-family: "TitilliumWebSemiBold", serif;
   color: black;
 }
 
@@ -3951,7 +3962,7 @@ main.newsandblog {
   position: relative;
   width: 1439px;
   height: 100%;
-  padding: 254px 354px;
+  padding-top: 254px 354px;
   display: -webkit-box !important;
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
@@ -5181,23 +5192,31 @@ template {
 
 @media screen and (max-width: 768px) {
   .about-block__count {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-
-  .about-block__count {
     margin-bottom: 20px;
   }
 
   .about-block__item {
     margin-bottom: 14px;
+  }
+
+  .watch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .watch-description {
     width: 100%;
+  }
+
+  .watch-player {
+    width: 100%;
+  }
+
+  .our-awards .video-description__text {
+    left: 60%;
   }
 
   .animation-block {
@@ -5458,6 +5477,48 @@ template {
 }
 
 @media (max-width: 768px) {
+  .about-company {
+    margin-bottom: 60px;
+  }
+
+  .about-header {
+    width: 95%;
+    margin-bottom: 100px;
+  }
+
+  .about-header {
+    width: 100%;
+    margin-bottom: 260px;
+  }
+
+  .about-header__title {
+    font-size: 24px;
+  }
+
+  .about-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .about-description {
+    width: 66%;
+  }
+
+  .about-description {
+    width: 86%;
+  }
+
+  .about-block {
+    width: 80%;
+  }
+
   .animation {
     width: 90%;
     margin: 0 auto;
@@ -5619,6 +5680,11 @@ template {
 }
 
 @media (max-width: 480px) {
+  .about-company {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
   .banner-slider .slick-prev,
   .banner-slider .slick-next {
     display: none !important;
@@ -5719,6 +5785,38 @@ template {
   .about-block {
     width: 100%;
     display: block;
+  }
+
+  .about-block__item {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .our-awards .video-description__text {
+    position: relative;
+    top: unset;
+    left: unset;
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset;
+    width: 248px;
+    height: 145px;
+    margin: auto;
+  }
+
+  .our-awards .video-description__text h1 {
+    font-family: "TitilliumWebRegular", serif;
+    font-weight: 100;
+    font-size: 24px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+  }
+
+  .our-awards .video-description__text h1 span {
+    font-family: "TitilliumWebSemiBold", serif;
+    color: black;
   }
 
   .animation-block {
