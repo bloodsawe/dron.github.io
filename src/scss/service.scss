@@ -61,10 +61,10 @@
             #d2e9ff 100%
         );
         position: relative;
+        margin-bottom: 80px;
         &__block {
             @include flex(space-between, center, row);
             padding: 130px 0;
-            margin-bottom: 80px;
             @media screen and (max-width: 1024px) {
               @include flex(space-between, stretch, column);
               padding: 63px 197px 63px 120px;

@@ -46,6 +46,7 @@
       padding: 12px;
     }
     &__item {
+      border-top: 4px solid transparent; 
       display: flex;
       align-items: center;
       height: 100%;
@@ -61,7 +62,7 @@
     }
     &__item:hover {
       cursor: pointer;
-      border-top: 4px solid $sunyellow;
+      border-top: 4px solid $sunyellow; 
       @media screen and (max-width: 768px) {
         border-top: none;
       }

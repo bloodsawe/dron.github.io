@@ -139,6 +139,36 @@ $(function() {
   });
 });
 
+// description-slider
+$(function() {
+  $(".sectors-description-img").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: ".sectors-description-slider"
+  });
+  if ($(".sectors-description-slider").length > 0) {
+    $(".sectors-description-slider").slick({
+      slidesToShow: 1,
+      autoplay: false,
+      dots: false,
+      prevArrow: '<div class="slick-prev"></div>',
+      nextArrow: '<div class="slick-next"></div>',
+      asNavFor: ".sectors-description-img",
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 481,
+          settings: {
+            arrows: false
+          }
+        }
+      ]
+    });
+  }
+});
+
 // news-slider
 $(function() {
   if ($(".news-slider").length > 0) {
@@ -241,4 +271,17 @@ $(function() {
         currentSlide + 1;
     });
   }
+});
+
+// testimonials-slider
+$(function() {
+  if ($(".sectors-slider").length > 0) {
+  }
+  $(".sectors-slider").slick({
+    slidesToShow: 1,
+    autoplay: false,
+    dots: false,
+    prevArrow: '<div class="slick-prev"></div>',
+    nextArrow: '<div class="slick-next"></div>',
+  });
 });

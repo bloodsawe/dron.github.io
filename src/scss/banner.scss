@@ -67,15 +67,6 @@
             outline: none;
         }
     }
-    // &__item_padding {
-    //     padding-top: 180px;
-    //     @media (max-width: 768px ) {
-    //         padding-top: 180px;
-    //     }
-    //     @media screen and (max-width:600px) {
-    //         padding-top: 180px;
-    //     }
-    // }
     &__container {
         @include flex (flex-start, center, column);
         width: 46%;
