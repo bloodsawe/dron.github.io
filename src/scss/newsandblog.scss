@@ -34,6 +34,9 @@ main.newsandblog {
             img.black {
                 display: none;
             }
+            @media (min-width:1441px) {
+                right: calc((100vw - 1110px)/2);
+            }
             @media (max-width:1024px) {
                 right: 5%;
             }
@@ -89,15 +92,24 @@ main.newsandblog {
     .slick-prev {
         left: 10%;
         transform: rotate(180deg);
+        @media screen and (min-width:1441px) {
+            left: calc(50% - 1100px/2);  
+        }
         @media screen and (max-width:1024px) {
-            left: 3%;  
+            left: 5%;  
         }
 
     }
     .slick-next {
         left: 15%;
+        @media screen and (min-width:1441px) {
+            left: calc(54% - 1100px/2);  
+        }
         @media screen and (max-width:1024px) {
            left: 14%; 
+        }
+        @media screen and (max-width:600px) {
+           left: 17%; 
         }
     }   
 }

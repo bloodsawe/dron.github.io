@@ -142,6 +142,10 @@ main.aboutUs {
     }
     &-description {
         @include flex(center, center, row);
+        @media screen and (min-width:1441px) {
+            justify-content: flex-start;
+            padding-left:calc((100vw - 1100px)/2) ;
+        }
         background-color: #282828;
         width: 50%;
         @media screen and (max-width:768px) {

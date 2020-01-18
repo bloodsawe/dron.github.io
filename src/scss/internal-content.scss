@@ -22,6 +22,10 @@ main.internal__page {
         color: $black;
         margin-bottom: 30px;
         padding: 0 50px;
+        width: 100%;
+        img {
+            padding: 0;
+        }
     }
     &__title {
         margin-bottom: 40px;

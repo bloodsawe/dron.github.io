@@ -7,6 +7,9 @@
     min-height: 350px;
     margin-bottom: 40px;
     @include flex (center, center, column);
+    @media (max-width:768px) {
+        background-position: center;
+    }
     &__text {
         font-family: "TitilliumWebBold",serif;
         font-size: 40px;

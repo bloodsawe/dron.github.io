@@ -6,16 +6,25 @@
     &__img {
         position: absolute;
         z-index: 1;
-        left: 25%;
+        left: calc((100vw - 710px)/2);
         top: 293px;
     }
     &__baner {
         min-height: 600px;
-        padding: 0 162px 60px 0;
+        padding-bottom: 60px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         @include flex(flex-end,flex-end,row);
+        @media (min-width:1441px) {
+            padding-right: calc((100vw - 1110px)/2);
+        }
+        @media (max-width:1440px) {
+            padding-right: 10%;
+        }
+        @media (max-width:1024px) {
+            padding-right: 5%;
+        }
         .main-button {
             width: 183px;
             color: #ffffff;
