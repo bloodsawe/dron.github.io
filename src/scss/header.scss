@@ -1,5 +1,13 @@
 @import "help/vars_and_mixins.scss";
-
+header {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 10;
+}
+header.out {
+  transform: translateY(-100%);
+}
 .header {
   @include flex($justify: space-between, $align: center, $direction: row);
   font-family: "TitilliumWebSemiBold";
@@ -11,6 +19,7 @@
     $color: $black
   );
   height: 100px;
+  z-index: 10;
   &-logo {
     width: 204px;
     height: 52px;
@@ -137,13 +146,7 @@
     }
   }
 }
-.header.out {
-  display: none;
-}
-.header.up {
-  display: block;
-  position: fixed;
-}
+
 @media screen and (max-width: 768px) {
   .header-nav__burger {
     display: block;

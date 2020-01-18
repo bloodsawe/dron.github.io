@@ -467,7 +467,6 @@
 }
 
 .animation {
-    border-radius: 38px;
     background-image: linear-gradient(
       to right,
       $sunyellow 0%,
@@ -475,26 +474,31 @@
       #d2e9ff 100%
     );
     position: relative;
+    margin-bottom: 80px;
     @media (max-width: 768px) {
       width: 90%;
-      margin: 0 auto;
+      margin: 0px auto 80px;
+      border-radius: 38px;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 20px;
     }
   
     &-block {
-    @include flex(space-between, center, row);
-    padding: 130px 65px 130px 95px;
-    margin-bottom: 80px;
-    @media screen and (max-width: 1024px) {
-      @include flex(space-between, stretch, column);
-      padding: 63px 197px 63px 120px;
-    }
-    @media screen and (max-width: 768px) {
-      @include flex(space-between, stretch, column);
-      padding: 63px 50px 63px 66px;
-    }
-    @media screen and (max-width: 480px) {
-      padding: 40px 43px 31px 20px;
-    }
+      @include flex(space-between, center, row);
+      padding: 130px 0;
+      margin-bottom: 80px;
+      @media screen and (max-width: 1024px) {
+        @include flex(space-between, stretch, column);
+        padding: 63px 197px 63px 120px;
+      }
+      @media screen and (max-width: 768px) {
+        @include flex(space-between, stretch, column);
+        padding: 63px 50px 63px 66px;
+      }
+      @media screen and (max-width: 480px) {
+        padding: 33px 0 24px ;
+      }
     &__title {
       font-family: "TitilliumWebBold", serif;
       font-size: 40px;

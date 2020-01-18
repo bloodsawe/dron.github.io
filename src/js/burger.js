@@ -12,19 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.classList.toggle("toggle");
   });
 
-  // let header = $(".header");
-  //     scrollPrev = 0;
-  // $(window).scroll(function() {
-  //   let scrolled = $(window).scrollTop();
-  //   console.log('scrolled: ', scrolled);
+  let header = $("header");
+      scrollPrev = 0;
+  $(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
     
-  //   if ( scrolled > 100 && scrolled > scrollPrev ) {
-  //     header.addClass('out');
-  //   } else {
-  //     header.removeClass('out');
-  //     header.addClass('up');
-  //   }
-  //   scrollPrev = scrolled;
-  // })
+    if ( scrolled > 100 && scrolled > scrollPrev ) {
+      header.addClass('out');
+    } else {
+      header.removeClass('out');
+    }
+    scrollPrev = scrolled;
+  })
 });
 
