@@ -171,6 +171,7 @@
     &-slider {
         margin-bottom: 60px;
         &__item {
+            position: relative;
             padding: 66px 0;
             background-color: $black;
         }
@@ -186,15 +187,13 @@
             color: #fff;
             margin-bottom: 48px;
         }
-        &__img {
-
-        }
         &__text {
             font-family: "TitilliumWebRegular",serif;
             font-size: 16px;
             line-height: 1.75;
             color: #fff;
             text-align: center;
+            margin-bottom: 25px;
         }
         &__subtext {
             font-size: 18px;
@@ -202,12 +201,45 @@
             color: #fff;
             font-family: "TitilliumWebSemiBold",serif;
         }
+        .slick-prev,
+        .slick-next {
+          cursor: pointer;
+          position: absolute;
+          top: 55%;
+          width: 8px;
+          height: 13px;
+          background: url(../img/arrow-right-s-line.svg) no-repeat center;
+        }
+        .slick-prev {
+          right: 16%;
+          z-index: 1;
+        }
+        .slick-next {
+          left: 16%;
+          transform: rotate(180deg);
+          @media (max-width:480px) {
+              right: 10%;
+          }
+        }
+        .slick-prev:hover,
+        .slick-next:hover {
+          background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+        }
     }
     &-description {
         @include flex(space-between,center,row);
+        position: relative;
+        height: 450px;
+        .slick-slider {
+            position: static;
+        }
         &-img {
             width: 50%;
             max-height: 450px;
+            img {
+                width: auto;
+                height: 450px;
+            }
         }
         &-slider {
             width: 50%;
@@ -228,10 +260,20 @@
                 font-family: "TitilliumWebRegular",serif;
             }
         }
+        &__counter {
+            top: 13%;
+            right: 36.5%;
+            position: absolute ;
+            font-size: 16px;
+            font-family: "TitilliumWebBold", serif;
+            @media (min-width: 1441px) {
+                right:calc(47.4% - 150px);
+            }
+        }
         .slick-prev,.slick-next {
             position: absolute;
             z-index: 1;
-            bottom: -51%;
+            bottom: 10%;
             width: 54px;
             height: 54px;
             border: solid 2px $verylightpink;
@@ -248,20 +290,14 @@
             cursor: pointer;
         }
         .slick-prev {
-            left: 19%;
+            left: calc(50% + 150px);
             transform: rotate(180deg);
-            @media screen and (min-width:1441px) {
-                left: calc(50% - 1100px/2);  
-            }
             @media screen and (max-width:1024px) {
                 left: 5%;  
             }
         }
         .slick-next {
-            left: 29%;
-            @media screen and (min-width:1441px) {
-                left: calc(54% - 1100px/2);  
-            }
+            left: calc(55% + 150px);
             @media screen and (max-width:1024px) {
                left: 14%; 
             }
@@ -272,8 +308,17 @@
     }
     &-oil, &-generation, &-grid, &-construction  {
         .collection {
+            &-block__title {
+                font-size: 24px;
+            }
             .select-block__item {
                 margin-bottom: 60px;
+            }
+            .select-block__title {
+                color: $browngrey;
+            }
+            .select-block__title:hover {
+                color: $black;
             }
             &-block__text {
                 margin-bottom: 10px;

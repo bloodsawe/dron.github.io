@@ -149,7 +149,7 @@ $(function() {
     asNavFor: ".sectors-description-slider"
   });
   if ($(".sectors-description-slider").length > 0) {
-    $(".sectors-description-slider").slick({
+  let descriptionSlider =  $(".sectors-description-slider").slick({
       slidesToShow: 1,
       autoplay: false,
       dots: false,
@@ -165,6 +165,10 @@ $(function() {
           }
         }
       ]
+    });
+    descriptionSlider.on("afterChange", function(event, slick, currentSlide, nextSlide) {
+      document.querySelectorAll(".sectors-description__counter span")[0].textContent =
+        currentSlide + 1;
     });
   }
 });
