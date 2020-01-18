@@ -28,7 +28,7 @@
             color: #ffffff;
             position: absolute;
             bottom: 11%;
-            right: 13%;
+            right: 10%;
             background: transparent;
             border: solid 2px #ffffff;
             color: #ffffff;
@@ -42,6 +42,9 @@
                 font-family: "TitilliumWebSemiBold",serif;
                 font-size: 14px;
                 padding-right: 41px;
+            }
+            @media (min-width:1441px) {
+                right: calc((100vw - 1110px)/2);
             }
             @media screen and (max-width:480px) {
                 display: none;

@@ -1,4 +1,7 @@
 @import "help/vars_and_mixins";
+hr {
+  color: #dcdcdc;
+}
 .casecards {
   background: none;
   .join {
@@ -10,11 +13,13 @@
     }
     margin-bottom: 120px !important;
     hr {
+      display: block;
       width: 100%;
       position: absolute;
       bottom: -61px;
       left: 0;
       background: #dcdcdc;
+      color: #dcdcdc;
     }
     .join__img {
       position: relative;
@@ -145,10 +150,24 @@
       }
     }
   }
+  .hr-for-tablet {
+    display: none;
+  }
   @media screen and (max-width: 1024px) {
     .casecards-wrap {
       .wrapper {
         width: 60.5%;
+        margin-bottom: 0px !important;
+        hr {
+          display: none;
+        }
+      }
+      hr.hr-for-tablet {
+        display: block;
+        margin: 45px auto;
+        width: 90%;
+        background: #dcdcdc;
+        color: #dcdcdc;
       }
     }
   }
@@ -156,11 +175,16 @@
     .casecards-wrap {
       .wrapper {
         width: 90.6%;
+        // hr {
+        //   // display: block;
+        // }
+      }
+      hr {
+        display: none;
       }
     }
   }
 }
-
 .casecards-slider {
   min-height: 400px;
   &__item {

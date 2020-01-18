@@ -1,6 +1,7 @@
 @import "help/vars_and_mixins";
 main.newsandblog {
     background: none;
+    padding-bottom: 20px;
 }
 .blog-slider {
     min-height: 400px;
@@ -148,6 +149,11 @@ main.newsandblog {
     &__item:hover {
         border-bottom: 4px solid $sunyellow;
         color: #fff;
+        padding-bottom: 7px;
+        @media (max-width:480px) {
+            padding-bottom: 11px;
+            margin-bottom: 11px;
+        }
     }
     &__list {
         font-family: "TitilliumWebRegular",serif;
@@ -182,14 +188,14 @@ main.newsandblog {
         flex-direction: column;
         height: 260px!important;
         width: 32%;
-        margin-right: 1% ;
+        // margin-right: 1% ;
         padding: 20px 20px 30px;
         border-radius: 18px;
         color: white;
         margin-bottom: 40px;
         @media (max-width:768px) {
             width: 49%;
-            margin-right: 0.5% ;
+            // margin-right: 0.5% ;
         }
         @media (max-width:480px) {
             width: 98%;
@@ -209,7 +215,7 @@ main.newsandblog {
         flex-wrap: wrap;
     }
     &__categories {
-        padding: 6px 12px;
+        padding: 10px 20px;
         margin-right: 8px;
         margin-bottom: 2px;
         border-radius: 6px;
