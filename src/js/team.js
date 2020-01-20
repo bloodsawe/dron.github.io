@@ -1,5 +1,6 @@
-function openSelection(evt, type) {
+function openSelection(evt) {
   var i;
+  type=event.target.getAttribute("data-categories");
   document.querySelector(".active-button").classList.remove("active-button");
   if (evt.target.classList.contains("active-button"))
     evt.target.classList.remove("active-button");

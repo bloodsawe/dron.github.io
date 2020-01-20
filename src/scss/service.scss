@@ -1,6 +1,7 @@
 @import "help/vars_and_mixins";
 
 .services {
+    overflow-x: hidden;
     background: #fff;
     position: relative;
     &__img {
@@ -31,6 +32,7 @@
             background: transparent;
             border: solid 2px #ffffff;
             color: #ffffff;
+            z-index: 2;
             img.black {
                 display: none;
             }

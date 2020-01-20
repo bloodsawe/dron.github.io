@@ -5,6 +5,7 @@ main.newsandblog {
 }
 .blog-slider {
     min-height: 400px;
+    padding-top: 100px;
     &__item {
         position: relative;
         width: 1439px;
@@ -244,6 +245,18 @@ main.newsandblog {
         font-family: "TitilliumWebSemiBold",serif;
         font-size: 16px;
         line-height: 1.5;
+        height: 24%;
+        overflow-y: auto;
+    }
+    &__text::-webkit-scrollbar {
+        width: 3px;
+        border-radius: 5px;
+        background-color: rgba(220, 220, 220, 0.5);
+    }
+    &__text::-webkit-scrollbar-thumb {
+        width: 2px;
+        border-radius: 10px;
+        background-color: white;
     }
 }
 
