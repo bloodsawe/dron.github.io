@@ -23,6 +23,9 @@ main.internal__page {
         margin-bottom: 30px;
         padding: 0 50px;
         width: 100%;
+        @media (max-width:480px) {
+            padding: 0 15px;
+        }
         img {
             padding: 0;
         }
@@ -34,6 +37,9 @@ main.internal__page {
         line-height: 1.56; 
         color: $black;
         padding: 0 50px;
+        @media (max-width:480px) {
+            padding: 0 15px;
+        }
     }
     &__link {
         margin: 0 auto;

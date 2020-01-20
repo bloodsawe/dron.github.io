@@ -4,34 +4,14 @@ $(function() {
   }
   $(".banner-slider").slick({
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed:6000,
     dots: false,
+    fade:true,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
   });
 });
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   if ($(".banner-slider").length > 0) {
-//     $(".banner-slider").slick({
-//       slidesToShow: 1,
-//       autoplay: false,
-//       dots: false,
-//       prevArrow: '<div class="slick-prev"></div>',
-//       nextArrow: '<div class="slick-next"></div>'
-//     });
-//   }
-//   if (
-//     $(".banner-slider").length > 0 ||
-//     $(".casecards-slider").length > 0 ||
-//     $(".blog-slider").length > 0
-//   )
-//     document.querySelector(".slick-active .main-button").style.right =
-//       screen.availWidth -
-//       document.querySelector(".header-nav__button").getBoundingClientRect()
-//         .right +
-//       "px";
-// });
 
 // company-slider
 $(function() {
@@ -139,7 +119,16 @@ $(function() {
   });
 });
 
+
 // description-slider
+document.addEventListener("DOMContentLoaded", function() {
+  if(document.querySelector(".sectors-oil, sectors-grid, sectors-generation, sectors-construction")) {
+    var sliders = document.querySelectorAll(".sectors-description-slider__item").length;
+    var counterSlider = document.querySelector(".counter-slider");
+    counterSlider.innerHTML = sliders; 
+  }
+})
+
 $(function() {
   $(".sectors-description-img").slick({
     slidesToShow: 1,
@@ -207,8 +196,10 @@ $(function() {
   }
   $(".blog-slider").slick({
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed:6000,
     dots: false,
+    fade:true,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
     responsive: [
@@ -228,8 +219,10 @@ $(function() {
   }
   $(".casecards-slider").slick({
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed:6000,
     dots: false,
+    fade:true,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
     responsive: [

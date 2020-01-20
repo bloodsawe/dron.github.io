@@ -1,7 +1,8 @@
 @import "help/vars_and_mixins";
-
-.internal-banner {
+.internal__page {
     padding-top: 100px;
+}
+.internal-banner {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 350px;
@@ -25,7 +26,7 @@
             width:79.5%;
         }
         @media screen and (max-width:480px) {
-            font-size: 34px;
+            font-size: 24px;
             line-height: 1.71;
             width:98%;
         }

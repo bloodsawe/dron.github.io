@@ -69,7 +69,6 @@ hr {
       width: 38.58%;
       padding-right: 2px;
       @media screen and (max-width: 1024px) {
-        // width: 49%;
         width: 100%;
         padding-right: 0;
       }
@@ -82,6 +81,7 @@ hr {
         font-size: 24px;
         line-height: 1.33;
         margin-bottom: 20px;
+        width: 100%;
         span {
           font-family: "TitilliumWebRegular", serif;
         }
@@ -198,6 +198,9 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media (min-width: 1441px) {
+      padding: 254px calc((100vw - 1110px)/2);
+    }
     @media (max-width: 1200px) {
       padding: 254px 39px;
     }

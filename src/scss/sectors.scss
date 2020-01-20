@@ -307,6 +307,7 @@
         }
     }
     &-oil, &-generation, &-grid, &-construction  {
+        padding-top: 100px;
         .collection {
             &-block__title {
                 font-size: 24px;

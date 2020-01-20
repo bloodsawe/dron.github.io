@@ -24,6 +24,7 @@ header.out {
     width: 204px;
     height: 52px;
     cursor: pointer;
+    outline: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     @media screen and (max-width: 768px) {
       width: 147px;
