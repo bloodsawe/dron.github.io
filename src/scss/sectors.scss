@@ -308,6 +308,9 @@
     }
     &-oil, &-generation, &-grid, &-construction  {
         padding-top: 100px;
+        .news-slider__item {
+            justify-content: flex-end;
+        }
         .collection {
             &-block__title {
                 font-size: 24px;

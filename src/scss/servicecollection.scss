@@ -1,25 +1,33 @@
 @import "help/vars_and_mixins";
 
 .services-collection {
+    overflow-x: hidden;
     background: #fff;
     padding-top: 100px;
+    position: relative;
+    &__player {
+        width: 100%;
+    }
     &__baner {
-        min-height: 600px;
-        padding-bottom: 60px;
+        // min-height: 600px;
+        // padding-bottom: 60px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        @include flex(flex-end,flex-end,row);
+        // @include flex(flex-end,flex-end,row);
         @media (min-width:1441px) {
-            padding-right: calc((100vw - 1110px)/2);
+            // padding-right: calc((100vw - 1110px)/2);
         }
         @media (max-width:1440px) {
-            padding-right: 10%;
+            // padding-right: 10%;
         }
         @media (max-width:1024px) {
             padding-right: 5%;
         }
         .main-button {
+            position: absolute;
+            top: 600px;
+            right: calc((100vw - 1110px)/2);
             width: 183px;
             color: #ffffff;
             background: transparent;
@@ -34,7 +42,7 @@
             &__text {
                 font-family: "TitilliumWebSemiBold",serif;
                 font-size: 14px;
-                padding-right: 41px;
+                padding-right: 38px;
             }
             @media screen and (max-width:480px) {
                 display: none;

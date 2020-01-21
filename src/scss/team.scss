@@ -1,5 +1,10 @@
 @import "help/vars_and_mixins";
-
+.team {
+  &__player {
+    width: 50%;
+    object-fit: cover;
+  }
+}
 .team-page {
   background: transparent;
   padding-top: 100px;

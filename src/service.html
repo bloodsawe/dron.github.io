@@ -61,7 +61,10 @@
     </header>
 
     <main class="services">
-        <section class="services__baner" style="background-image: url(/img/bitmap.jpg);">
+        <section class="services__baner">
+          <video class="services__player" preload="auto" poster="assets/videoback.png" controls autoplay muted loop>
+            <source src="./img/west.mp4" type="video/mp4" /> 
+          </video>
           <img class="services__img" src="./img/macbook-mock-dribbble-2.png" alt="">
           <a href="#" class="main-button">
             <p class="main-button__text">Next Service</p>
@@ -85,55 +88,43 @@
         </section>
         
         <section class="collection wrapper">
+          <div class="collection-title">
+            Provided Features
+          </div>
           <div class="collection-inner">
             <div class="collection-block">
               <div class="collection-block__description">
-                <div class="collection-block__line"></div>
                 <div class="collection-block__item">
                   <div class="collection-block__title">
                     Multi-Sector Digitalization
                   </div>
                   <div class="collection-block__text">
                     <p class="collection-block__text-animation" data-tab="0">
-                      iHawk is transforming asset and project management for the Oil,
-                      Gas & Petrochemical, Power Generation,
-                      Power Grid and Construction sectors by performing and digitizing complex visual inspection,
-                      survey and site progress which is then hosted in the cloud for easy access,
-                      sharing and interrogation for complete situational awareness.
+                      iHawk is transforming asset and project management for the Oil, Gas & Petrochemical, Power Generation, Power Grid and Construction sectors by performing and digitizing complex visual inspection, survey and site progress which is then hosted in the cloud for easy access, sharing and interrogation for complete situational awareness.
                     </p>
                   </div>
                 </div>
               </div>
               <div class="collection-block__description">
-                <div class="collection-block__line"></div>
                 <div class="collection-block__item">
                   <div class="collection-block__title">
                     Claim Validation and Value Driving
                   </div>
                   <div class="collection-block__text">
                     <p class="collection-block__text-animation" data-tab="1">
-                      iHawk is transforming asset and project management for the Oil,
-                      Gas & Petrochemical, Power Generation,
-                      Power Grid and Construction sectors by performing and digitizing complex visual inspection,
-                      survey and site progress which is then hosted in the cloud for easy access,
-                      sharing and interrogation for complete situational awareness.
+                      iHawk achieves complete situational awareness for all levels of your organization by streamlining data into a single-source-of-truth. No matter how big your company is, or how many facilities you're managing, iHawk intuitively manages and shares your data with everyone in your organization.
                     </p>
                   </div>
                 </div>
               </div>
               <div class="collection-block__description">
-                <div class="collection-block__line"></div>
                 <div class="collection-block__item">
                   <div class="collection-block__title">
                     Streamlined Integration
                   </div>
                   <div class="collection-block__text">
                     <p class="collection-block__text-animation" data-tab="2">
-                      iHawk is transforming asset and project management for the Oil,
-                      Gas & Petrochemical, Power Generation,
-                      Power Grid and Construction sectors by performing and digitizing complex visual inspection,
-                      survey and site progress which is then hosted in the cloud for easy access,
-                      sharing and interrogation for complete situational awareness.
+                     Whether you're utilizing our pioneering data capture services or collecting your own, our success team will ensure iHawk seamlessly integrates with new, on-going and legacy projects to ensure all the data you require is easily accessible, no matter how you collect it.
                     </p>
                   </div>
                 </div>
@@ -167,21 +158,20 @@
           <div class="watch-description">
               <div class="watch-description__inner">
                   <div class="watch-description__title">
-                    Latest Case Study
+                    iHawk in Action
                   </div>
                   <div class="watch-description__text">
-                    Cyberhawk provide long term support to multi-billion 
-                    dollar construction project in central asia
+                    Harness the power of visual data management software and lead your organization into the digital age. 
+                    Make the most of your visual data and seamlessly share it with the people that matter.
+                    <br> <span class="watch-description__text_yellow"> Created by engineers, for engineers.</span>
                   </div>
-                  <a href="#" class="main-button">
-                      <p class="main-button__text">Case Studies</p>
-                      <img src="/img/arrow-up-right-black.svg" alt="">
-                  </a>
               </div>
           </div>
-          <div class="watch-player">
-              <img src="./img/bitmap-video.jpg" alt="">
-          </div>
+          
+            <video class="watch-player" id="video"  preload="auto" poster="assets/videoback.png" controls autoplay muted loop>
+              <source src="./img/west.mp4" type="video/mp4" /> 
+            </video>
+          
         </section>
         
         <section class="cards wrapper">

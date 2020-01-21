@@ -189,9 +189,13 @@ main.aboutUs {
                 font-size: 18px;
             }
         }
+        &__text_yellow {
+            color: $sunyellow;
+        }
     }
     &-player {
         width: 50%;
+        object-fit: cover;
         @media screen and (max-width:768px) {
             width: 100%;
             height: 441px;
