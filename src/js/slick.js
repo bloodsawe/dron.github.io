@@ -162,49 +162,6 @@ $(function() {
   }
 });
 
-
-// description-slider
-document.addEventListener("DOMContentLoaded", function() {
-  if(document.querySelector(".sectors-oil, sectors-grid, sectors-generation, sectors-construction")) {
-    var sliders = document.querySelectorAll(".sectors-description-slider__item").length;
-    var counterSlider = document.querySelector(".counter-slider");
-    counterSlider.innerHTML = sliders; 
-  }
-})
-
-$(function() {
-  $(".sectors-description-img").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: ".sectors-description-slider"
-  });
-  if ($(".sectors-description-slider").length > 0) {
-  let descriptionSlider =  $(".sectors-description-slider").slick({
-      slidesToShow: 1,
-      autoplay: false,
-      dots: false,
-      prevArrow: '<div class="slick-prev"></div>',
-      nextArrow: '<div class="slick-next"></div>',
-      asNavFor: ".sectors-description-img",
-      focusOnSelect: true,
-      responsive: [
-        {
-          breakpoint: 481,
-          settings: {
-            arrows: false
-          }
-        }
-      ]
-    });
-    descriptionSlider.on("afterChange", function(event, slick, currentSlide, nextSlide) {
-      document.querySelectorAll(".sectors-description__counter span")[0].textContent =
-        currentSlide + 1;
-    });
-  }
-});
-
 // news-slider
 $(function() {
   if ($(".news-slider").length > 0) {

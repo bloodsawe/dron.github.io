@@ -71,7 +71,3 @@ blockTab.forEach(elem => {
     })
   })
 })
-
-
-
-
