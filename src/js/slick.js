@@ -5,11 +5,11 @@ $(function() {
   $(".banner-slider").slick({
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed:6000,
+    autoplaySpeed: 6000,
     dots: false,
-    fade:true,
+    fade: true,
     prevArrow: '<div class="slick-prev"></div>',
-    nextArrow: '<div class="slick-next"></div>',
+    nextArrow: '<div class="slick-next"></div>'
   });
 });
 
@@ -42,7 +42,7 @@ $(function() {
   }
   let sliderItem = document.querySelectorAll(".slider-block__item");
   $(".slider-block").slick({
-    slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
+    slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length - 1,
     slidesToScroll: 1,
     autoplay: false,
     dots: false,
@@ -55,31 +55,31 @@ $(function() {
       {
         breakpoint: 1601,
         settings: {
-          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
+          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length - 1
         }
       },
       {
         breakpoint: 1201,
         settings: {
-          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
+          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length - 1
         }
       },
       {
         breakpoint: 1025,
         settings: {
-          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
+          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length - 1
         }
       },
       {
         breakpoint: 769,
         settings: {
-          slidesToShow: sliderItem.length >= 7 ? 6 : sliderItem.length-1,
+          slidesToShow: sliderItem.length >= 7 ? 6 : sliderItem.length - 1
         }
       },
       {
         breakpoint: 481,
         settings: {
-          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
+          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length - 1
         }
       }
     ]
@@ -87,47 +87,51 @@ $(function() {
 });
 
 // collection-slider
-// $(function() {
-//   $(".collection-block").slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     fade: true,
-//     asNavFor: ".select-block"
-//   });
-//   if ($(".select-block").length > 0) {
-//   }
-//   $(".select-block").slick({
-//     slidesToShow: 3,
-//     autoplay: false,
-//     dots: false,
-//     vertical: true,
-//     verticalSwiping: true,
-//     prevArrow: '<div class="slick-prev"></div>',
-//     nextArrow: '<div class="slick-next"></div>',
-//     asNavFor: ".collection-block",
-//     focusOnSelect: true,
-//     centerMode: true,
-//     responsive: [
-//       {
-//         breakpoint: 481,
-//         settings: {
-//           arrows: false
-//         }
-//       }
-//     ]
-//   });
-// });
-
+$(function() {
+  $(".collection-block").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: ".select-block"
+  });
+  if ($(".select-block").length > 0) {
+  }
+  $(".select-block").slick({
+    slidesToShow: 3,
+    autoplay: false,
+    dots: false,
+    vertical: true,
+    verticalSwiping: true,
+    prevArrow: '<div class="slick-prev"></div>',
+    nextArrow: '<div class="slick-next"></div>',
+    asNavFor: ".collection-block",
+    focusOnSelect: true,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 481,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
+  });
+});
 
 // description-slider
 document.addEventListener("DOMContentLoaded", function() {
-  if(document.querySelector(".sectors-oil, sectors-grid, sectors-generation, sectors-construction")) {
-    var sliders = document.querySelectorAll(".sectors-description-slider__item").length;
+  if (
+    document.querySelector(
+      ".sectors-oil, sectors-grid, sectors-generation, sectors-construction"
+    )
+  ) {
+    var sliders = document.querySelectorAll(".sectors-description-slider__item")
+      .length;
     var counterSlider = document.querySelector(".counter-slider");
-    counterSlider.innerHTML = sliders; 
+    counterSlider.innerHTML = sliders;
   }
-})
+});
 
 $(function() {
   $(".sectors-description-img").slick({
@@ -138,7 +142,7 @@ $(function() {
     asNavFor: ".sectors-description-slider"
   });
   if ($(".sectors-description-slider").length > 0) {
-  let descriptionSlider =  $(".sectors-description-slider").slick({
+    let descriptionSlider = $(".sectors-description-slider").slick({
       slidesToShow: 1,
       autoplay: false,
       dots: false,
@@ -155,9 +159,15 @@ $(function() {
         }
       ]
     });
-    descriptionSlider.on("afterChange", function(event, slick, currentSlide, nextSlide) {
-      document.querySelectorAll(".sectors-description__counter span")[0].textContent =
-        currentSlide + 1;
+    descriptionSlider.on("afterChange", function(
+      event,
+      slick,
+      currentSlide,
+      nextSlide
+    ) {
+      document.querySelectorAll(
+        ".sectors-description__counter span"
+      )[0].textContent = currentSlide + 1;
     });
   }
 });
@@ -197,9 +207,9 @@ $(function() {
   $(".blog-slider").slick({
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed:6000,
+    autoplaySpeed: 6000,
     dots: false,
-    fade:true,
+    fade: true,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
     responsive: [
@@ -220,9 +230,9 @@ $(function() {
   $(".casecards-slider").slick({
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed:6000,
+    autoplaySpeed: 6000,
     dots: false,
-    fade:true,
+    fade: true,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
     responsive: [
@@ -279,6 +289,6 @@ $(function() {
     autoplay: false,
     dots: false,
     prevArrow: '<div class="slick-prev"></div>',
-    nextArrow: '<div class="slick-next"></div>',
+    nextArrow: '<div class="slick-next"></div>'
   });
 });

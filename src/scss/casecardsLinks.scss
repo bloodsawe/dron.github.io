@@ -48,6 +48,7 @@ hr {
         user-select: none;
       }
       @media screen and (max-width: 1024px) {
+        // width: 46%;
         width: 100%;
         margin-bottom: 40px;
       }
@@ -386,17 +387,17 @@ hr {
       left: 10%;
       transform: rotate(180deg);
       @media screen and (max-width:1024px) {
-          left: 5%;  
+          left: 3%;  
       }
 
   }
   .slick-next {
       left: 15%;
       @media screen and (max-width:1024px) {
-         left: 14%; 
+         left: 12%; 
       }
       @media screen and (max-width:600px) {
-         left: 17%; 
+         left: 14%; 
       }
   }   
 }

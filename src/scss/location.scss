@@ -3,6 +3,7 @@
 .location {
     position: relative;
     background-color: $black;
+    height: 760px;
     padding: 120px 0 100px;
     @media screen and (max-width:768px) {
         height: auto;
@@ -52,7 +53,7 @@
         }
     }
     &__text {
-        font-family:"TitilliumWebSemiBold",serif;
+        font-family:"TitilliumWebBold",serif;
         font-size: 18px;
         line-height: 1.56;
         color: $verylightpink;
@@ -95,7 +96,7 @@
     }
     &__text {
         font-family:"TitilliumWebSemiBold",serif;
-        font-size: 16px;
+        font-size: 16;
         line-height: 1.5;
         color: $browngrey;
     }

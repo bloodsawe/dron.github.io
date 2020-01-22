@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded",function() {
     if(document.querySelector(".homepage")) {
         let banner = document.querySelector(".banner-slider__item");
-        console.log('banner: ', banner);
         banner.style.paddingTop = "120px";
 
-        let img =Array.from(banner.querySelectorAll("img.down"));
-        img.map((e)=> {
-            e.classList.remove("down")
-        })
+        let img = document.querySelector("img.down");
+        img.classList.remove("down");
 
     }
 });
