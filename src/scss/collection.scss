@@ -67,6 +67,7 @@
         position: relative;
         width: 2px;
         background-color: $verylightpink;
+        
         @media screen and (max-width: 480px) {
             position: absolute;
             height: 410px;
@@ -76,14 +77,18 @@
             position: absolute;
             left: -1px;
             width: 4px;
-            height: 33%;
+            
             background-color: $sunyellow;
         }
     }
     .select-block {
         width: 30%;
-        max-height: 500px;
+        // height: 100%;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
         @media screen and (max-width:768px) {
             width: 35%;  
         }
