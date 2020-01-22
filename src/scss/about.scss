@@ -12,7 +12,7 @@ main.aboutUs {
         margin-bottom: 60px;
     }
     @media (max-width:480px) {
-        padding-top: 40px;  
+        padding-top: 100px;  
         margin-bottom: 40px;
     }
 }
@@ -25,6 +25,13 @@ main.aboutUs {
         top: 0;
         right: 0;
         z-index: -1;
+        @media (max-width:768px) {
+            top: 200px;
+            right: -242px;
+        }
+        @media (max-width:480px) {
+            right: -153px;
+        }
     }
     &-header {
         text-align: center;
@@ -36,7 +43,7 @@ main.aboutUs {
             margin-bottom: 100px;
         }
         @media (max-width:768px) {
-            width: 100%;
+            width: 90%;
             margin-bottom: 260px;
         }
         &__title {
@@ -67,7 +74,7 @@ main.aboutUs {
         @media (max-width:768px) {
             width: 66%;
         }
-        @media (max-width:768px) {
+        @media (max-width:480px) {
             width: 86%;
         }
         &__title {
@@ -118,10 +125,14 @@ main.aboutUs {
             }
         }
         &__item:nth-child(4) {
-            order: 2;
+            @media (max-width:480px) {
+                order: 2;
+            }
         }
         &__item:nth-child(2) {
-            order: 1;
+            @media (max-width:480px) {
+                order: 1;
+            }
         }
         &__text {
             font-family:"TitilliumWebSemiBold",serif;
@@ -138,10 +149,14 @@ main.aboutUs {
     min-height: 450px;
     @media screen and (max-width:768px) {
         flex-direction: column;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
     &-description {
         @include flex(center, center, row);
+        @media screen and (min-width:1441px) {
+            justify-content: flex-start;
+            padding-left:calc((100vw - 1100px)/2) ;
+        }
         background-color: #282828;
         width: 50%;
         @media screen and (max-width:768px) {
@@ -157,6 +172,13 @@ main.aboutUs {
             width: 90%;
             }
         }
+        &__title {
+            font-size: 40px;
+            color: #fff;
+            line-height: 1.3;
+            font-family: "TitilliumWebBold",serif;
+            margin-bottom: 21px;
+        }
         &__text {
             font-family: "TitilliumWebSemiBold", serif;
             font-size: 24px;
@@ -167,9 +189,13 @@ main.aboutUs {
                 font-size: 18px;
             }
         }
+        &__text_yellow {
+            color: $sunyellow;
+        }
     }
     &-player {
         width: 50%;
+        object-fit: cover;
         @media screen and (max-width:768px) {
             width: 100%;
             height: 441px;
@@ -196,8 +222,18 @@ main.aboutUs {
             height: 450px;
             width: 50%;
             @include flex(center,center,column);
+            @media (min-width: 1441px) {
+                padding-right: calc((100vw - 1110px)/2);
+            }
             @media (max-width: 768px) {
                 width: 100%;
+                height: 300px;
+            }
+        }
+        &__description:nth-child(1) {
+            @media (min-width: 1441px) {
+                padding-left: calc((100vw - 1394px)/2);
+                padding-right: 0;
             }
         }
         &__title {
@@ -242,6 +278,9 @@ main.aboutUs {
             @media (max-width: 600px) {
                 left: -14px;
             }
+            @media (max-width: 480px) {
+                left: -83px;
+            }
         }
         &__img_position {
             top: 73px;
@@ -258,6 +297,9 @@ main.aboutUs {
             }
             @media (max-width: 600px) {
                 left: 70px;
+            }
+            @media (max-width: 480px) {
+                left: -52px;
             }
         }
     }
@@ -366,6 +408,7 @@ main.aboutUs {
     }
     &__arrow {
         cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         position: absolute;
         transform: rotate(90deg);
         top: 28px;
@@ -398,7 +441,7 @@ main.aboutUs {
     height: 600px;
     margin-bottom: 130px;
     @media screen and (max-width:480px) {
-        margin-bottom: 230px;
+        margin-bottom: 250px;
     }
     position: relative;
     .wrapper {

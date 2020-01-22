@@ -1,16 +1,28 @@
-
-(function ($) {
-  $(function () {
-    $('.header-nav__burger').on('click', function () {
-      $(this).closest('.header-nav').toggleClass('state_open');
-    });
-  });
-})(jQuery);
-
 document.addEventListener("DOMContentLoaded", function () {
-  var burger = document.querySelector(".header-nav__burger");
+  (function ($) {
+    $(function () {
+      $('.header-nav__burger').on('click', function () {
+        $(this).closest('.header-nav').toggleClass('state_open');
+      });
+    });
+  })(jQuery);
+
+  let burger = document.querySelector(".header-nav__burger");
   burger.addEventListener("click", function () {
     burger.classList.toggle("toggle");
   });
+
+  let header = $("header");
+      scrollPrev = 0;
+  $(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+    
+    if ( scrolled > 100 && scrolled > scrollPrev ) {
+      header.addClass('out');
+    } else {
+      header.removeClass('out');
+    }
+    scrollPrev = scrolled;
+  })
 });
 

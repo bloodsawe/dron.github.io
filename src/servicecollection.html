@@ -61,7 +61,10 @@
     </header>
 
     <main class="services-collection">
-        <section class="services-collection__baner" style="background-image: url(/img/bitmap.jpg);">
+        <section class="services-collection__baner">
+          <video class="services-collection__player" preload="auto" poster="assets/videoback.png" controls autoplay muted loop>
+            <source src="./img/west.mp4" type="video/mp4" /> 
+          </video>
           <a href="#" class="main-button">
             <p class="main-button__text">Next Service</p>
             <img class="white" src="/img/arrow-up-right.svg" alt="">
@@ -69,7 +72,7 @@
           </a>
         </section>
         <section class="services-collection-info">
-          <div class="services-collection-info__block">
+          <div class="services-collection-info__block  wrapper">
             <h1 class="services-collection-info__title">
               Drone Data Collection
             </h1>
@@ -84,7 +87,6 @@
             <div class="collection-inner">
               <div class="collection-block">
                 <div class="collection-block__description">
-                  <div class="collection-block__line"></div>
                   <div class="collection-block__item">
                     <div class="collection-block__title">
                         World-Class Pilots
@@ -102,37 +104,25 @@
                   </div>
                 </div>
                 <div class="collection-block__description">
-                  <div class="collection-block__line"></div>
                   <div class="collection-block__item">
                     <div class="collection-block__title">
                         Quicker, Safer, Smarter
                     </div>
                     <div class="collection-block__text">
                       <p class="collection-block__text-animation" data-tab="1">
-                        We employ some of the best drone pilots in the world,
-                        and the best pilots collect the highest quality data possible. 
-                        Our exclusive in-house flight school extends to four levels of
-                        rigorous training which entails at least 18 months' 
-                        experience and a minimum of 500 flights to develop our pilots 
-                        into the world-class pilots who conduct Cyberhawk's inspection flights.
+                        Eliminate the need to work at height or in other hazardous environments, maintaining stand-off distance from operating asset and eradicate the requirement of manned helicopters. Cyberhawk's drone-based data collection service is cheaper and faster than traditional methods whilst providing a superior level of detailed data and service.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="collection-block__description">
-                  <div class="collection-block__line"></div>
                   <div class="collection-block__item">
                     <div class="collection-block__title">
                         End-to-End Solution
                     </div>
                     <div class="collection-block__text">
                       <p class="collection-block__text-animation" data-tab="2">
-                        We employ some of the best drone pilots in the world,
-                        and the best pilots collect the highest quality data possible. 
-                        Our exclusive in-house flight school extends to four levels of
-                        rigorous training which entails at least 18 months' 
-                        experience and a minimum of 500 flights to develop our pilots 
-                        into the world-class pilots who conduct Cyberhawk's inspection flights.
+                        As well conducting complex drone inspections, we work with clients to digitize visual inspection results and maximize the benefit of drone-captured data through our data management software, iHawk. We provide visualization tools, such as visual asset integrity matrix, internal & external visual tours, accurate digital twins, network mapping, IoT data and much more, hosted from out cloud-based solution. This enables better decision-making, communication, budgeting and planning.
                       </p>
                     </div>
                   </div>
@@ -163,20 +153,24 @@
         </section>
 
         <section class="watch">
-            <div class="watch-description">
-                <div class="watch-description__text">
-                  When first-class drone-based inspection data is at the forefront
-                  of your decision making...
-                  You need the best pilots in the world to capture it.
-                </div>
-                <a href="#" class="main-button">
-                    <p class="main-button__text">Let's Talk</p>
-                    <img src="/img/arrow-up-right-black.svg" alt="">
-                </a>
-            </div>
-            <div class="watch-player">
-                <img src="./img/bitmap-video.jpg" alt="">
-            </div>
+          <div class="watch-description">
+              <div class="watch-description__inner">
+                  <div class="watch-description__title">
+                    Cyberhawk in Action
+                  </div>
+                  <div class="watch-description__text">
+                    When first-class drone-based inspection data is at the forefront of your decision making... 
+                    You need the best pilots in the world to capture it.
+                  </div>
+                  <a href="#" class="main-button">
+                      <p class="main-button__text">Let's Talk</p>
+                      <img src="/img/arrow-up-right-black.svg" alt="">
+                  </a>
+              </div>
+          </div>
+          <video class="watch-player"  preload="auto" poster="assets/videoback.png" controls autoplay muted loop>
+            <source src="./img/west.mp4" type="video/mp4" /> 
+          </video>
         </section>
 
         <section class="cards wrapper">
