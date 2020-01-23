@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   if(document.querySelector(".team-page")) {
     document.querySelector(".button").classList.add("active-button");
-    document.getElementById("Directors").style.display = "flex";
+    document.querySelector(".block-with-employee").style.display = "flex";
   }
 });
 

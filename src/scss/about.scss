@@ -194,8 +194,8 @@ main.aboutUs {
         }
     }
     &-player {
+        position: relative;
         width: 50%;
-        object-fit: cover;
         @media screen and (max-width:768px) {
             width: 100%;
             height: 441px;
@@ -203,6 +203,28 @@ main.aboutUs {
         @media screen and (max-width:480px) {
             height: 302px;
         }
+        &-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-btn{
+            position: absolute;
+            top: calc(50% - 33.75px);
+            left: calc(50% - 33.75px);
+            width: 67.5px;
+            height: 67.5px;
+            // background: none;
+            border: none;
+            border-radius: 50%;
+            background: url(../img/player-button.svg) no-repeat;
+            // opacity: 0.5;
+            background-repeat: no-repeat;
+
+        }
+        // #pauseBtn {
+        //     display: none;
+        // }
         img {
             width: 100%;
             height: 100%;

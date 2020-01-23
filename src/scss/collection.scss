@@ -11,6 +11,13 @@
     }
     &-inner {
         position: relative;
+        height: 500px;
+        @media screen and (max-width:900px) {
+            height: 600px;
+        }
+        @media screen and (max-width:480px) {
+            height: 1100px;
+        }
         @include flex(space-between, stretch, row);
         margin-bottom: 120px;
         @media screen and (max-width:480px) {
@@ -20,7 +27,7 @@
     }
     &-block {
         @include flex(space-between, stretch, column);
-        // width: 65%;
+        width: 76%;
         @media screen and (max-width:768px) {
             // width: 45%;  
         }
@@ -53,8 +60,9 @@
             font-family: "TitilliumWebRegular", serif;
             font-size: 16px;
             line-height: 2;
+            height: 300px;
+            overflow: scroll;
             margin-bottom: 100px;
-            overflow: hidden;
             color: $black;
             @media screen and (max-width:768px) {
                 margin-bottom: 65px;  
@@ -99,11 +107,11 @@
     .select-block {
         width: 100%;
         margin-left: 20px;
-
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         cursor: pointer;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: space-around;
         &__item {
             margin-bottom: 15px;
@@ -117,7 +125,7 @@
             font-family: "TitilliumWebSemiBold", serif;
             font-size: 18px;
             line-height: 1.56;
-            color: $browngrey;
+            color: $black;
             padding: 13px 0 13px 68px;
         }
         &__title:hover {

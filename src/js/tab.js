@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-  if(document.querySelector(".homepage")) {
+  if(document.querySelector(".homepage,.services-collection,.services,.sectors-oil,.sectors-grid,.sectors-construction,.sectors-generation")) {
         let blockDescription = Array.from(document.querySelectorAll(".collection-block__description"))
     let blockTab = Array.from(document.querySelectorAll(".select-block__item"))
     let descriptionText = Array.from(document.querySelectorAll(".collection-block__text-animation"))

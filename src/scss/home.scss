@@ -524,7 +524,7 @@
       font-family: "TitilliumWebSemiBold", serif;
       font-size: 24px;
       line-height: 1.58;
-      width: 34.29%;
+      width: 61.29%;
       @media screen and (max-width: 1024px) {
         width: auto;
       }
@@ -663,10 +663,11 @@
 .join {
     position: relative;
     @include flex(space-between,stretch,row);
-    margin-bottom: 120px!important;
+    margin-bottom: 240px!important;
     max-height: 485px;
     @media screen and (max-width:480px) {
       max-height: none;
+      margin-bottom: 40px!important ;
     }
     .main-button {
       width: 200px;

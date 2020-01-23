@@ -9,8 +9,9 @@ main.newsandblog {
     &__item {
         position: relative;
         width: 1439px;
-        height: 100%;
-        padding: 254px 354px;
+        // height: 100%;
+        // padding: 254px 354px;
+        min-height: 500px!important;
         display: flex!important;
         justify-content: center;
         align-items: center;
@@ -201,14 +202,13 @@ main.newsandblog {
         flex-direction: column;
         height: 260px!important;
         width: 32%;
-        // margin-right: 1% ;
         padding: 20px 20px 30px;
         border-radius: 18px;
         color: white;
         margin-bottom: 40px;
+        background-position: center;
         @media (max-width:768px) {
             width: 49%;
-            // margin-right: 0.5% ;
         }
         @media (max-width:480px) {
             width: 98%;

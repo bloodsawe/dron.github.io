@@ -6,7 +6,7 @@ hr {
   background: none;
   .join {
     position: relative;
-    @include flex(start, center, row);
+    @include flex(flex-start, center, row); 
     > a {
       position: relative;
       @include flex(start, center, row);
@@ -63,9 +63,9 @@ hr {
       }
     }
     .join-block {
-      margin: 0 auto;
       flex: unset;
       width: 38.58%;
+      margin: 0 auto;
       padding-right: 2px;
       @media screen and (max-width: 1024px) {
         width: 100%;
@@ -125,6 +125,18 @@ hr {
       .join-block__text {
         font-size: 17px;
       }
+    }
+  }
+  .join-item {
+    // margin: 0 auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1110px;
+    @media (max-width: 1440px) {
+      max-width: 80%;
+    }
+    @media (max-width: 1024px) {
+      max-height: initial;
     }
   }
   .loader {
