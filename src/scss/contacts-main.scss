@@ -8,6 +8,8 @@
     position: relative;
 
     &-offices {
+      background: url(../img/world-map.png) no-repeat;
+      background-size: contain;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -85,7 +87,6 @@
     }
 
     &-callback {
-      // overflow: hidden;
       position: relative;
       height: 420px;
       background: url(../img/contacts-asnw-desctop.jpg) no-repeat center/cover;

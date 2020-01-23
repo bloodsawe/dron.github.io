@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
   if(document.querySelector(".team-page")) {
     document.querySelector(".button").classList.add("active-button");
-    document.querySelector(".block-with-employee").style.display = "flex";
+    document.getElementById("Directors").style.display = "flex";
   }
 });
+
 
 function openSelection(evt) {
   var i;

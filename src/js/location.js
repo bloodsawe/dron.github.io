@@ -16385,7 +16385,7 @@ var yCords = [
   "421.1",
   "218.6"
 ];
-
+console.log(xCords.indexOf("366.8"));
 
 window.addEventListener("DOMContentLoaded", function () {
   function worldMap(id, color) {
@@ -16411,7 +16411,7 @@ window.addEventListener("DOMContentLoaded", function () {
         newCircle.setAttribute("cy", yCords[i]);
         newCircle.setAttribute("r", "1");
 
-        if (i === 994 || i === 1443 || i === 1604 || i === 5018) {
+        if (i === 994 || i === 1443 || i ===1490 || i === 1517 || i === 1604 || i === 5018) {
           var areaTitle;
           newCircle.setAttribute("fill", "#c3d833");
 
@@ -16422,6 +16422,14 @@ window.addEventListener("DOMContentLoaded", function () {
 
             case 1443:
               areaTitle = "London, Storbritannien";
+              break;
+            
+            case 1490:
+              areaTitle = "gfd,gfg";
+              break;
+
+            case 1517:
+              areaTitle = "gjghd,gjkfgfg";
               break;
 
             case 1604:
@@ -16443,6 +16451,5 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
   worldMap("#worldmap", "#5c5c5c");
-  worldMap("#worldmapOffices", "#dcdcdc");
 });
 
