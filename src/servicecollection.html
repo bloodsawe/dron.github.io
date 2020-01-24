@@ -84,49 +84,51 @@
           </div>
         </section>
         <section class="collection wrapper">
+          <div class="collection-title">Provided Features</div>
           <div class="collection-inner">
     
             <div class="collection-block">
     
               <div class="collection-block__description">
-                <div class="collection-block__line"></div>
                 <div class="collection-block__item">
                   <div class="collection-block__title">
-                    UAV Data Collection
+                    Multi-Sector Digitalization
                   </div>
                   <div class="collection-block__text">
-                    <p class="collection-block__text-animation">
-                      Cyberhawk is the wset inspection for the energy industry,
-                      helping clients digitalize assets and help them make informed decisions.
-                      Cyberhawk conduct complete UAV inspection to equip clients with detail inspections and survey across
-                      all onshore and ofshore assets.
+                    <p class="collection-block__text-animation">iHawk is transforming asset and p
+                      roject management for the Oil, Gas & Petrochemical, Power Generation, 
+                      Power Grid and Construction sectors by performing and digitizing complex visual inspection, survey and site progress 
+                      which is then hosted in the cloud for easy access, sharing and interrogation for complete situational awareness.
                     </p>
                   </div>
                 </div>
-                <a href="#" class="main-button">
-                  <p class="main-button__text">Learn More</p>
-                  <img src="/img/arrow-up-right-black.svg" alt="">
-                </a>
               </div>
               <div class="collection-block__description">
-                <div class="collection-block__line"></div>
                 <div class="collection-block__item">
                   <div class="collection-block__title">
-                    Data Management / iHawk
+                    Claim Validation and Value Driving
                   </div>
                   <div class="collection-block__text">
-                    <p class="collection-block__text-animation">
-                      Cyberhawk is the wset inspection for the energy industry,
-                      helping clients digitalize assets and help them make informed decisions.
-                      Cyberhawk conduct complete UAV inspection to equip clients with detail inspections and survey across
-                      all onshore and ofshore assets.
+                    <p class="collection-block__text-animation">iHawk achieves complete situational awareness for all 
+                      levels of your organization by streamlining data into a single-source-of-truth. No matter how big your company is, 
+                      or how many facilities you're managing, iHawk intuitively manages and shares your data with everyone in your organization.
                     </p>
                   </div>
                 </div>
-                <a href="#" class="main-button">
-                  <p class="main-button__text">Learn More</p>
-                  <img src="/img/arrow-up-right-black.svg" alt="">
-                </a>
+              </div>
+              <div class="collection-block__description">
+                <div class="collection-block__item">
+                  <div class="collection-block__title">
+                    Streamlined Integration
+                  </div>
+                  <div class="collection-block__text">
+                    <p class="collection-block__text-animation">
+                      Whether you're utilizing our pioneering data capture services or collecting your own, our success team will ensure 
+                      iHawk seamlessly integrates with new, on-going and legacy projects to ensure all the data you 
+                      require is easily accessible, no matter how you collect it.
+                    </p>
+                  </div>
+                </div>
               </div>
     
     
@@ -142,18 +144,16 @@
     
                 <div class="select-block__item">
                   <img class="select-block__img" src="img/focus.svg" alt="">
-                  <div class="select-block__title">UAV Data Collection</div>
-                  <div class="select-block__text">Close-visual and thermal
-                    UAV-based inspections & survey</div>
+                  <div class="select-block__title">Multi-Sector Digitalization</div>
                 </div>
                 <div class="select-block__item">
                   <img class="select-block__img" src="img/laptop.svg" alt="">
-                  <div class="select-block__title">Data Management/iHawk</div>
-                  <div class="select-block__text">Cloud-based visual data
-                    management software</div>
+                  <div class="select-block__title">Claim Validation and Value Driving</div>
                 </div>
-                
-    
+                <div class="select-block__item">
+                  <img class="select-block__img" src="img/laptop.svg" alt="">
+                  <div class="select-block__title">Streamlined Integration</div>
+                </div>
               </div>
             </div>
           </div>
@@ -163,23 +163,29 @@
           <div class="watch-description">
               <div class="watch-description__inner">
                   <div class="watch-description__title">
-                    Cyberhawk in Action
+                    iHawk in Action
                   </div>
                   <div class="watch-description__text">
-                    When first-class drone-based inspection data is at the forefront of your decision making... 
-                    You need the best pilots in the world to capture it.
+                    Harness the power of visual data management software and lead your organization into the digital age. 
+                    Make the most of your visual data and seamlessly share it with the people that matter.
                   </div>
                   <a href="#" class="main-button">
-                      <p class="main-button__text">Let's Talk</p>
-                      <img src="/img/arrow-up-right-black.svg" alt="">
-                  </a>
+                    <p class="main-button__text">Let's Talk</p>
+                    <img src="/img/arrow-up-right-black.svg" alt="">
+                </a>
               </div>
           </div>
-          <video class="watch-player"  preload="auto" poster="assets/videoback.png" controls autoplay muted loop>
-            <source src="./img/west.mp4" type="video/mp4" /> 
-          </video>
+          
+          <div class="watch-player">
+            <video id="video" class="watch-player-video"  preload="auto" poster="assets/videoback.png" controls  muted loop>
+              <source src="./img/west.mp4" type="video/mp4" /> 
+            </video>
+            <button id="playBtn" class="watch-player-btn" onclick="_video.play(); _playBtn.style.display = 'none';"></button>
+            <!-- <button id="pauseBtn" class="watch-player-btn" onclick="_video.pause(); _pauseBtn.style.display = 'none'; _playBtn.style.display = 'block';"></button> -->
+          </div>
+          
         </section>
-
+        
         <section class="cards wrapper">
             <div class="main-block">
               <h1 class="main-block__title">
