@@ -17,8 +17,8 @@
       &-title {
         padding: 120px 0 10px 0 ;
         max-width: 540px;
-        font-family: TitilliumWebBold;
-        @include font ($weight: 600, $size: 24px, $line-height: 1.58, $letter-spacing: normal, $color: $black);
+        font-family: "TitilliumWebBold", "serif";
+        @include font ($weight: 600, $size: 40px, $line-height: 1.58, $letter-spacing: normal, $color: $black);
         text-align: center;
       }
       &-text {

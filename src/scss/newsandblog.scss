@@ -9,9 +9,7 @@ main.newsandblog {
     &__item {
         position: relative;
         width: 1439px;
-        // height: 100%;
-        // padding: 254px 354px;
-        min-height: 500px!important;
+        height: 600px!important;
         display: flex!important;
         justify-content: center;
         align-items: center;
@@ -23,6 +21,7 @@ main.newsandblog {
         }
         @media (max-width:480px) {
             padding: 200px 15px;
+            height: 500px!important;
         }
         .main-button {
             position: absolute;

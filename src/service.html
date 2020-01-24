@@ -88,7 +88,7 @@
         </section>
         
         <section class="collection wrapper">
-          <div class="collection-title">g</div>
+          <div class="collection-title">Provided Features</div>
           <div class="collection-inner">
     
             <div class="collection-block">
@@ -172,14 +172,19 @@
                   <div class="watch-description__text">
                     Harness the power of visual data management software and lead your organization into the digital age. 
                     Make the most of your visual data and seamlessly share it with the people that matter.
+                    <br>
                     <br> <span class="watch-description__text_yellow"> Created by engineers, for engineers.</span>
                   </div>
               </div>
           </div>
           
-            <video class="watch-player" id="video"  preload="auto" poster="assets/videoback.png" controls autoplay muted loop>
+          <div class="watch-player">
+            <video id="video" class="watch-player-video"  preload="auto" poster="assets/videoback.png" controls  muted loop>
               <source src="./img/west.mp4" type="video/mp4" /> 
             </video>
+            <button id="playBtn" class="watch-player-btn" onclick="_video.play(); _playBtn.style.display = 'none';"></button>
+            <!-- <button id="pauseBtn" class="watch-player-btn" onclick="_video.pause(); _pauseBtn.style.display = 'none'; _playBtn.style.display = 'block';"></button> -->
+          </div>
           
         </section>
         

@@ -1893,7 +1893,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", function() {
       if (isAnyPartOfElementInViewport(document.querySelector(".location"))) {
         document.querySelector("main").classList.add("show-before");
-        $(".join h3,.join p").css("color", "white");
+        $(".join h3,.join p:not(.main-button__text)").css("color", "white");
         document.querySelector(".join .main-button__text").style.color =
           "black";
       } else {
