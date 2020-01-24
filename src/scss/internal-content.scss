@@ -1,5 +1,9 @@
 @import "help/vars_and_mixins";
 
+main.internal__page {
+    background: none;
+}
+
 .internal-content {
     @include flex(center, flex-start, column);
     width: 44%;
@@ -18,6 +22,13 @@
         color: $black;
         margin-bottom: 30px;
         padding: 0 50px;
+        width: 100%;
+        @media (max-width:480px) {
+            padding: 0 15px;
+        }
+        img {
+            padding: 0;
+        }
     }
     &__title {
         margin-bottom: 40px;
@@ -26,6 +37,9 @@
         line-height: 1.56; 
         color: $black;
         padding: 0 50px;
+        @media (max-width:480px) {
+            padding: 0 15px;
+        }
     }
     &__link {
         margin: 0 auto;

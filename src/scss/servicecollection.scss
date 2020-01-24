@@ -1,0 +1,138 @@
+@import "help/vars_and_mixins";
+
+.services-collection {
+    overflow-x: hidden;
+    background: #fff;
+    padding-top: 100px;
+    position: relative;
+    &__player {
+        width: 100%;
+    }
+    &__baner {
+        // min-height: 600px;
+        // padding-bottom: 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        // @include flex(flex-end,flex-end,row);
+        @media (min-width:1441px) {
+            // padding-right: calc((100vw - 1110px)/2);
+        }
+        @media (max-width:1440px) {
+            // padding-right: 10%;
+        }
+        @media (max-width:1024px) {
+            padding-right: 5%;
+        }
+        .main-button {
+            position: absolute;
+            top: 600px;
+            right: calc((100vw - 1110px)/2);
+            width: 183px;
+            color: #ffffff;
+            background: transparent;
+            border: solid 2px #ffffff;
+            color: #ffffff;
+            img.black {
+                display: none;
+            }
+            img.down {
+                transform: rotate(90deg);
+            }
+            &__text {
+                font-family: "TitilliumWebSemiBold",serif;
+                font-size: 14px;
+                padding-right: 38px;
+            }
+            @media screen and (max-width:480px) {
+                display: none;
+            }
+        }
+        .main-button:hover {
+            background-color: #ffd84b;
+            border: 2px solid #ffd84b;
+            color: black;
+            img.white{
+                display: none;
+            }
+            img.black{
+                display: block;
+            }   
+        }
+        .main-button:focus {
+            background-color: #ffd84b;
+            border: 2px solid #ffd84b;
+            outline: none;
+        }
+    }
+    &-info {
+        background-image: url(../img/cyberhawk-icon-drone-2.png), linear-gradient(
+            to right,
+            $sunyellow 0%,
+            #d2e9ff 100%
+        );
+        background-repeat: no-repeat;
+        background-position: left 20% center;
+        position: relative;
+        &__block {
+            @include flex(space-between, center, row);
+            padding: 130px 0;
+            margin-bottom: 80px;
+            @media screen and (max-width: 1024px) {
+              @include flex(space-between, stretch, column);
+              padding: 63px 197px 63px 120px;
+            }
+            @media screen and (max-width: 768px) {
+              @include flex(space-between, stretch, column);
+              padding: 63px 50px 63px 66px;
+            }
+            @media screen and (max-width: 480px) {
+              padding: 40px 43px 31px 20px;
+            }
+          }
+          &__title {
+            font-family: "TitilliumWebBold", serif;
+            font-size: 40px;
+            line-height: 1.3;
+            color: $black;
+            span {
+              font-family: "TitilliumWebRegular", serif;
+            }
+            @media screen and (max-width: 480px) {
+              font-size: 24px;
+            }
+          }
+          &__description {
+            font-family: "TitilliumWebSemiBold", serif;
+            font-size: 24px;
+            line-height: 1.58;
+            width: 50%;
+            @media screen and (max-width: 1024px) {
+              width: auto;
+            }
+            @media screen and (max-width: 480px) {
+              font-size: 18px;
+            }
+          }
+    }
+    .callback {
+        background: url(../img/bitmap-services.jpg) no-repeat center/cover;
+    }
+    .callback-block {
+        &__text {
+            width: 43%;
+            @media screen and (max-width:1024px) {
+                width: 50%;
+            }
+            @media screen and (max-width:480px) {
+                font-size: 24px;
+                width: 100%;
+            }
+        }
+        .main-button {
+            @media (max-width: 480px) {
+                margin: 0 auto;
+            }
+        }
+    }
+}

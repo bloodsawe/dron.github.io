@@ -5,17 +5,11 @@ $(function() {
   $(".banner-slider").slick({
     slidesToShow: 1,
     autoplay: false,
+    autoplaySpeed:6000,
     dots: false,
+    fade:true,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
-    responsive: [
-      {
-        breakpoint: 481,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
   });
 });
 
@@ -59,31 +53,31 @@ $(function() {
     centerMode: true,
     responsive: [
       {
-        breakpoint: 1600,
+        breakpoint: 1601,
         settings: {
           slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
         }
       },
       {
-        breakpoint: 1200,
+        breakpoint: 1201,
         settings: {
           slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
-          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
+          slidesToShow: sliderItem.length >= 7 ? 6 : sliderItem.length-1,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 481,
         settings: {
           slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length-1,
         }
@@ -93,36 +87,79 @@ $(function() {
 });
 
 // collection-slider
+// $(function() {
+//   $(".collection-block").slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     fade: true,
+//     asNavFor: ".select-block"
+//   });
+//   if ($(".select-block").length > 0) {
+//   }
+//   $(".select-block").slick({
+//     slidesToShow: 3,
+//     autoplay: false,
+//     dots: false,
+//     vertical: true,
+//     verticalSwiping: true,
+//     prevArrow: '<div class="slick-prev"></div>',
+//     nextArrow: '<div class="slick-next"></div>',
+//     asNavFor: ".collection-block",
+//     focusOnSelect: true,
+//     centerMode: true,
+//     responsive: [
+//       {
+//         breakpoint: 481,
+//         settings: {
+//           arrows: false
+//         }
+//       }
+//     ]
+//   });
+// });
+
+
+// description-slider
+document.addEventListener("DOMContentLoaded", function() {
+  if(document.querySelector(".sectors-oil, sectors-grid, sectors-generation, sectors-construction")) {
+    var sliders = document.querySelectorAll(".sectors-description-slider__item").length;
+    var counterSlider = document.querySelector(".counter-slider");
+    counterSlider.innerHTML = sliders; 
+  }
+})
+
 $(function() {
-  $(".collection-block").slick({
+  $(".sectors-description-img").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: ".select-block"
+    asNavFor: ".sectors-description-slider"
   });
-  if ($(".select-block").length > 0) {
+  if ($(".sectors-description-slider").length > 0) {
+  let descriptionSlider =  $(".sectors-description-slider").slick({
+      slidesToShow: 1,
+      autoplay: false,
+      dots: false,
+      prevArrow: '<div class="slick-prev"></div>',
+      nextArrow: '<div class="slick-next"></div>',
+      asNavFor: ".sectors-description-img",
+      focusOnSelect: true,
+      // responsive: [
+      //   {
+      //     breakpoint: 481,
+      //     settings: {
+      //       arrows: false
+      //     }
+      //   }
+      // ]
+    });
+    descriptionSlider.on("afterChange", function(event, slick, currentSlide, nextSlide) {
+      document.querySelectorAll(".sectors-description__counter span")[0].textContent =
+        currentSlide + 1;
+    });
   }
-  $(".select-block").slick({
-    slidesToShow: 3,
-    autoplay: false,
-    dots: false,
-    vertical: true,
-    verticalSwiping: true,
-    prevArrow: '<div class="slick-prev"></div>',
-    nextArrow: '<div class="slick-next"></div>',
-    asNavFor: ".collection-block",
-    focusOnSelect: true,
-    centerMode: true,
-    responsive: [
-      {
-        breakpoint: 481,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
-  });
 });
 
 // news-slider
@@ -159,8 +196,10 @@ $(function() {
   }
   $(".blog-slider").slick({
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed:6000,
     dots: false,
+    fade:true,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
     responsive: [
@@ -180,8 +219,10 @@ $(function() {
   }
   $(".casecards-slider").slick({
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed:6000,
     dots: false,
+    fade:true,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
     responsive: [
@@ -227,4 +268,17 @@ $(function() {
         currentSlide + 1;
     });
   }
+});
+
+// testimonials-slider
+$(function() {
+  if ($(".sectors-slider").length > 0) {
+  }
+  $(".sectors-slider").slick({
+    slidesToShow: 1,
+    autoplay: 5000,
+    dots: false,
+    prevArrow: '<div class="slick-prev"></div>',
+    nextArrow: '<div class="slick-next"></div>',
+  });
 });

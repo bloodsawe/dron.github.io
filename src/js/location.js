@@ -1,3 +1,4 @@
+
 var xCords = [
   "171.8",
   "171.8",
@@ -16385,47 +16386,98 @@ var yCords = [
   "218.6"
 ];
 
-window.addEventListener("DOMContentLoaded", () => {
-  if (document.querySelectorAll("section.location, section.main-feedback, section.main-offices").length) {
-    if (window.matchMedia("(max-width: 480px)").matches) {
-      let svg = document.querySelector("svg");
-      svg.setAttribute("viewBox", "300 0 200 320");
-    }
-    if (window.matchMedia("(min-width: 1600px)").matches) {
-      let svg = document.querySelector("svg");
-      svg.setAttribute("viewBox", "0 0 1000 320");
-    }
-    for (var i = 0; i < xCords.length; i++) {
-      var newCircle = document.createElementNS(
-        "http://www.w3.org/2000/svg",
-        "circle"
-      );
-      newCircle.setAttribute("cx", xCords[i]);
-      newCircle.setAttribute("cy", yCords[i]);
-      newCircle.setAttribute("r", "1");
-      if (i === 994 || i === 1443 || i === 1604 || i === 5018) {
-        var areaTitle;
-        newCircle.setAttribute("fill", "#c3d833");
-        switch (i) {
-          case 994:
-            areaTitle = "Markham, Ontario";
-            break;
-          case 1443:
-            areaTitle = "London, Storbritannien";
-            break;
-          case 1604:
-            areaTitle = "Göteborg, Sverige";
-            break;
-          case 5018:
-            areaTitle = "Hongkong";
-            break;
+window.addEventListener("DOMContentLoaded", function () {
+  function worldMap(id, color) {
+    if (document.querySelectorAll("section.location, section.main-feedback, section.main-offices").length) {
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        var svg = document.querySelector("svg");
+        svg.setAttribute("viewBox", "150 50 450 300");
+      }
+      if (window.matchMedia("(max-width: 480px)").matches) {
+        var svg = document.querySelector("svg");
+        svg.setAttribute("viewBox", "300 0 200 320");
+      }
+
+      if (window.matchMedia("(min-width: 1600px)").matches) {
+        var _svg = document.querySelector("svg");
+
+        _svg.setAttribute("viewBox", "0 0 1000 320");
+      }
+
+      for (var i = 0; i < xCords.length; i++) {
+        var newCircle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        newCircle.setAttribute("cx", xCords[i]);
+        newCircle.setAttribute("cy", yCords[i]);
+        newCircle.setAttribute("r", "1");
+
+        if (i === 5352 || 
+          i === 5150 || 
+          i === 5032 || 
+          i === 5113 || 
+          i === 5042 || 
+          i === 4999 || 
+          i === 4572 || 
+          i === 3485 || 
+          i === 3451 || 
+          i === 3446 || 
+          i === 2880 || 
+          i === 2856 || 
+          i === 3104 || 
+          i === 8190 || 
+          i === 1734 || 
+          i === 1466 || 
+          i === 1787 || 
+          i === 1773 || 
+          i === 1436 || 
+          i === 1445 || 
+          i === 1429 || 
+          i === 1614 || 
+          i === 1700 || 
+          i === 1595 || 
+          i === 2016 || 
+          i === 2333 || 
+          i === 2589 || 
+          i === 1049 || 
+          i === 2213 || 
+          i === 2279) {
+          var areaTitle;
+          newCircle.setAttribute("fill", "#c3d833");
+
+          switch (i) {
+            case 994:
+              areaTitle = "Markham, Ontario";
+              break;
+
+            case 1443:
+              areaTitle = "London, Storbritannien";
+              break;
+            
+            case 1490:
+              areaTitle = "gfd,gfg";
+              break;
+
+            case 1517:
+              areaTitle = "gjghd,gjkfgfg";
+              break;
+
+            case 1604:
+              areaTitle = "Göteborg, Sverige";
+              break;
+
+            case 5018:
+              areaTitle = "Hongkong";
+              break;
+          }
+
+          newCircle.setAttribute("title", "" + areaTitle + "");
+          $(id).append(newCircle);
+        } else {
+          newCircle.setAttribute("fill", color);
+          $(id).prepend(newCircle);
         }
-        newCircle.setAttribute("title", "" + areaTitle + "");
-        $("#worldmap").append(newCircle);
-      } else {
-        newCircle.setAttribute("fill", "#5c5c5c");
-        $("#worldmap").prepend(newCircle);
       }
     }
   }
+  worldMap("#worldmap", "#5c5c5c");
 });
+

@@ -13,8 +13,8 @@
 /* =============================================================================
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
-   html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-   body{line-height:1}
+   html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+   body{line-height:1; overflow-x:hidden}
    mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
    input,select{vertical-align:middle}
     
@@ -24,6 +24,8 @@ canvas{
     position: absolute;
     top: 0;
 }
+
+canvas#map{width:100%!important;height:100%!important;padding:0;margin:0;overflow: hidden;}
 
 #particles-js{
     height: 100%;
@@ -50,6 +52,9 @@ main {
 .wrapper {
     width: 80%;
     margin: 0 auto;
+    @media screen and (min-width:1441px) {
+        width:1110px;
+    }
     @media screen and (max-width:1024px) {
         width: 90%;
     }
@@ -85,6 +90,7 @@ main {
     height: 55px;
     border-radius: 36px;
     border: solid 2px $greyishbrown;
+    padding: 0 10px;
     @include flex(space-around, center, row);
     &__input {
         background: transparent;
@@ -135,13 +141,26 @@ main {
       color: $browngrey;
     }
     hr {
-    color: $verylightpink;
-      width: 75%;
-      @media screen and (max-width: 768px) {
-        width: 55%;
-      }
-      @media screen and (max-width: 480px) {
-        width: 44%;
-      }
+        color: $verylightpink;
+        width: 75%;
+        @media screen and (max-width: 768px) {
+             width: 55%;
+        }
+        @media screen and (max-width: 480px) {
+            width: 44%;
+        }
     }
-  }
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+
+.active {
+    display: block;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
