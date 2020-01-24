@@ -20,6 +20,15 @@
       text-align: center;
       color: black;
       margin-bottom: 5px;
+      @media screen and (max-width: 485px) {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+      }
     }
     p {
       margin-bottom: 30px;
@@ -54,12 +63,24 @@
       letter-spacing: normal;
       color: #b4b4b4;
       border-bottom: 4px solid transparent;
+      @media screen and (max-width: 768px) {
+        margin: 0;
+      }
+      @media screen and (max-width: 485px) {
+        margin: 0 5px;
+      }
     }
 
     .button:active,
     .active-button {
       color: black;
       border-bottom: 4px solid #ffd12d;
+    }
+    @media screen and (max-width: 768px) {
+      justify-content: space-around;
+    }
+    @media screen and (max-width: 485px) {
+      justify-content: space-between;
     }
   }
   .block-with-employee {
@@ -85,11 +106,23 @@
         border-radius: 10%;
         margin-bottom: 20px;
         img {
+          // width: 100%;
+          // height: auto;
           width: 100%;
-          height: auto;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10%;
+        }
+        @media screen and (max-width: 768px) {
+          max-height: 292px;
+        }
+        @media screen and (max-width: 485px) {
+          // max-height: 190px;
+          max-height: 57%;
         }
       }
       .text {
+        height: 100%;
         h3 {
           font-family: "TitilliumWebBold", serif;
           font-size: 24px;
@@ -99,6 +132,14 @@
           line-height: 1.33;
           letter-spacing: normal;
           color: black;
+          @media screen and (max-width: 485px) {
+            font-size: 18px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+            letter-spacing: normal;
+          }
         }
         p {
           font-family: "TitilliumWebSemiBold", serif;
@@ -110,7 +151,23 @@
           letter-spacing: normal;
           text-align: left;
           color: #b4b4b4;
+          @media screen and (max-width: 485px) {
+            font-family: "TitilliumWebRegular", serif;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2;
+            letter-spacing: normal;
+          }
         }
+      }
+      @media screen and (max-width: 768px) {
+        // max-width: 210px;
+        max-width: 30%;
+      }
+      @media screen and (max-width: 485px) {
+        max-width: 48%;
       }
     }
   }

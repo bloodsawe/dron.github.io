@@ -16,7 +16,7 @@
             height: 600px;
         }
         @media screen and (max-width:480px) {
-            height: 1100px;
+            height: auto;
         }
         @include flex(space-between, stretch, row);
         margin-bottom: 120px;
@@ -61,7 +61,8 @@
             font-size: 16px;
             line-height: 2;
             height: 300px;
-            overflow: scroll;
+            overflow-y: scroll;
+            overflow-x: hidden;
             margin-bottom: 100px;
             color: $black;
             @media screen and (max-width:768px) {

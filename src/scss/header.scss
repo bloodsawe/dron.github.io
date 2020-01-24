@@ -107,6 +107,9 @@ header.out {
       padding: 17px 23px;
       font-size: 14px;
       margin-left: 35px;
+      @media screen and (max-width: 860px) {
+        padding: 17px 12px;
+      }
       @media screen and (max-width: 768px) {
           margin-left: 0;
       }

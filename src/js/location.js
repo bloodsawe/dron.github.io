@@ -16385,7 +16385,6 @@ var yCords = [
   "421.1",
   "218.6"
 ];
-console.log(xCords.indexOf("366.8"));
 
 window.addEventListener("DOMContentLoaded", function () {
   function worldMap(id, color) {

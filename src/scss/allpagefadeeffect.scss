@@ -1,7 +1,7 @@
-section {
-  opacity: 0;
-}
-main {
+// section {
+//   opacity: 0;
+// }
+main.homepage {
   z-index: 1;
   position: relative;
   transition: all 1s linear;
@@ -9,7 +9,7 @@ main {
     linear-gradient(rgb(245, 245, 245), rgb(255, 255, 255)) repeat scroll 0% 0% /
     auto padding-box border-box;
 }
-main::before {
+main.homepage::before {
   position: absolute;
   content: "";
   top: 0;
