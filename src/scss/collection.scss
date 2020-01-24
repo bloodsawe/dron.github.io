@@ -11,13 +11,13 @@
     }
     &-inner {
         position: relative;
-        height: 500px;
-        @media screen and (max-width:900px) {
-            height: 600px;
-        }
-        @media screen and (max-width:480px) {
-            height: auto;
-        }
+        // height: 500px;
+        // @media screen and (max-width:900px) {
+        //     height: 600px;
+        // }
+        // @media screen and (max-width:480px) {
+        //     height: auto;
+        // }
         @include flex(space-between, stretch, row);
         margin-bottom: 120px;
         @media screen and (max-width:480px) {

@@ -3,7 +3,7 @@
 .banner-slider {
     padding-top: 100px;
     min-height: 400px;
-    margin-bottom: 60px;
+    margin-bottom: 60px; 
     @media screen and (max-width:1024px){
         margin-bottom: 40px;
     }
@@ -603,6 +603,7 @@
             border-radius: 18px;
             color: white;
             margin-bottom: 40px;
+            background-position: center;
         }
         &__item:focus {
             outline: none;

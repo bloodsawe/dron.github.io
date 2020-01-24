@@ -109,7 +109,7 @@
             }
             @media screen and (max-width: 768px) {
               @include flex(space-between, stretch, column);
-              padding: 63px 50px 63px -0px;
+              padding: 63px 50px 63px 0px;
             }
             @media screen and (max-width: 480px) {
               padding: 40px 0px 31px 0px;
