@@ -23,6 +23,7 @@ hr {
     }
     .join__img {
       position: relative;
+      cursor: pointer;
       width: 41.5%;
       height: 300px;
       img {
@@ -77,6 +78,7 @@ hr {
       }
       &__title {
         font-family: "TitilliumWebBold", serif;
+        cursor: pointer;
         font-size: 24px;
         line-height: 1.33;
         margin-bottom: 20px;

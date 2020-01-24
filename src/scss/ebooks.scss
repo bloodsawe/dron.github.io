@@ -62,7 +62,7 @@
   }
 
   &__body {
-    position: relative;
+    // position: relative;
     height: 250px;
     border-radius: 18px;
     border: solid 2px $verylightpink;
@@ -73,9 +73,18 @@
       background-color: rgba(40, 40, 40, 0.5);
       border: solid 4px $sunflower;
 
-      .ebook-card__body__btn {
+      .ebook-card__body__background {
+        background-color: rgba(40, 40, 40, 0.5);
         visibility: visible;
       }
+    }
+
+    &__background {
+      height: 100%;
+      width: 100%;
+      border-radius: 18px;
+      position: relative;
+      visibility: hidden;
     }
 
     &__btn {
@@ -83,7 +92,6 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      visibility: hidden;
     }
   }
   &__text {
