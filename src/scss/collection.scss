@@ -1,7 +1,6 @@
 @import "help/vars_and_mixins.scss";
 
 .collection {
-    // height: 100%;
     &-title {
         font-family: "TitilliumWebBold",serif;
         font-size: 40px;
@@ -132,7 +131,7 @@
             font-family: "TitilliumWebSemiBold", serif;
             font-size: 18px;
             line-height: 1.56;
-            color: $black;
+            color: $browngrey;
             padding: 13px 0 13px 68px;
         }
         &__title:hover {

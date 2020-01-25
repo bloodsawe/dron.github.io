@@ -159,10 +159,12 @@ main.newsandblog {
             margin-bottom: 15px;
         }
     }
-    &__item:hover {
+    .active-button {
+      color: #fff;
+    }
+    &__item:active {
         border-bottom: 4px solid $sunyellow;
         color: #fff;
-        padding-bottom: 7px;
         @media (max-width:480px) {
             padding-bottom: 11px;
             margin-bottom: 11px;

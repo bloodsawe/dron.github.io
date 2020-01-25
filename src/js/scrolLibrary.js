@@ -1879,7 +1879,14 @@ document.addEventListener("DOMContentLoaded", function() {
   } else if (document.querySelectorAll(".newsandblog").length > 0) {
     ScrollReveal({
       reset: true
-    }).reveal(".filter,.blog-slider,.blog-cards__container", {
+    }).reveal(".filter,.blog-slider,.blog-cards__item", {
+      delay: delay,
+      duration: duration
+    });
+  } else if (document.querySelectorAll(".team-page").length > 0) {
+    ScrollReveal({
+      reset: true
+    }).reveal(".text h1,.text p,.navigation-panel,.block", {
       delay: delay,
       duration: duration
     });

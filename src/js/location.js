@@ -16451,15 +16451,7 @@ window.addEventListener("DOMContentLoaded", function () {
             case 1443:
               areaTitle = "London, Storbritannien";
               break;
-            
-            case 1490:
-              areaTitle = "gfd,gfg";
-              break;
-
-            case 1517:
-              areaTitle = "gjghd,gjkfgfg";
-              break;
-
+              
             case 1604:
               areaTitle = "Göteborg, Sverige";
               break;

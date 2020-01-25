@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function() {
-  if(document.querySelector(".sectors-oil")) {
+  if(document.querySelector(".sectors-oil,.services,.services-collection")) {
     // console.log('123123');
     
     function init() {
