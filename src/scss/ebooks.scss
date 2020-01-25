@@ -1,0 +1,109 @@
+@import "help/vars_and_mixins";
+
+.ebook-bg {
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+}
+
+.ebook-title {
+  width: 100%;
+  font-family: "TitilliumWebBold", serif;
+  font-size: 40px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  color: $white;
+  margin: 0;
+
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.ebook-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__empty {
+    height: 0;
+    min-width: 32%;
+  }
+}
+
+.ebook-card {
+  margin-top: 60px;
+  width: 32%;
+  position: relative;
+
+  @media screen and (min-width: 960px) {
+    &:nth-child(-n + 3) {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 960px) and (min-width: 600px) {
+    width: 49%;
+    margin-top: 40px;
+    &:nth-child(-n + 2) {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin-top: 40px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__body {
+    // position: relative;
+    height: 250px;
+    border-radius: 18px;
+    border: solid 2px $verylightpink;
+    background-color: #d8d8d8;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: rgba(40, 40, 40, 0.5);
+      border: solid 4px $sunflower;
+
+      .ebook-card__body__background {
+        background-color: rgba(40, 40, 40, 0.5);
+        visibility: visible;
+      }
+    }
+
+    &__background {
+      height: 100%;
+      width: 100%;
+      border-radius: 18px;
+      position: relative;
+      visibility: hidden;
+    }
+
+    &__btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__text {
+    font-family: "TitilliumWebBold", serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: $white;
+
+    padding-top: 20px;
+  }
+}

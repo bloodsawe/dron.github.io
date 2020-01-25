@@ -4,9 +4,11 @@ header {
   background: #fff;
   width: 100%;
   z-index: 10;
+  transition: 0.5s linear;
 }
 header.out {
   transform: translateY(-100%);
+  transition: 0.5s linear;
 }
 .header {
   @include flex($justify: space-between, $align: center, $direction: row);
@@ -45,7 +47,6 @@ header.out {
       height: 100%;
     }
     &__list-insert {
-      // display: none;
       visibility: hidden;
       opacity: 0;
       position: absolute;
@@ -54,6 +55,8 @@ header.out {
       z-index: 1;
       background: white;
       padding: 12px;
+      width: 190px;
+      transition: opacity 0.7s ease-out 0s; 
     }
     &__item {
       border-top: 4px solid transparent; 
@@ -68,7 +71,6 @@ header.out {
     }
     &__item-insert {
       margin-bottom: 15px;
-      // white-space: nowrap;
     }
     &__item:hover {
       cursor: pointer;
@@ -105,6 +107,9 @@ header.out {
       padding: 17px 23px;
       font-size: 14px;
       margin-left: 35px;
+      @media screen and (max-width: 860px) {
+        padding: 17px 12px;
+      }
       @media screen and (max-width: 768px) {
           margin-left: 0;
       }

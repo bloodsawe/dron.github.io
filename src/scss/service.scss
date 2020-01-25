@@ -7,34 +7,46 @@
     padding-top: 100px;
     &__player {
         width: 100%;
+        height: auto;
+        max-height: 100%;
     }
     &__img {
         position: absolute;
         z-index: 1;
         left: calc((100vw - 710px)/2);
-        // top: 393px;
         bottom:-70px;
+        @media (max-width:1024px) {
+            width: 50%;
+            left: 25%;
+        }
+        @media (max-width:1024px) {
+            width: 50%;
+            left: 25%;
+        }
+        @media (max-width:768px) {
+            width: 75%;
+            left: 12%;
+        }
+        @media (max-width:480px) {
+            width: 66%;
+            left: 17%;
+            bottom:-33px;
+        }
     }
     &__baner {
         position: relative;
-        min-height: 600px;
-        // padding-bottom: 60px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        // @include flex(flex-start,flex-end,row);
         @media (min-width:1441px) {
             // padding-right: calc((100vw - 1110px)/2);
         }
         @media (max-width:1440px) {
             // padding-right: 10%;
         }
-        @media (max-width:1024px) {
-            padding-right: 5%;
-        }
         .main-button {
             position: absolute;
-            top: 600px;
+            bottom: 10%;
             right: calc((100vw - 1110px)/2);
             width: 183px;
             color: #ffffff;
@@ -51,9 +63,15 @@
             &__text {
                 font-family: "TitilliumWebSemiBold",serif;
                 font-size: 14px;
-                padding-right: 41px;
+                padding-right: 36px;
             }
-            @media screen and (max-width:480px) {
+            @media screen and (max-width:1440px) {
+                right: 10%;
+            }
+            @media screen and (max-width:1024px) {
+                right: 5%;
+            }
+            @media screen and (max-width:768px) {
                 display: none;
             }
         }
@@ -81,20 +99,23 @@
             #d2e9ff 100%
         );
         position: relative;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
+        @media screen and (max-width: 480px) {
+            margin-bottom: 40px;
+        }
         &__block {
             @include flex(space-between, center, row);
             padding: 130px 0;
             @media screen and (max-width: 1024px) {
               @include flex(space-between, stretch, column);
-              padding: 63px 197px 63px 120px;
+              padding: 63px 116px 63px 120px;
             }
             @media screen and (max-width: 768px) {
               @include flex(space-between, stretch, column);
-              padding: 63px 50px 63px 66px;
+              padding: 63px 50px 63px 0px;
             }
             @media screen and (max-width: 480px) {
-              padding: 40px 43px 31px 20px;
+              padding: 40px 0px 31px 0px;
             }
           }
           &__title {
@@ -142,5 +163,11 @@
                 margin: 0 auto;
             }
         }
+    }
+    .select-block__title {
+        color:$browngrey;
+    }
+    .select-block__title:hover {
+        color:$black;
     }
 }

@@ -62,7 +62,7 @@
 
     <main class="services">
         <section class="services__baner">
-          <video class="services__player" preload="auto" poster="assets/videoback.png" controls autoplay muted loop>
+          <video class="services__player" preload="auto" poster="assets/videoback.png" controls muted loop>
             <source src="./img/west.mp4" type="video/mp4" /> 
           </video>
           <img class="services__img" src="./img/macbook-mock-dribbble-2.png" alt="">
@@ -88,19 +88,21 @@
         </section>
         
         <section class="collection wrapper">
-          <div class="collection-title">
-            Provided Features
-          </div>
+          <div class="collection-title">Provided Features</div>
           <div class="collection-inner">
+    
             <div class="collection-block">
+    
               <div class="collection-block__description">
                 <div class="collection-block__item">
                   <div class="collection-block__title">
                     Multi-Sector Digitalization
                   </div>
                   <div class="collection-block__text">
-                    <p class="collection-block__text-animation" data-tab="0">
-                      iHawk is transforming asset and project management for the Oil, Gas & Petrochemical, Power Generation, Power Grid and Construction sectors by performing and digitizing complex visual inspection, survey and site progress which is then hosted in the cloud for easy access, sharing and interrogation for complete situational awareness.
+                    <p class="collection-block__text-animation">iHawk is transforming asset and p
+                      roject management for the Oil, Gas & Petrochemical, Power Generation, 
+                      Power Grid and Construction sectors by performing and digitizing complex visual inspection, survey and site progress 
+                      which is then hosted in the cloud for easy access, sharing and interrogation for complete situational awareness.
                     </p>
                   </div>
                 </div>
@@ -111,8 +113,9 @@
                     Claim Validation and Value Driving
                   </div>
                   <div class="collection-block__text">
-                    <p class="collection-block__text-animation" data-tab="1">
-                      iHawk achieves complete situational awareness for all levels of your organization by streamlining data into a single-source-of-truth. No matter how big your company is, or how many facilities you're managing, iHawk intuitively manages and shares your data with everyone in your organization.
+                    <p class="collection-block__text-animation">iHawk achieves complete situational awareness for all 
+                      levels of your organization by streamlining data into a single-source-of-truth. No matter how big your company is, 
+                      or how many facilities you're managing, iHawk intuitively manages and shares your data with everyone in your organization.
                     </p>
                   </div>
                 </div>
@@ -123,32 +126,38 @@
                     Streamlined Integration
                   </div>
                   <div class="collection-block__text">
-                    <p class="collection-block__text-animation" data-tab="2">
-                     Whether you're utilizing our pioneering data capture services or collecting your own, our success team will ensure iHawk seamlessly integrates with new, on-going and legacy projects to ensure all the data you require is easily accessible, no matter how you collect it.
+                    <p class="collection-block__text-animation">
+                      Whether you're utilizing our pioneering data capture services or collecting your own, our success team will ensure 
+                      iHawk seamlessly integrates with new, on-going and legacy projects to ensure all the data you 
+                      require is easily accessible, no matter how you collect it.
                     </p>
                   </div>
                 </div>
               </div>
+    
+    
+    
             </div>
     
-            <div class="collection-scroll">
-              <div class="collection-scroll__thumb">
+            <div class="collection-container">
+              <div class="collection-scroll">
+                <div class="collection-scroll__thumb"></div>
+              </div>
     
-              </div>
-            </div>
+              <div class="select-block">
     
-            <div class="select-block">
-              <div class="select-block__item" data-tab="0">
-                <img class="select-block__img" src="img/drone-copy.svg" alt="">
-                <div class="select-block__title">Multi-Sector Digitalization</div>
-              </div>
-              <div class="select-block__item" data-tab="1">
-                <img class="select-block__img" src="img/drone-cloud.svg" alt="">
-                <div class="select-block__title">Claim Validation and Value Driving</div>
-              </div>
-              <div class="select-block__item" data-tab="2">
-                <img class="select-block__img" src="img/vision.svg" alt="">
-                <div class="select-block__title">Streamlined Integration</div>
+                <div class="select-block__item">
+                  <img class="select-block__img" src="img/focus.svg" alt="">
+                  <div class="select-block__title">Multi-Sector Digitalization</div>
+                </div>
+                <div class="select-block__item">
+                  <img class="select-block__img" src="img/laptop.svg" alt="">
+                  <div class="select-block__title">Claim Validation and Value Driving</div>
+                </div>
+                <div class="select-block__item">
+                  <img class="select-block__img" src="img/laptop.svg" alt="">
+                  <div class="select-block__title">Streamlined Integration</div>
+                </div>
               </div>
             </div>
           </div>
@@ -163,14 +172,19 @@
                   <div class="watch-description__text">
                     Harness the power of visual data management software and lead your organization into the digital age. 
                     Make the most of your visual data and seamlessly share it with the people that matter.
+                    <br>
                     <br> <span class="watch-description__text_yellow"> Created by engineers, for engineers.</span>
                   </div>
               </div>
           </div>
           
-            <video class="watch-player" id="video"  preload="auto" poster="assets/videoback.png" controls autoplay muted loop>
+          <div class="watch-player">
+            <video id="video" class="watch-player-video"  preload="auto" poster="assets/videoback.png" controls  muted loop>
               <source src="./img/west.mp4" type="video/mp4" /> 
             </video>
+            <button id="playBtn" class="watch-player-btn" onclick="_video.play(); _playBtn.style.display = 'none';"></button>
+            <!-- <button id="pauseBtn" class="watch-player-btn" onclick="_video.pause(); _pauseBtn.style.display = 'none'; _playBtn.style.display = 'block';"></button> -->
+          </div>
           
         </section>
         
@@ -301,12 +315,8 @@
           <div class="block-subscribe">
             <h3 class="block-subscribe__title">Subscribe to our newsletter</h3>
             <form action="" class="block-subscribe__form">
-    
              <span><input class="block-subscribe__input" type="email" placeholder="Enter your e-mail" name="" id=""></span> 
-            <!-- <div class="block-subscribe__arrow"></div> -->
             <input type="submit" class="block-subscribe__submit" value="" >
-      
-      
             </form>
             <div class="block-subscribe__address">
               <div class="block-subscribe__items">
@@ -323,36 +333,50 @@
               </div>
             </div>
           </div>
-  
-          <div class="block-info">
-            <div class="block-info__item">
-              <h4 class="block-info__title">Services</h4>
-              <a href="#" class="block-info__link">iHawk</a>
-              <a href="#" class="block-info__link">UAV Data Collection</a>
+          <div class="block">
+            <div class="block-info">
+              <div class="block-info__item">
+                <h4 class="block-info__title">Services</h4>
+                <a href="#" class="block-info__link">iHawk</a>
+                <a href="#" class="block-info__link">UAV Data Collection</a>
+              </div>
+              <div class="block-info__item">
+                <h4 class="block-info__title">Sectors</h4>
+                <a href="#" class="block-info__link">Oil & Gas</a>
+                <a href="#" class="block-info__link">Power generation</a>
+                <a href="#" class="block-info__link">Power grid</a>
+                <a href="#" class="block-info__link">Construction</a>
+              </div>
+              <div class="block-info__item">
+                <h4 class="block-info__title">Resources</h4>
+                <a href="#" class="block-info__link">iHawk Knowledge Hub</a></a>
+                <a href="#" class="block-info__link">eBooks</a>
+                <a href="#" class="block-info__link">Case Studies</a>
+              </div>
+              <div class="block-info__item">
+                <h4 class="block-info__title">Company</h4>
+                <a href="#" class="block-info__link">About</a>
+                <a href="#" class="block-info__link">News & Blog</a>
+                <a href="#" class="block-info__link">Careers</a>
+                <a href="#" class="block-info__link">Team</a>
+                <a href="#" class="block-info__link">Contact</a>
+              </div>
             </div>
-            <div class="block-info__item">
-              <h4 class="block-info__title">Sectors</h4>
-              <a href="#" class="block-info__link">Oil & Gas</a>
-              <a href="#" class="block-info__link">Power generation</a>
-              <a href="#" class="block-info__link">Power grid</a>
-              <a href="#" class="block-info__link">Construction</a>
-            </div>
-            <div class="block-info__item">
-              <h4 class="block-info__title">Resources</h4>
-              <a href="#" class="block-info__link">iHawk Knowledge Hub</a></a>
-              <a href="#" class="block-info__link">eBooks</a>
-              <a href="#" class="block-info__link">Case Studies</a>
-            </div>
-            <div class="block-info__item">
-              <h4 class="block-info__title">Company</h4>
-              <a href="#" class="block-info__link">About</a>
-              <a href="#" class="block-info__link">News & Blog</a>
-              <a href="#" class="block-info__link">Careers</a>
-              <a href="#" class="block-info__link">Team</a>
-              <a href="#" class="block-info__link">Contact</a>
+            <div class="block-link">
+              <div class="block-link__logo">
+                <a href="#"><img src="/img/header-logo-white.svg" alt=""></a>
+              </div>
+              <div class="block-link__social">
+                <a href="#" class="block-link__items"><img src="/img/linkedin.svg" alt=""></a>
+                <a href="#" class="block-link__items"><img src="/img/youtube.svg" alt=""></a>
+                <a href="#" class="block-link__items"><img src="/img/twitter.svg" alt=""></a>
+                <a href="#" class="block-link__items"><img src="/img/facebook.svg" alt=""></a>
+              </div>
             </div>
           </div>
-          <div class="block-link">
+        </div>
+        <div class="wrapper">
+          <div class="block-link none">
             <div class="block-link__logo">
               <a href="#"><img src="/img/header-logo-white.svg" alt=""></a>
             </div>
