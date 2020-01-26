@@ -16389,6 +16389,14 @@ var yCords = [
 window.addEventListener("DOMContentLoaded", function () {
   function worldMap(id, color) {
     if (document.querySelectorAll("section.location, section.main-feedback, section.main-offices").length) {
+      if (window.matchMedia("(max-width: 1800px)").matches) {
+        var _svg = document.querySelector("svg");
+        _svg.setAttribute("viewBox", "0 0 1000 320");
+      }
+      if (window.matchMedia("(max-width: 1440px)").matches) {
+        var svg = document.querySelector("svg");
+        svg.setAttribute("viewBox", "0 0 800 300");
+      }
       if (window.matchMedia("(max-width: 768px)").matches) {
         var svg = document.querySelector("svg");
         svg.setAttribute("viewBox", "150 50 450 300");
@@ -16397,11 +16405,9 @@ window.addEventListener("DOMContentLoaded", function () {
         var svg = document.querySelector("svg");
         svg.setAttribute("viewBox", "300 0 200 320");
       }
-
-      if (window.matchMedia("(min-width: 1600px)").matches) {
+      if (window.matchMedia("(min-width: 1801px)").matches) {
         var _svg = document.querySelector("svg");
-
-        _svg.setAttribute("viewBox", "0 0 1000 320");
+        _svg.setAttribute("viewBox", "-210 0 1400 320");
       }
 
       for (var i = 0; i < xCords.length; i++) {

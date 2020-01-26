@@ -369,10 +369,10 @@
             padding: 28px 0 0;
             border-radius: 18px;
             background-color: $sunyellow;
-            width: 23.8%;
+            width: 255px;
             height: 350px;
             transition: all 0.6s linear;
-            @media screen and (max-width: 1339px) {
+            @media screen and (max-width: 1439px) {
               width: 22.2%;
             }
             @media screen and (max-width: 768px) {

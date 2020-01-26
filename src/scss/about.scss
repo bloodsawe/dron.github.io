@@ -235,10 +235,17 @@ main.aboutUs {
 .promise {
     @include flex(space-between,center,row);
     height: 450px;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        height: auto;
+    }
     &-block {
         &__left {
             @include flex(center,center,column);
             width: 50%;
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
         } 
         &__right {
             @include flex(center,center,column);
@@ -246,10 +253,33 @@ main.aboutUs {
             height: 100%;
             background-color: $sunyellow;
             position: relative;
-        } 
+            @media screen and (max-width:768px) {
+                width: 100%;
+                height:450px;
+            }
+        }
+        &__img {
+            position: absolute
+        }
+        &__img.cloud {
+            width:100%;
+            top: 0;
+        }
+        &__img.earth {
+            right: 17px;
+            bottom: 0;
+            z-index:0;
+        }
+        &__container-text {
+            width:56%;
+            height:370px;
+            overflow-x:auto;
+        }
         &__container {
+            @include flex(space-around,flex-start,column);
             width: 56%;
-
+            z-index:1;
+            height: 370px;
             .main-button {
                 width: 269px;
                 color: #ffffff;
@@ -282,6 +312,7 @@ main.aboutUs {
             font-size: 40px;
             line-height: 1.3;
             color: #ffffff;
+            margin-bottom:120px;
 
             p {
                 font-family: "TitilliumWebSemiBold",serif; 
@@ -486,6 +517,19 @@ main.aboutUs {
         color: $black;
         margin-bottom: 20px;
     }
+    &__certificate {
+        font-family: "TitilliumWebSemiBold",serif;
+        font-size: 18px;
+        line-height: 1.56;
+        text-decoration: underline;
+        position: absolute;
+        top: 25px;
+        right: 8%;
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+          top:28px;
+        }
+    }
     &__arrow {
         cursor: pointer;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -499,7 +543,7 @@ main.aboutUs {
         display: none;
     }
     &__item {
-        font-family: "TitilliumWebSemiRegular", serif;
+        font-family: "TitilliumWebRegular", serif;
         font-size: 16px;
         line-height: 2;
         color: $black;
