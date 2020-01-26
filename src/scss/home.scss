@@ -204,11 +204,9 @@
     }
     &__logo {
       position: absolute;
-      width: 48px;
-      height: 46px;
       img {
-        width: 48px;
-        height: 46px;
+        width: auto;
+        height: 100%;
       }
       @media screen and (max-width: 1024px) {
         display: none;

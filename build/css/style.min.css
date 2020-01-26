@@ -3517,13 +3517,11 @@ header.out {
 
 .company .main-block__logo {
   position: absolute;
-  width: 48px;
-  height: 46px;
 }
 
 .company .main-block__logo img {
-  width: 48px;
-  height: 46px;
+  width: auto;
+  height: 100%;
 }
 
 .company .main-block__heading {
