@@ -1893,6 +1893,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   } else if (document.querySelectorAll(".casecards").length > 0) {
     return;
+  } else if (document.querySelectorAll(".aboutUs").length > 0) {
+    ScrollReveal({ reset: true }).reveal("section:not(.awards),.awards__item", {
+      delay: delay,
+      duration: duration
+    });
   } else {
     ScrollReveal({ reset: true }).reveal("section", {
       delay: delay,

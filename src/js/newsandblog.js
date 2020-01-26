@@ -6,7 +6,8 @@ function changeSlider(
 ) {
   var i;
   $(`.${blockThatNeedToOpen}`).slick("unslick");
-  type = event.target.getAttribute("data-categories") + "-slider";
+  type = event.target.getAttribute("data-categories") + "-top-slider";
+  type = type.toLocaleLowerCase();
   var x = document.querySelectorAll(`.${blockThatNeedToOpen}`);
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";

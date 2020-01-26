@@ -275,6 +275,13 @@ main.aboutUs {
             height:370px;
             overflow-x:auto;
         }
+        &__container-text::-webkit-scrollbar {
+            width: 5px;
+            background-color: #dcdcdc;
+        }
+        &__container-text::-webkit-scrollbar-thumb {
+            background-color: $sunyellow;
+        }
         &__container {
             @include flex(space-around,flex-start,column);
             width: 56%;
@@ -521,6 +528,7 @@ main.aboutUs {
         font-family: "TitilliumWebSemiBold",serif;
         font-size: 18px;
         line-height: 1.56;
+        color:$black;
         text-decoration: underline;
         position: absolute;
         top: 25px;
@@ -549,6 +557,9 @@ main.aboutUs {
         color: $black;
         list-style-type: square;
         margin-bottom: 10px;
+        a {
+            color: $black;
+        }
     }
 
 }

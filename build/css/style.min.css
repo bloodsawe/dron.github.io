@@ -327,6 +327,15 @@ main.aboutUs {
   overflow-x: auto;
 }
 
+.promise-block__container-text::-webkit-scrollbar {
+  width: 5px;
+  background-color: #dcdcdc;
+}
+
+.promise-block__container-text::-webkit-scrollbar-thumb {
+  background-color: #ffd12d;
+}
+
 .promise-block__container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -584,6 +593,7 @@ main.aboutUs {
   font-family: "TitilliumWebSemiBold",serif;
   font-size: 18px;
   line-height: 1.56;
+  color: #282828;
   text-decoration: underline;
   position: absolute;
   top: 25px;
@@ -613,6 +623,10 @@ main.aboutUs {
   color: #282828;
   list-style-type: square;
   margin-bottom: 10px;
+}
+
+.awards__item a {
+  color: #282828;
 }
 
 .grow {
@@ -5268,6 +5282,7 @@ main.newsandblog {
   color: #b4b4b4;
   padding: 11px;
   margin-right: 18px;
+  border-bottom: 4px solid transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 

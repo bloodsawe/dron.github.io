@@ -151,6 +151,7 @@ main.newsandblog {
         color:$browngrey;
         padding: 11px;
         margin-right: 18px;
+        border-bottom: 4px solid transparent;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         @media (max-width:600px) {
             margin-right: 5px;
