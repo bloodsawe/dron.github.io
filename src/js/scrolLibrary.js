@@ -1879,10 +1879,11 @@ document.addEventListener("DOMContentLoaded", function() {
   } else if (document.querySelectorAll(".newsandblog").length > 0) {
     ScrollReveal({
       reset: true
-    }).reveal(".filter,.blog-slider,.blog-cards__item", {
+    }).reveal(".filter,.blog-cards__item", {
       delay: delay,
       duration: duration
     });
+    // return;
   } else if (document.querySelectorAll(".team-page").length > 0) {
     ScrollReveal({
       reset: true
@@ -1890,6 +1891,8 @@ document.addEventListener("DOMContentLoaded", function() {
       delay: delay,
       duration: duration
     });
+  } else if (document.querySelectorAll(".casecards").length > 0) {
+    return;
   } else {
     ScrollReveal({ reset: true }).reveal("section", {
       delay: delay,

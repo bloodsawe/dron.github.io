@@ -63,10 +63,58 @@
   </header>
 
   <main class="newsandblog">
-    <section class="blog-slider">
+    <section class="blog-slider All-slider"  style="display:block">
       <div class="blog-slider__item" style="background-image: url(/img/bitmap.jpg); background-size: cover;">
         <div class="blog-slider__container">
           <h1 class="blog-slider__title">The power of digital transmission inspection reporting
+          </h1>
+        </div>
+        <a href="#" class="main-button">
+          <p class="main-button__text">Learn More </p>
+          <img class="white" src="/img/arrow-up-right.svg" alt="">
+          <img class="black" src="/img/arrow-up-right-black.svg" alt="">
+        </a>
+      </div>
+      <div class="blog-slider__item" style="background-image: url(/img/group-4.jpg);">
+        <div class="blog-slider__container">
+          <h1 class="blog-slider__title">The power of digital transmission inspection reporting
+          </h1>
+        </div>
+        <a href="#" class="main-button">
+          <p class="main-button__text">Read More </p>
+          <img class="white" src="/img/arrow-up-right.svg" alt="">
+          <img class="black" src="img/arrow-up-right-black.svg" alt="">
+        </a>
+      </div>
+    </section>
+    <section class="blog-slider News-slider"  style="display:none">
+      <div class="blog-slider__item" style="background-image: url(/img/bitmap.jpg); background-size: cover;">
+        <div class="blog-slider__container">
+          <h1 class="blog-slider__title">News SLIDER ROLLO
+          </h1>
+        </div>
+        <a href="#" class="main-button">
+          <p class="main-button__text">Learn More </p>
+          <img class="white" src="/img/arrow-up-right.svg" alt="">
+          <img class="black" src="/img/arrow-up-right-black.svg" alt="">
+        </a>
+      </div>
+      <div class="blog-slider__item" style="background-image: url(/img/group-4.jpg);">
+        <div class="blog-slider__container">
+          <h1 class="blog-slider__title">V SLIDER LIL
+          </h1>
+        </div>
+        <a href="#" class="main-button">
+          <p class="main-button__text">Read More </p>
+          <img class="white" src="/img/arrow-up-right.svg" alt="">
+          <img class="black" src="img/arrow-up-right-black.svg" alt="">
+        </a>
+      </div>
+    </section> 
+    <section class="blog-slider Blog-slider"  style="display:none">
+      <div class="blog-slider__item" style="background-image: url(/img/bitmap.jpg); background-size: cover;">
+        <div class="blog-slider__container">
+          <h1 class="blog-slider__title">BLOG SLIDER
           </h1>
         </div>
         <a href="#" class="main-button">
@@ -93,9 +141,9 @@
           Filter
         </div>
         <div class="filter-block__tabs">
-          <div class="filter-block__item active-button " data-categories = "All" onclick="openSelection(event,'blog-cards','active-button','block')">All</div>
-          <div class="filter-block__item" data-categories = "News" onclick="openSelection(event,'blog-cards','active-button','block')">News</div>
-          <div class="filter-block__item" data-categories = "Blog" onclick="openSelection(event,'blog-cards','active-button','block')">Blog</div>
+          <div class="filter-block__item active-button " data-categories = "All" onclick="openSelection(event,'blog-cards','active-button','block');changeSlider(event)">All</div>
+          <div class="filter-block__item" data-categories = "News" onclick="openSelection(event,'blog-cards','active-button','block'); changeSlider(event)">News</div>
+          <div class="filter-block__item" data-categories = "Blog" onclick="openSelection(event,'blog-cards','active-button','block');changeSlider(event)">Blog</div>
         </div>
         <form class="search-form" action="">
           <input class="search-form__input" type="text" placeholder="Search">
