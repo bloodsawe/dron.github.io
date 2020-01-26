@@ -1,5 +1,7 @@
 //Подключаем галп
 const gulp = require("gulp"),
+  //Оптимизация ДЖС
+  babel = require("gulp-babel"),
   //Объединение файлов
   concat = require("gulp-concat"),
   //Добапвление префиксов
@@ -145,7 +147,7 @@ gulp.task("scripts", () => {
   return (
     gulp
       .src(scriptFiles)
-
+      .pipe(babel())
       //Проверка на ошибки
       .pipe(
         plumber({
@@ -155,9 +157,10 @@ gulp.task("scripts", () => {
           })
         })
       )
-
       //Объединение файлов в один
       .pipe(concat("main.js"))
+      // .pipe(babel("main.js"))
+
       //Минификация JS
       //.pipe(uglify({
       //   toplevel: true

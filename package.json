@@ -26,5 +26,9 @@
     "jquery": "^3.4.1",
     "main-bower-files": "^2.13.1",
     "node-bourbon": "^4.2.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "gulp-babel": "^8.0.0-beta.2"
   }
 }
