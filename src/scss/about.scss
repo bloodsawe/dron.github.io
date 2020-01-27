@@ -214,12 +214,12 @@ main.aboutUs {
             height: 100%;
             object-fit: cover;
         }
-        &-btn{
+        &-btn {
             position: absolute;
-            top: calc(50% - 33.75px);
-            left: calc(50% - 33.75px);
-            width: 67.5px;
-            height: 67.5px;
+            top: calc(50% - 35px);
+            left: calc(50% - 35px);
+            width: 70px;
+            height: 70px;
             // background: none;
             border: none;
             border-radius: 50%;
@@ -237,6 +237,8 @@ main.aboutUs {
         }
     }
 }
+
+
 
 .promise {
     @include flex(space-between,center,row);

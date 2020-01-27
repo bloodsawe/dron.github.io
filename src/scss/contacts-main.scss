@@ -196,6 +196,7 @@
         ul {
           max-width: 635px;
           min-width: 580px;
+          z-index: 2;
           @media screen and (max-width: 900px) {
             max-width: 100%;
           }
