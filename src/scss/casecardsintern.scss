@@ -220,17 +220,23 @@
     }
   }
   .callback {
-    background: url(../img/bitmap-home.jpg) no-repeat center/cover;
+    // background: url(../img/bitmap-home.jpg) no-repeat center/cover;
+    background: none;
     margin-bottom: 80px;
     height: 560px;
     @media screen and (max-width: $tabletwiev) {
       margin-bottom: 30px;
-      background: url(../img/bitmap-tablet.jpg) no-repeat center/cover;
+      // background: url(../img/bitmap-tablet.jpg) no-repeat center/cover;
       height: 300px;
     }
     @media screen and (max-width: 480px) {
-      background: url(../img/bitmap-mobile.jpg) no-repeat center/cover;
+      // background: url(../img/bitmap-mobile.jpg) no-repeat center/cover;
       height: 200px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .text-inform {
