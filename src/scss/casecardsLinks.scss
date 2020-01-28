@@ -217,26 +217,17 @@ hr {
 }
 .casecards-slider {
   min-height: 400px;
+  padding-top: 100px;
   &__item {
     position: relative;
     width: 1439px;
-    height: 100%;
-    padding: 254px 354px;
+    min-height: 600px !important;
     display: flex !important;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @media (min-width: 1441px) {
-      padding: 254px calc((100vw - 1110px) / 2);
-    }
-    @media (max-width: 1200px) {
-      padding: 254px 39px;
-    }
-    @media (max-width: 480px) {
-      padding: 200px 15px;
-    }
     .main-button {
       position: absolute;
       bottom: 11%;
@@ -274,6 +265,12 @@ hr {
       background-color: #ffd84b;
       border: 2px solid #ffd84b;
       outline: none;
+    }
+  }
+  &__container {  
+    width: 49%;
+    @media (max-width: 768px) {
+      width: 88%;
     }
   }
   &__title {
