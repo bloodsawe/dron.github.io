@@ -2,6 +2,7 @@
 
 .careers-page {
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .top-block {
@@ -161,6 +162,8 @@
       font-size: 14px;
       line-height: 24px;
       color: $black;
+      width: 100%;
+      height: auto;
     }
   }
 }
@@ -171,26 +174,43 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 50px 0;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
   }
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  // .wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   @media screen and (max-width: 768px) {
+  //     flex-direction: column;
+  //     align-items: flex-start;
+  //   }
+  // }
+  padding-left: 10%;
+  padding-right: 10%;
+  @media screen and (min-width:1441px) {
+    padding-left: calc((100vw - 1100px)/2);
+    padding-right: calc((100vw - 1100px)/2);
+  }
+  @media screen and (max-width:1024px) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  @media screen and (max-width: 480px) {
+    padding-left: 5%;
+    padding-right: 5%;
   }
   &-title {
-    width: 50%;
-    padding-left: 30px;
+
+    max-width: 40%;
+
+    // padding-left: 30px;
     font-family: TitilliumWebBold;
     font-size: 40px;
     line-height: 52px;
@@ -203,10 +223,12 @@
       padding-left: 0px;
       width: 100%;
       padding-bottom: 20px;
+      max-width: 100%;
     }
   }
   &-text {
-    max-width: 50%;
+
+    max-width: 40%;
     font-family: TitilliumWebSemiBold;
     font-size: 24px;
     line-height: 38px;
@@ -244,7 +266,7 @@
       }
     }
     &-office {
-      min-height: 545px;
+      min-height: 488px;
       @media screen and (max-width: 960px) {
         order: 5;
       }
@@ -258,44 +280,55 @@
   }
   .best {
     height: 387px;
+    // @media screen and (max-width: 990px) {
+    //   height: 312px;
+    // }
     @media screen and (max-width: 960px) {
       height: auto;
-      padding-top: 60px;
-      padding-bottom: 30px;
       order: 2;
+    }
+    background-color: $black;
+    &-text {
+      padding-top: 105px;
+      padding-bottom: 90px;
+      @media screen and (max-width: 990px) {
+        padding: 60px 0;
+      }
     }
   }
   .sparking {
     height: 325px;
     @media screen and (max-width: 960px) {
       height: auto;
-      padding-top: 60px;
-      padding-bottom: 30px;
       order: 4;
+    }
+    background-color: $black;
+    &-text {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      @media screen and (max-width: 990px) {
+        padding: 60px 0;
+      }
     }
   }
   .office {
     @media screen and (max-width: 960px) {
       order: 6;
     }
-  }
-  &-container-dark {
-    background-color: $black;
+    min-height: 408px;
+    background-color: #ffffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: 960px) {
+
+
+        align-items: center !important;
+    }
   }
   &-container-bg {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-  }
-  &-container-light {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   &-text-light {
     font-family: TitilliumWebRegular;
@@ -303,7 +336,6 @@
     line-height: 32px;
     color: #ffffff;
     max-width: 445px;
-    padding-bottom: 30px;
   }
   &-text-dark {
     font-family: TitilliumWebRegular;
@@ -311,7 +343,8 @@
     line-height: 32px;
     color: $black;
     max-width: 445px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+
   }
   &-text-bg {
     font-family: TitilliumWebSemiBold;
@@ -319,7 +352,7 @@
     line-height: 38px;
     color: #ffffff;
     max-width: 445px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   .title {
     font-family: TitilliumWebBold;
@@ -328,22 +361,52 @@
     color: $black;
     padding: 20px 0;
   }
-  
   .column-left {
-    .table-text-light, .table-text-bg, .table-text-dark {
+    padding-left: 20%;
+    padding-right: 30px;
+    @media screen and (min-width:1441px) {
+      padding-left: calc((100vw - 1100px)/2);
+    }
+    @media screen and (max-width: 960px) {
+      padding-right: 10%;
       padding-left: 10%;
-      @media screen and (max-width: 960px) {
-        padding-left: 5%;
-        padding-right: 5%;
-      }
+    }
+    @media screen and (max-width:1024px) {
+      padding-left: 10%;
+    }
+    @media screen and (max-width: 480px) {
+      padding-left: 5%;
+    }
+    display: flex;
+    justify-content: flex-start;
+    @media screen and (max-width: 960px) {
+      justify-content: center;
+      align-items: flex-end;
     }
   }
   .column-right {
-    .table-text-light, .table-text-bg, .table-text-dark {
+    padding-right: 20%;
+    padding-left: 30px;
+    @media screen and (max-width: 960px) {
       padding-right: 10%;
-      @media screen and (max-width: 960px) {
-        padding-left: 5%;
-        padding-right: 5%;
+      padding-left: 10%;
+    }
+    @media screen and (min-width:1441px) {
+      padding-right: calc((100vw - 1100px)/2);
+    }
+    @media screen and (max-width:1024px) {
+      padding-right: 10%;
+    }
+    @media screen and (max-width: 480px) {
+      padding-right: 5%;
+    }
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (max-width: 960px) {
+      justify-content: center;
+      align-items: flex-end;
+      .office {
+        align-items: center;
       }
     }
   }
@@ -351,120 +414,15 @@
     display: flex;
     flex-direction: column;
   }
+  
 }
-
-// .table {
-//   width: 100%;
-//   display: flex;
-//   flex-direction: row;
-
-//   &-img {
-//     &-castle {
-//       min-height: 471px;
-//       background: url(../img/careers-table-castle.png) no-repeat center/cover;
-//     }
-//     &-office {
-//       min-height: 475px;
-//       background: url(../img/careers-table-office.png) no-repeat center/cover;
-//     }
-//     &-people {
-//       min-height: 488px;
-//       background: url(../img/careers-table-people.png) no-repeat center/cover;
-//     }
-//   }
-//   &-container-dark {
-//     background-color: $black;
-//   }
-//   &-container-light {
-//     background-color: #ffffff;
-//   }
-//   &-text-light {
-//     font-family: TitilliumWebRegular;
-//     font-size: 16px;
-//     line-height: 32px;
-//     color: #ffffff;
-//   }
-//   &-text-dark {
-//     font-family: TitilliumWebRegular;
-//     font-size: 16px;
-//     line-height: 32px;
-//     color: $black;
-//   }
-//   .title {
-//     font-family: TitilliumWebBold;
-//     font-size: 40px;
-//     line-height: 52px;
-//     color: $black;
-//     // padding-bottom: 10px;
-//   }
-//   &-text-bg {
-//     font-family: TitilliumWebSemiBold;
-//     font-size: 24px;
-//     line-height: 38px;
-//     color: #ffffff;
-//   }
-//   &-column-left {
-//     width: 50%;
-//     .table-text-light {
-//       padding-left: 20%;
-//       @media screen and (min-width:1441px) {
-//         padding-left: calc((100vw - 1100px)/2);
-//       }
-//       @media screen and (max-width:1024px) {
-//         padding-left: 10%;
-//       }
-//     }
-//     .table-text-bg {
-//       padding-left: 20%;
-//       @media screen and (min-width:1441px) {
-//         padding-left: calc((100vw - 1100px)/2);
-//       }
-//       @media screen and (max-width:1024px) {
-//         padding-left: 10%;
-//       }
-//     }
-//     .table-container-dark {
-//       padding: 60px 125px 40px 0px;
-//     }
-//     .table-container-bg {
-//       padding: 266px 126px 30px 0px;
-//     }
-//   }
-//   &-column-right {
-//     width: 50%;
-//     .table-text-light {
-//       padding-right: 20%;
-//       @media screen and (min-width:1441px) {
-//         padding-right: calc((100vw - 1100px)/2);
-//       }
-//       @media screen and (max-width:1024px) {
-//         padding-right: 10%;
-//       }
-//     }
-//     .table-text-dark {
-//       padding-right: 20%;
-//       @media screen and (min-width:1441px) {
-//         padding-right: calc((100vw - 1100px)/2);
-//       }
-//       @media screen and (max-width:1024px) {
-//         padding-right: 10%;
-//       }
-//     }
-//     .table-container-dark {
-//       padding: 105px 0px 90px 95px;
-//     }
-//     .table-container-light {
-//       padding: 54px 0px 30px 94px;
-//     }
-//   }
-// }
 
 .work {
   width: 100%;
   height: auto;
   position: relative;
   display: flex;
-  overflow: hidden;
+  // overflow: hidden;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -609,6 +567,8 @@
 
 .works {
   padding-top: 30px;
+  background-color: #fff;
+  position: relative;
   @media screen and (max-width: 480px) {
     padding-top: 0px;
   }
@@ -757,8 +717,8 @@
     align-items: center;
     &-img {
       margin-right: 20px;
-      width: 41px;
-      height: 41px;
+      // min-width: 41px;
+      min-height: 41px;
       z-index: 1;
     }
     &-text {

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  if (document.querySelectorAll(".casecards").length > 0) {
+  if (document.querySelectorAll(".casecards, .careers-page").length > 0) {
     var dropDown = Array.from(
       document.querySelectorAll(".case-filter-block__list")
     );

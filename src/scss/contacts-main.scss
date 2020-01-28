@@ -8,18 +8,30 @@
     position: relative;
 
     &-offices {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      // @media screen and (max-width: 480px) {
+      //   margin-bottom: 40px;
+      // }
       background: url(../img/world-map.png) no-repeat;
       background-size: contain;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       &-title {
-        padding: 120px 0 10px 0 ;
+        padding: 90px 0 10px 0 ;
         max-width: 540px;
         font-family: "TitilliumWebBold", "serif";
         @include font ($weight: 600, $size: 40px, $line-height: 1.58, $letter-spacing: normal, $color: $black);
         text-align: center;
+        @media screen and (max-width: 480px) {
+          @include font ($weight: 600, $size: 24px, $line-height: 32px, $letter-spacing: normal, $color: $black);
+          padding: 70px 0 0px 0 ;
+        }
       }
       &-text {
         font-family: TitilliumWebSemiBold;
@@ -39,31 +51,45 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         height: auto;
+        .empty {
+          margin: 0;
+        }
         &__item {
           margin: 60px 0px 20px 0px;
-          width: 33.3%;
+          width: 32%;
           height: auto;
-          @media screen and (max-width: 800px) {
+          @media screen and (max-width: 768px) {
             margin: 40px 0px 10px 0px;
-            width: 50%;  
+            width: 32%;
           }
-          @media screen and (max-width: 534px) {
-            margin: 20px 0px 0px 0px;
+          @media screen and (max-width: 700px) {
+            
+            width: 50%;
+          }
+          @media screen and (max-width: 480px) {
+            
             width: 100%;  
+            .main-offices-list__item-card {
+              width: 220px;
+            }
+            display: flex;
+            justify-content: center;
           }
-          min-width: 240px;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: center;
+          // max-width: 240px;
+          // display: flex;
+          // flex-direction: column;
+          // justify-content: flex-start;
+          // align-items: center;
           &-card {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            width: 220px;
+            max-width: 220px;
             &-name {
               font-family: TitilliumWebRegular;
               @include font ($weight: normal, $size: 24px, $line-height: 32px, $letter-spacing: normal, $color: $black);
