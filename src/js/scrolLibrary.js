@@ -1904,17 +1904,17 @@ document.addEventListener("DOMContentLoaded", function() {
       duration: duration
     });
   }
-  if (document.querySelectorAll(".homepage").length > 0) {
-    window.addEventListener("scroll", function() {
-      if (isAnyPartOfElementInViewport(document.querySelector(".location"))) {
-        document.querySelector("main").classList.add("show-before");
-        $(".join h3,.join p:not(.main-button__text)").css("color", "white");
-        document.querySelector(".join .main-button__text").style.color =
-          "black";
-      } else {
-        $(".join h3,.join p").css("color", "");
-        document.querySelector("main").classList.remove("show-before");
-      }
-    });
-  }
+  // if (document.querySelectorAll(".homepage").length > 0) {
+  //   window.addEventListener("scroll", function() {
+  //     if (isAnyPartOfElementInViewport(document.querySelector(".location"))) {
+  //       document.querySelector("main").classList.add("show-before");
+  //       $(".join h3,.join p:not(.main-button__text)").css("color", "white");
+  //       document.querySelector(".join .main-button__text").style.color =
+  //         "black";
+  //     } else {
+  //       $(".join h3,.join p").css("color", "");
+  //       document.querySelector("main").classList.remove("show-before");
+  //     }
+  //   });
+  // }
 });
