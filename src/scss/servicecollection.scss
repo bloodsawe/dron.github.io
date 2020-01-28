@@ -112,13 +112,17 @@
         }
     }
     .callback {
-        background: url(../img/bitmap-services.jpg) no-repeat center/cover;
+        background: url(../img/service-bg.png) no-repeat center/cover;
+        @include flex(center,center,column);
+        height: 450px;
     }
     .callback-block {
+        padding: 0;
+        // @include flex(space-between,center,column);
         &__text {
-            width: 43%;
-            @media screen and (max-width:1024px) {
-                width: 50%;
+            width: 50%;
+            @media screen and (max-width:768px) {
+                width: 66%;
             }
             @media screen and (max-width:480px) {
                 font-size: 24px;
@@ -129,6 +133,24 @@
             @media (max-width: 480px) {
                 margin: 0;
             }
+        }
+    }
+    .cards {
+        .main-block__title {
+            margin: 0;
+        }
+    }
+    .watch {
+        margin-bottom: 60px;
+        @media screen and (max-width: 480px) {
+            margin-bottom: 20px;
+        }
+    }
+    .collection-block__title {
+        padding-top: 0;
+        font-size: 24px;
+        @media screen and (max-width:480px) {
+            font-size: 18px;
         }
     }
 }

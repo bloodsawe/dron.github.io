@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
   if (document.querySelectorAll(".casecards, .careers-page").length > 0) {
-    var dropDown = Array.from(
-      document.querySelectorAll(".case-filter-block__list")
-    );
-    // console.log('dropDown: ', dropDown);
+    var dropDown = [];
+    for (
+      let i = 0;
+      i < document.querySelectorAll(".case-filter-block__list").length;
+      i++
+    ) {
+      dropDown.push(document.querySelectorAll(".case-filter-block__list")[i]);
+    }
     dropDown.forEach(function(elem, index) {
       elem.addEventListener("click", function(e) {
         let list = document.querySelectorAll(".case-filter-block__list-insert")[
