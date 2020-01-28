@@ -34,16 +34,11 @@
         }
     }
     &__baner {
+        display: flex;
         position: relative;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        @media (min-width:1441px) {
-            // padding-right: calc((100vw - 1110px)/2);
-        }
-        @media (max-width:1440px) {
-            // padding-right: 10%;
-        }
         .main-button {
             position: absolute;
             bottom: 10%;
@@ -160,8 +155,27 @@
         }
         .main-button {
             @media (max-width: 480px) {
-                margin: 0 auto;
+                margin: 0;
             }
+        }
+    }
+    .cards {
+        .main-block__title {
+            margin: 0;
+        }
+    }
+    .watch {
+        @media screen and (max-width: 480px) {
+            margin-bottom: 20px;
+        }
+    }
+    .collection-block__title {
+        padding-top: 0;
+        @media screen and (max-width:768px) {
+            font-size: 24px;
+        }
+        @media screen and (max-width:480px) {
+            font-size: 18px;
         }
     }
 }
