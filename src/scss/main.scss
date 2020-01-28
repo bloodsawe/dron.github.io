@@ -90,7 +90,7 @@ main {
     height: 55px;
     border-radius: 36px;
     border: solid 2px $greyishbrown;
-    padding: 0 10px;
+    padding: 0 24px;
     @include flex(space-around, center, row);
     &__input {
         background: transparent;

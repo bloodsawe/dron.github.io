@@ -165,13 +165,17 @@
   }
   .main-block {
     @include flex(space-between, start, row);
-    margin-bottom: 76px;
+    margin-bottom: 60px;
     @media screen and (min-width: 1024px) {
       justify-content: space-evenly;
       position: relative;
     }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 32px;
+    }
     @media screen and (max-width: 480px) {
       @include flex(space-between, stretch, column);
+      margin-bottom: 40px;
     }
     &__title {
       font-family: "TitilliumWebBold", serif;
@@ -179,6 +183,7 @@
       line-height: 1.15;
       width: 19%;
       margin: 0;
+      color: $black;
       @media screen and (min-width: 1024px) {
         position: absolute;
         left: 0;
@@ -189,6 +194,8 @@
       }
       @media screen and (max-width: 480px) {
         width: 90%;
+        font-size: 24px;
+        margin-bottom: 20px;
       }
     }
     &__inner {
@@ -322,6 +329,7 @@
 }
 
 .cards {
+    background: url(../img/oval.svg) no-repeat top/cover;
     .main-block {
         @include flex(space-between,center,row);
         margin-bottom: 60px;
@@ -352,14 +360,14 @@
     
     &-block {
         @include flex(space-between,stretch,row);
-        margin-bottom: 120px;
+        padding-bottom: 120px;
         @media screen and (max-width: 768px) {
             flex-wrap: wrap;
         }
         @media screen and (max-width: 480px) {
             justify-content: flex-start;
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            padding-bottom: 20px;
         }
         &__item {
             position: relative;
