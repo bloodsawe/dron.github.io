@@ -1,14 +1,33 @@
 @import "help/vars_and_mixins.scss";
 .intern {
+  $tabletwiev: 1024px;
+  .join-block {
+    margin-left: 8%;
+  }
   .text-header {
-    padding: 0 50px;
+    padding: 200px 50px 0;
     h1 {
       @media screen and (max-width: 480px) {
         padding: 0;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+      }
+      @media screen and (max-width: $tabletwiev) {
+        padding: 0;
+        line-height: 1.3;
+        font-size: 39px;
+        margin-bottom: 30px;
       }
     }
     @media screen and (max-width: 480px) {
-      padding: 0;
+      // padding: 0;
+      padding: 140px 0 0;
+    }
+    @media screen and (max-width: $tabletwiev) {
+      padding: 200px 0 0;
     }
   }
   .banner-slider__title {
@@ -23,12 +42,12 @@
     }
     .block-with-drone.join__img {
       position: relative;
-      width: 44.8% !important;
-      height: 240px !important;
+      width: 44.8%;
+      height: 240px;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: black;
+      background: #282828;
       border-radius: 18px;
       overflow: hidden;
       img {
@@ -38,6 +57,11 @@
         object-fit: cover;
         border-radius: 20px;
         transform: scale(0.8);
+        @media screen and (max-width: 480px) {
+          top: 0;
+          right: 0;
+          transform: scale(0.7);
+        }
       }
       &-textblock {
         z-index: 1;
@@ -49,14 +73,14 @@
           flex-direction: column;
           align-items: flex-start;
           h5 {
-            font-family: "TitilliumWebBold", serif;
+            font-family: "TitilliumWebSemiBold", serif;
             font-size: 18px;
             line-height: 1.56;
             font-weight: 600;
             color: white;
           }
           span {
-            font-family: "TitilliumWebBold", serif;
+            font-family: "TitilliumWebRegular", serif;
             font-size: 14px;
             line-height: 1.71;
             color: white;
@@ -69,18 +93,33 @@
             }
           }
         }
+        @media screen and (max-width: 480px) {
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+          padding: 10%;
+        }
       }
       @media screen and (max-width: 480px) {
-        margin: unset;
-        width: 100% !important;
+        margin: 0;
+        margin-bottom: 30px;
+        width: 100%;
+      }
+      @media screen and (max-width: $tabletwiev) {
+        width: 100%;
+        margin: 0 0 30px 0;
       }
     }
-    .join-block {
-      width: 42% !important;
+    .join-block.join-block {
+      width: 43.5%;
       padding-right: 0px !important;
       @media screen and (max-width: 480px) {
-        margin: unset;
-        width: 100% !important;
+        margin: 0;
+        width: 100%;
+      }
+      @media screen and (max-width: $tabletwiev) {
+        width: 100%;
+        margin: 0;
       }
     }
     @media screen and (max-width: 480px) {
@@ -88,15 +127,28 @@
     }
   }
   .wrapper.join {
+    // padding-right: calc((100vw - 1110px) / 2);
+    // padding-left: calc((100vw - 1110px) / 2);
     width: 90%;
+    margin: 0 auto;
+    @media screen and (max-width: 480px) {
+      margin-bottom: 30px !important;
+    }
   }
+
   .last-wrapper.join {
-    width: 80%;
-    padding: unset;
+    max-height: none;
+    justify-content: space-between;
+    padding: 0 89px;
     .join__img {
-      left: 2%;
-      @media screen and (max-width: 768px) {
-        left: unset;
+      // width: 38%;
+      width: 42%;
+      @media screen and (max-width: $tabletwiev) {
+        width: 70%;
+        margin-right: auto;
+      }
+      @media screen and (max-width: 480px) {
+        width: 100%;
       }
     }
     .main-button {
@@ -105,39 +157,86 @@
       left: 50%;
       transform: translate(-50%, -50%);
       img {
-        width: unset;
-        height: unset;
+        width: initial;
+        height: initial;
+      }
+      @media screen and (max-width: $tabletwiev) {
+        display: flex;
       }
     }
     .join-block {
-      width: 41% !important;
-      @media screen and (max-width: 480px) {
-        width: 100% !important;
+      // width: 49%;
+      // width: 35%;
+      width: 40%;
+      margin: 0 auto;
+      margin-left: 8%;
+      &__text {
+        font-family: "TitilliumWebRegular", serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        @media screen and (max-width: $tabletwiev) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.71;
+        }
+      }
+      @media screen and (max-width: $tabletwiev) {
+        margin-right: auto;
+        width: 65%;
       }
     }
     hr {
-      width: 95%;
-      bottom: unset;
+      // width: 95%;
+      width: 85%;
+      bottom: initial;
       left: 50%;
       top: -40px;
       transform: translate(-50%);
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $tabletwiev) {
         width: 100%;
       }
+      @media screen and (max-width: 480px) {
+        width: 110%;
+      }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tabletwiev) {
+      padding: 0;
       width: 90%;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 60px !important;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 40px !important;
     }
   }
   .callback {
-    background: url(../img/bitmap-home.jpg) no-repeat center/cover;
+    // background: url(../img/bitmap-home.jpg) no-repeat center/cover;
+    background: none;
     margin-bottom: 80px;
     height: 560px;
-    @media screen and (max-width: 768px) {
-      background: url(../img/bitmap-tablet.jpg) no-repeat center/cover;
+    @media screen and (max-width: $tabletwiev) {
+      margin-bottom: 30px;
+      // background: url(../img/bitmap-tablet.jpg) no-repeat center/cover;
+      height: 300px;
     }
     @media screen and (max-width: 480px) {
-      background: url(../img/bitmap-mobile.jpg) no-repeat center/cover;
+      // background: url(../img/bitmap-mobile.jpg) no-repeat center/cover;
+      height: 200px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .text-inform {
@@ -150,12 +249,22 @@
         width: 100%;
         margin-bottom: 20px;
       }
+      @media screen and (max-width: $tabletwiev) {
+        width: 78%;
+        margin: 0 auto 30px;
+      }
     }
     .p-tag {
       p {
         font-size: 16px;
         line-height: 2;
         font-family: "TitilliumWebRegular", serif;
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        margin-bottom: 30px;
       }
     }
     .h5-tag {
@@ -164,20 +273,42 @@
         font-family: "TitilliumWebBold", serif;
         font-size: 24px;
         line-height: 1.58;
+        @media screen and (max-width: 480px) {
+          font-family: "TitilliumWebSemiBold", serif;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: $tabletwiev) {
+        margin: 0 auto 30px;
+      }
+      @media screen and (max-width: 480px) {
+        margin: 0 0 30px 0;
       }
     }
     @media screen and (max-width: 480px) {
-      flex-direction: column-reverse;
+      flex-direction: column;
+      width: 90%;
+    }
+    @media screen and (max-width: $tabletwiev) {
+      width: 80%;
+      margin: 0 auto;
+      flex-direction: column;
     }
   }
   .block-text-slider {
-    margin: unset;
+    position: relative;
+    margin: 0;
     width: 100%;
     display: flex;
     margin-bottom: 120px;
     .slider {
       position: relative;
-      width: 45%;
+      // width: 46%;
+      width: 43.5%;
       height: 100%;
       .counter {
         position: absolute;
@@ -186,10 +317,22 @@
         p {
           font-size: 16px;
           font-family: "TitilliumWebBold", serif;
+          color: #282828;
+          @media screen and (max-width: 480px) {
+            font-family: "TitilliumWebSemiBold", serif;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+          }
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $tabletwiev) {
           // bottom: 105%;
-          left: 0;
+          left: 25%;
+        }
+        @media screen and (max-width: 480px) {
+          left: 5%;
+          transform: translate(0%, 165%);
         }
       }
       &__block {
@@ -198,6 +341,9 @@
           object-fit: cover;
           width: 100%;
           height: 100%;
+        }
+        @media screen and (max-width: 480px) {
+          height: 220px;
         }
       }
       .slick-prev,
@@ -213,7 +359,7 @@
         border-radius: 50%;
         background: transparent;
         background: url(../img/arrow-right-s-line.svg) no-repeat center;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $tabletwiev) {
           // display: none !important;
         }
       }
@@ -230,41 +376,56 @@
       .slick-next {
         right: 0;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $tabletwiev) {
+        transform: translate(-6%, 0%);
+        width: 90%;
+      }
+      @media screen and (max-width: 480px) {
         width: 100%;
+        transform: inherit;
       }
     }
     .block-with-text {
       position: relative;
-      right: 17px;
-      // padding-right: 105px;
-      padding-right: 70px;
-      margin: 0 auto;
+      // margin-left: 4%;
+      margin-left: 6.5%;
+      margin-right: calc((100vw - 1100px) / 2);
       width: 43%;
       p {
         margin-bottom: 40px;
         font-size: 16px;
         line-height: 2;
         font-family: "TitilliumWebRegular", serif;
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+        }
       }
       p:last-child {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $tabletwiev) {
           padding-bottom: 40px;
         }
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $tabletwiev) {
         // flex-direction: column;
-        position: unset;
+        position: initial;
         margin: 0 auto;
         margin-top: 120px;
         width: 100%;
-        padding: unset;
+        padding: 0;
+      }
+      @media screen and (max-width: 480px) {
+        width: 90%;
       }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tabletwiev) {
       flex-direction: column;
       width: 90%;
       margin: 0 auto;
+      margin-top: 30px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-top: 0;
+      width: 100%;
     }
   }
 }

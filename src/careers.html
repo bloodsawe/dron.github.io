@@ -83,9 +83,14 @@
           With a work-hard-play-hard attitude, each member of the 70-strong Cyberhawk team plays an important role in both our energetic culture and our ambition for continued success.
         </p>
       </div>
-      <video class="team__player" preload="auto" poster="assets/videoback.png" controls autoplay muted loop>
-        <source src="./img/west.mp4" type="video/mp4" /> 
-      </video>
+      
+      <div class="watch-player">
+        <video id="video" class="watch-player-video"  preload="auto" poster="assets/videoback.png" controls muted loop>
+          <source src="./img/west.mp4" type="video/mp4" /> 
+        </video>
+        <button id="playBtn" class="watch-player-btn" onclick="_video.play();"></button>
+        <!-- <button id="pauseBtn" class="watch-player-btn" onclick="_video.pause(); _pauseBtn.style.display = 'none'; _playBtn.style.display = 'block';"></button> -->
+      </div>
     </section>
 
     <section class="advantages">
@@ -159,66 +164,143 @@
     </section>
 
     <section class="location-section">
-      <div class="wrapper">
+
         <h2 class="location-section-title">Life at Edinburgh HQ</h2>
         <p class="location-section-text">
           Located in southeastern Scotland, Edinburgh has been the Capital of Scotland since the 15th century and is recognised for its vast offering of heritage, culture, excitement and wonder. 
         </p>
-      </div>
+
     </section>
 
     <section class="table">
-      <div class="table-column-left">
-        <div class="table-img-castle"></div>
-        <div class="table-container-dark">
-          <p class="table-text-light">
-            Sparking creativity, Edinburgh has produced some of the most creative people in the world, such as J K Rowling who wrote the majority of Harry Potter books whilst living in the city. As the greenest city in the UK, Edinburgh is home to 112 of the countries most beautiful parks including Arthur's Seat, an extinct volcano which is the main peak of the group of hills that form most of Holyrood Park.
-          </p>
-        </div>
-        <div class="table-container-bg table-img-office">
-          <p class="table-text-bg">
-            The Cyberhawk Edinburgh HQ, located a stone-throw from Edinburgh City, is a beautifully modern, flexible workspace based in the Edinburgh International Climbing Arena (EICA).
-          </p>
-        </div>
+      <div class="table-img-castle column-left" style="background-image: url(../img/careers-table-castle.png)"></div>
+      
+      <div class="table-container-dark sparking column-left">
+        <p class="table-text-light sparking-text">
+          Sparking creativity, Edinburgh has produced some of the most creative people in the world, such as J K Rowling who wrote the majority of Harry Potter books whilst living in the city. As the greenest city in the UK, Edinburgh is home to 112 of the countries most beautiful parks including Arthur's Seat, an extinct volcano which is the main peak of the group of hills that form most of Holyrood Park.
+        </p>
       </div>
-      <div class="table-column-right">
-        <div class="table-container-dark">
-          <p class="table-text-light">
-            Best known for Edinburgh Castle which sit above the city on Castle Rock and is home to the royal Crown Jewels, the capital city is the host of many annual world-wide spectacles such as The Edinburgh Festival Fringe (the largest art festival in the world), the illusive Royal Edinburgh Military Tattoo and the Edinburgh Hogmanay Street Party. 
-          </p>
-        </div>
-        <div class="table-img-people"></div>
-        <div class="table-container-light">
-          <p class="table-text-dark title">
-            The Office
-          </p>
-          <p class="table-text-dark">
-            Providing immediate access to one of the best indoor climbing arenas in the world, olympic-standard gym facilities, indoor soft play complex, Judo Scotland National Training Centre and multiple cafes, there is plenty to do when you're not making use of our mindfulness pods or taking time away from our standing hot desks. Based less than 5-miles from Edinburgh Airport, no matter how far you want to travel, the first step of your journey is right on our doorstep. 
-          </p>
-        </div>
+
+      <div class="table-container-bg table-img-office column-left" style="background-image: url(../img/careers-table-office.png)">
+        <p class="table-text-bg">
+          The Cyberhawk Edinburgh HQ, located a stone-throw from Edinburgh City, is a beautifully modern, flexible workspace based in the Edinburgh International Climbing Arena (EICA).
+        </p>
+      </div>
+
+      <div class="table-container-dark best column-right">
+        <p class="table-text-light best-text">
+          Best known for Edinburgh Castle which sit above the city on Castle Rock and is home to the royal Crown Jewels, the capital city is the host of many annual world-wide spectacles such as The Edinburgh Festival Fringe (the largest art festival in the world), the illusive Royal Edinburgh Military Tattoo and the Edinburgh Hogmanay Street Party. 
+        </p>
+      </div>
+
+      <div class="table-img-people column-right" style="background-image: url(../img/careers-table-people.png)"></div>
+
+      <div class="table-container-light office column-right">
+        <p class="table-text-dark title">
+          The Office
+        </p>
+        <p class="table-text-dark">
+          Providing immediate access to one of the best indoor climbing arenas in the world, olympic-standard gym facilities, indoor soft play complex, Judo Scotland National Training Centre and multiple cafes, there is plenty to do when you're not making use of our mindfulness pods or taking time away from our standing hot desks. Based less than 5-miles from Edinburgh Airport, no matter how far you want to travel, the first step of your journey is right on our doorstep. 
+        </p>
       </div>
     </section>
 
     <section class="work">
-        <div class="work-top">
-          <img src="/img/careers-work.svg" alt="">
-          <div class="wrapper">
-            <h3 class="work-top-title">
-              Work with Us
-            </h3>
-            <p class="work-top-text">
-              Can't find the right role for you but know you would be a perfect fit at Cyberhawk? We're all ears when it comes to incredible talent!
-            </p>
-          </div>
+      <div class="work-text">
+        <img class="work-text-img" src="/img/careers-work.svg" alt="">
+        <div class="work-text-container">
+          <h3 class="work-text-title">
+            Work with Us
+          </h3>
+          <p class="work-text-subtitle">
+            Can't find the right role for you but know you would be a perfect fit at Cyberhawk? We're all ears when it comes to incredible talent!
+          </p>
+
         </div>
-        <div class="work-bottom">
+      </div>
+      <div class="work-search">
+        <div class="work-search-container">
+          <div class="case-filter-block__item">
+            Location
+            <div class="case-filter-block__list">
+              Chose location
+              <img class="case-filter__arrow" src="img/arrow-drop-down-line.svg" alt="">
+            </div>
+            <ul class="case-filter-block__list-insert">
+              <li class="case-filter-block__item-insert">Power generation</li>
+              <li class="case-filter-block__item-insert">Power grid</li>
+              <li class="case-filter-block__item-insert">Construction</li>
+            </ul>
+          </div>
+          <form class="search-form" action="">
+            <input class="search-form__input" type="text" placeholder="Search">
+            <button class="search-form__button" type="submit"><i class="grey fas fa-search"></i><i class="yellow fas fa-search"></i></button>
+          </form>
+
+        </div>
+      </div>
+        
+    </section>
+
+    <div class="works">
+      <div class="wrapper">
+        <section class="works-card">
+          <h3 class="works-card-title">Bids & Proposals coordinator</h3>
+          <p class="works-card-info"><b>Location:</b> Ratho, Edinburgh</p>
+          <p class="works-card-info"><b>Salary:</b> £24,000 – £28,000 per annum DOE</p>
+          <p class="works-card-info"><b>Contract:</b> Full time, Permanent</p>
+          <p class="works-card-info"><b>Benefits:</b> Subsidised Lunches, Free gym membership to Excite gym in Edinburgh Indoor Climbing Arena, Discounted Climbing Rates and a great Employee Benefits Scheme!</p>
+          <a href="#" class="main-button works-card-btn">
+            <p class="main-button__text">Learn More</p>
+            <img src="/img/arrow-up-right-black.svg" alt="">
+          </a>
+        </section>
+        <section class="works-card">
+          <h3 class="works-card-title">Graduate inspection engineer – Renewables & utilities</h3>
+          <p class="works-card-info"><b>Location:</b> Ratho, Edinburgh, EH28 8AA</p>
+          <p class="works-card-info"><b>Salary:</b> £22,500 plus field allowances</p>
+          <p class="works-card-info"><b>Contract:</b> Full time, Permanent</p>
+          <p class="works-card-info"><b>Benefits:</b> Subsidised Lunches, Free gym membership to Excite gym in Edinburgh Indoor Climbing Arena, Discounted Climbing Rates and a great Employee Benefits Scheme!</p>
+          <a href="#" class="main-button works-card-btn">
+            <p class="main-button__text">Learn More</p>
+            <img src="/img/arrow-up-right-black.svg" alt="">
+          </a>
+        </section>
+        <section class="works-card">
+          <h3 class="works-card-title">Aviation equipment technician</h3>
+          <p class="works-card-info"><b>Location:</b> Ratho, Edinburgh</p>
+          <p class="works-card-info"><b>Salary:</b> £25,000 per annum dependent on experience</p>
+          <p class="works-card-info"><b>Contract:</b> Full time, Permanent</p>
+          <p class="works-card-info"><b>Benefits:</b> Subsidised Lunches, Free gym membership to Excite gym in Edinburgh Indoor Climbing Arena, Discounted Climbing Rates and a great Employee Benefits Scheme!</p>
+          <a href="#" class="main-button works-card-btn">
+            <p class="main-button__text">Learn More</p>
+            <img src="/img/arrow-up-right-black.svg" alt="">
+          </a>
+        </section>
+        <section class="works-card">
+          <h3 class="works-card-title">Graduate inspection engineer – Oil & Gas</h3>
+          <p class="works-card-info"><b>Location:</b> Ratho, Edinburgh, EH28 8AA</p>
+          <p class="works-card-info"><b>Salary:</b> £22,500 plus field allowances</p>
+          <p class="works-card-info"><b>Contract:</b> Full time, Permanent</p>
+          <p class="works-card-info"><b>Benefits:</b> Subsidised Lunches, Free gym membership to Excite gym in Edinburgh Indoor Climbing Arena, Discounted Climbing Rates and a great Employee Benefits Scheme!</p>
+          <a href="#" class="main-button works-card-btn">
+            <p class="main-button__text">Learn More</p>
+            <img src="/img/arrow-up-right-black.svg" alt="">
+          </a>
+        </section>
+      </div>
+    </div>
+    
+
+    <section class="cv">
+        <div class="cv-bottom">
           <div class="wrapper">
-            <p class="work-bottom-text">
+            <p class="cv-bottom-text">
               If you think you can bring significant value to our team and big impact to our clients, we would be delighted to hear from you.
             </p>
-            <p class="work-bottom-text">
+            <p class="cv-bottom-text">
               Send a speculative CV and cover letter to 
-              <a href="3">recruitment@thecyberhawk.com</a> 
+              <a href="#">recruitment@thecyberhawk.com</a> 
             </p>
           </div>
         </div>
@@ -293,12 +375,8 @@
         <div class="block-subscribe">
           <h3 class="block-subscribe__title">Subscribe to our newsletter</h3>
           <form action="" class="block-subscribe__form">
-  
            <span><input class="block-subscribe__input" type="email" placeholder="Enter your e-mail" name="" id=""></span> 
-          <!-- <div class="block-subscribe__arrow"></div> -->
           <input type="submit" class="block-subscribe__submit" value="" >
-    
-    
           </form>
           <div class="block-subscribe__address">
             <div class="block-subscribe__items">
@@ -315,36 +393,50 @@
             </div>
           </div>
         </div>
-
-        <div class="block-info">
-          <div class="block-info__item">
-            <h4 class="block-info__title">Services</h4>
-            <a href="#" class="block-info__link">iHawk</a>
-            <a href="#" class="block-info__link">UAV Data Collection</a>
+        <div class="block">
+          <div class="block-info">
+            <div class="block-info__item">
+              <h4 class="block-info__title">Services</h4>
+              <a href="#" class="block-info__link">iHawk</a>
+              <a href="#" class="block-info__link">UAV Data Collection</a>
+            </div>
+            <div class="block-info__item">
+              <h4 class="block-info__title">Sectors</h4>
+              <a href="#" class="block-info__link">Oil & Gas</a>
+              <a href="#" class="block-info__link">Power generation</a>
+              <a href="#" class="block-info__link">Power grid</a>
+              <a href="#" class="block-info__link">Construction</a>
+            </div>
+            <div class="block-info__item">
+              <h4 class="block-info__title">Resources</h4>
+              <a href="#" class="block-info__link">iHawk Knowledge Hub</a></a>
+              <a href="#" class="block-info__link">eBooks</a>
+              <a href="#" class="block-info__link">Case Studies</a>
+            </div>
+            <div class="block-info__item">
+              <h4 class="block-info__title">Company</h4>
+              <a href="#" class="block-info__link">About</a>
+              <a href="#" class="block-info__link">News & Blog</a>
+              <a href="#" class="block-info__link">Careers</a>
+              <a href="#" class="block-info__link">Team</a>
+              <a href="#" class="block-info__link">Contact</a>
+            </div>
           </div>
-          <div class="block-info__item">
-            <h4 class="block-info__title">Sectors</h4>
-            <a href="#" class="block-info__link">Oil & Gas</a>
-            <a href="#" class="block-info__link">Power generation</a>
-            <a href="#" class="block-info__link">Power grid</a>
-            <a href="#" class="block-info__link">Construction</a>
-          </div>
-          <div class="block-info__item">
-            <h4 class="block-info__title">Resources</h4>
-            <a href="#" class="block-info__link">iHawk Knowledge Hub</a></a>
-            <a href="#" class="block-info__link">eBooks</a>
-            <a href="#" class="block-info__link">Case Studies</a>
-          </div>
-          <div class="block-info__item">
-            <h4 class="block-info__title">Company</h4>
-            <a href="#" class="block-info__link">About</a>
-            <a href="#" class="block-info__link">News & Blog</a>
-            <a href="#" class="block-info__link">Careers</a>
-            <a href="#" class="block-info__link">Team</a>
-            <a href="#" class="block-info__link">Contact</a>
+          <div class="block-link">
+            <div class="block-link__logo">
+              <a href="#"><img src="/img/header-logo-white.svg" alt=""></a>
+            </div>
+            <div class="block-link__social">
+              <a href="#" class="block-link__items"><img src="/img/linkedin.svg" alt=""></a>
+              <a href="#" class="block-link__items"><img src="/img/youtube.svg" alt=""></a>
+              <a href="#" class="block-link__items"><img src="/img/twitter.svg" alt=""></a>
+              <a href="#" class="block-link__items"><img src="/img/facebook.svg" alt=""></a>
+            </div>
           </div>
         </div>
-        <div class="block-link">
+      </div>
+      <div class="wrapper">
+        <div class="block-link none">
           <div class="block-link__logo">
             <a href="#"><img src="/img/header-logo-white.svg" alt=""></a>
           </div>

@@ -3,12 +3,16 @@
 .careers-page {
   padding-top: 100px;
 }
+
 .top-block {
   width: 100%;
-  height: 320px;
+  // height: 320px;
   background: linear-gradient(to right, $sunyellow 0%, #d2e9ff 100%);
 
-  padding: 80px 0;
+  padding: 80px 0 80px 0;
+  @media screen and (max-width:480px) {
+    padding: 80px 0 38px 0;
+  }
   .wrapper {
     display: flex;
     justify-content: center;
@@ -18,9 +22,13 @@
   &-title {
     font-family: TitilliumWebBold;
     font-size: 40px;
-    line-height: 52px;
+    line-height: 40px;
     color: $black;
     text-align: center;
+    @media screen and (max-width:480px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
   &-subtitle {
     max-width: 600px;
@@ -30,6 +38,7 @@
     color: $black;
     text-align: center;
     display: block;
+    
   }
 }
 
@@ -37,41 +46,68 @@
   width: 100%;
   overflow: hidden;
   background-color: $black;
-  height: 450px;
+  
+  // height: 450px;
   display: flex;
   flex-direction: row;
-  padding-left: 10%;
-  @media screen and (min-width:1441px) {
-    padding-left: calc((100vw - 1100px)/2);
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
-  @media screen and (max-width:1024px) {
-    padding-left: 5%;
-  }
+  
   .container {
     width: 50.0%;
+    padding-right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding-right: 0px;
+      align-items: center;
+    }
+    
+    
+    padding-left: 10%;
+    @media screen and (min-width:1441px) {
+      padding-left: calc((100vw - 1100px)/2);
+    }
+    @media screen and (max-width:1024px) {
+      padding-left: 5%;
+    }
+    @media screen and (max-width: 480px) {
+      padding-right: 5%;
+    }
   }
   &-text {
+    max-width: 445px;
+    padding-top: 110px;
     font-family: TitilliumWebSemiBold;
     font-size: 24px;
     line-height: 38px;
     color: $white;
-    padding-right: 100px;
     padding-bottom: 20px;
+    @media screen and (max-width: 480px) {
+      padding-top: 60px;
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
   &-subtext {
+    max-width: 445px;
+    padding-bottom: 110px;
     font-family: TitilliumWebRegular;
     font-size: 16px;
     line-height: 32px;
     color: $white;
-    padding-right: 100px;
-
+    @media screen and (max-width: 480px) {
+      padding-bottom: 45px;
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
   &-careers-video {
-    width: 100%;
+    height: 100%;
     height: auto;
     object-fit: cover;
   }
@@ -81,6 +117,9 @@
   height: auto;
   padding-top: 50px;
   padding-bottom: 30px;
+  @media screen and (max-width: 534px) {
+    padding-top: 30px;  
+  }
   .empty {
     margin: 0;
   }
@@ -99,8 +138,8 @@
       width: 45%;  
     }
     @media screen and (max-width: 534px) {
-      // margin: 20px 0px 0px 0px;
-      width: 70%;  
+      margin: 10px 0px 10px 0px;
+      width: 100%;  
     }
     
     display: flex;
@@ -122,185 +161,453 @@
       font-size: 14px;
       line-height: 24px;
       color: $black;
+      width: 100%;
+      height: auto;
     }
   }
 }
 
 .location-section {
-  min-height: 370px;
+  // min-height: 370px;
   background-image: url(../img/careers-location.png), linear-gradient(to right, $sunyellow 0%, #d2e9ff 100%);
   background-repeat: no-repeat;
   background-position: bottom center;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  padding: 50px 0;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  // .wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   @media screen and (max-width: 768px) {
+  //     flex-direction: column;
+  //     align-items: flex-start;
+  //   }
+  // }
+  padding-left: 10%;
+  padding-right: 10%;
+  @media screen and (min-width:1441px) {
+    padding-left: calc((100vw - 1100px)/2);
+    padding-right: calc((100vw - 1100px)/2);
+  }
+  @media screen and (max-width:1024px) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  @media screen and (max-width: 480px) {
+    padding-left: 5%;
+    padding-right: 5%;
   }
   &-title {
-    width: 360px;
+
+    max-width: 40%;
+
+    // padding-left: 30px;
     font-family: TitilliumWebBold;
     font-size: 40px;
     line-height: 52px;
     color: $black;
+    @media screen and (max-width: 480px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    @media screen and (max-width: 768px) {
+      padding-left: 0px;
+      width: 100%;
+      padding-bottom: 20px;
+      max-width: 100%;
+    }
   }
   &-text {
-    width: 445px;
+
+    max-width: 40%;
     font-family: TitilliumWebSemiBold;
     font-size: 24px;
     line-height: 38px;
     color: $black;
+    @media screen and (max-width: 480px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 445px;
+    }
   }
 }
 
 .table {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  
+  column-count: 2;
+  column-gap: 0;
+  * {
+    width: 100%;
 
+  }
   &-img {
+    &-castle, &-office, &-people {
+      background-color: #282828;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
     &-castle {
-      height: 471px;
-      background: url(../img/careers-table-castle.png) no-repeat center/cover;
+      min-height: 471px;
+      @media screen and (max-width: 960px) {
+        order: 1;
+      }
     }
     &-office {
-      height: 475px;
-      background: url(../img/careers-table-office.png) no-repeat center/cover;
+      min-height: 488px;
+      @media screen and (max-width: 960px) {
+        order: 5;
+      }
     }
     &-people {
-      height: 488px;
-      background: url(../img/careers-table-people.png) no-repeat center/cover;
+      min-height: 488px;
+      @media screen and (max-width: 960px) {
+        order: 3;
+      }
     }
   }
-  &-container-dark {
+  .best {
+    height: 387px;
+    // @media screen and (max-width: 990px) {
+    //   height: 312px;
+    // }
+    @media screen and (max-width: 960px) {
+      height: auto;
+      order: 2;
+    }
     background-color: $black;
+    &-text {
+      padding-top: 105px;
+      padding-bottom: 90px;
+      @media screen and (max-width: 990px) {
+        padding: 60px 0;
+      }
+    }
   }
-  &-container-light {
+  .sparking {
+    height: 325px;
+    @media screen and (max-width: 960px) {
+      height: auto;
+      order: 4;
+    }
+    background-color: $black;
+    &-text {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      @media screen and (max-width: 990px) {
+        padding: 60px 0;
+      }
+    }
+  }
+  .office {
+    @media screen and (max-width: 960px) {
+      order: 6;
+    }
+    min-height: 408px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 960px) {
+
+
+        align-items: center !important;
+    }
+  }
+  &-container-bg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
   &-text-light {
     font-family: TitilliumWebRegular;
     font-size: 16px;
     line-height: 32px;
     color: #ffffff;
+    max-width: 445px;
   }
   &-text-dark {
     font-family: TitilliumWebRegular;
     font-size: 16px;
     line-height: 32px;
     color: $black;
-  }
-  .title {
-    font-family: TitilliumWebBold;
-    font-size: 40px;
-    line-height: 52px;
-    color: $black;
-    // padding-bottom: 10px;
+    max-width: 445px;
+    padding-bottom: 20px;
+
   }
   &-text-bg {
     font-family: TitilliumWebSemiBold;
     font-size: 24px;
     line-height: 38px;
     color: #ffffff;
+    max-width: 445px;
+    padding-bottom: 30px;
   }
-  &-column-left {
-    width: 50%;
-    .table-text-light {
-      padding-left: 20%;
-      @media screen and (min-width:1441px) {
-        padding-left: calc((100vw - 1100px)/2);
-      }
-      @media screen and (max-width:1024px) {
-        padding-left: 10%;
-      }
-    }
-    .table-text-bg {
-      padding-left: 20%;
-      @media screen and (min-width:1441px) {
-        padding-left: calc((100vw - 1100px)/2);
-      }
-      @media screen and (max-width:1024px) {
-        padding-left: 10%;
-      }
-    }
-    .table-container-dark {
-      padding: 60px 125px 40px 0px;
-    }
-    .table-container-bg {
-      padding: 266px 126px 30px 0px;
-    }
+  .title {
+    font-family: TitilliumWebBold;
+    font-size: 40px;
+    line-height: 52px;
+    color: $black;
+    padding: 20px 0;
   }
-  &-column-right {
-    width: 50%;
-    .table-text-light {
-      padding-right: 20%;
-      @media screen and (min-width:1441px) {
-        padding-right: calc((100vw - 1100px)/2);
-      }
-      @media screen and (max-width:1024px) {
-        padding-right: 10%;
-      }
+  .column-left {
+    padding-left: 20%;
+    padding-right: 30px;
+    @media screen and (min-width:1441px) {
+      padding-left: calc((100vw - 1100px)/2);
     }
-    .table-text-dark {
-      padding-right: 20%;
-      @media screen and (min-width:1441px) {
-        padding-right: calc((100vw - 1100px)/2);
-      }
-      @media screen and (max-width:1024px) {
-        padding-right: 10%;
-      }
+    @media screen and (max-width: 960px) {
+      padding-right: 10%;
+      padding-left: 10%;
     }
-    .table-container-dark {
-      padding: 105px 0px 90px 95px;
+    @media screen and (max-width:1024px) {
+      padding-left: 10%;
     }
-    .table-container-light {
-      padding: 54px 0px 30px 94px;
+    @media screen and (max-width: 480px) {
+      padding-left: 5%;
+    }
+    display: flex;
+    justify-content: flex-start;
+    @media screen and (max-width: 960px) {
+      justify-content: center;
+      align-items: flex-end;
     }
   }
+  .column-right {
+    padding-right: 20%;
+    padding-left: 30px;
+    @media screen and (max-width: 960px) {
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+    @media screen and (min-width:1441px) {
+      padding-right: calc((100vw - 1100px)/2);
+    }
+    @media screen and (max-width:1024px) {
+      padding-right: 10%;
+    }
+    @media screen and (max-width: 480px) {
+      padding-right: 5%;
+    }
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (max-width: 960px) {
+      justify-content: center;
+      align-items: flex-end;
+      .office {
+        align-items: center;
+      }
+    }
+  }
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
 
 .work {
+  width: 100%;
+  height: auto;
   position: relative;
-  &-top {
-    z-index: -1;
-    img {
+  display: flex;
+  // overflow: hidden;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  &-text {
+    &-container {
+      @media screen and (max-width: 480px) {
+        padding-left: 5%;
+      }
+    }
+    &-img {
       position: absolute;
       top: 0;
       left: 0;
-      height: 100%;
+      height: 150%;
       width: auto;
       z-index: 0;
+      @media screen and (max-width: 840px) {
+        height: 100%;
+      }
     }
+    width: 50%;
+    height: auto;
     background-color: $sunyellow;
-    padding: 60px 0;
-    .wrapper {
+    padding-right: 30px;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      padding-right: 0px;
     }
     &-title {
-      z-index: 1;
-      text-align: center;
+      padding-left: 20%;
+      @media screen and (min-width:1441px) {
+        padding-left: calc((100vw - 1100px)/2);
+      }
+      @media screen and (max-width:1024px) {
+        padding-left: 10%;
+      }
+      position: relative;
+      text-align: left;
       font-family: TitilliumWebSemiBold;
       font-size: 40px;
       line-height: 52px;
       color: $black;
       padding-bottom: 10px;
+      @media screen and (max-width: 768px) {
+        text-align: left;
+        padding-left: 0;
+      }
     }
-    &-text {
-      z-index: 1;
-      max-width: 540px;
+    &-subtitle {
+      @media screen and (max-width: 768px) {
+        max-width: 445px;
+      }
+      position: relative;
+      padding-left: 20%;
+      @media screen and (min-width:1441px) {
+        padding-left: calc((100vw - 1100px)/2);
+      }
+      @media screen and (max-width:1024px) {
+        padding-left: 10%;
+      }
       font-family: TitilliumWebSemiBold;
       font-size: 18px;
       line-height: 28px;
       color: $black;
-      text-align: center;
+      text-align: left;
+      @media screen and (max-width: 768px) {
+        // text-align: left;
+        padding-left: 0;
+      }
     }
   }
+  &-search {
+    @media screen and (max-width: 768px) {
+      padding: 30px 0;
+    }
+    &-container {
+      max-width: 445px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: space-between;
+      }
+      @media screen and (max-width: 480px) {
+        flex-direction: column;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        align-items: flex-start;
+      }
+      @media screen and (max-width: 480px) {
+        padding-left: 5%;
+      }
+    }
+    padding-left: 30px;
+    position: relative;
+    padding-right: 10%;
+    @media screen and (min-width:1441px) {
+      padding-right: calc((100vw - 1100px)/2);
+    }
+    @media screen and (max-width:1024px) {
+      padding-right: 5%;
+    }
+    .case-filter-block__list {
+      min-width: 120px;
+    }
+    .case-filter-block__item {
+      padding-right: 0;
+      margin-right: 0;
+    }
+    .search-form {
+      @media screen and (max-width: 900px) and (min-width:768px) {
+        width: 200px;
+      }
+    }
+    width: 50%;
+    height: auto;
+    background-color: $black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+    }
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      padding-bottom: 30px;
+      padding-top: 10px;
+      align-items: flex-start;
+    }
+  }
+}
+
+.works {
+  padding-top: 30px;
+  background-color: #fff;
+  position: relative;
+  @media screen and (max-width: 480px) {
+    padding-top: 0px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-card {
+    padding-top: 30px;
+    max-width: 730px;
+    border-bottom: 1px solid $sunyellow;
+    &-title {
+      font-family: TitilliumWebSemiBold, serif;
+      font-size: 24px;
+      line-height: 38px;
+      color: $black;
+      text-align: left;
+    }
+    &-info {
+      font-family: TitilliumWebRegular, serif;
+      font-size: 16px;
+      line-height: 32px;
+      color: $black;
+      text-align: left;
+    }
+    &-btn {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    &:nth-last-child(1) {
+      border: none;
+    }
+  }
+  
+}
+
+
+
+.cv {
   &-bottom {
     background: linear-gradient(to right, $sunyellow 30%, #d2e9ff 100%);
     padding: 55px 0;
@@ -309,12 +616,15 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      // width: 100%;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        // justify-content: space-between;
+        justify-content: flex-start;
+      }
     }
     &-text {
       z-index: 1;
-      // padding: 0 30px;
-      max-width: 42%;
+      max-width: 445px;
       font-family: TitilliumWebSemiBold;
       font-size: 24px;
       line-height: 38px;
@@ -322,13 +632,28 @@
       a {
         color: $black;
       }
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    &-text:nth-child(1) {
+      padding-right: 15px;
+      @media screen and (max-width: 768px) {
+        padding-right: 0px;
+      }
+    }
+    &-text:nth-child(2) {
+      padding-left: 15px;
+      @media screen and (max-width: 768px) {
+        padding-top: 20px;
+        padding-left: 0px;
+      }
     }
   }
-}
-
+} 
 
 .benefits {
-  
   background-color: #f2f3f4;
   padding-bottom: 20px;
   padding-top: 60px;
@@ -342,6 +667,8 @@
     // width: 100%;
   }
   &-title {
+    position: relative;
+    z-index: 1;
     text-align: center;
     font-family: TitilliumWebSemiBold;
     font-size: 40px;
@@ -351,9 +678,13 @@
   }
   &-bg-img {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     height: 100%;
+    @media screen and (max-width: 900px) {
+      height: 400px;
+    }
+    
     width: auto;
     z-index: 0;
   }
@@ -376,7 +707,7 @@
     }
     @media screen and (max-width: 534px) {
       // margin: 20px 0px 0px 0px;
-      width: 70%;  
+      width: 100%;  
     }
     
     display: flex;
@@ -385,11 +716,12 @@
     align-items: center;
     &-img {
       margin-right: 20px;
-      width: 41px;
-      height: 41px;
+      // min-width: 41px;
+      min-height: 41px;
       z-index: 1;
     }
     &-text {
+      position: relative;
       z-index: 1;
       font-family: TitilliumWebSemiBold;
       font-size: 18px;
@@ -398,6 +730,7 @@
     }
   }
   &-text {
+    position: relative;
     z-index: 1;
     padding-top: 25px;
     font-family: TitilliumWebSemiBold;

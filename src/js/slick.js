@@ -4,7 +4,7 @@ $(function() {
   }
   $(".banner-slider").slick({
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed:6000,
     dots: false,
     fade:true,
@@ -20,6 +20,7 @@ $(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    adaptiveHeight: true,
     asNavFor: ".slider-block"
   });
 
@@ -146,14 +147,14 @@ $(function() {
       nextArrow: '<div class="slick-next"></div>',
       asNavFor: ".sectors-description-img",
       focusOnSelect: true,
-      responsive: [
-        {
-          breakpoint: 481,
-          settings: {
-            arrows: false
-          }
-        }
-      ]
+      // responsive: [
+      //   {
+      //     breakpoint: 481,
+      //     settings: {
+      //       arrows: false
+      //     }
+      //   }
+      // ]
     });
     descriptionSlider.on("afterChange", function(event, slick, currentSlide, nextSlide) {
       document.querySelectorAll(".sectors-description__counter span")[0].textContent =
@@ -276,7 +277,7 @@ $(function() {
   }
   $(".sectors-slider").slick({
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: 5000,
     dots: false,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',

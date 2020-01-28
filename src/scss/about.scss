@@ -164,7 +164,7 @@ main.aboutUs {
             height: 441px;
         }
         @media screen and (max-width:480px) {
-            height: 302px;
+            height: 382px;
         }
         &__inner {
             width: 62%;
@@ -179,9 +179,15 @@ main.aboutUs {
             font-family: "TitilliumWebBold",serif;
             margin-bottom: 21px;
         }
+        &__header {
+            font-family: "TitilliumWebBold",serif;
+            font-size: 40px;
+            line-height: 1.3;
+            color: #fff;
+        }
         &__text {
             font-family: "TitilliumWebSemiBold", serif;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 1.56;
             color: #fff;
             margin-bottom: 40px;
@@ -194,8 +200,8 @@ main.aboutUs {
         }
     }
     &-player {
+        position: relative;
         width: 50%;
-        object-fit: cover;
         @media screen and (max-width:768px) {
             width: 100%;
             height: 441px;
@@ -203,9 +209,129 @@ main.aboutUs {
         @media screen and (max-width:480px) {
             height: 302px;
         }
+        &-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-btn {
+            position: absolute;
+            top: calc(50% - 40px);
+            left: calc(50% - 40px);
+            width: 80px;
+            height: 80px;
+            // background: none;
+            border: none;
+            border-radius: 50%;
+            background: url(../img/player-button.svg) no-repeat;
+            // opacity: 0.5;
+            background-repeat: no-repeat;
+
+        }
+        // #pauseBtn {
+        //     display: none;
+        // }
         img {
             width: 100%;
             height: 100%;
+        }
+    }
+}
+
+
+
+.promise {
+    @include flex(space-between,center,row);
+    height: 450px;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        height: auto;
+    }
+    &-block {
+        &__left {
+            @include flex(center,center,column);
+            width: 50%;
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+        } 
+        &__right {
+            @include flex(center,center,column);
+            width: 50%;
+            height: 100%;
+            background-color: $sunyellow;
+            position: relative;
+            @media screen and (max-width:768px) {
+                width: 100%;
+                height:450px;
+            }
+        }
+        &__img {
+            position: absolute
+        }
+        &__img.cloud {
+            width:100%;
+            top: 0;
+        }
+        &__img.earth {
+            right: 17px;
+            bottom: 0;
+            z-index:0;
+        }
+        &__container-text {
+            width:56%;
+            height:370px;
+            overflow-x:auto;
+        }
+        &__container-text::-webkit-scrollbar {
+            width: 5px;
+            background-color: #dcdcdc;
+        }
+        &__container-text::-webkit-scrollbar-thumb {
+            background-color: $sunyellow;
+        }
+        &__container {
+            @include flex(space-around,flex-start,column);
+            width: 56%;
+            z-index:1;
+            height: 370px;
+            .main-button {
+                width: 269px;
+                color: #ffffff;
+                padding: 17px 24px;
+                background: transparent;
+                border: solid 2px #ffffff;
+                color: #ffffff;
+                &__text {
+                font-family: "TitilliumWebSemiBold", serif;
+                font-size: 14px;
+                padding-right: 44px;
+                }
+            }
+        }
+        &__title {
+            font-size: 24px;
+            color: $black;
+            line-height: 1.58;
+            font-family: "TitilliumWebSemiBold",serif;
+        }
+        &__text {
+            font-size: 16px;
+            color: $black;
+            line-height: 2;
+            font-family: "TitilliumWebregular",serif;
+        }
+        &__heading {
+            width: 296px;
+            font-family: "TitilliumWebregular",serif;
+            font-size: 40px;
+            line-height: 1.3;
+            color: #ffffff;
+            margin-bottom:120px;
+
+            p {
+                font-family: "TitilliumWebSemiBold",serif; 
+            }
         }
     }
 }
@@ -406,6 +532,20 @@ main.aboutUs {
         color: $black;
         margin-bottom: 20px;
     }
+    &__certificate {
+        font-family: "TitilliumWebSemiBold",serif;
+        font-size: 18px;
+        line-height: 1.56;
+        color:$black;
+        text-decoration: underline;
+        position: absolute;
+        top: 25px;
+        right: 8%;
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+          top:28px;
+        }
+    }
     &__arrow {
         cursor: pointer;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -419,12 +559,15 @@ main.aboutUs {
         display: none;
     }
     &__item {
-        font-family: "TitilliumWebSemiRegular", serif;
+        font-family: "TitilliumWebRegular", serif;
         font-size: 16px;
         line-height: 2;
         color: $black;
         list-style-type: square;
         margin-bottom: 10px;
+        a {
+            color: $black;
+        }
     }
 
 }
@@ -482,7 +625,7 @@ main.aboutUs {
         @media screen and (max-width: 900px) {
             left: 40px;
             max-width: 450px;
-            padding: 50px 60px 20px 60px;
+            padding: 20px 60px 20px 60px;
         }
         @media screen and (max-width: 768px) {
             left: 0px;

@@ -6,7 +6,7 @@ hr {
   background: none;
   .join {
     position: relative;
-    @include flex(start, center, row);
+    @include flex(flex-start, center, row);
     > a {
       position: relative;
       @include flex(start, center, row);
@@ -23,6 +23,7 @@ hr {
     }
     .join__img {
       position: relative;
+      // cursor: pointer;
       width: 41.5%;
       height: 300px;
       img {
@@ -48,7 +49,6 @@ hr {
         user-select: none;
       }
       @media screen and (max-width: 1024px) {
-        // width: 46%;
         width: 100%;
         margin-bottom: 40px;
       }
@@ -64,9 +64,9 @@ hr {
       }
     }
     .join-block {
-      margin: 0 auto;
       flex: unset;
       width: 38.58%;
+      margin: 0 auto;
       padding-right: 2px;
       @media screen and (max-width: 1024px) {
         width: 100%;
@@ -78,6 +78,7 @@ hr {
       }
       &__title {
         font-family: "TitilliumWebBold", serif;
+        cursor: pointer;
         font-size: 24px;
         line-height: 1.33;
         margin-bottom: 20px;
@@ -126,6 +127,18 @@ hr {
       .join-block__text {
         font-size: 17px;
       }
+    }
+  }
+  .join-item {
+    // margin: 0 auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1110px;
+    @media (max-width: 1440px) {
+      max-width: 80%;
+    }
+    @media (max-width: 1024px) {
+      max-height: initial;
     }
   }
   .loader {
@@ -199,7 +212,7 @@ hr {
     background-position: center;
     background-size: cover;
     @media (min-width: 1441px) {
-      padding: 254px calc((100vw - 1110px)/2);
+      padding: 254px calc((100vw - 1110px) / 2);
     }
     @media (max-width: 1200px) {
       padding: 254px 39px;
@@ -219,8 +232,8 @@ hr {
       img.black {
         display: none;
       }
-      @media (min-width:1441px) {
-        right: calc((100vw - 1110px)/2);
+      @media (min-width: 1441px) {
+        right: calc((100vw - 1110px) / 2);
       }
       @media (max-width: 1024px) {
         right: 5%;
@@ -279,193 +292,194 @@ hr {
   .slick-prev {
     left: 10%;
     transform: rotate(180deg);
-    @media screen and (min-width:1441px) {
-      left: calc(50% - 1100px/2);  
-  }
+    @media screen and (min-width: 1441px) {
+      left: calc(50% - 1100px / 2);
+    }
     @media screen and (max-width: 1024px) {
       left: 5%;
     }
   }
   .slick-next {
     left: 15%;
-    @media screen and (min-width:1441px) {
-      left: calc(54% - 1100px/2);  
+    @media screen and (min-width: 1441px) {
+      left: calc(54% - 1100px / 2);
     }
     @media screen and (max-width: 1024px) {
       left: 14%;
     }
-    @media screen and (max-width:600px) {
-      left: 17%; 
-   }
+    @media screen and (max-width: 600px) {
+      left: 17%;
+    }
   }
 }
 
 .casecards-slider {
   min-height: 400px;
   &__item {
-      position: relative;
-      width: 1439px;
-      height: 100%;
-      padding: 254px 354px;
-      display: flex!important;
-      justify-content: center;
-      align-items: center;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      @media (max-width:1200px) {
-          padding: 254px 39px;
+    position: relative;
+    width: 1439px;
+    height: 100%;
+    padding: 254px 354px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (max-width: 1200px) {
+      padding: 254px 39px;
+    }
+    @media (max-width: 480px) {
+      padding: 200px 15px;
+    }
+    .main-button {
+      position: absolute;
+      bottom: 11%;
+      right: 10%;
+      background: transparent;
+      border: solid 2px #ffffff;
+      color: #ffffff;
+      width: 170px;
+      padding: 17px 14px;
+      img.black {
+        display: none;
       }
-      @media (max-width:480px) {
-          padding: 200px 15px;
+      @media (max-width: 1024px) {
+        right: 5%;
       }
-      .main-button {
-          position: absolute;
-          bottom: 11%;
-          right: 10%;
-          background: transparent;
-          border: solid 2px #ffffff;
-          color: #ffffff;
-          width: 170px;
-          padding: 17px 14px;
-          img.black {
-              display: none;
-          }
-          @media (max-width:1024px) {
-              right: 5%;
-          }
-          @media (max-width:480px) {
-              right:auto;
-          }
+      @media (max-width: 480px) {
+        right: auto;
       }
-      .main-button:hover {
-          background-color: #ffd84b;
-          border: 2px solid #ffd84b;
-          color: black;
-          img.white{
-              display: none;
-          }
-          img.black{
-              display: block;
-          }   
+    }
+    .main-button:hover {
+      background-color: #ffd84b;
+      border: 2px solid #ffd84b;
+      color: black;
+      img.white {
+        display: none;
       }
-      .main-button:focus {
-          background-color: #ffd84b;
-          border: 2px solid #ffd84b;
-          outline: none;
+      img.black {
+        display: block;
       }
+    }
+    .main-button:focus {
+      background-color: #ffd84b;
+      border: 2px solid #ffd84b;
+      outline: none;
+    }
   }
   &__title {
-      font-family: "TitilliumWebBold",serif;
-      font-size: 40px;
-      font-weight: bold;
-      line-height: 1.15;
-      text-align: center;
-      color: $white;
-      @media screen and (max-width:480px) {
-          font-size: 24px;
-          line-height: 1.33;
-      }
+    font-family: "TitilliumWebBold", serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.15;
+    text-align: center;
+    color: $white;
+    @media screen and (max-width: 480px) {
+      font-size: 24px;
+      line-height: 1.33;
+    }
   }
-  .slick-prev,.slick-next {
-      position: absolute;
-      z-index: 1;
-      bottom: 11%;
-      width: 54px;
-      height: 54px;
-      border: solid 2px $verylightpink;
-      border-radius: 50%; 
-      background: transparent;
-      background: url(../img/arrow-right-s-line.svg) no-repeat center;
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    z-index: 1;
+    bottom: 11%;
+    width: 54px;
+    height: 54px;
+    border: solid 2px $verylightpink;
+    border-radius: 50%;
+    background: transparent;
+    background: url(../img/arrow-right-s-line.svg) no-repeat center;
   }
-  .slick-prev:hover,.slick-next:hover {
-      border: solid 2px $sunyellow;
-      background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
-      cursor: pointer;
+  .slick-prev:hover,
+  .slick-next:hover {
+    border: solid 2px $sunyellow;
+    background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+    cursor: pointer;
   }
   .slick-prev {
-      left: 10%;
-      transform: rotate(180deg);
-      @media screen and (max-width:1024px) {
-          left: 3%;  
-      }
-
+    left: 10%;
+    transform: rotate(180deg);
+    @media screen and (max-width: 1024px) {
+      left: 5%;
+    }
   }
   .slick-next {
-      left: 15%;
-      @media screen and (max-width:1024px) {
-         left: 12%; 
-      }
-      @media screen and (max-width:600px) {
-         left: 14%; 
-      }
-  }   
+    left: 15%;
+    @media screen and (max-width: 1024px) {
+      left: 14%;
+    }
+    @media screen and (max-width: 600px) {
+      left: 17%;
+    }
+  }
 }
 
 .case-filter {
-  min-height: 140px; 
+  min-height: 140px;
   background-color: $black;
   margin-bottom: 40px;
-  @include flex(center,center,row);
-  @media (max-width:768px) {
+  @include flex(center, center, row);
+  @media (max-width: 768px) {
     padding: 39px 0;
   }
 }
 
 .case-filter-block {
-  @include flex(space-between,center,row);
-  @media (max-width:768px) {
-    @include flex(space-between, flex-start,column);
+  @include flex(space-between, center, row);
+  @media (max-width: 768px) {
+    @include flex(space-between, flex-start, column);
   }
   &__title {
-      font-family: "TitilliumWebBold",serif;
-      font-size: 24px;
-      line-height: 1.33;
-      color: #fff;
-      margin-right: 69px;
-      @media (max-width:768px) {
-        display: none;
-      }
+    font-family: "TitilliumWebBold", serif;
+    font-size: 24px;
+    line-height: 1.33;
+    color: #fff;
+    margin-right: 69px;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   &__tabs {
-      @include flex(space-between,center,row);
-      @media (max-width:768px) {
-        margin-bottom: 30px;
-      }
-      @media (max-width:480px) {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    @include flex(space-between, center, row);
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   &__item {
-      position: relative;
-      cursor: pointer;
-      font-family: "TitilliumWebSemiBold",serif;
-      line-height: 1.5;
-      font-size: 16px;
-      color:$browngrey;
-      padding: 11px;
-      margin-right: 18px;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      @media (max-width:600px) {
-          margin-right: 5px;
-      }
-      @media (max-width:480px) {
-          margin-bottom: 15px;
-      }
+    position: relative;
+    cursor: pointer;
+    font-family: "TitilliumWebSemiBold", serif;
+    line-height: 1.5;
+    font-size: 16px;
+    color: $browngrey;
+    padding: 11px;
+    margin-right: 18px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    @media (max-width: 600px) {
+      margin-right: 5px;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 15px;
+    }
   }
   &__list {
-      font-family: "TitilliumWebRegular",serif;
-      font-size: 14px;
-      line-height: 1.71;
-      color: #fff;
-      position: relative;
-      margin-top: 5px;
-      img {
-          position: absolute;
-          left: -15px;
-          top: 9px;
-      }
+    font-family: "TitilliumWebRegular", serif;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #fff;
+    position: relative;
+    margin-top: 5px;
+    img {
+      position: absolute;
+      left: -15px;
+      top: 9px;
+    }
   }
   &__list-insert {
     display: none;
@@ -476,19 +490,19 @@ hr {
     left: -18px;
   }
   &__item-insert {
-      font-family: "TitilliumWebRegular",serif;
-      font-size: 14px;
-      line-height: 1.71;
-      color: #fff;
-      margin-bottom: 10px;
+    font-family: "TitilliumWebRegular", serif;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #fff;
+    margin-bottom: 10px;
   }
   &__item-insert:hover {
     color: $sunyellow;
   }
   .search-form {
-      margin-left: auto;
-      @media (max-width:768px) {
-        margin-left: 0;
-      }
+    margin-left: auto;
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
   }
 }

@@ -16386,10 +16386,17 @@ var yCords = [
   "218.6"
 ];
 
-
 window.addEventListener("DOMContentLoaded", function () {
   function worldMap(id, color) {
     if (document.querySelectorAll("section.location, section.main-feedback, section.main-offices").length) {
+      if (window.matchMedia("(max-width: 1800px)").matches) {
+        var _svg = document.querySelector("svg");
+        _svg.setAttribute("viewBox", "0 0 1000 320");
+      }
+      if (window.matchMedia("(max-width: 1440px)").matches) {
+        var svg = document.querySelector("svg");
+        svg.setAttribute("viewBox", "0 0 800 300");
+      }
       if (window.matchMedia("(max-width: 768px)").matches) {
         var svg = document.querySelector("svg");
         svg.setAttribute("viewBox", "150 50 450 300");
@@ -16398,11 +16405,9 @@ window.addEventListener("DOMContentLoaded", function () {
         var svg = document.querySelector("svg");
         svg.setAttribute("viewBox", "300 0 200 320");
       }
-
-      if (window.matchMedia("(min-width: 1600px)").matches) {
+      if (window.matchMedia("(min-width: 1801px)").matches) {
         var _svg = document.querySelector("svg");
-
-        _svg.setAttribute("viewBox", "0 0 1000 320");
+        _svg.setAttribute("viewBox", "-210 0 1400 320");
       }
 
       for (var i = 0; i < xCords.length; i++) {
@@ -16411,7 +16416,36 @@ window.addEventListener("DOMContentLoaded", function () {
         newCircle.setAttribute("cy", yCords[i]);
         newCircle.setAttribute("r", "1");
 
-        if (i === 994 || i === 1443 || i === 1604 || i === 5018) {
+        if (i === 5352 || 
+          i === 5150 || 
+          i === 5032 || 
+          i === 5113 || 
+          i === 5042 || 
+          i === 4999 || 
+          i === 4572 || 
+          i === 3485 || 
+          i === 3451 || 
+          i === 3446 || 
+          i === 2880 || 
+          i === 2856 || 
+          i === 3104 || 
+          i === 8190 || 
+          i === 1734 || 
+          i === 1466 || 
+          i === 1787 || 
+          i === 1773 || 
+          i === 1436 || 
+          i === 1445 || 
+          i === 1429 || 
+          i === 1614 || 
+          i === 1700 || 
+          i === 1595 || 
+          i === 2016 || 
+          i === 2333 || 
+          i === 2589 || 
+          i === 1049 || 
+          i === 2213 || 
+          i === 2279) {
           var areaTitle;
           newCircle.setAttribute("fill", "#c3d833");
 
@@ -16423,7 +16457,7 @@ window.addEventListener("DOMContentLoaded", function () {
             case 1443:
               areaTitle = "London, Storbritannien";
               break;
-
+              
             case 1604:
               areaTitle = "Göteborg, Sverige";
               break;
@@ -16443,6 +16477,5 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
   worldMap("#worldmap", "#5c5c5c");
-  worldMap("#worldmapOffices", "#dcdcdc");
 });
 

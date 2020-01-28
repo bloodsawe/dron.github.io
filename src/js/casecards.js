@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (document.querySelectorAll(".casecards").length > 0) {
-    var dropDown = Array.from(document.querySelectorAll(".case-filter__arrow"));
+  if (document.querySelectorAll(".casecards, .careers-page").length > 0) {
+    var dropDown = Array.from(document.querySelectorAll(".case-filter-block__list"));
     console.log('dropDown: ', dropDown);
     dropDown.forEach(function (elem, index) {
       elem.addEventListener("click", function (e) {

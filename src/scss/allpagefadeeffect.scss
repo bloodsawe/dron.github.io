@@ -1,0 +1,47 @@
+// section {
+//   opacity: 0;
+// }
+main.homepage {
+  z-index: 1;
+  position: relative;
+  transition: all 1s linear;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(rgb(245, 245, 245), rgb(255, 255, 255)) repeat scroll 0% 0% /
+    auto padding-box border-box;
+}
+main.homepage::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #282828;
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+main.show-before::before {
+  opacity: 1;
+}
+.main-offices {
+  opacity: 1;
+}
+.internal-banner,
+.internal-content {
+  opacity: 1;
+}
+.internal-content {
+  .internal-content__text,
+  .internal-content__title,
+  img {
+    opacity: 0;
+  }
+}
+
+.newsandblog,
+.team-page {
+  section {
+    opacity: 1;
+  }
+}
