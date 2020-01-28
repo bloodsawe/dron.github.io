@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="50px" viewBox="0 0 41 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>document</title>
+    <desc>Created with Sketch.</desc>
+    <g id="About-Company" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-189.000000, -3709.000000)">
+            <g id="Accreditations" transform="translate(189.000000, 3692.000000)">
+                <g id="document" transform="translate(0.000000, 17.000000)">
+                    <circle id="Oval" fill="#FFD12D" cx="17" cy="17" r="17"></circle>
+                    <path d="M16,16 L16,50 L35.3025525,50 L41,44.3269348 L41,16 L16,16 Z M39.0069963,41.8789825 L32.8759148,41.8789825 L32.8759148,48.0078125 L17.9930037,48.0078125 L17.9930037,17.9921875 L39.0069963,17.9921875 L39.0069963,41.8789825 Z M34.8689185,43.87117 L38.6338271,43.87117 L34.8689185,47.6200104 L34.8689185,43.87117 Z" id="Shape" fill="#282828" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="#282828" fill-rule="nonzero" points="21 39 28 39 28 41 21 41"></polygon>
+                    <polygon id="Path" fill="#282828" fill-rule="nonzero" points="21 35 35 35 35 37 21 37"></polygon>
+                    <polygon id="Path" fill="#282828" fill-rule="nonzero" points="21 31 35 31 35 33 21 33"></polygon>
+                    <polygon id="Path" fill="#282828" fill-rule="nonzero" points="21 27 35 27 35 29 21 29"></polygon>
+                    <polygon id="Path" fill="#282828" fill-rule="nonzero" points="21 21 23 21 23 23 21 23"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
