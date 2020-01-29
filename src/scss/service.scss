@@ -5,14 +5,9 @@
     background: #fff;
     position: relative;
     padding-top: 100px;
-    // height: 600px;
-    @media (max-width:480px) {
-        height: 500px;
-    }
     &__player {
         width: 100%;
         height: auto;
-        // max-height: 100%;
         object-fit: cover;
     }
     &__img {
@@ -55,6 +50,15 @@
             border: solid 2px #ffffff;
             color: #ffffff;
             z-index: 2;
+            @media screen and (max-width:1440px) {
+                right: 10%;
+            }
+            @media screen and (max-width:1024px) {
+                right: 5%;
+            }
+            @media screen and (max-width:768px) {
+                display: none;
+            }
             img.black {
                 display: none;
             }
@@ -65,15 +69,6 @@
                 font-family: "TitilliumWebSemiBold",serif;
                 font-size: 14px;
                 padding-right: 36px;
-            }
-            @media screen and (max-width:1440px) {
-                right: 10%;
-            }
-            @media screen and (max-width:1024px) {
-                right: 5%;
-            }
-            @media screen and (max-width:768px) {
-                display: none;
             }
         }
         .main-button:hover {

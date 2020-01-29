@@ -29,6 +29,15 @@
             background: transparent;
             border: solid 2px #ffffff;
             color: #ffffff;
+            @media screen and (max-width:1440px) {
+                right: 10%;
+            }
+            @media screen and (max-width:1024px) {
+                right: 5%;
+            }
+            @media screen and (max-width:768px) {
+                display: none;
+            }
             img.black {
                 display: none;
             }

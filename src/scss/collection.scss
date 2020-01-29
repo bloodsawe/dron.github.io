@@ -150,7 +150,7 @@
 
 @keyframes up {
     from {
-        bottom: -156px;
+        bottom: -50px;
     }
     to {
         bottom: 0;
@@ -158,7 +158,7 @@
 }
 @keyframes down {
     from {
-        top: -156px;
+        top: -30px;
     }
     to {
         top: 0;
@@ -170,12 +170,8 @@
     border: none;
     position: relative;
 }
-.homepage, .services-collection {
-    .collection-block__text {
-        overflow-y: auto;
-    }
-}
-.sectors-oil, .sectors-grid, .sectors-construction, .sectors-generation {
+
+.services,.services-collection,  .sectors-oil, .homepage, .sectors-grid, .sectors-construction, .sectors-generation {
     .collection-block__text-animation {
         max-height: 135px;
         overflow-y: hidden;

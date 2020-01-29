@@ -106,12 +106,12 @@ document.addEventListener("DOMContentLoaded", function () {
         descriptionText.forEach(function (elem) {
           if (elem.getAttribute("data-tab") == selectedBlockDescription) {
             if (prevElem < nextElem) {
-              elem.style.animation = "down 1s linear 0s 1 normal";
+              elem.style.animation = "down 0.5s linear 0s 1 normal";
               setTimeout(function () {
                 elem.style.animation = "";
               }, 1000);
             } else if (prevElem > nextElem) {
-              elem.style.animation = "up 1s linear 0s 1 normal";
+              elem.style.animation = "up 0.5s linear 0s 1 normal";
               setTimeout(function () {
                 elem.style.animation = "";
               }, 1000);

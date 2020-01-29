@@ -68,6 +68,13 @@
       background-color: #ffd84b;
       border: 2px solid #ffd84b;
       outline: none;
+      color: $black;
+      img.white {
+        display: none;
+      }
+      img.black {
+        display: block;
+      }
     }
   }
   &__item::after {
