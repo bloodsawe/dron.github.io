@@ -16388,7 +16388,7 @@ var yCords = [
 
 window.addEventListener("DOMContentLoaded", function () {
   function worldMap(id, color) {
-    if (document.querySelectorAll("section.location, section.main-feedback, section.main-offices").length) {
+    if (document.querySelectorAll("section.location").length) {
       if (window.matchMedia("(max-width: 1800px)").matches) {
         var _svg = document.querySelector("svg");
         _svg.setAttribute("viewBox", "0 0 1000 320");

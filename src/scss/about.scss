@@ -20,13 +20,13 @@ main.aboutUs {
 .about {
   @include flex(space-between, center, column);
 
-  background-image: url(/img/about-background.png);
+  background-image: url(../img/about-background.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
 
   @media screen and (max-width: 768px) {
-    background-image: url(/img/about-background-tablet.png);
+    background-image: url(../img/about-background-tablet.png);
     background-size: auto;
     background-position: right 60px;
   }

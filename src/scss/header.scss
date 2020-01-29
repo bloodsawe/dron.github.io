@@ -166,6 +166,9 @@ header.out {
     margin-bottom: 25px;
   }
   .header-nav.state_open .header-nav__list {
+    overflow-x: scroll;
+    height: 100vh;
+
     display: block;
     position: absolute;
     width: 100%;
@@ -175,7 +178,7 @@ header.out {
     background-color: #ffffff;
     z-index: 10;
     overflow: auto;
-    height: auto;
+    // height: auto;
     padding-left: 60px;
   }
   .header-nav__list-insert {

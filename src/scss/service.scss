@@ -28,18 +28,21 @@
             left: 12%;
         }
         @media (max-width:480px) {
-            width: 66%;
-            left: 17%;
+            width: 100%;
+            left: 0%;
             bottom:-33px;
         }
     }
     &__baner {
-        height: 500px;
+        height: 600px;
         display: flex;
         position: relative;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        @media screen and (max-width:480px) {
+            height: 500px;
+        }
         .main-button {
             position: absolute;
             bottom: 10%;
