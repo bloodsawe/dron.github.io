@@ -62,8 +62,8 @@
             font-family: "TitilliumWebRegular", serif;
             font-size: 16px;
             line-height: 2;
-            height: 300px;
-            overflow-y: auto;
+            // height: 300px;
+            // overflow-y: auto;
             margin-bottom: 100px;
             color: $black;
             @media screen and (max-width:768px) {
@@ -82,7 +82,6 @@
         }
         &__text-animation {
             position: relative;
-
         }
     }
     &-scroll {
@@ -163,5 +162,22 @@
     }
     to {
         top: 0;
+    }
+}
+
+.read-more-button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+.homepage, .services-collection {
+    .collection-block__text {
+        overflow-y: auto;
+    }
+}
+.sectors-oil, .sectors-grid, .sectors-construction, .sectors-generation {
+    .collection-block__text-animation {
+        max-height: 135px;
+        overflow-y: hidden;
     }
 }
