@@ -46,7 +46,10 @@ footer {
                 width:49%;
             }
             @media screen and (max-width:768px) {
-                width:34%;
+                width:44%;
+            }
+            @media screen and (max-width:480px) {
+                width:47%;
             }
         } 
         &__title {
@@ -141,6 +144,16 @@ footer {
             margin-bottom: 77px;
             padding: 14px;
         }
+        &__input::-moz-placeholder {
+            color: #fff;
+            font-family: "TitilliumWebRegular",serif;
+            font-size: 14px;
+        }
+        &__input::-webkit-input-placeholder {
+            color:#fff;
+            font-size: 14px;
+            font-family: "TitilliumWebRegular",serif;
+        }
         &__arrow {
             position: absolute;
             width: 19px;
@@ -150,8 +163,10 @@ footer {
         }
         &__input:hover {
             border-bottom: 1px solid $verylightpink;
-        }
-        
+            & + input {
+                border-bottom: 1px solid $verylightpink;
+            }
+        }   
         &__input:focus {
             outline: none;
         }
@@ -164,7 +179,7 @@ footer {
             top: 0;
             right: 0;
             background: transparent;
-            background-image: url(../img/arrow-up-right-black.svg);
+            background-image: url(../img/footer-arrow.svg);
             background-repeat: no-repeat;
             background-position: center;
             border: none;

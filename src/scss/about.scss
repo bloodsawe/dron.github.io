@@ -1,439 +1,484 @@
 @import "help/vars_and_mixins";
 
 main.aboutUs {
-    background: none;
+  background: none;
 }
 
 .about-company {
+  padding-top: 200px;
+  margin-bottom: 120px;
+  overflow-x: hidden;
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 480px) {
     padding-top: 100px;
-    margin-bottom: 120px;
-    overflow-x: hidden;
-    @media (max-width:768px) {
-        margin-bottom: 60px;
-    }
-    @media (max-width:480px) {
-        padding-top: 100px;  
-        margin-bottom: 40px;
-    }
+    margin-bottom: 10px;
+  }
 }
 
 .about {
-    @include flex(space-between, center, column);
-    position: relative;
-    &__img {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: -1;
-        @media (max-width:768px) {
-            top: 200px;
-            right: -242px;
-        }
-        @media (max-width:480px) {
-            right: -153px;
-        }
+  @include flex(space-between, center, column);
+
+  background-image: url(/img/about-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+
+  @media screen and (max-width: 768px) {
+    background-image: url(/img/about-background-tablet.png);
+    background-size: auto;
+    background-position: right 60px;
+  }
+
+  @media screen and (max-width: 480px) {
+    background-position: right 50px;
+  }
+
+  &-header {
+    text-align: center;
+    color: $black;
+    width: 53%;
+    // margin-bottom: 118px;
+    margin: 0 auto 118px;
+    @media (max-width: 768px) {
+      width: 95%;
+      margin-bottom: 100px;
     }
-    &-header {
-        text-align: center;
+    @media (max-width: 480px) {
+      width: 98%;
+      margin-bottom: 260px;
+      padding-top: 40px;
+    }
+    &__title {
+      font-family: "TitilliumWebBold", serif;
+      font-size: 40px;
+      line-height: 1.3;
+      margin-bottom: 10px;
+      @media (max-width: 480px) {
+        font-size: 24px;
+      }
+    }
+    &__text {
+      font-family: "TitilliumWebSemiBold", serif;
+      font-size: 18px;
+      line-height: 1.56;
+    }
+  }
+  &-inner {
+    @include flex(space-between, flex-end, row);
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    width: 100%;
+  }
+  &-description {
+    color: $black;
+    width: 37%;
+    @media (max-width: 768px) {
+      width: 66%;
+    }
+    @media (max-width: 480px) {
+      width: 86%;
+    }
+    &__title {
+      font-family: "TitilliumWebSemiBold", serif;
+      font-size: 24px;
+      line-height: 1.58;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 480px) {
+        font-size: 18px;
+      }
+    }
+    &__text {
+      font-family: "TitilliumWebRegular", serif;
+      font-size: 16px;
+      line-height: 2;
+
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
+      }
+    }
+  }
+  &-block {
+    width: 47%;
+    height: 100%;
+    z-index: 1;
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      display: block;
+    }
+    &__count {
+      @include flex(space-between, stretch, row);
+      flex-wrap: wrap;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+    &__item {
+      width: 50%;
+      margin-top: 70px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 14px;
+      }
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: 20px;
+      }
+      span {
+        font-family: "TitilliumWebSemiBold", serif;
+        font-size: 50px;
         color: $black;
-        width: 53%;
-        margin-bottom: 118px;
-        @media (max-width:768px) {
-            width: 95%;
-            margin-bottom: 100px;
-        }
-        @media (max-width:768px) {
-            width: 90%;
-            margin-bottom: 260px;
-        }
-        &__title {
-            font-family: "TitilliumWebBold",serif;
-            font-size: 40px;
-            line-height: 1.3;
-            margin-bottom: 10px;
-            @media (max-width:768px) {
-                font-size: 24px;
-            }
-        }
-        &__text {
-            font-family: "TitilliumWebSemiBold",serif;
-            font-size: 18px;
-            line-height: 1.56;
-        }
+      }
     }
-    &-inner {
-        @include flex(space-between, flex-end, row);
-        @media (max-width:768px) {
-            flex-direction:column;
-            align-items: flex-start;
-        }
+    &__item:nth-child(4) {
+      @media (max-width: 480px) {
+        order: 2;
+      }
     }
-    &-description {
-        color: $black;
-        width: 37%;
-        @media (max-width:768px) {
-            width: 66%;
-        }
-        @media (max-width:480px) {
-            width: 86%;
-        }
-        &__title {
-            font-family: "TitilliumWebSemiBold",serif;
-            font-size: 24px;
-            line-height: 1.58;
-            margin-bottom: 20px;
-        }
-        &__text {
-            font-family: "TitilliumWebRegular",serif;
-            font-size: 16px;
-            line-height: 2;
-        }
+    &__item:nth-child(2) {
+      @media (max-width: 480px) {
+        order: 1;
+      }
     }
-    &-block {
-        width: 47%;
-        height: 100%;
-        z-index: 1;
-        @media (max-width:768px) {
-            width: 80%;
-        }
-        @media screen and (max-width:480px) {
-            width: 100%;
-            display: block;
-        }
-        &__count {
-            @include flex(space-between,stretch,row);
-            flex-wrap: wrap;
-            @media screen and (max-width:768px) {
-                margin-bottom: 20px;
-            }
-        }
-        &__item {
-            width: 50%;
-            margin-top: 70px;
-            @media screen and (max-width:768px) {
-                margin-bottom: 14px;
-            }
-            @media screen and (max-width:480px) {
-                width: 100%;
-                margin-bottom: 0px;
-                margin-top: 20px;
-            }
-            span {
-                font-family:"TitilliumWebSemiBold",serif;
-                font-size: 50px;
-                color: $black;
-            }
-        }
-        &__item:nth-child(4) {
-            @media (max-width:480px) {
-                order: 2;
-            }
-        }
-        &__item:nth-child(2) {
-            @media (max-width:480px) {
-                order: 1;
-            }
-        }
-        &__text {
-            font-family:"TitilliumWebSemiBold",serif;
-            font-size: 16;
-            line-height: 1.5;
-            color: $black;
-            margin-top: 7px;
-        }
+    &__text {
+      font-family: "TitilliumWebSemiBold", serif;
+      font-size: 16;
+      line-height: 1.5;
+      color: $black;
+      margin-top: 7px;
     }
+  }
 }
 
 .watch {
-    @include flex(space-between, stretch, row);
-    min-height: 450px;
-    @media screen and (max-width:768px) {
-        flex-direction: column;
-        margin-bottom: 0px;
+  @include flex(space-between, stretch, row);
+  min-height: 450px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  &-description {
+    @include flex(center, center, row);
+    @media screen and (min-width: 1441px) {
+      justify-content: flex-start;
+      padding-left: calc((100vw - 1100px) / 2);
     }
-    &-description {
-        @include flex(center, center, row);
-        @media screen and (min-width:1441px) {
-            justify-content: flex-start;
-            padding-left:calc((100vw - 1100px)/2) ;
-        }
-        background-color: #282828;
-        width: 50%;
-        @media screen and (max-width:768px) {
-            width: 100%;
-            height: 441px;
-        }
-        @media screen and (max-width:480px) {
-            height: 382px;
-        }
-        &__inner {
-            width: 62%;
-            @media screen and (max-width:480px) {
-            width: 90%;
-            }
-        }
-        &__title {
-            font-size: 40px;
-            color: #fff;
-            line-height: 1.3;
-            font-family: "TitilliumWebBold",serif;
-            margin-bottom: 21px;
-        }
-        &__header {
-            font-family: "TitilliumWebBold",serif;
-            font-size: 40px;
-            line-height: 1.3;
-            color: #fff;
-        }
-        &__text {
-            font-family: "TitilliumWebSemiBold", serif;
-            font-size: 18px;
-            line-height: 1.56;
-            color: #fff;
-            margin-bottom: 40px;
-            @media screen and (max-width:480px) {
-                font-size: 18px;
-            }
-        }
-        &__text_yellow {
-            color: $sunyellow;
-        }
+    background-color: #282828;
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 441px;
     }
-    &-player {
-        position: relative;
-        width: 50%;
-        @media screen and (max-width:768px) {
-            width: 100%;
-            height: 441px;
-        }
-        @media screen and (max-width:480px) {
-            height: 302px;
-        }
-        &-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        &-btn {
-            position: absolute;
-            top: calc(50% - 40px);
-            left: calc(50% - 40px);
-            width: 80px;
-            height: 80px;
-            // background: none;
-            border: none;
-            border-radius: 50%;
-            background: url(../img/player-button.svg) no-repeat;
-            // opacity: 0.5;
-            background-repeat: no-repeat;
-
-        }
-        // #pauseBtn {
-        //     display: none;
-        // }
-        img {
-            width: 100%;
-            height: 100%;
-        }
+    @media screen and (max-width: 480px) {
+      height: 382px;
     }
+    &__inner {
+      width: 62%;
+      @media screen and (max-width: 480px) {
+        width: 90%;
+      }
+    }
+    &__title {
+      font-size: 40px;
+      color: #fff;
+      line-height: 1.3;
+      font-family: "TitilliumWebBold", serif;
+      margin-bottom: 21px;
+      @media screen and (max-width: 480px) {
+        font-size: 24px;
+      }
+    }
+    &__header {
+      font-family: "TitilliumWebBold", serif;
+      font-size: 40px;
+      line-height: 1.3;
+      color: #fff;
+    }
+    &__text {
+      font-family: "TitilliumWebSemiBold", serif;
+      font-size: 24px;
+      line-height: 1.56;
+      color: #fff;
+      margin-bottom: 40px;
+      @media screen and (max-width: 480px) {
+        font-size: 18px;
+      }
+    }
+    &__text_yellow {
+      color: $sunyellow;
+    }
+  }
+  &-player {
+    position: relative;
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 441px;
+    }
+    @media screen and (max-width: 480px) {
+      height: 302px;
+    }
+    &-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-btn {
+      position: absolute;
+      top: calc(50% - 40px);
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 80px;
+      // background: none;
+      border: none;
+      border-radius: 50%;
+      background: url(../img/player-button.svg) no-repeat;
+      // opacity: 0.5;
+      background-repeat: no-repeat;
+    }
+    // #pauseBtn {
+    //     display: none;
+    // }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
-
-
 .promise {
-    @include flex(space-between,center,row);
-    height: 450px;
-    @media screen and (max-width:768px) {
-        flex-direction: column;
-        height: auto;
+  @include flex(space-between, center, row);
+  height: 450px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
+  &-block {
+    &__left {
+      @include flex(center, center, column);
+      width: 50%;
+      height: 100%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
-    &-block {
-        &__left {
-            @include flex(center,center,column);
-            width: 50%;
-            @media screen and (max-width:768px) {
-                width: 100%;
-            }
-        } 
-        &__right {
-            @include flex(center,center,column);
-            width: 50%;
-            height: 100%;
-            background-color: $sunyellow;
-            position: relative;
-            @media screen and (max-width:768px) {
-                width: 100%;
-                height:450px;
-            }
-        }
-        &__img {
-            position: absolute
-        }
-        &__img.cloud {
-            width:100%;
-            top: 0;
-        }
-        &__img.earth {
-            right: 17px;
-            bottom: 0;
-            z-index:0;
-        }
-        &__container-text {
-            width:56%;
-            height:370px;
-            overflow-x:auto;
-        }
-        &__container-text::-webkit-scrollbar {
-            width: 5px;
-            background-color: #dcdcdc;
-        }
-        &__container-text::-webkit-scrollbar-thumb {
-            background-color: $sunyellow;
-        }
-        &__container {
-            @include flex(space-around,flex-start,column);
-            width: 56%;
-            z-index:1;
-            height: 370px;
-            .main-button {
-                width: 269px;
-                color: #ffffff;
-                padding: 17px 24px;
-                background: transparent;
-                border: solid 2px #ffffff;
-                color: #ffffff;
-                &__text {
-                font-family: "TitilliumWebSemiBold", serif;
-                font-size: 14px;
-                padding-right: 44px;
-                }
-            }
-        }
-        &__title {
-            font-size: 24px;
-            color: $black;
-            line-height: 1.58;
-            font-family: "TitilliumWebSemiBold",serif;
-        }
-        &__text {
-            font-size: 16px;
-            color: $black;
-            line-height: 2;
-            font-family: "TitilliumWebregular",serif;
-        }
-        &__heading {
-            width: 296px;
-            font-family: "TitilliumWebregular",serif;
-            font-size: 40px;
-            line-height: 1.3;
-            color: #ffffff;
-            margin-bottom:120px;
+    &__right {
+      @include flex(flex-start, center, column);
 
-            p {
-                font-family: "TitilliumWebSemiBold",serif; 
-            }
-        }
+      width: 50%;
+      height: 100%;
+      background-color: $sunyellow;
+      position: relative;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 450px;
+      }
     }
+    &__img {
+      position: absolute;
+    }
+    &__img.cloud {
+      width: 100%;
+      top: 0;
+    }
+    &__img.earth {
+      right: 17px;
+      bottom: 0;
+      z-index: 0;
+    }
+    &__container-text {
+      width: 62.5%;
+      max-width: 445px;
+      height: 100%;
+      padding-top: 65px;
+      padding-bottom: 65px;
+      overflow-x: auto;
+
+      @media screen and (max-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
+    &__container-text::-webkit-scrollbar {
+      width: 5px;
+      background-color: #dcdcdc;
+    }
+    &__container-text::-webkit-scrollbar-thumb {
+      background-color: $sunyellow;
+    }
+    &__container {
+      @include flex(space-around, flex-start, column);
+      width: 56%;
+      z-index: 1;
+      height: 370px;
+      .main-button {
+        width: 269px;
+        color: #ffffff;
+        padding: 17px 24px;
+        background: transparent;
+        border: solid 2px #ffffff;
+        color: #ffffff;
+        &__text {
+          font-family: "TitilliumWebSemiBold", serif;
+          font-size: 14px;
+          padding-right: 44px;
+        }
+      }
+    }
+    &__title {
+      font-size: 24px;
+      color: $black;
+      line-height: 1.58;
+      max-width: 345px;
+      font-family: "TitilliumWebSemiBold", serif;
+    }
+    &__text {
+      font-size: 16px;
+      color: $black;
+      line-height: 2;
+      font-family: "TitilliumWebregular", serif;
+      padding-top: 20px;
+    }
+    &__heading {
+      width: 296px;
+      font-family: "TitilliumWebregular", serif;
+      font-size: 40px;
+      line-height: 1.3;
+      color: #ffffff;
+      margin-bottom: 120px;
+      margin-top: 120px;
+
+      p {
+        font-family: "TitilliumWebSemiBold", serif;
+      }
+    }
+  }
 }
 
 .innovations {
-    overflow-x: hidden;
-    &-block {
-        @include flex(space-between, center, row);
-        @media (max-width: 768px) {
-            flex-direction: column;
-        }
-        color: $black;
-        &__description {
-            height: 450px;
-            width: 50%;
-            @include flex(center,center,column);
-            @media (min-width: 1441px) {
-                padding-right: calc((100vw - 1110px)/2);
-            }
-            @media (max-width: 768px) {
-                width: 100%;
-                height: 300px;
-            }
-        }
-        &__description:nth-child(1) {
-            @media (min-width: 1441px) {
-                padding-left: calc((100vw - 1394px)/2);
-                padding-right: 0;
-            }
-        }
-        &__title {
-            font-family: "TitilliumWebBold",serif;
-            font-size: 40px;
-            line-height: 1.3;
-            margin-bottom: 20px;
-            width: 56%;
-            @media (max-width: 480px) {
-                width: 90%;
-            }
-        }
-        &__text {
-            font-family: "TitilliumWebRegular",serif;
-            font-size: 16px;
-            line-height: 2;
-            width: 56%;
-            @media (max-width: 480px) {
-                width: 90%;
-            }
-        }
-        &__square {
-            position: relative;
-            width: 50%;
-            height: 450px;
-            background-color: $black;
-            @media (max-width: 768px) {
-                width: 100%;
-            }
-        }
-        &__square_yellow {
-            background-color: $sunyellow;
-        }
-        &__img {
-            position: absolute;
-            top: 159px;
-            left: -77px;
-            @media (max-width: 768px) {
-                top: 59px;
-                left: 43px;
-            }
-            @media (max-width: 600px) {
-                left: -14px;
-            }
-            @media (max-width: 480px) {
-                left: -83px;
-            }
-        }
-        &__img_position {
-            top: 73px;
-            left: 219px;
-            @media (max-width: 1200px) {
-                left: 88px;
-            }
-            @media (max-width: 960px) {
-                left: -16px;
-            }
-            @media (max-width: 768px) {
-                top: 69px;
-                left: 134px;
-            }
-            @media (max-width: 600px) {
-                left: 70px;
-            }
-            @media (max-width: 480px) {
-                left: -52px;
-            }
-        }
+  overflow-x: hidden;
+  &-block {
+    @include flex(space-between, center, row);
+    @media (max-width: 768px) {
+      flex-direction: column;
     }
-    &-block:nth-child(2) {
-        @media (max-width:768px) {
-            flex-direction: column-reverse;
-        }
+    color: $black;
+    &__description {
+      height: 450px;
+      width: 50%;
+      @include flex(center, center, column);
+      @media (min-width: 1441px) {
+        padding-right: calc((100vw - 1110px) / 2);
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        height: 300px;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+        height: 208px;
+      }
     }
+    &__description:nth-child(1) {
+      @media (min-width: 1441px) {
+        padding-left: calc((100vw - 1394px) / 2);
+        padding-right: 0;
+      }
+    }
+    &__title {
+      font-family: "TitilliumWebBold", serif;
+      font-size: 40px;
+      line-height: 1.3;
+      margin-bottom: 20px;
+      width: 62.5%;
+      @media (max-width: 768px) {
+        min-width: 445px;
+      }
+      @media (max-width: 480px) {
+        min-width: 290px;
+        margin-top: 20px;
+        width: 90%;
+        font-size: 24px;
+      }
+    }
+    &__text {
+      font-family: "TitilliumWebRegular", serif;
+      font-size: 16px;
+      line-height: 2;
+      width: 62.5%;
+      @media (max-width: 768px) {
+        min-width: 445px;
+      }
+      @media (max-width: 480px) {
+        min-width: 290px;
+        width: 90%;
+        font-size: 14px;
+      }
+    }
+    &__square {
+      position: relative;
+      width: 50%;
+      height: 450px;
+      background-color: $black;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      @media (max-width: 480px) {
+        height: 350px;
+      }
+    }
+    &__square_yellow {
+      background-color: $sunyellow;
+    }
+    &__img {
+      position: absolute;
+      top: 159px;
+      left: -77px;
+      @media (max-width: 768px) {
+        top: 59px;
+        left: 43px;
+      }
+      @media (max-width: 600px) {
+        left: -14px;
+      }
+      @media (max-width: 480px) {
+        height: 251px;
+        left: -83px;
+      }
+    }
+    &__img_position {
+      top: 73px;
+      left: 219px;
+      @media (max-width: 1200px) {
+        left: 88px;
+      }
+      @media (max-width: 960px) {
+        left: -16px;
+      }
+      @media (max-width: 768px) {
+        top: 69px;
+        left: 134px;
+      }
+      @media (max-width: 600px) {
+        left: 70px;
+      }
+      @media (max-width: 480px) {
+        left: -52px;
+      }
+    }
+  }
+  &-block:nth-child(2) {
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .our-awards {
@@ -448,11 +493,12 @@ main.aboutUs {
     height: 100%;
     &__text {
       position: absolute;
+      @include flex(space-between,center,column);
       top: 50%;
       //   left: 50%;
       left: 56%;
       transform: translate(-50%, -50%);
-      width: 410px;
+      width: 570px;
       height: 240px;
       border-radius: 18px;
       display: flex;
@@ -499,6 +545,16 @@ main.aboutUs {
         }
       }
     }
+    &__text-bottom {
+      font-family: "TitilliumWebSemiBold",serif;
+      font-size: 24px;
+      line-height: 1.58;
+      color: $black;
+      width: 75%;
+      @media screen and (max-width: 480px) {
+        font-size: 18px;
+      }
+    }
   }
   @media screen and (max-width: 480px) {
     height: 260px;
@@ -508,162 +564,173 @@ main.aboutUs {
 }
 
 .awards {
-    margin-bottom: 80px;
-    &__block {
-        @include flex(flex-start, start, row);
+  margin-bottom: 80px;
+  &__block {
+    @include flex(flex-start, start, row);
+  }
+  &__icon {
+    margin: 15px 0 0 0;
+    width: 90px;
+  }
+  &__dropdown {
+    position: relative;
+    width: 100%;
+    padding: 26px 0;
+    border-bottom: 2px solid $sunflower;
+    border-top: 2px solid $sunflower;
+  }
+  &__dropdown_border {
+    border-bottom: none;
+  }
+  &__title {
+    font-family: "TitilliumWebSemiBold", serif;
+    font-size: 18px;
+    line-height: 1.56;
+    color: $black;
+    // margin-bottom: 20px;
+  }
+  &__certificate {
+    font-family: "TitilliumWebSemiBold", serif;
+    font-size: 18px;
+    line-height: 1.56;
+    color: $black;
+    text-decoration: underline;
+    position: absolute;
+    top: 25px;
+    right: 8%;
+    @media screen and (max-width: 768px) {
+      display: none;
     }
-    &__icon {
-        margin: 15px 30px 0 0;
+  }
+  &__arrow {
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    transform: rotate(90deg);
+    top: 28px;
+    right: 4px;
+  }
+  &__list {
+    padding-left: 18px;
+    display: none;
+    @media screen and (max-width: 480px) {
+      padding-top: 30px;
+      margin-left: -70px;
     }
-    &__dropdown {
-        position: relative;
-        width: 100%;
-        padding: 26px 0;
-        border-bottom: 2px solid $sunflower;
-        border-top: 2px solid $sunflower;
-    }
-    &__dropdown_border {
-        border-bottom: none;
-    }
-    &__title {
-        font-family: "TitilliumWebSemiBold", serif;
-        font-size: 18px;
-        line-height: 1.56;
-        color: $black;
-        margin-bottom: 20px;
-    }
-    &__certificate {
-        font-family: "TitilliumWebSemiBold",serif;
-        font-size: 18px;
-        line-height: 1.56;
-        color:$black;
-        text-decoration: underline;
-        position: absolute;
-        top: 25px;
-        right: 8%;
-        @media screen and (max-width: 480px) {
-          font-size: 14px;
-          top:28px;
-        }
-    }
-    &__arrow {
-        cursor: pointer;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        position: absolute;
-        transform: rotate(90deg);
-        top: 28px;
-        right: 4px;
-    }
-    &__list {
-        padding-left: 17px;
-        display: none;
-    }
-    &__item {
-        font-family: "TitilliumWebRegular", serif;
-        font-size: 16px;
-        line-height: 2;
-        color: $black;
-        list-style-type: square;
-        margin-bottom: 10px;
-        a {
-            color: $black;
-        }
+  }
+  &__item {
+    font-family: "TitilliumWebRegular", serif;
+    font-size: 16px;
+    line-height: 2;
+    color: $black;
+    list-style-type: square;
+    // margin-bottom: 10px;
+    a {
+      color: $black;
     }
 
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
 }
 
 .grow {
-    background: url(../img/grow-desctop.jpg) no-repeat center/cover;
-    @media screen and (max-width:768px) {
-        background: url(../img/grow-tablet.jpg) no-repeat center/cover;
-    }
-    @media screen and (max-width:480px) {
-        height: 400px;
-        background: url(../img/grow-mobile.jpg) no-repeat center/cover;
-    }
-    height: 600px;
-    margin-bottom: 130px;
-    @media screen and (max-width:480px) {
-        margin-bottom: 250px;
-    }
+  background: url(../img/grow-desctop.jpg) no-repeat center/cover;
+  @media screen and (max-width: 768px) {
+    background: url(../img/grow-tablet.jpg) no-repeat center/cover;
+  }
+  @media screen and (max-width: 480px) {
+    height: 400px;
+    background: url(../img/grow-mobile.jpg) no-repeat center/cover;
+  }
+  height: 600px;
+  margin-bottom: 130px;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 250px;
+  }
+  position: relative;
+  .wrapper {
     position: relative;
-    .wrapper {
-        position: relative;
-        height: 100%;
-        // width: 100%;
-        @media screen and (max-width: 900px) {
-            width: 100%;
-        }
-        // @media screen and (max-width: 660px) {
-        //     width: 90%;
-        // }
+    height: 100%;
+    // width: 100%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
     }
-    z-index: 0;
-    .all-jobs {
-        position: absolute;
-        bottom: 40px;
-        right: 0px;
-        @media screen and (max-width: 900px) {
-            right: 40px;
-            max-width: 160px;
-        }
-        @media screen and (max-width: 660px) {
-            display: none;
-        }
+    // @media screen and (max-width: 660px) {
+    //     width: 90%;
+    // }
+  }
+  z-index: 0;
+  .all-jobs {
+    position: absolute;
+    width: 159px;
+    bottom: 40px;
+    right: 0px;
+    @media screen and (max-width: 900px) {
+      right: 40px;
+      max-width: 160px;
     }
-    &-block {
-        position: absolute;
-        bottom: -30px;
-        left: 0;
-        max-width: 570px;
-        
-        min-height: 300px;
-        border-radius: 18px;
-        background-image: linear-gradient(to right, $sunyellow 0%, #d2e9ff 100%);
-        z-index: 1;
-        padding: 50px 90px 20px 90px;
-        @media screen and (max-width: 900px) {
-            left: 40px;
-            max-width: 450px;
-            padding: 20px 60px 20px 60px;
-        }
-        @media screen and (max-width: 768px) {
-            left: 0px;
-            max-width: 450px;
-            border-radius: 0 18px 18px 0;
-        }
-        @media screen and (max-width: 660px) {
-            bottom: -120px;
-            max-width: 100%;
-            border-radius: 18px;
-        }
-        @media screen and (max-width: 480px) {
-            bottom: -220px;
-            min-height: 250px;
-        }
-        @media screen and (max-width: 440px) {
-            padding: 50px 15px 50px 15px;
-        }
+    @media screen and (max-width: 660px) {
+      display: none;
+    }
+  }
+  &-block {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    max-width: 570px;
 
-            
-        &-title {
-            font-family: "TitilliumWebBold",serif;
-            font-size: 40px;
-            line-height: 52px;
-            @media screen and (max-width: 500px) {
-                font-size: 24px;
-                line-height: 32px;
-            }
-        }
-        &-text {
-            font-family: "TitilliumWebSemiBold",serif;
-            font-size: 24px;
-            line-height: 38px;
-            @media screen and (max-width: 500px) {
-                font-size: 18px;
-                line-height: 28px;
-            }
-        }
+    min-height: 300px;
+    border-radius: 18px;
+    background-image: linear-gradient(to right, $sunyellow 0%, #d2e9ff 100%);
+    z-index: 1;
+    padding: 50px 90px 20px 90px;
+    @media screen and (max-width: 900px) {
+      left: 40px;
+      max-width: 450px;
+      padding: 20px 60px 20px 60px;
+    }
+    @media screen and (max-width: 768px) {
+      left: 0px;
+      max-width: 450px;
+      border-radius: 0 18px 18px 0;
+    }
+    @media screen and (max-width: 660px) {
+      bottom: -120px;
+      max-width: 100%;
+      border-radius: 18px;
+    }
+    @media screen and (max-width: 480px) {
+      bottom: -220px;
+      min-height: 250px;
+    }
+    @media screen and (max-width: 440px) {
+      padding: 50px 15px 50px 15px;
+    }
 
+    &-title {
+      font-family: "TitilliumWebBold", serif;
+      font-size: 40px;
+      line-height: 52px;
+      margin: 0;
+      padding-bottom: 20px;
+      @media screen and (max-width: 500px) {
+        font-size: 24px;
+        line-height: 32px;
       }
+    }
+    &-text {
+      font-family: "TitilliumWebSemiBold", serif;
+      font-size: 24px;
+      line-height: 38px;
+      @media screen and (max-width: 500px) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
 }

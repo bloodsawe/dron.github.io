@@ -55,10 +55,24 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (document.querySelector(".homepage,.services-collection,.services,.sectors-oil,.sectors-grid,.sectors-construction,.sectors-generation")) {
+  if (document.querySelector(".homepage, .services-collection, .services, .sectors-oil, .sectors-grid, .sectors-construction, .sectors-generation")) {
     var blockDescription = Array.from(document.querySelectorAll(".collection-block__description"));
     var blockTab = Array.from(document.querySelectorAll(".select-block__item"));
     var descriptionText = Array.from(document.querySelectorAll(".collection-block__text-animation"));
+    var readMoreBtn = Array.from(document.querySelectorAll(".read-more-button"));
+
+    readMoreBtn.forEach(function (elem) {
+
+      elem.addEventListener('click', function() {
+        elem.style.display = "none";
+        descriptionText.forEach((elem) => {
+          if (elem.getAttribute("data-tab") == selectedBlockDescription) {
+            elem.style.maxHeight = "2000px";
+          }
+        })
+      })
+    });
+    
     blockDescription.forEach(function (elem, i) {
       return elem.setAttribute("data-tab", i);
     });
@@ -66,6 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return elem.setAttribute("data-tab", i);
     });
     descriptionText.forEach(function (elem, i) {
+      return elem.setAttribute("data-tab", i);
+    });
+    readMoreBtn.forEach(function (elem, i) {
       return elem.setAttribute("data-tab", i);
     });
     var selectedBlockDescription = '0';
@@ -87,6 +104,27 @@ document.addEventListener("DOMContentLoaded", function () {
           elem.getAttribute("data-tab") == selectedBlockDescription ? elem.style.display = "block" : elem.style.display = "none";
         });
         descriptionText.forEach(function (elem) {
+          if (elem.getAttribute("data-tab") == selectedBlockDescription) {
+            if (prevElem < nextElem) {
+              elem.style.animation = "down 1s linear 0s 1 normal";
+              setTimeout(function () {
+                elem.style.animation = "";
+              }, 1000);
+            } else if (prevElem > nextElem) {
+              elem.style.animation = "up 1s linear 0s 1 normal";
+              setTimeout(function () {
+                elem.style.animation = "";
+              }, 1000);
+            }
+          } else {
+            elem.style.maxHeight = "135px";
+            readMoreBtn.forEach(function (elem) {
+              elem.style.display = "block";
+            });
+          }
+        });
+        readMoreBtn.forEach(function (elem) {
+          
           if (elem.getAttribute("data-tab") == selectedBlockDescription) {
             if (prevElem < nextElem) {
               elem.style.animation = "down 1s linear 0s 1 normal";

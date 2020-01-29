@@ -1,629 +1,996 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Cyberhawk</title>
-    <link rel="stylesheet" href="./scss/header.scss">
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-</head>
-<body>
-
-  <header>
-    <div class="header wrapper">
-      <div class="header-logo">
-        <a href="#"><img src="/img/header-logo.svg" alt=""></a>
-      </div>
-      <nav class="header-nav">
-        <div class="header-nav__burger">
-          <span></span>
-          <span></span>
-          <span></span>
+    <link rel="stylesheet" href="./scss/header.scss" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header wrapper">
+        <div class="header-logo">
+          <a href="#"><img src="/img/header-logo.svg" alt=""/></a>
         </div>
-        <ul class="header-nav__list">
-          <li class="header-nav__item"><span class="header-nav__link">Services</span>
+        <nav class="header-nav">
+          <div class="header-nav__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <span class="header-nav__link">Services</span>
               <ul class="header-nav__list-insert">
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">iHawk</a></li>
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">UAV Data Collection</a>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert">iHawk</a>
                 </li>
-              </ul>
-          </li>
-          <li class="header-nav__item"><span class="header-nav__link">Sectors</span>
-              <ul class="header-nav__list-insert">
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Oil, Gas &
-                    Petrochemical</a></li>
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Power generation</a>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert"
+                    >UAV Data Collection</a
+                  >
                 </li>
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Power grid</a></li>
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Construction</a></li>
               </ul>
             </li>
-          <li class="header-nav__item"><span class="header-nav__link">Resources</span>
+            <li class="header-nav__item">
+              <span class="header-nav__link">Sectors</span>
               <ul class="header-nav__list-insert">
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">iHawk Knowledge Hub</a></li>
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">eBooks</a></li>
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Case Studies</a></li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert"
+                    >Oil, Gas & Petrochemical</a
+                  >
+                </li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert"
+                    >Power generation</a
+                  >
+                </li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert">Power grid</a>
+                </li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert">Construction</a>
+                </li>
               </ul>
-          </li>
-          <li class="header-nav__item"><span class="header-nav__link">Company</span>
+            </li>
+            <li class="header-nav__item">
+              <span class="header-nav__link">Resources</span>
               <ul class="header-nav__list-insert">
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">About</a></li>
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">News & Blog</a></li>
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Careers</a></li>
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Team</a></li>
-                <li class="header-nav__item-insert"><a href="#" class="header-nav__link-insert">Contact</a></li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert"
+                    >iHawk Knowledge Hub</a
+                  >
+                </li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert">eBooks</a>
+                </li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert">Case Studies</a>
+                </li>
               </ul>
-          </li>
-        </ul>
-        <a class="header-nav__button" href="#">iHawk Login</a>
-      </nav>
-    </div>
-  </header>
+            </li>
+            <li class="header-nav__item">
+              <span class="header-nav__link">Company</span>
+              <ul class="header-nav__list-insert">
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert">About</a>
+                </li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert">News & Blog</a>
+                </li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert">Careers</a>
+                </li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert">Team</a>
+                </li>
+                <li class="header-nav__item-insert">
+                  <a href="#" class="header-nav__link-insert">Contact</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a class="header-nav__button" href="#">iHawk Login</a>
+        </nav>
+      </div>
+    </header>
 
-  <main class="newsandblog">
-    <section class="blog-slider all-top-slider"  style="display:block">
-      <div class="blog-slider__item" style="background-image: url(/img/bitmap.jpg); background-size: cover;">
-        <div class="blog-slider__container">
-          <h1 class="blog-slider__title">The power of digital transmission inspection reporting
-          </h1>
-        </div>
-        <a href="#" class="main-button">
-          <p class="main-button__text">Learn More </p>
-          <img class="white" src="/img/arrow-up-right.svg" alt="">
-          <img class="black" src="/img/arrow-up-right-black.svg" alt="">
-        </a>
-      </div>
-      <div class="blog-slider__item" style="background-image: url(/img/group-4.jpg);">
-        <div class="blog-slider__container">
-          <h1 class="blog-slider__title">The power of digital transmission inspection reporting
-          </h1>
-        </div>
-        <a href="#" class="main-button">
-          <p class="main-button__text">Read More </p>
-          <img class="white" src="/img/arrow-up-right.svg" alt="">
-          <img class="black" src="img/arrow-up-right-black.svg" alt="">
-        </a>
-      </div>
-    </section>
-    <section class="blog-slider news-top-slider"  style="display:none">
-      <div class="blog-slider__item" style="background-image: url(/img/bitmap.jpg); background-size: cover;">
-        <div class="blog-slider__container">
-          <h1 class="blog-slider__title">News SLIDER ROLLO
-          </h1>
-        </div>
-        <a href="#" class="main-button">
-          <p class="main-button__text">Learn More </p>
-          <img class="white" src="/img/arrow-up-right.svg" alt="">
-          <img class="black" src="/img/arrow-up-right-black.svg" alt="">
-        </a>
-      </div>
-      <div class="blog-slider__item" style="background-image: url(/img/group-4.jpg);">
-        <div class="blog-slider__container">
-          <h1 class="blog-slider__title">V SLIDER LIL
-          </h1>
-        </div>
-        <a href="#" class="main-button">
-          <p class="main-button__text">Read More </p>
-          <img class="white" src="/img/arrow-up-right.svg" alt="">
-          <img class="black" src="img/arrow-up-right-black.svg" alt="">
-        </a>
-      </div>
-    </section> 
-    <section class="blog-slider blog-top-slider"  style="display:none">
-      <div class="blog-slider__item" style="background-image: url(/img/bitmap.jpg); background-size: cover;">
-        <div class="blog-slider__container">
-          <h1 class="blog-slider__title">BLOG SLIDER
-          </h1>
-        </div>
-        <a href="#" class="main-button">
-          <p class="main-button__text">Learn More </p>
-          <img class="white" src="/img/arrow-up-right.svg" alt="">
-          <img class="black" src="/img/arrow-up-right-black.svg" alt="">
-        </a>
-      </div>
-      <div class="blog-slider__item" style="background-image: url(/img/group-4.jpg);">
-        <div class="blog-slider__container">
-          <h1 class="blog-slider__title">The power of digital transmission inspection reporting
-          </h1>
-        </div>
-        <a href="#" class="main-button">
-          <p class="main-button__text">Read More </p>
-          <img class="white" src="/img/arrow-up-right.svg" alt="">
-          <img class="black" src="img/arrow-up-right-black.svg" alt="">
-        </a>
-      </div>
-    </section>
-    <section class="filter">
-      <div class="filter-block wrapper">
-        <div class="filter-block__title">
-          Filter
-        </div>
-        <div class="filter-block__tabs">
-          <div class="filter-block__item active-button " data-categories = "All" onclick="openSelection(event,'blog-cards','active-button','block');changeSlider(event)">All</div>
-          <div class="filter-block__item" data-categories = "News" onclick="openSelection(event,'blog-cards','active-button','block'); changeSlider(event)">News</div>
-          <div class="filter-block__item" data-categories = "Blog" onclick="openSelection(event,'blog-cards','active-button','block');changeSlider(event)">Blog</div>
-        </div>
-        <form class="search-form" action="">
-          <input class="search-form__input" type="text" placeholder="Search">
-          <button class="search-form__button" type="submit"><i class="grey fas fa-search"></i><i class="yellow fas fa-search"></i></button>
-        </form>
-      </div>
-    </section>
-    <section id="All" class="blog-cards wrapper" style="display:none">
-      <div class="blog-cards__container " >
-        <div class="line-block">
-          <div class="line-block__title">
-            Latest updates
+    <main class="newsandblog">
+      <section class="blog-slider all-top-slider" style="display:block">
+        <div
+          class="blog-slider__item"
+          style="background-image: url(/img/bitmap.jpg); background-size: cover;"
+        >
+          <div class="blog-slider__container">
+            <h1 class="blog-slider__title">
+              The power of digital transmission inspection reporting
+            </h1>
           </div>
-          <hr>
-        </div>
-        <div class="blog-cards__block">
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Power generation</div>
-            </div>
-            <p class="blog-cards__text">A new revolution:
-              a pragmatic approach to blade intelligence & health</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">News</div>
-              <div class="blog-cards__categories">Power grid</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">News</div>
-              <div class="blog-cards__categories">Power grid</div>
-            </div>
-            <p class="blog-cards__text">New technology and digitisation driving a transformation in plant asset management</p>
-          </a>
-          <a class="blog-cards__empty" >
-          </a>
-          <a class="blog-cards__empty" >
-          </a>
-          <a class="blog-cards__empty" >
+          <a href="#" class="main-button">
+            <p class="main-button__text">Learn More</p>
+            <img class="white" src="/img/arrow-up-right.svg" alt="" />
+            <img class="black" src="/img/arrow-up-right-black.svg" alt="" />
           </a>
         </div>
-      </div>
-      <div class="blog-cards__container">
-        <div class="line-block">
-          <div class="line-block__title">
-            December 2019
+        <div
+          class="blog-slider__item"
+          style="background-image: url(/img/group-4.jpg);"
+        >
+          <div class="blog-slider__container">
+            <h1 class="blog-slider__title">
+              The power of digital transmission inspection reporting
+            </h1>
           </div>
-          <hr>
-        </div>
-        <div class="blog-cards__block">
-          <a href="#" class="blog-cards__item" style="background-image: url(./img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Power generation</div>
-            </div>
-            <p class="blog-cards__text">A new revolution:
-              a pragmatic approach to blade intelligence & health
-           </p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Power generation</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">New technology and digitisation driving a transformation in plant asset management</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a class="blog-cards__empty" >
-          </a>
-          <a class="blog-cards__empty" >
-          </a>
-          <a class="blog-cards__empty" >
+          <a href="#" class="main-button">
+            <p class="main-button__text">Read More</p>
+            <img class="white" src="/img/arrow-up-right.svg" alt="" />
+            <img class="black" src="img/arrow-up-right-black.svg" alt="" />
           </a>
         </div>
-      </div>
-      <div class="blog-cards__container">
-        <div class="line-block">
-          <div class="line-block__title">
-            November 2019
+      </section>
+      <section class="blog-slider news-top-slider" style="display:none">
+        <div
+          class="blog-slider__item"
+          style="background-image: url(/img/bitmap.jpg); background-size: cover;"
+        >
+          <div class="blog-slider__container">
+            <h1 class="blog-slider__title">News SLIDER ROLLO</h1>
           </div>
-          <hr>
-        </div>
-        <div class="blog-cards__block">
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">A new revolution:
-              a pragmatic approach to blade intelligence & health</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a class="blog-cards__empty" >
-          </a>
-          <a class="blog-cards__empty" >
-          </a>
-          <a class="blog-cards__empty" >
+          <a href="#" class="main-button">
+            <p class="main-button__text">Learn More</p>
+            <img class="white" src="/img/arrow-up-right.svg" alt="" />
+            <img class="black" src="/img/arrow-up-right-black.svg" alt="" />
           </a>
         </div>
-      </div> 
-    </section >
-    <section id="News" class="blog-cards wrapper" style="display:none">
-      <div class="blog-cards__container">
-        <div class="line-block">
-          <div class="line-block__title">
-            Latest updates
+        <div
+          class="blog-slider__item"
+          style="background-image: url(/img/group-4.jpg);"
+        >
+          <div class="blog-slider__container">
+            <h1 class="blog-slider__title">V SLIDER LIL</h1>
           </div>
-          <hr>
-        </div>
-        <div class="blog-cards__block">
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Power generation</div>
-            </div>
-            <p class="blog-cards__text">ZYABL</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">News</div>
-              <div class="blog-cards__categories">Power grid</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">News</div>
-              <div class="blog-cards__categories">Power grid</div>
-            </div>
-            <p class="blog-cards__text">New technology and digitisation driving a transformation in plant asset management
-            </p>
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
+          <a href="#" class="main-button">
+            <p class="main-button__text">Read More</p>
+            <img class="white" src="/img/arrow-up-right.svg" alt="" />
+            <img class="black" src="img/arrow-up-right-black.svg" alt="" />
           </a>
         </div>
-      </div>
-      <div class="blog-cards__container">
-        <div class="line-block">
-          <div class="line-block__title">
-            December 2019
+      </section>
+      <section class="blog-slider blog-top-slider" style="display:none">
+        <div
+          class="blog-slider__item"
+          style="background-image: url(/img/bitmap.jpg); background-size: cover;"
+        >
+          <div class="blog-slider__container">
+            <h1 class="blog-slider__title">BLOG SLIDER</h1>
           </div>
-          <hr>
-        </div>
-        <div class="blog-cards__block">
-          <a href="#" class="blog-cards__item" style="background-image: url(./img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Power generation</div>
-            </div>
-            <p class="blog-cards__text">A new revolution:
-              a pragmatic approach to blade intelligence & health
-            </p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Power generation</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">New technology and digitisation driving a transformation in plant asset management
-            </p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
+          <a href="#" class="main-button">
+            <p class="main-button__text">Learn More</p>
+            <img class="white" src="/img/arrow-up-right.svg" alt="" />
+            <img class="black" src="/img/arrow-up-right-black.svg" alt="" />
           </a>
         </div>
-      </div>
-      <div class="blog-cards__container">
-        <div class="line-block">
-          <div class="line-block__title">
-            November 2019
+        <div
+          class="blog-slider__item"
+          style="background-image: url(/img/group-4.jpg);"
+        >
+          <div class="blog-slider__container">
+            <h1 class="blog-slider__title">
+              The power of digital transmission inspection reporting
+            </h1>
           </div>
-          <hr>
-        </div>
-        <div class="blog-cards__block">
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">A new revolution:
-              a pragmatic approach to blade intelligence & health</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
+          <a href="#" class="main-button">
+            <p class="main-button__text">Read More</p>
+            <img class="white" src="/img/arrow-up-right.svg" alt="" />
+            <img class="black" src="img/arrow-up-right-black.svg" alt="" />
           </a>
         </div>
-      </div>
-    </section>
-    <section id="Blog" class="blog-cards wrapper" style="display:none">
-      <div class="blog-cards__container">
-        <div class="line-block">
-          <div class="line-block__title">
-            Latest updates
+      </section>
+      <section class="filter">
+        <div class="filter-block">
+          <div class="filter-block__title">
+            Filter
           </div>
-          <hr>
-        </div>
-        <div class="blog-cards__block">
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Power generation</div>
+          <div class="filter-block__tabs">
+            <div
+              class="filter-block__item active-button "
+              data-categories="All"
+              onclick="openSelection(event,'blog-cards','active-button','block');changeSlider(event)"
+            >
+              All
             </div>
-            <p class="blog-cards__text">NEWS BLOCK ROFLS</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">News</div>
-              <div class="blog-cards__categories">Power grid</div>
+            <div
+              class="filter-block__item"
+              data-categories="News"
+              onclick="openSelection(event,'blog-cards','active-button','block'); changeSlider(event)"
+            >
+              News
             </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">News</div>
-              <div class="blog-cards__categories">Power grid</div>
+            <div
+              class="filter-block__item"
+              data-categories="Blog"
+              onclick="openSelection(event,'blog-cards','active-button','block');changeSlider(event)"
+            >
+              Blog
             </div>
-            <p class="blog-cards__text">New technology and digitisation driving a transformation in plant asset management
-            </p>
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-        </div>
-      </div>
-      <div class="blog-cards__container">
-        <div class="line-block">
-          <div class="line-block__title">
-            December 2019
           </div>
-          <hr>
-        </div>
-        <div class="blog-cards__block">
-          <a href="#" class="blog-cards__item" style="background-image: url(./img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Power generation</div>
-            </div>
-            <p class="blog-cards__text">A new revolution:
-              a pragmatic approach to blade intelligence & health
-            </p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Power generation</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">New technology and digitisation driving a transformation in plant asset management
-            </p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/newsandblog.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-        </div>
-      </div>
-      <div class="blog-cards__container">
-        <div class="line-block">
-          <div class="line-block__title">
-            November 2019
-          </div>
-          <hr>
-        </div>
-        <div class="blog-cards__block">
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">A new revolution:
-              a pragmatic approach to blade intelligence & health</p>
-          </a>
-          <a href="#" class="blog-cards__item" style="background-image: url(/img/bitmap.jpg);">
-            <div class="blog-cards__block-categories">
-              <div class="blog-cards__categories">Blog</div>
-              <div class="blog-cards__categories">Construction</div>
-            </div>
-            <p class="blog-cards__text">The power of digital transmission inspection reporting</p>
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-          <a class="blog-cards__empty">
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer">
-      <div class="wrapper">
-        <div class="block-subscribe">
-          <h3 class="block-subscribe__title">Subscribe to our newsletter</h3>
-          <form action="" class="block-subscribe__form">
-           <span><input class="block-subscribe__input" type="email" placeholder="Enter your e-mail" name="" id=""></span> 
-          <input type="submit" class="block-subscribe__submit" value="" >
+          <form class="search-form" action="">
+            <input
+              class="search-form__input"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="search-form__button" type="submit">
+              <i class="grey fas fa-search"></i
+              ><i class="yellow fas fa-search"></i>
+            </button>
           </form>
-          <div class="block-subscribe__address">
-            <div class="block-subscribe__items">
-              <span>Head office</span> <br>
-              <a class="block-subscribe__link" href="#">EICA Ratho, 5th Floor</a> 
+        </div>
+      </section>
+      <section id="All" class="blog-cards wrapper" style="display:none">
+        <div class="blog-cards__container">
+          <div class="line-block">
+            <div class="line-block__title">
+              Latest updates
             </div>
-            <div class="block-subscribe__items">
-            <a class="block-subscribe__link" href="#">Edinburgh EH28 8AA</a>   <br>
-            <a class="block-subscribe__link" href="#">United Kingdom</a>  
+            <hr />
+          </div>
+          <div class="blog-cards__block">
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Power generation</div>
+              </div>
+              <p class="blog-cards__text">
+                A new revolution: <br />
+                a pragmatic approach to blade intelligence & health
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">News</div>
+                <div class="blog-cards__categories">Power grid</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background: url(/img/bitmap.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">News</div>
+                <div class="blog-cards__categories">Power grid</div>
+              </div>
+              <p class="blog-cards__text">
+                New technology and digitisation driving a transformation in
+                plant asset management
+              </p>
+            </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+          </div>
+        </div>
+        <div class="blog-cards__container">
+          <div class="line-block">
+            <div class="line-block__title">
+              December 2019
             </div>
-            <div class="block-subscribe__items">
-          <a class="block-subscribe__link" href="mailto:info@thecyberhawk">info@thecyberhawk.com</a> <br>
-          <a class="block-subscribe__link" href="tel:+44 01313702130">+44 (0)131 370 2130</a class="block-subscribe__link">
+            <hr />
+          </div>
+          <div class="blog-cards__block">
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(./img/newsandblog.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Power generation</div>
+              </div>
+              <p class="blog-cards__text">
+                A new revolution: <br />
+                a pragmatic approach to blade intelligence & health
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/newsandblog.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Power generation</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/newsandblog.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                New technology and digitisation driving a transformation in
+                plant asset management
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/newsandblog.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+          </div>
+        </div>
+        <div class="blog-cards__container">
+          <div class="line-block">
+            <div class="line-block__title">
+              November 2019
+            </div>
+            <hr />
+          </div>
+          <div class="blog-cards__block">
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                A new revolution: <br />
+                a pragmatic approach to blade intelligence & health
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+          </div>
+        </div>
+      </section>
+      <section id="News" class="blog-cards wrapper" style="display:none">
+        <div class="blog-cards__container">
+          <div class="line-block">
+            <div class="line-block__title">
+              Latest updates
+            </div>
+            <hr />
+          </div>
+          <div class="blog-cards__block">
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Power generation</div>
+              </div>
+              <p class="blog-cards__text">
+                A new revolution: <br />
+                a pragmatic approach to blade intelligence & health
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">News</div>
+                <div class="blog-cards__categories">Power grid</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background: url(/img/bitmap.jpg);
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">News</div>
+                <div class="blog-cards__categories">Power grid</div>
+              </div>
+              <p class="blog-cards__text">
+                New technology and digitisation driving a transformation in
+                plant asset management
+              </p>
+            </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+          </div>
+        </div>
+        <div class="blog-cards__container">
+          <div class="line-block">
+            <div class="line-block__title">
+              December 2019
+            </div>
+            <hr />
+          </div>
+          <div class="blog-cards__block">
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(./img/newsandblog.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Power generation</div>
+              </div>
+              <p class="blog-cards__text">
+                A new revolution: <br />
+                a pragmatic approach to blade intelligence & health
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/newsandblog.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Power generation</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/newsandblog.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                New technology and digitisation driving a transformation in
+                plant asset management
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/newsandblog.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+          </div>
+        </div>
+        <div class="blog-cards__container">
+          <div class="line-block">
+            <div class="line-block__title">
+              November 2019
+            </div>
+            <hr />
+          </div>
+          <div class="blog-cards__block">
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                A new revolution: <br />
+                a pragmatic approach to blade intelligence & health
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+          </div>
+        </div>
+      </section>
+      <section id="Blog" class="blog-cards wrapper" style="display:none">
+        <div class="blog-cards__container">
+          <div class="line-block">
+            <div class="line-block__title">
+              Latest updates
+            </div>
+            <hr />
+          </div>
+          <div class="blog-cards__block">
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                              background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Power generation</div>
+              </div>
+              <p class="blog-cards__text">
+                A new revolution: <br />
+                a pragmatic approach to blade intelligence & health
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                              background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">News</div>
+                <div class="blog-cards__categories">Power grid</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background: url(/img/bitmap.jpg);
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                              background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">News</div>
+                <div class="blog-cards__categories">Power grid</div>
+              </div>
+              <p class="blog-cards__text">
+                New technology and digitisation driving a transformation in
+                plant asset management
+              </p>
+            </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+          </div>
+        </div>
+        <div class="blog-cards__container">
+          <div class="line-block">
+            <div class="line-block__title">
+              December 2019
+            </div>
+            <hr />
+          </div>
+          <div class="blog-cards__block">
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(./img/newsandblog.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Power generation</div>
+              </div>
+              <p class="blog-cards__text">
+                A new revolution: <br />
+                a pragmatic approach to blade intelligence & health
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/newsandblog.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Power generation</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/newsandblog.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                New technology and digitisation driving a transformation in
+                plant asset management
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/newsandblog.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+          </div>
+        </div>
+        <div class="blog-cards__container">
+          <div class="line-block">
+            <div class="line-block__title">
+              November 2019
+            </div>
+            <hr />
+          </div>
+          <div class="blog-cards__block">
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                A new revolution: <br />
+                a pragmatic approach to blade intelligence & health
+              </p>
+            </a>
+            <a
+              href="#"
+              class="blog-cards__item"
+              style="background-image: url(/img/bitmap.jpg);
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;"
+            >
+              <div class="blog-cards__block-categories">
+                <div class="blog-cards__categories">Blog</div>
+                <div class="blog-cards__categories">Construction</div>
+              </div>
+              <p class="blog-cards__text">
+                The power of digital transmission inspection reporting
+              </p>
+            </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+            <a class="blog-cards__empty"> </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="wrapper">
+          <div class="block-subscribe">
+            <h3 class="block-subscribe__title">Subscribe to our newsletter</h3>
+            <form action="" class="block-subscribe__form">
+              <span
+                ><input
+                  class="block-subscribe__input"
+                  type="email"
+                  placeholder="Enter your e-mail"
+                  name=""
+                  id=""
+              /></span>
+              <input type="submit" class="block-subscribe__submit" value="" />
+            </form>
+            <div class="block-subscribe__address">
+              <div class="block-subscribe__items">
+                <span>Head office</span> <br />
+                <a class="block-subscribe__link" href="#"
+                  >EICA Ratho, 5th Floor</a
+                >
+              </div>
+              <div class="block-subscribe__items">
+                <a class="block-subscribe__link" href="#">Edinburgh EH28 8AA</a>
+                <br />
+                <a class="block-subscribe__link" href="#">United Kingdom</a>
+              </div>
+              <div class="block-subscribe__items">
+                <a class="block-subscribe__link" href="mailto:info@thecyberhawk"
+                  >info@thecyberhawk.com</a
+                >
+                <br />
+                <a class="block-subscribe__link" href="tel:+44 01313702130"
+                  >+44 (0)131 370 2130</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="block-info">
+              <div class="block-info__item">
+                <h4 class="block-info__title">Services</h4>
+                <a href="#" class="block-info__link">iHawk</a>
+                <a href="#" class="block-info__link">UAV Data Collection</a>
+              </div>
+              <div class="block-info__item">
+                <h4 class="block-info__title">Sectors</h4>
+                <a href="#" class="block-info__link">Oil & Gas</a>
+                <a href="#" class="block-info__link">Power generation</a>
+                <a href="#" class="block-info__link">Power grid</a>
+                <a href="#" class="block-info__link">Construction</a>
+              </div>
+              <div class="block-info__item">
+                <h4 class="block-info__title">Resources</h4>
+                <a href="#" class="block-info__link">iHawk Knowledge Hub</a>
+                <a href="#" class="block-info__link">eBooks</a>
+                <a href="#" class="block-info__link">Case Studies</a>
+              </div>
+              <div class="block-info__item">
+                <h4 class="block-info__title">Company</h4>
+                <a href="#" class="block-info__link">About</a>
+                <a href="#" class="block-info__link">News & Blog</a>
+                <a href="#" class="block-info__link">Careers</a>
+                <a href="#" class="block-info__link">Team</a>
+                <a href="#" class="block-info__link">Contact</a>
+              </div>
+            </div>
+            <div class="block-link">
+              <div class="block-link__logo">
+                <a href="#"><img src="/img/header-logo-white.svg" alt=""/></a>
+              </div>
+              <div class="block-link__social">
+                <a href="#" class="block-link__items"
+                  ><img src="/img/linkedin.svg" alt=""
+                /></a>
+                <a href="#" class="block-link__items"
+                  ><img src="/img/youtube.svg" alt=""
+                /></a>
+                <a href="#" class="block-link__items"
+                  ><img src="/img/twitter.svg" alt=""
+                /></a>
+                <a href="#" class="block-link__items"
+                  ><img src="/img/facebook.svg" alt=""
+                /></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="block">
-          <div class="block-info">
-            <div class="block-info__item">
-              <h4 class="block-info__title">Services</h4>
-              <a href="#" class="block-info__link">iHawk</a>
-              <a href="#" class="block-info__link">UAV Data Collection</a>
-            </div>
-            <div class="block-info__item">
-              <h4 class="block-info__title">Sectors</h4>
-              <a href="#" class="block-info__link">Oil & Gas</a>
-              <a href="#" class="block-info__link">Power generation</a>
-              <a href="#" class="block-info__link">Power grid</a>
-              <a href="#" class="block-info__link">Construction</a>
-            </div>
-            <div class="block-info__item">
-              <h4 class="block-info__title">Resources</h4>
-              <a href="#" class="block-info__link">iHawk Knowledge Hub</a></a>
-              <a href="#" class="block-info__link">eBooks</a>
-              <a href="#" class="block-info__link">Case Studies</a>
-            </div>
-            <div class="block-info__item">
-              <h4 class="block-info__title">Company</h4>
-              <a href="#" class="block-info__link">About</a>
-              <a href="#" class="block-info__link">News & Blog</a>
-              <a href="#" class="block-info__link">Careers</a>
-              <a href="#" class="block-info__link">Team</a>
-              <a href="#" class="block-info__link">Contact</a>
-            </div>
-          </div>
-          <div class="block-link">
+        <div class="wrapper">
+          <div class="block-link none">
             <div class="block-link__logo">
-              <a href="#"><img src="/img/header-logo-white.svg" alt=""></a>
+              <a href="#"><img src="/img/header-logo-white.svg" alt=""/></a>
             </div>
             <div class="block-link__social">
-              <a href="#" class="block-link__items"><img src="/img/linkedin.svg" alt=""></a>
-              <a href="#" class="block-link__items"><img src="/img/youtube.svg" alt=""></a>
-              <a href="#" class="block-link__items"><img src="/img/twitter.svg" alt=""></a>
-              <a href="#" class="block-link__items"><img src="/img/facebook.svg" alt=""></a>
+              <a href="#" class="block-link__items"
+                ><img src="/img/linkedin.svg" alt=""
+              /></a>
+              <a href="#" class="block-link__items"
+                ><img src="/img/youtube.svg" alt=""
+              /></a>
+              <a href="#" class="block-link__items"
+                ><img src="/img/twitter.svg" alt=""
+              /></a>
+              <a href="#" class="block-link__items"
+                ><img src="/img/facebook.svg" alt=""
+              /></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="wrapper">
-        <div class="block-link none">
-          <div class="block-link__logo">
-            <a href="#"><img src="/img/header-logo-white.svg" alt=""></a>
+      <div class="subfooter">
+        <div class="wrapper">
+          <div class="subfooter__copyright">
+            © 2019 CYBERHAWK INNOVATIONS LIMITED
           </div>
-          <div class="block-link__social">
-            <a href="#" class="block-link__items"><img src="/img/linkedin.svg" alt=""></a>
-            <a href="#" class="block-link__items"><img src="/img/youtube.svg" alt=""></a>
-            <a href="#" class="block-link__items"><img src="/img/twitter.svg" alt=""></a>
-            <a href="#" class="block-link__items"><img src="/img/facebook.svg" alt=""></a>
+          <div class="subfooter__list">
+            <a href="#" class="subfooter__links">Terms & Conditions</a>
+            <a href="#" class="subfooter__links">Privacy Policy</a>
+            <a href="#" class="subfooter__links">Other Policies</a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="subfooter">
-      <div class="wrapper">
-        <div class="subfooter__copyright">
-          © 2019 CYBERHAWK INNOVATIONS LIMITED
-        </div>
-        <div class="subfooter__list">
-          <a href="#" class="subfooter__links">Terms & Conditions</a>
-          <a href="#" class="subfooter__links">Privacy Policy</a>
-          <a href="#" class="subfooter__links">Other Policies</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="https://kit.fontawesome.com/d0fa8037db.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./js/main.min.js"></script>
-</body>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d0fa8037db.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/main.min.js"></script>
+  </body>
 </html>

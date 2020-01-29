@@ -31,13 +31,13 @@ main.show-before::before {
 .internal-content {
   opacity: 1;
 }
-.internal-content {
-  .internal-content__text,
-  .internal-content__title,
-  img {
-    opacity: 0;
-  }
-}
+// .internal-content {
+//   .internal-content__text,
+//   .internal-content__title,
+//   img {
+//     opacity: 0;
+//   }
+// }
 
 .newsandblog,
 .team-page {

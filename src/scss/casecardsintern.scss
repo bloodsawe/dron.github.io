@@ -196,7 +196,8 @@
     }
     hr {
       // width: 95%;
-      width: 85%;
+      // width: 85%;
+      width: calc(100% - 89px * 2);
       bottom: initial;
       left: 50%;
       top: -40px;

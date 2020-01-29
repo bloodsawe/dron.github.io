@@ -33,7 +33,8 @@
       }
     }
     p {
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
+      margin-bottom: 10px;
       font-family: "TitilliumWebSemiBold", serif;
       font-size: 18px;
       font-weight: 600;
@@ -70,6 +71,7 @@
       }
       @media screen and (max-width: 485px) {
         margin: 0 5px;
+        margin-top: 10px;
       }
     }
 
@@ -86,7 +88,8 @@
     }
   }
   .block-with-employee {
-    display: flex;
+    // display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -121,7 +124,8 @@
         }
         @media screen and (max-width: 485px) {
           // max-height: 190px;
-          max-height: 78%;
+          // max-height: 78%;
+          max-height: 71.58%;
           margin-bottom: 10px;
         }
       }
@@ -159,6 +163,7 @@
           letter-spacing: normal;
           text-align: left;
           color: #b4b4b4;
+          text-transform: uppercase;
           @media screen and (max-width: 485px) {
             font-family: "TitilliumWebRegular", serif;
             font-size: 16px;
@@ -172,13 +177,17 @@
       }
       @media screen and (max-width: $tabletwiev) {
         // max-width: 210px;
-        max-width: 30%;
+        // max-width: 30%;
+        max-width: 31%;
       }
       @media screen and (max-width: 485px) {
         max-width: 48%;
         margin-bottom: 20px;
       }
     }
+  }
+  .block-with-employee:first-child {
+    display: flex;
   }
 }
 .active-button {
