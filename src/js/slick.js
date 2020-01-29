@@ -26,7 +26,7 @@ $(function() {
 
   if ($(".slider-block").length > 0) {
   }
-  if (screen.availWidth <= 480) {
+  if (window.innerWidth <= 480) {
     $(".slider-block").slick({
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -77,12 +77,12 @@ $(function() {
           slidesToShow: sliderItem.length >= 7 ? 6 : sliderItem.length - 1
         }
       },
-      {
-        breakpoint: 481,
-        settings: {
-          slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length - 1
-        }
-      }
+      // {
+      //   breakpoint: 481,
+      //   settings: {
+      //     slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length - 1
+      //   }
+      // }
     ]
   });
 });
