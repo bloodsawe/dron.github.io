@@ -519,22 +519,13 @@
   @media (max-width: 480px) {
     margin-bottom: 20px;
   }
-
-  &-block {
+  .wrapper {
     @include flex(space-between, center, row);
-    padding: 130px 0;
-    margin-bottom: 80px;
-    @media screen and (max-width: 1024px) {
-      @include flex(space-between, stretch, column);
-      padding: 63px 197px 63px 120px;
-    }
-    @media screen and (max-width: 768px) {
-      @include flex(space-between, stretch, column);
-      padding: 63px 50px 63px 66px;
-    }
-    @media screen and (max-width: 480px) {
-      padding: 33px 0 24px;
-    }
+  }
+  &-block {
+    @include flex(start, flex-start, column);
+    margin: 80px 0;
+    width: 50%;
     &__title {
       font-family: "TitilliumWebBold", serif;
       font-size: 40px;

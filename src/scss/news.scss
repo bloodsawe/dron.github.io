@@ -60,6 +60,10 @@
         font-family: "TitilliumWebSemiBold",serif;
         font-size: 16px;
         line-height: 1.5;
+        text-transform: lowercase;
+    }
+    &__text::first-letter {
+        text-transform: uppercase;
     }
     .slick-prev,.slick-next {
         position: absolute;
