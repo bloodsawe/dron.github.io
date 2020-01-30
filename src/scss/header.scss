@@ -68,6 +68,9 @@ header.out {
       @media screen and (max-width: 820px) {
         padding: 0 14px;
       }
+      @media screen and (max-width: 768px) {
+        border-top: none;
+      }
     }
     &__item-insert {
       margin-bottom: 15px;

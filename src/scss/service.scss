@@ -173,6 +173,12 @@
     }
     .watch {
         margin-bottom: 60px;
+        &-description__text {
+            font-size: 18px;
+        }
+        &-description__text_yellow {
+            font-size: 18px;
+        }
         @media screen and (max-width: 480px) {
             margin-bottom: 20px;
         }

@@ -319,10 +319,9 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     @media screen and (max-width: 960px) {
-
-
-        align-items: center !important;
+      align-items: center !important;
     }
   }
   &-container-bg {
@@ -505,13 +504,13 @@
       padding: 30px 0;
     }
     &-container {
-      max-width: 445px;
+      width: 445px;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
       @media screen and (max-width: 768px) {
-        width: 100%;
+        
         justify-content: space-between;
       }
       @media screen and (max-width: 480px) {
@@ -542,7 +541,7 @@
     }
     .search-form {
       @media screen and (max-width: 900px) and (min-width:768px) {
-        width: 200px;
+        width: 230px;
       }
     }
     width: 50%;
@@ -658,6 +657,9 @@
   background-color: #f2f3f4;
   padding-bottom: 20px;
   padding-top: 60px;
+  @media screen and (max-width: 534px) {
+    padding-bottom: 56px; 
+  }
   height: auto;
   position: relative;
   .wrapper-title, .wrapper-text {
@@ -703,11 +705,11 @@
     width: 26.3%;
     height: auto;
     @media screen and (max-width: 800px) {
-      // margin: 40px 0px 10px 0px;
+      
       width: 45%;  
     }
     @media screen and (max-width: 534px) {
-      // margin: 20px 0px 0px 0px;
+      margin: 15px 0px 15px 0px;
       width: 100%;  
     }
     
@@ -734,6 +736,9 @@
     position: relative;
     z-index: 1;
     padding-top: 25px;
+    @media screen and (max-width: 534px) {
+      padding-top: 15px;
+    }
     font-family: TitilliumWebSemiBold;
     font-size: 18px;
     line-height: 28px;
@@ -785,11 +790,12 @@
     position: relative;
     cursor: pointer;
     font-family: "TitilliumWebSemiBold", serif;
-    line-height: 1.5;
-    font-size: 16px;
+    line-height: 28px;
+    font-size: 18px;
     color: $browngrey;
     padding: 11px;
     margin-right: 18px;
+    color: #fff;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     @media (max-width: 600px) {
       margin-right: 5px;
@@ -801,7 +807,7 @@
   &__list {
     font-family: "TitilliumWebRegular", serif;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 24px;
     color: #fff;
     position: relative;
     margin-top: 5px;
@@ -833,6 +839,10 @@
   .search-form {
     margin-left: auto;
     padding: 0 24px;
+    
+    @media (max-width: 902px) {
+      padding: 0 12px;
+    }
     @media (max-width: 768px) {
       margin-left: 0;
     }

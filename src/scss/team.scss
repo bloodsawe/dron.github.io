@@ -21,7 +21,10 @@
       letter-spacing: normal;
       text-align: center;
       color: black;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+      // margin-bottom: 5px;
+      // margin-top: 40px;
+      margin-top: 100px;
       @media screen and (max-width: 485px) {
         font-size: 24px;
         font-weight: bold;
@@ -30,6 +33,10 @@
         line-height: 1.33;
         letter-spacing: normal;
         text-align: center;
+        margin-top: 20px;
+      }
+      @media screen and (max-width: $tabletwiev) {
+        margin-top: 100px;
       }
     }
     p {
@@ -51,7 +58,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 55px;
+    margin-top: 30px;
+    // margin-bottom: 50px;
+    margin-bottom: 41px;
     .button {
       padding-bottom: 5px;
       border: none;
@@ -82,8 +91,15 @@
     }
     @media screen and (max-width: $tabletwiev) {
       justify-content: space-around;
+      // margin-top: 41px;
+      margin-top: 31px;
+      // margin-bottom: 62px;
+      margin-bottom: 48px;
     }
     @media screen and (max-width: 485px) {
+      // margin-top: 20px;
+      margin-top: 0;
+      margin-bottom: 41px;
       justify-content: space-between;
     }
   }

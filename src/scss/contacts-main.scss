@@ -23,7 +23,8 @@
         align-items: center;
       }
       &-title {
-        padding: 90px 0 10px 0 ;
+        padding: 90px 0 0 0 ;
+        margin: 0;
         max-width: 540px;
         font-family: "TitilliumWebBold", "serif";
         @include font ($weight: 600, $size: 40px, $line-height: 1.58, $letter-spacing: normal, $color: $black);
@@ -38,7 +39,7 @@
         max-width: 540px;
         @include font ($weight: 600, $size: 18px, $line-height: 1.58, $letter-spacing: normal, $color: $black);
         text-align: center;
-        padding-bottom: 280px;
+        padding-bottom: 250px;
         @media screen and (max-width: 800px) {
           padding-bottom: 80px;
         }

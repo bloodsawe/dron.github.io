@@ -199,27 +199,9 @@
             Filter
           </div>
           <div class="filter-block__tabs">
-            <div
-              class="filter-block__item active-button "
-              data-categories="All"
-              onclick="openSelection(event,'blog-cards','active-button','block');changeSlider(event)"
-            >
-              All
-            </div>
-            <div
-              class="filter-block__item"
-              data-categories="News"
-              onclick="openSelection(event,'blog-cards','active-button','block'); changeSlider(event)"
-            >
-              News
-            </div>
-            <div
-              class="filter-block__item"
-              data-categories="Blog"
-              onclick="openSelection(event,'blog-cards','active-button','block');changeSlider(event)"
-            >
-              Blog
-            </div>
+            <div class="filter-block__item">All</div>
+            <div class="filter-block__item">News</div>
+            <div class="filter-block__item">Blog</div>
           </div>
           <form class="search-form" action="">
             <input
@@ -234,7 +216,7 @@
           </form>
         </div>
       </section>
-      <section id="All" class="blog-cards wrapper" style="display:none">
+      <section class="blog-cards wrapper">
         <div class="blog-cards__container">
           <div class="line-block">
             <div class="line-block__title">
@@ -242,25 +224,30 @@
             </div>
             <hr />
           </div>
+
           <div class="blog-cards__block">
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
+            <div class="blog-cards__default-bg">
+              <a
+                href="#"
+                class="blog-cards__item"
+                style="background-image: url();
               background-repeat: no-repeat;
               background-size: cover;
               background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Power generation</div>
-              </div>
-              <p class="blog-cards__text">
-                A new revolution: <br />
-                a pragmatic approach to blade intelligence & health
-              </p>
-            </a>
-            <a
+              >
+                <div class="blog-cards__block-categories">
+                  <div class="blog-cards__categories">Blog</div>
+                  <div class="blog-cards__categories">Power generation</div>
+                </div>
+                <p class="blog-cards__text">
+                  A new revolution: <br />
+                  a pragmatic approach to blade intelligence & health
+                </p>
+              </a>
+            </div>
+
+            <div class="blog-cards__default-bg">
+              <a
               href="#"
               class="blog-cards__item"
               style="background-image: url(/img/bitmap.jpg);
@@ -276,7 +263,10 @@
                 The power of digital transmission inspection reporting
               </p>
             </a>
-            <a
+            </div>
+          
+            <div class="blog-cards__default-bg">
+                <a
               href="#"
               class="blog-cards__item"
               style="background: url(/img/bitmap.jpg);
@@ -293,6 +283,8 @@
                 plant asset management
               </p>
             </a>
+            </div>
+          
             <a class="blog-cards__empty"> </a>
             <a class="blog-cards__empty"> </a>
             <a class="blog-cards__empty"> </a>
@@ -306,7 +298,8 @@
             <hr />
           </div>
           <div class="blog-cards__block">
-            <a
+            <div class="blog-cards__default-bg">
+               <a
               href="#"
               class="blog-cards__item"
               style="background-image: url(./img/newsandblog.jpg);
@@ -323,7 +316,10 @@
                 a pragmatic approach to blade intelligence & health
               </p>
             </a>
-            <a
+            </div>
+           
+            <div class="blog-cards__default-bg">
+               <a
               href="#"
               class="blog-cards__item"
               style="background-image: url(/img/newsandblog.jpg);
@@ -339,7 +335,10 @@
                 The power of digital transmission inspection reporting
               </p>
             </a>
-            <a
+            </div>
+           
+            <div class="blog-cards__default-bg">
+                <a
               href="#"
               class="blog-cards__item"
               style="background-image: url(/img/newsandblog.jpg);
@@ -356,7 +355,10 @@
                 plant asset management
               </p>
             </a>
-            <a
+            </div>
+          
+            <div class="blog-cards__default-bg">
+               <a
               href="#"
               class="blog-cards__item"
               style="background-image: url(/img/newsandblog.jpg);
@@ -372,7 +374,10 @@
                 The power of digital transmission inspection reporting
               </p>
             </a>
-            <a
+            </div>
+           
+            <div class="blog-cards__default-bg">
+              <a
               href="#"
               class="blog-cards__item"
               style="background-image: url(/img/bitmap.jpg);
@@ -388,6 +393,8 @@
                 The power of digital transmission inspection reporting
               </p>
             </a>
+            </div>
+            
             <a class="blog-cards__empty"> </a>
             <a class="blog-cards__empty"> </a>
             <a class="blog-cards__empty"> </a>
@@ -401,7 +408,8 @@
             <hr />
           </div>
           <div class="blog-cards__block">
-            <a
+            <div class="blog-cards__default-bg">
+               <a
               href="#"
               class="blog-cards__item"
               style="background-image: url(/img/bitmap.jpg);
@@ -418,7 +426,10 @@
                 a pragmatic approach to blade intelligence & health
               </p>
             </a>
-            <a
+            </div>
+           
+            <div class="blog-cards__default-bg">
+               <a
               href="#"
               class="blog-cards__item"
               style="background-image: url(/img/bitmap.jpg);
@@ -434,418 +445,8 @@
                 The power of digital transmission inspection reporting
               </p>
             </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-          </div>
-        </div>
-      </section>
-      <section id="News" class="blog-cards wrapper" style="display:none">
-        <div class="blog-cards__container">
-          <div class="line-block">
-            <div class="line-block__title">
-              Latest updates
             </div>
-            <hr />
-          </div>
-          <div class="blog-cards__block">
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
-                      background-repeat: no-repeat;
-                      background-size: cover;
-                      background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Power generation</div>
-              </div>
-              <p class="blog-cards__text">
-                A new revolution: <br />
-                a pragmatic approach to blade intelligence & health
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
-                      background-repeat: no-repeat;
-                      background-size: cover;
-                      background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">News</div>
-                <div class="blog-cards__categories">Power grid</div>
-              </div>
-              <p class="blog-cards__text">
-                The power of digital transmission inspection reporting
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background: url(/img/bitmap.jpg);
-                      background-repeat: no-repeat;
-                      background-size: cover;
-                      background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">News</div>
-                <div class="blog-cards__categories">Power grid</div>
-              </div>
-              <p class="blog-cards__text">
-                New technology and digitisation driving a transformation in
-                plant asset management
-              </p>
-            </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-          </div>
-        </div>
-        <div class="blog-cards__container">
-          <div class="line-block">
-            <div class="line-block__title">
-              December 2019
-            </div>
-            <hr />
-          </div>
-          <div class="blog-cards__block">
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(./img/newsandblog.jpg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Power generation</div>
-              </div>
-              <p class="blog-cards__text">
-                A new revolution: <br />
-                a pragmatic approach to blade intelligence & health
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/newsandblog.jpg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Power generation</div>
-              </div>
-              <p class="blog-cards__text">
-                The power of digital transmission inspection reporting
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/newsandblog.jpg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Construction</div>
-              </div>
-              <p class="blog-cards__text">
-                New technology and digitisation driving a transformation in
-                plant asset management
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/newsandblog.jpg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Construction</div>
-              </div>
-              <p class="blog-cards__text">
-                The power of digital transmission inspection reporting
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Construction</div>
-              </div>
-              <p class="blog-cards__text">
-                The power of digital transmission inspection reporting
-              </p>
-            </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-          </div>
-        </div>
-        <div class="blog-cards__container">
-          <div class="line-block">
-            <div class="line-block__title">
-              November 2019
-            </div>
-            <hr />
-          </div>
-          <div class="blog-cards__block">
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                  background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Construction</div>
-              </div>
-              <p class="blog-cards__text">
-                A new revolution: <br />
-                a pragmatic approach to blade intelligence & health
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                  background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Construction</div>
-              </div>
-              <p class="blog-cards__text">
-                The power of digital transmission inspection reporting
-              </p>
-            </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-          </div>
-        </div>
-      </section>
-      <section id="Blog" class="blog-cards wrapper" style="display:none">
-        <div class="blog-cards__container">
-          <div class="line-block">
-            <div class="line-block__title">
-              Latest updates
-            </div>
-            <hr />
-          </div>
-          <div class="blog-cards__block">
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
-                              background-repeat: no-repeat;
-                              background-size: cover;
-                              background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Power generation</div>
-              </div>
-              <p class="blog-cards__text">
-                A new revolution: <br />
-                a pragmatic approach to blade intelligence & health
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
-                              background-repeat: no-repeat;
-                              background-size: cover;
-                              background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">News</div>
-                <div class="blog-cards__categories">Power grid</div>
-              </div>
-              <p class="blog-cards__text">
-                The power of digital transmission inspection reporting
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background: url(/img/bitmap.jpg);
-                              background-repeat: no-repeat;
-                              background-size: cover;
-                              background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">News</div>
-                <div class="blog-cards__categories">Power grid</div>
-              </div>
-              <p class="blog-cards__text">
-                New technology and digitisation driving a transformation in
-                plant asset management
-              </p>
-            </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-          </div>
-        </div>
-        <div class="blog-cards__container">
-          <div class="line-block">
-            <div class="line-block__title">
-              December 2019
-            </div>
-            <hr />
-          </div>
-          <div class="blog-cards__block">
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(./img/newsandblog.jpg);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Power generation</div>
-              </div>
-              <p class="blog-cards__text">
-                A new revolution: <br />
-                a pragmatic approach to blade intelligence & health
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/newsandblog.jpg);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Power generation</div>
-              </div>
-              <p class="blog-cards__text">
-                The power of digital transmission inspection reporting
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/newsandblog.jpg);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Construction</div>
-              </div>
-              <p class="blog-cards__text">
-                New technology and digitisation driving a transformation in
-                plant asset management
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/newsandblog.jpg);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Construction</div>
-              </div>
-              <p class="blog-cards__text">
-                The power of digital transmission inspection reporting
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Construction</div>
-              </div>
-              <p class="blog-cards__text">
-                The power of digital transmission inspection reporting
-              </p>
-            </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-            <a class="blog-cards__empty"> </a>
-          </div>
-        </div>
-        <div class="blog-cards__container">
-          <div class="line-block">
-            <div class="line-block__title">
-              November 2019
-            </div>
-            <hr />
-          </div>
-          <div class="blog-cards__block">
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
-                          background-repeat: no-repeat;
-                          background-size: cover;
-                          background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Construction</div>
-              </div>
-              <p class="blog-cards__text">
-                A new revolution: <br />
-                a pragmatic approach to blade intelligence & health
-              </p>
-            </a>
-            <a
-              href="#"
-              class="blog-cards__item"
-              style="background-image: url(/img/bitmap.jpg);
-                          background-repeat: no-repeat;
-                          background-size: cover;
-                          background-position: center;"
-            >
-              <div class="blog-cards__block-categories">
-                <div class="blog-cards__categories">Blog</div>
-                <div class="blog-cards__categories">Construction</div>
-              </div>
-              <p class="blog-cards__text">
-                The power of digital transmission inspection reporting
-              </p>
-            </a>
+           
             <a class="blog-cards__empty"> </a>
             <a class="blog-cards__empty"> </a>
             <a class="blog-cards__empty"> </a>
