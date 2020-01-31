@@ -28,7 +28,8 @@ main.internal__page {
       }
       &__list-item {
         margin-bottom: 10px;
-      }
+        list-style: disc;
+    }
     &__text {
         font-family: "TitilliumWebRegular", serif;
         font-size: 16px;

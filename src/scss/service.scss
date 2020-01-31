@@ -45,6 +45,7 @@
         }
         .main-button {
             position: absolute;
+            z-index: 1;
             bottom: 10%;
             right: calc((100vw - 1110px)/2);
             width: 183px;
@@ -143,14 +144,38 @@
           }
     }
     .callback {
+        position: relative;
         background: url(../img/service-bg.png) no-repeat center/cover;
         min-height: 450px;
         @include flex(center,center,column);
     }
     .callback-block {
         padding: 0;
+        &__img {
+            position: absolute;
+            top: calc((100% - 324px)/2);
+            @media (min-width: 1441px) {
+                right: calc((100vw - 1110px)/2);
+            }
+            @media (max-width: 1440px) {   
+                right: 10%;
+            }
+            @media (max-width: 1200px) {   
+                right: 5%;
+            }
+            @media (max-width: 1024px) {   
+                right: -5%;
+            }
+            @media (max-width: 768px) {   
+                right: -222px;
+            }
+            @media (max-width: 480px) {
+                display: none;
+            }
+        }
         &__text {
             width: 50%;
+            z-index: 1;
             @media screen and (max-width:768px) {
                 width: 66%;
             }

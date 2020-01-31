@@ -272,37 +272,46 @@ main.newsandblog {
 .popup {
   position: fixed;
   width: 420px;
-  height: 160px;
+  height: 240px;
   bottom: 0%;
+  -webkit-animation: 1s ease-out 0s popup;
   animation: 1s ease-out 0s popup;
   right: 0;
   background-color: #282828;
-  &__content {
-
-  }
-  &__close {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: transparent;
-    border: none;
-  }
-  &__close:before {
-    display: inline-block !important;
-    border-radius: 0.33em;
-    content: "\00D7";
-    font-size: 25px;
-    font-weight: normal;
-    line-height: 25px;
-    width: 40px;
-    height: 40px;
-    text-align: right;
-    color: #bbb;
-    background: transparent;
-    padding-top: 6px;
-    padding-right: 12px;
-  }
+}
+.popup__content {
+  position: relative;
+  padding: 40px;
+}
+.modal-title-form {
+  font-family: "TitilliumWebBold", serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+.popup__close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  z-index: 2;
+}
+.popup__close:before {
+  display: inline-block !important;
+  border-radius: 0.33em;
+  content: "\00D7";
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 25px;
+  width: 40px;
+  height: 40px;
+  text-align: right;
+  color: #bbb;
+  background: transparent;
+  padding-top: 6px;
+  padding-right: 12px;
 }
 
 @keyframes popup {

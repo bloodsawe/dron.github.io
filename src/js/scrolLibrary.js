@@ -1891,7 +1891,7 @@ document.addEventListener("DOMContentLoaded", function() {
       delay: delay,
       duration: duration
     });
-  } else if (document.querySelectorAll(".casecards").length > 0) {
+  } else if (document.querySelectorAll(".casecards").length > 0 && !document.querySelector(".casecards.intern")) {
     return;
   } else if (document.querySelectorAll(".aboutUs").length > 0) {
     ScrollReveal({ reset: true }).reveal("section:not(.awards),.awards__item", {

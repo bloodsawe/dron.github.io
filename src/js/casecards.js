@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  if(document.querySelectorAll(".casecards").length > 0) {
+  if(document.querySelectorAll(".casecards").length > 0 && !document.querySelector(".casecards.intern")) {
     // #### FILTER FEATURE (Case Studies)
     if($("body").hasClass("page-template-page-casestudies-php") || $("main").hasClass("casecards")){
       var mbtnContainer = document.getElementById("filter_1");
