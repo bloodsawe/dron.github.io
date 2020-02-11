@@ -21,6 +21,7 @@
     text-align: center;
     color: #ffffff;
     width: 53%;
+    text-transform: lowercase;
     @media screen and (max-width: 960px) {
       width: 70%;
     }
@@ -32,6 +33,9 @@
       line-height: 1.71;
       width: 98%;
     }
+  }
+  &__text:first-letter {
+    text-transform: uppercase;
   }
 }
 .internal-banner::after {

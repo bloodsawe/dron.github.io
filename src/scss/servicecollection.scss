@@ -135,6 +135,8 @@
         &__img {
             position: absolute;
             top: calc((100% - 324px)/2);
+            width: 495px;
+            height: 324px;
             @media (min-width: 1441px) {
                 right: calc((100vw - 1110px)/2);
             }

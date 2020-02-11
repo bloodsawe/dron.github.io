@@ -170,8 +170,7 @@ header.out {
   }
   .header-nav.state_open .header-nav__list {
     overflow-x: scroll;
-    height: 100vh;
-
+    height: calc(100vh - 80px);
     display: block;
     position: absolute;
     width: 100%;
@@ -181,7 +180,6 @@ header.out {
     background-color: #ffffff;
     z-index: 10;
     overflow: auto;
-    // height: auto;
     padding-left: 60px;
   }
   .header-nav__list-insert {

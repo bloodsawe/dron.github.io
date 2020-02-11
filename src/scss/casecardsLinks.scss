@@ -92,11 +92,14 @@ hr {
         line-height: 1.33;
         margin-bottom: 20px;
         width: 100%;
+        text-transform: lowercase;
         span {
           font-family: "TitilliumWebRegular", serif;
         }
       }
-
+      &__title::first-letter {
+        text-transform: uppercase;
+      }
       &__text {
         font-family: "TitilliumWebRegular", serif;
         font-size: 16px;

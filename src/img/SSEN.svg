@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Path + Path + Path + Path + Path + Path Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="49.9870433%" x2="100%" y2="49.9870433%" id="linearGradient-1">
+            <stop stop-color="#5F8AC7" offset="0%"></stop>
+            <stop stop-color="#004687" offset="55%"></stop>
+            <stop stop-color="#002961" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0.42,38.98 L0.42,13.89 C0.441966887,6.44327384 6.47327384,0.411966887 13.92,0.39 L39.01,0.39 L39.01,25.47 C38.9880331,32.9167262 32.9567262,38.9480331 25.51,38.97 L0.42,38.98 Z" id="path-2"></path>
+        <linearGradient x1="1.8721684%" y1="19.7068404%" x2="98.4286305%" y2="78.0944625%" id="linearGradient-4">
+            <stop stop-color="#94969A" offset="0%"></stop>
+            <stop stop-color="#E4E5E6" offset="50%"></stop>
+            <stop stop-color="#94969A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="10.8880572%" y1="41.7560952%" x2="98.2647159%" y2="65.4552105%" id="linearGradient-5">
+            <stop stop-color="#94969A" offset="0%"></stop>
+            <stop stop-color="#E4E5E6" offset="50%"></stop>
+            <stop stop-color="#94969A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="1.29010916%" y1="48.5295328%" x2="73.6354615%" y2="51.3156376%" id="linearGradient-6">
+            <stop stop-color="#94969A" offset="0%"></stop>
+            <stop stop-color="#E4E5E6" offset="50%"></stop>
+            <stop stop-color="#94969A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Path-+-Path-+-Path-+-Path-+-Path-+-Path-Mask" transform="translate(-0.420000, -0.390000)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+            <path d="M32.8,12.02 C34.1359706,12.0785907 35.4397392,11.5995817 36.42,10.69 C35.7062189,11.0323111 34.9213598,11.2002504 34.13,11.18 C29.13,11.18 26.8,6.1 25.13,0.01 L21.87,0.01 C24.54,6.33 27.82,12.02 32.8,12.02 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-3)"></path>
+            <path d="M30.26,12.28 C26.09,11.07 23.03,5.7 20.42,9.9475983e-14 L18.92,9.9475983e-14 C22.04,5.97 25.63,11.66 30.26,12.28 Z" id="Path" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-3)"></path>
+            <path d="M30.36,20.06 C23.42,20.06 13.87,8.39 8.22,1.23 C6.47708146,2.02115373 4.91490735,3.16130259 3.63,4.58 C9.88,10.5 22.21,21.69 29.54,21.69 C32.3726863,21.6430954 34.9777798,20.1285062 36.42,17.69 C34.7606318,19.1990692 32.602878,20.0429433 30.36,20.06 L30.36,20.06 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-3)"></path>
+            <path d="M2.11,6.6 C1.6104541,7.40530526 1.19494061,8.25978864 0.87,9.15 C7.87,14.29 21.31,23.76 28.54,22.88 C29.127082,22.8093128 29.7041606,22.6717534 30.26,22.47 C29.9099987,22.5371631 29.5558585,22.5805954 29.2,22.6 C21.75,22.99 8.56,12.11 2.11,6.6 Z" id="Path" fill="url(#linearGradient-5)" fill-rule="nonzero" mask="url(#mask-3)"></path>
+            <path d="M26.77,30.39 C20.58,30.39 8.24,24.12 0.03,19.53 L0.03,26.28 C7.42,29.2 16.9,32.71 25.5,32.71 C35.5,32.71 36.42,24.27 36.42,24.27 C34.6802456,28.0245064 30.9079149,30.4169068 26.77,30.39 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-3)"></path>
+            <path d="M26,33.98 C17.37,34.55 7.62,31.63 -2.20268248e-13,29.19 L-2.20268248e-13,32.46 C7.62,34.17 17.13,36.01 25.34,34.75 C27.0653021,34.5199123 28.7275766,33.9488241 30.23,33.07 C28.8768123,33.5945069 27.4491665,33.9016363 26,33.98 L26,33.98 Z" id="Path" fill="url(#linearGradient-6)" fill-rule="nonzero" mask="url(#mask-3)"></path>
+        </g>
+    </g>
+</svg>

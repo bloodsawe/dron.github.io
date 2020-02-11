@@ -20,7 +20,6 @@ $(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    adaptiveHeight: true,
     asNavFor: ".slider-block"
   });
 
