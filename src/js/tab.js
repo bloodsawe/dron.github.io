@@ -62,12 +62,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var readMoreBtn = Array.from(document.querySelectorAll(".read-more-button"));
 
     readMoreBtn.forEach(function (elem) {
-
       elem.addEventListener('click', function() {
         elem.style.display = "none";
         descriptionText.forEach((elem) => {
           if (elem.getAttribute("data-tab") == selectedBlockDescription) {
-            elem.style.maxHeight = "2000px";
+            elem.style.maxHeight = "100000px";
+            ScrollReveal().sync();
           }
         })
       })
@@ -110,32 +110,36 @@ document.addEventListener("DOMContentLoaded", function () {
               setTimeout(function () {
                 elem.style.animation = "";
               }, 1000);
+              ScrollReveal().sync();
             } else if (prevElem > nextElem) {
               elem.style.animation = "up 0.5s linear 0s 1 normal";
               setTimeout(function () {
                 elem.style.animation = "";
               }, 1000);
+              ScrollReveal().sync();
             }
           } else {
             elem.style.maxHeight = "135px";
             readMoreBtn.forEach(function (elem) {
               elem.style.display = "block";
             });
+            ScrollReveal().sync();
           }
         });
         readMoreBtn.forEach(function (elem) {
-          
           if (elem.getAttribute("data-tab") == selectedBlockDescription) {
             if (prevElem < nextElem) {
               elem.style.animation = "down 1s linear 0s 1 normal";
               setTimeout(function () {
                 elem.style.animation = "";
               }, 1500);
+              ScrollReveal().sync();
             } else if (prevElem > nextElem) {
               elem.style.animation = "up 1s linear 0s 1 normal";
               setTimeout(function () {
                 elem.style.animation = "";
               }, 1000);
+              ScrollReveal().sync();
             }
           }
         });

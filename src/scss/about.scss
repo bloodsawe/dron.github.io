@@ -232,10 +232,11 @@ main.aboutUs {
     }
     &-btn {
       position: absolute;
-      top: calc(50% - 40px);
-      left: calc(50% - 40px);
-      width: 80px;
-      height: 80px;
+      
+      top: calc(50% - 42px);
+      left: calc(50% - 42px);
+      width: 84px;
+      height: 84px;
       // background: none;
       border: none;
       border-radius: 50%;
@@ -252,7 +253,18 @@ main.aboutUs {
     }
   }
 }
-
+@supports (-webkit-appearance:none) {
+  .watch-player-btn {
+    top: calc(50% - 54px);
+    left: calc(50% - 42px);
+  }
+}
+@-moz-document url-prefix() {
+  .watch-player-btn {
+    top: calc(50% - 42px);
+    left: calc(50% - 42px);
+  }
+}
 .promise {
   @include flex(space-between, center, row);
   height: 450px;
