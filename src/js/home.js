@@ -24,23 +24,23 @@
 
 // ie
 
-document.addEventListener("DOMContentLoaded", function () {
-  if (document.querySelector(".homepage")) {  
-    var banner = document.querySelector(".banner-slider__item");
-    if(window.matchMedia("(min-width: 481px)").matches) {
-      banner.style.paddingTop = "120px";
-    }
-    if(window.matchMedia("(max-width: 480px)").matches) {
-        banner.style.paddingTop = "85px";
-    }
+// document.addEventListener("DOMContentLoaded", function () {
+//   if (document.querySelector(".homepage")) {  
+//     var banner = document.querySelector(".banner-slider__item");
+//     // if(window.matchMedia("(min-width: 481px)").matches) {
+//     //   banner.style.paddingTop = "120px";
+//     // }
+//     // if(window.matchMedia("(max-width: 480px)").matches) {
+//     //     banner.style.paddingTop = "85px";
+//     // }
     
 
-    var img = Array.from(banner.querySelectorAll("img.down"));
-    img.map(function (e) {
-      e.classList.remove("down");
-    });
-  }
-});
+//     var img = Array.from(banner.querySelectorAll("img.down"));
+//     img.map(function (e) {
+//       e.classList.remove("down");
+//     });
+//   }
+// });
  
 // anchor
 

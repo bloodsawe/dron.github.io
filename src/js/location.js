@@ -16445,6 +16445,16 @@ window.addEventListener("DOMContentLoaded", function () {
           i === 2589 || 
           i === 1049 || 
           i === 2213 || 
+          i === 636 || 
+          i === 632 || 
+          i === 281 || 
+          i === 707 || 
+          i === 686 || 
+          i === 921 || 
+          i === 920 || 
+          i === 939 || 
+          i === 996 || 
+          i === 685 ||
           i === 2279) {
           var areaTitle;
           newCircle.setAttribute("fill", "#c3d833");
@@ -16478,4 +16488,36 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   worldMap("#worldmap", "#5c5c5c");
 });
+
+function getAllIndexes(arr, val) {
+    var indexes = [], i;
+    for(i = 0; i < arr.length; i++)
+        if (arr[i] === val)
+            indexes.push(i);
+    return indexes;
+}
+
+Array.prototype.diff = function(arr2) {
+    var ret = [];
+    this.sort();
+    arr2.sort();
+    for(var i = 0; i < this.length; i += 1) {
+        if(arr2.indexOf(this[i]) > -1){
+            ret.push(this[i]);
+        }
+    }
+    return ret;
+};
+
+
+
+var xx = getAllIndexes(xCords, '164.3');
+var yy = getAllIndexes(yCords, '132.4');
+
+
+console.log(xx.diff(yy));
+
+
+
+
 

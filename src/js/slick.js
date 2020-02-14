@@ -5,7 +5,8 @@ $(function() {
   $(".banner-slider").slick({
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 10000,
+    pauseOnHover:true,
     dots: false,
     fade: true,
     prevArrow: '<div class="slick-prev"></div>',
@@ -76,12 +77,6 @@ $(function() {
           slidesToShow: sliderItem.length >= 7 ? 6 : sliderItem.length - 1
         }
       },
-      // {
-      //   breakpoint: 481,
-      //   settings: {
-      //     slidesToShow: sliderItem.length >= 10 ? 9 : sliderItem.length - 1
-      //   }
-      // }
     ]
   });
 });
@@ -117,14 +112,6 @@ $(function() {
       nextArrow: '<div class="slick-next"></div>',
       asNavFor: ".sectors-description-img",
       focusOnSelect: true
-      // responsive: [
-      //   {
-      //     breakpoint: 481,
-      //     settings: {
-      //       arrows: false
-      //     }
-      //   }
-      // ]
     });
     descriptionSlider.on("afterChange", function(
       event,
