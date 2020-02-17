@@ -203,6 +203,21 @@ $(function() {
 //casecardsintern-slider
 $(function() {
   if ($(".intern .slider").length > 0) {
+    let arr=[]
+    document.querySelectorAll(".slider__block img").forEach(e=>{
+        if(e.src.indexOf("case_studies")+1 !=0)
+        arr.push(e)
+    })
+    arr.forEach(e=>{
+      e.parentElement.remove()
+    })
+    if(document.querySelector(".slider-elm").children.length==0){
+      document.querySelector(".slider").style.visibility = "hidden";
+document.querySelector(".slider").style.width="initial";
+document.querySelector(".block-with-text").style.marginRight="calc((100vw - 112%) / 2)";
+document.querySelector(".block-text-slider").classList.add("class-for-slider-without-content");
+      return
+    } 
     let length = $(".intern .slider .slider__block").length;
     document.querySelectorAll(".counter span")[1].textContent = length;
     let slider = $(".intern .slider-elm").slick({
