@@ -16489,33 +16489,37 @@ window.addEventListener("DOMContentLoaded", function () {
   worldMap("#worldmap", "#5c5c5c");
 });
 
-function getAllIndexes(arr, val) {
-    var indexes = [], i;
-    for(i = 0; i < arr.length; i++)
-        if (arr[i] === val)
-            indexes.push(i);
-    return indexes;
-}
-
-Array.prototype.diff = function(arr2) {
-    var ret = [];
-    this.sort();
-    arr2.sort();
-    for(var i = 0; i < this.length; i += 1) {
-        if(arr2.indexOf(this[i]) > -1){
-            ret.push(this[i]);
-        }
-    }
-    return ret;
-};
 
 
+// function for finding points
 
-var xx = getAllIndexes(xCords, '164.3');
-var yy = getAllIndexes(yCords, '132.4');
+// function getAllIndexes(arr, val) {
+//     var indexes = [], i;
+//     for(i = 0; i < arr.length; i++)
+//         if (arr[i] === val)
+//             indexes.push(i);
+//     return indexes;
+// }
+
+// Array.prototype.diff = function(arr2) {
+//     var ret = [];
+//     this.sort();
+//     arr2.sort();
+//     for(var i = 0; i < this.length; i += 1) {
+//         if(arr2.indexOf(this[i]) > -1){
+//             ret.push(this[i]);
+//         }
+//     }
+//     return ret;
+// };
 
 
-console.log(xx.diff(yy));
+
+// var xx = getAllIndexes(xCords, '164.3');
+// var yy = getAllIndexes(yCords, '132.4');
+
+
+// console.log(xx.diff(yy));
 
 
 

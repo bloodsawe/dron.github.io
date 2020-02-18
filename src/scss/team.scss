@@ -12,7 +12,7 @@
   padding-top: 100px;
   .text {
     h1 {
-      font-family: "TitilliumWebBold", serif;
+      font-family: "TitilliumWebBold", sans-serif;
       font-size: 40px;
       font-weight: bold;
       font-stretch: normal;
@@ -42,7 +42,7 @@
     p {
       // margin-bottom: 30px;
       margin-bottom: 10px;
-      font-family: "TitilliumWebSemiBold", serif;
+      font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 18px;
       font-weight: 600;
       font-stretch: normal;
@@ -66,7 +66,7 @@
       border: none;
       background: none;
       margin: 0 20px;
-      font-family: "TitilliumWebSemiBold", serif;
+      font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 18px;
       font-weight: 600;
       font-stretch: normal;
@@ -157,7 +157,7 @@
         // height: 100%;
         h3 {
           margin: 0;
-          font-family: "TitilliumWebBold", serif;
+          font-family: "TitilliumWebBold", sans-serif;
           // font-size: 24px;
           font-size: 25px;
           font-weight: bold;
@@ -167,7 +167,7 @@
           letter-spacing: normal;
           color: black;
           @media screen and (max-width: 485px) {
-            font-family: "TitilliumWebSemiBold", serif;
+            font-family: "TitilliumWebSemiBold", sans-serif;
             font-size: 18px;
             font-weight: 600;
             font-stretch: normal;
@@ -178,7 +178,7 @@
         }
         p {
           margin: 0;
-          font-family: "TitilliumWebSemiBold", serif;
+          font-family: "TitilliumWebSemiBold", sans-serif;
           font-size: 18px;
           font-weight: 600;
           font-stretch: normal;
@@ -189,7 +189,7 @@
           color: #b4b4b4;
           text-transform: uppercase;
           @media screen and (max-width: 485px) {
-            font-family: "TitilliumWebRegular", serif;
+            font-family: "TitilliumWebRegular", sans-serif;
             font-size: 16px;
             font-weight: normal;
             font-stretch: normal;

@@ -73,14 +73,14 @@
           flex-direction: column;
           align-items: flex-start;
           h5 {
-            font-family: "TitilliumWebSemiBold", serif;
+            font-family: "TitilliumWebSemiBold", sans-serif;
             font-size: 18px;
             line-height: 1.56;
             font-weight: 600;
             color: white;
           }
           span {
-            font-family: "TitilliumWebRegular", serif;
+            font-family: "TitilliumWebRegular", sans-serif;
             font-size: 14px;
             line-height: 1.71;
             color: white;
@@ -171,7 +171,7 @@
       margin: 0 auto;
       margin-left: 8%;
       &__text {
-        font-family: "TitilliumWebRegular", serif;
+        font-family: "TitilliumWebRegular", sans-serif;
         font-size: 16px;
         font-weight: normal;
         font-stretch: normal;
@@ -259,7 +259,7 @@
       p {
         font-size: 16px;
         line-height: 2;
-        font-family: "TitilliumWebRegular", serif;
+        font-family: "TitilliumWebRegular", sans-serif;
         @media screen and (max-width: 480px) {
           font-size: 14px;
         }
@@ -271,11 +271,11 @@
     .h5-tag {
       margin: 0 auto;
       h5 {
-        font-family: "TitilliumWebBold", serif;
+        font-family: "TitilliumWebBold", sans-serif;
         font-size: 24px;
         line-height: 1.58;
         @media screen and (max-width: 480px) {
-          font-family: "TitilliumWebSemiBold", serif;
+          font-family: "TitilliumWebSemiBold", sans-serif;
           font-weight: 600;
           font-stretch: normal;
           font-style: normal;
@@ -319,10 +319,10 @@
         left: 27%;
         p {
           font-size: 16px;
-          font-family: "TitilliumWebBold", serif;
+          font-family: "TitilliumWebBold", sans-serif;
           color: #282828;
           @media screen and (max-width: 480px) {
-            font-family: "TitilliumWebSemiBold", serif;
+            font-family: "TitilliumWebSemiBold", sans-serif;
             font-weight: 600;
             font-stretch: normal;
             font-style: normal;
@@ -398,7 +398,7 @@
         margin-bottom: 40px;
         font-size: 16px;
         line-height: 2;
-        font-family: "TitilliumWebRegular", serif;
+        font-family: "TitilliumWebRegular", sans-serif;
         @media screen and (max-width: 480px) {
           font-size: 14px;
         }

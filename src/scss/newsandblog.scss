@@ -78,7 +78,7 @@ main.newsandblog {
     }
   }
   &__title {
-    font-family: "TitilliumWebBold", serif;
+    font-family: "TitilliumWebBold", sans-serif;
     font-size: 40px;
     font-weight: bold;
     line-height: 1.15;
@@ -146,7 +146,7 @@ main.newsandblog {
     flex-direction: column;
   }
   &__title {
-    font-family: "TitilliumWebBold", serif;
+    font-family: "TitilliumWebBold", sans-serif;
     font-size: 24px;
     line-height: 1.33;
     color: #fff;
@@ -163,7 +163,7 @@ main.newsandblog {
   }
   &__item {
     cursor: pointer;
-    font-family: "TitilliumWebSemiBold", serif;
+    font-family: "TitilliumWebSemiBold", sans-serif;
     line-height: 1.5;
     font-size: 16px;
     color: $browngrey;
@@ -187,7 +187,7 @@ main.newsandblog {
     }
   }
   &__list {
-    font-family: "TitilliumWebRegular", serif;
+    font-family: "TitilliumWebRegular", sans-serif;
     font-size: 14px;
     line-height: 1.71;
     color: #fff;
@@ -256,7 +256,7 @@ main.newsandblog {
     border-radius: 6px;
     color: white;
     background-color: rgba(220, 220, 220, 0.5);
-    font-family: "TitilliumWebSemiBold", serif;
+    font-family: "TitilliumWebSemiBold", sans-serif;
     font-size: 12px;
   }
   &__categories:hover {
@@ -264,7 +264,7 @@ main.newsandblog {
     color: black;
   }
   &__text {
-    font-family: "TitilliumWebSemiBold", serif;
+    font-family: "TitilliumWebSemiBold", sans-serif;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -284,7 +284,7 @@ main.newsandblog {
   padding: 40px;
 }
 .modal-title-form {
-  font-family: "TitilliumWebBold", serif;
+  font-family: "TitilliumWebBold", sans-serif;
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 21px;

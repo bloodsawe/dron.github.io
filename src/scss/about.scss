@@ -51,7 +51,7 @@ main.aboutUs {
       padding-top: 40px;
     }
     &__title {
-      font-family: "TitilliumWebBold", serif;
+      font-family: "TitilliumWebBold", sans-serif;
       font-size: 40px;
       line-height: 1.3;
       margin-bottom: 10px;
@@ -60,7 +60,7 @@ main.aboutUs {
       }
     }
     &__text {
-      font-family: "TitilliumWebSemiBold", serif;
+      font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 18px;
       line-height: 1.56;
     }
@@ -83,7 +83,7 @@ main.aboutUs {
       width: 86%;
     }
     &__title {
-      font-family: "TitilliumWebSemiBold", serif;
+      font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 24px;
       line-height: 1.58;
       margin-bottom: 20px;
@@ -93,7 +93,7 @@ main.aboutUs {
       }
     }
     &__text {
-      font-family: "TitilliumWebRegular", serif;
+      font-family: "TitilliumWebRegular", sans-serif;
       font-size: 16px;
       line-height: 2;
 
@@ -132,7 +132,7 @@ main.aboutUs {
         margin-top: 20px;
       }
       span {
-        font-family: "TitilliumWebSemiBold", serif;
+        font-family: "TitilliumWebSemiBold", sans-serif;
         font-size: 50px;
         color: $black;
       }
@@ -148,7 +148,7 @@ main.aboutUs {
       }
     }
     &__text {
-      font-family: "TitilliumWebSemiBold", serif;
+      font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 16;
       line-height: 1.5;
       color: $black;
@@ -189,20 +189,20 @@ main.aboutUs {
       font-size: 40px;
       color: #fff;
       line-height: 1.3;
-      font-family: "TitilliumWebBold", serif;
+      font-family: "TitilliumWebBold", sans-serif;
       margin-bottom: 21px;
       @media screen and (max-width: 480px) {
         font-size: 24px;
       }
     }
     &__header {
-      font-family: "TitilliumWebBold", serif;
+      font-family: "TitilliumWebBold", sans-serif;
       font-size: 40px;
       line-height: 1.3;
       color: #fff;
     }
     &__text {
-      font-family: "TitilliumWebSemiBold", serif;
+      font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 24px;
       line-height: 1.56;
       color: #fff;
@@ -348,7 +348,7 @@ main.aboutUs {
         border: solid 2px #ffffff;
         color: #ffffff;
         &__text {
-          font-family: "TitilliumWebSemiBold", serif;
+          font-family: "TitilliumWebSemiBold", sans-serif;
           font-size: 14px;
           padding-right: 44px;
         }
@@ -359,7 +359,7 @@ main.aboutUs {
       color: $black;
       line-height: 1.58;
       max-width: 345px;
-      font-family: "TitilliumWebSemiBold", serif;
+      font-family: "TitilliumWebSemiBold", sans-serif;
 
       @media screen and (max-width: 480px) {
         font-size: 18px;
@@ -369,7 +369,7 @@ main.aboutUs {
       font-size: 16px;
       color: $black;
       line-height: 2;
-      font-family: "TitilliumWebregular", serif;
+      font-family: "TitilliumWebregular", sans-serif;
       padding-top: 20px;
 
       @media screen and (max-width: 480px) {
@@ -378,7 +378,7 @@ main.aboutUs {
     }
     &__heading {
       width: 296px;
-      font-family: "TitilliumWebregular", serif;
+      font-family: "TitilliumWebregular", sans-serif;
       font-size: 40px;
       line-height: 1.3;
       color: #ffffff;
@@ -390,7 +390,7 @@ main.aboutUs {
       }
 
       p {
-        font-family: "TitilliumWebSemiBold", serif;
+        font-family: "TitilliumWebSemiBold", sans-serif;
       }
     }
   }
@@ -427,7 +427,7 @@ main.aboutUs {
       }
     }
     &__title {
-      font-family: "TitilliumWebBold", serif;
+      font-family: "TitilliumWebBold", sans-serif;
       font-size: 40px;
       line-height: 1.3;
       margin-bottom: 20px;
@@ -443,7 +443,7 @@ main.aboutUs {
       }
     }
     &__text {
-      font-family: "TitilliumWebRegular", serif;
+      font-family: "TitilliumWebRegular", sans-serif;
       font-size: 16px;
       line-height: 2;
       width: 62.5%;
@@ -467,6 +467,10 @@ main.aboutUs {
       @media (max-width: 480px) {
         height: 350px;
       }
+    }
+    &__square:nth-child(2) {
+      background: url(../img/bg-about-team-drone.jpg) no-repeat center/cover;
+      background-color: none;
     }
     &__square_yellow {
       background-color: $sunyellow;
@@ -572,7 +576,7 @@ main.aboutUs {
     }
 
     &__title {
-      font-family: "TitilliumWebRegular", serif;
+      font-family: "TitilliumWebRegular", sans-serif;
       font-weight: 100;
       font-size: 40px;
       line-height: 1.3;
@@ -584,13 +588,13 @@ main.aboutUs {
         margin: 0 auto 10px;
       }
       span {
-        font-family: "TitilliumWebSemiBold", serif;
+        font-family: "TitilliumWebSemiBold", sans-serif;
         color: $black;
       }
     }
 
     &__text {
-      font-family: "TitilliumWebSemiBold", serif;
+      font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 24px;
       line-height: 1.58;
       color: $black;
@@ -622,12 +626,12 @@ main.aboutUs {
   //     rgb(210, 233, 255) 100%
   //   );
   //   h1 {
-  //     font-family: "TitilliumWebRegular", serif;
+  //     font-family: "TitilliumWebRegular", sans-serif;
   //     font-weight: 100;
   //     font-size: 40px;
   //     line-height: 1.3;
   //     span {
-  //       font-family: "TitilliumWebSemiBold", serif;
+  //       font-family: "TitilliumWebSemiBold", sans-serif;
   //       color: black;
   //     }
   //   }
@@ -643,21 +647,21 @@ main.aboutUs {
   //     height: 145px;
   //     margin: auto;
   //     h1 {
-  //       font-family: "TitilliumWebRegular", serif;
+  //       font-family: "TitilliumWebRegular", sans-serif;
   //       font-weight: 100;
   //       font-size: 24px;
   //       font-stretch: normal;
   //       font-style: normal;
   //       line-height: 1.33;
   //       span {
-  //         font-family: "TitilliumWebSemiBold", serif;
+  //         font-family: "TitilliumWebSemiBold", sans-serif;
   //         color: black;
   //       }
   //     }
   //   }
   // }
   // &__text-bottom {
-  //   font-family: "TitilliumWebSemiBold", serif;
+  //   font-family: "TitilliumWebSemiBold", sans-serif;
   //   font-size: 24px;
   //   line-height: 1.58;
   //   color: $black;
@@ -693,14 +697,14 @@ main.aboutUs {
     border-bottom: none;
   }
   &__title {
-    font-family: "TitilliumWebSemiBold", serif;
+    font-family: "TitilliumWebSemiBold", sans-serif;
     font-size: 18px;
     line-height: 1.56;
     color: $black;
     // margin-bottom: 20px;
   }
   &__certificate {
-    font-family: "TitilliumWebSemiBold", serif;
+    font-family: "TitilliumWebSemiBold", sans-serif;
     font-size: 18px;
     line-height: 1.56;
     color: $black;
@@ -729,7 +733,7 @@ main.aboutUs {
     }
   }
   &__item {
-    font-family: "TitilliumWebRegular", serif;
+    font-family: "TitilliumWebRegular", sans-serif;
     font-size: 16px;
     line-height: 2;
     color: $black;
@@ -823,7 +827,7 @@ main.aboutUs {
     }
 
     &-title {
-      font-family: "TitilliumWebBold", serif;
+      font-family: "TitilliumWebBold", sans-serif;
       font-size: 40px;
       line-height: 52px;
       margin: 0;
@@ -834,7 +838,7 @@ main.aboutUs {
       }
     }
     &-text {
-      font-family: "TitilliumWebSemiBold", serif;
+      font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 24px;
       line-height: 38px;
       @media screen and (max-width: 500px) {

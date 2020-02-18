@@ -99,6 +99,8 @@ $(function() {
   $(".sectors-description-img").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed:4000,
     arrows: false,
     fade: true,
     asNavFor: ".sectors-description-slider"
@@ -106,7 +108,8 @@ $(function() {
   if ($(".sectors-description-slider").length > 0) {
     let descriptionSlider = $(".sectors-description-slider").slick({
       slidesToShow: 1,
-      autoplay: false,
+      autoplay: true,
+      autoplaySpeed:4000,
       dots: false,
       prevArrow: '<div class="slick-prev"></div>',
       nextArrow: '<div class="slick-next"></div>',
@@ -253,9 +256,9 @@ document.querySelector(".block-text-slider").classList.add("class-for-slider-wit
 $(function() {
   if (
     $(".sectors-construction,.sectors-generation,.sectors-grid,.sectors-oil")
-      .length > 0
+      .length > 0  && $(".sectors-banner__item").length>1
   ) {
-    $(".sectors-slider .wrapper").slick({
+    $(".sectors-banner").slick({
       slidesToShow: 1,
       autoplay: 6000,
       dots: false,
@@ -269,6 +272,39 @@ $(function() {
       dots: false,
       prevArrow: '<div class="slick-prev"></div>',
       nextArrow: '<div class="slick-next"></div>'
+    });
+  }
+});
+
+// similar-positions-slider
+$(function() {
+  if ($(".similar-positions-slider").length > 0) {
+    $(".similar-positions-slider").slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      centerMode: true,
+      variableWidth: true,
+      autoplay: false,
+      prevArrow: '<div class="slick-prev"></div>',
+      nextArrow: '<div class="slick-next"></div>',
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 1
+          }
+        },
+      ]
     });
   }
 });

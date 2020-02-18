@@ -91,7 +91,7 @@ hr {
         padding: 0;
       }
       &__title {
-        font-family: "TitilliumWebBold", serif;
+        font-family: "TitilliumWebBold", sans-serif;
         cursor: pointer;
         font-size: 24px;
         line-height: 1.33;
@@ -99,14 +99,14 @@ hr {
         width: 100%;
         text-transform: lowercase;
         span {
-          font-family: "TitilliumWebRegular", serif;
+          font-family: "TitilliumWebRegular", sans-serif;
         }
       }
       &__title::first-letter {
         text-transform: uppercase;
       }
       &__text {
-        font-family: "TitilliumWebRegular", serif;
+        font-family: "TitilliumWebRegular", sans-serif;
         font-size: 16px;
         line-height: 1.75;
         margin-bottom: unset;
@@ -123,7 +123,7 @@ hr {
         margin-bottom: 20px;
       }
       .join-block__title {
-        font-family: "TitilliumWebSemiBold", serif;
+        font-family: "TitilliumWebSemiBold", sans-serif;
         font-size: 18px;
         font-weight: 600;
         font-stretch: normal;
@@ -299,7 +299,7 @@ hr {
 //     }
 //   }
 //   &__title {
-//     font-family: "TitilliumWebBold", serif;
+//     font-family: "TitilliumWebBold", sans-serif;
 //     font-size: 40px;
 //     font-weight: bold;
 //     line-height: 1.15;
@@ -379,7 +379,7 @@ hr {
   }
 
   &__title {
-    font-family: "TitilliumWebBold", serif;
+    font-family: "TitilliumWebBold", sans-serif;
     font-size: 24px;
     line-height: 1.33;
     color: #fff;
@@ -412,7 +412,7 @@ hr {
     width: 100%;
     position: relative;
     cursor: pointer;
-    font-family: "TitilliumWebSemiBold", serif;
+    font-family: "TitilliumWebSemiBold", sans-serif;
     line-height: 1.5;
     font-size: 16px;
     // color: $browngrey;
@@ -434,7 +434,7 @@ hr {
     }
   }
   &__list {
-    font-family: "TitilliumWebRegular", serif;
+    font-family: "TitilliumWebRegular", sans-serif;
     font-size: 14px;
     line-height: 1.71;
     color: #fff;
@@ -456,7 +456,7 @@ hr {
     left: -18px;
   }
   &__item-insert {
-    font-family: "TitilliumWebRegular", serif;
+    font-family: "TitilliumWebRegular", sans-serif;
     font-size: 14px;
     line-height: 1.71;
     color: #fff;

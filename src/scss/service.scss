@@ -70,7 +70,7 @@
                 transform: rotate(90deg);
             }
             &__text {
-                font-family: "TitilliumWebSemiBold",serif;
+                font-family: "TitilliumWebSemiBold",sans-serif;
                 font-size: 14px;
                 padding-right: 36px;
             }
@@ -119,19 +119,19 @@
             }
           }
           &__title {
-            font-family: "TitilliumWebBold", serif;
+            font-family: "TitilliumWebBold", sans-serif;
             font-size: 40px;
             line-height: 1.3;
             color: $black;
             span {
-              font-family: "TitilliumWebRegular", serif;
+              font-family: "TitilliumWebRegular", sans-serif;
             }
             @media screen and (max-width: 480px) {
               font-size: 24px;
             }
           }
           &__description {
-            font-family: "TitilliumWebSemiBold", serif;
+            font-family: "TitilliumWebSemiBold", sans-serif;
             font-size: 24px;
             line-height: 1.58;
             width: 50%;
@@ -148,6 +148,9 @@
         background: url(../img/service-bg.png) no-repeat center/cover;
         min-height: 450px;
         @include flex(center,center,column);
+        @media (max-width: 768px) {   
+            background: url(../img/bg-ihawk-tablet-request.jpg) no-repeat center/cover;
+        }
     }
     .callback-block {
         padding: 0;
@@ -172,6 +175,7 @@
             }
             @media (max-width: 768px) {   
                 right: -222px;
+                display: none;
             }
             @media (max-width: 480px) {
                 display: none;

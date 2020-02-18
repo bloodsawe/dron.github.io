@@ -151,14 +151,14 @@
       margin-bottom: 10px;
     }
     &-title {
-      font-family: TitilliumWebSemiBold;
+      font-family: TitilliumWebSemiBold ,sans-serif;
       font-size: 18px;
       line-height: 28px;
       color: $black;
       margin-bottom: 10px;
     }
     &-text {
-      font-family: TitilliumWebRegular;
+      font-family: TitilliumWebRegular, sans-serif;
       font-size: 14px;
       line-height: 24px;
       color: $black;
@@ -581,14 +581,14 @@
     max-width: 730px;
     border-bottom: 1px solid $sunyellow;
     &-title {
-      font-family: TitilliumWebSemiBold, serif;
+      font-family: TitilliumWebSemiBold, sans-serif;
       font-size: 24px;
       line-height: 38px;
       color: $black;
       text-align: left;
     }
     &-info {
-      font-family: TitilliumWebRegular, serif;
+      font-family: TitilliumWebRegular, sans-serif;
       font-size: 16px;
       line-height: 32px;
       color: $black;
@@ -767,7 +767,7 @@
   }
 
   &__title {
-    font-family: "TitilliumWebBold", serif;
+    font-family: "TitilliumWebBold", sans-serif;
     font-size: 24px;
     line-height: 1.33;
     color: #fff;
@@ -789,7 +789,7 @@
   &__item {
     position: relative;
     cursor: pointer;
-    font-family: "TitilliumWebSemiBold", serif;
+    font-family: "TitilliumWebSemiBold", sans-serif;
     line-height: 28px;
     font-size: 18px;
     color: $browngrey;
@@ -805,7 +805,7 @@
     }
   }
   &__list {
-    font-family: "TitilliumWebRegular", serif;
+    font-family: "TitilliumWebRegular", sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: #fff;
@@ -827,7 +827,7 @@
     left: -18px;
   }
   &__item-insert {
-    font-family: "TitilliumWebRegular", serif;
+    font-family: "TitilliumWebRegular", sans-serif;
     font-size: 14px;
     line-height: 1.71;
     color: #fff;

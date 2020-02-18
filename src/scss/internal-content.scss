@@ -17,7 +17,7 @@ main.internal__page {
         width:95%;
     }
     &__list {
-        font-family: "TitilliumWebRegular", serif;
+        font-family: "TitilliumWebRegular", sans-serif;
         font-size: 16px;
         line-height: 2;
         color: #282828;
@@ -31,7 +31,7 @@ main.internal__page {
         list-style: disc;
     }
     &__text {
-        font-family: "TitilliumWebRegular", serif;
+        font-family: "TitilliumWebRegular", sans-serif;
         font-size: 16px;
         line-height: 2; 
         color: $black;
@@ -50,7 +50,7 @@ main.internal__page {
     }
     &__title {
         margin-bottom: 40px;
-        font-family: "TitilliumWebSemiBold", serif;
+        font-family: "TitilliumWebSemiBold", sans-serif;
         font-size: 18px;
         line-height: 1.56; 
         color: $black;
@@ -62,7 +62,7 @@ main.internal__page {
     }
     &__link {
         margin: 0 auto;
-        font-family: "TitilliumWebSemiBold", serif;
+        font-family: "TitilliumWebSemiBold", sans-serif;
         font-size: 14px;
         color: $black;
         position: relative;

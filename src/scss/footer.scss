@@ -53,14 +53,14 @@ footer {
             }
         } 
         &__title {
-            font-family: "TitilliumWebSemiBold", serif;
+            font-family: "TitilliumWebSemiBold", sans-serif;
             font-size: 16px;
             color: $greyishbrown;
             margin-bottom: 30px;
         } 
         &__link {
             display: block;
-            font-family: "TitilliumWebSemiBold", serif;
+            font-family: "TitilliumWebSemiBold", sans-serif;
             font-size: 14px;
             color: #ffffff;
             margin-bottom: 22px;
@@ -122,7 +122,7 @@ footer {
             }
         }
         &__title {
-            font-family: "TitilliumWebBold", serif;
+            font-family: "TitilliumWebBold", sans-serif;
             font-size: 24px;
             color: #ffffff;
             margin-bottom: 21px;
@@ -137,7 +137,7 @@ footer {
             background: transparent;
             border: 0px;
             border-bottom: 1px solid $greyishbrown;
-            font-family: "TitilliumWebRegular", serif;
+            font-family: "TitilliumWebRegular", sans-serif;
             font-size: 14px;
             line-height: 1.79;
             color: #ffffff;
@@ -146,13 +146,13 @@ footer {
         }
         &__input::-moz-placeholder {
             color: #fff;
-            font-family: "TitilliumWebRegular",serif;
+            font-family: "TitilliumWebRegular",sans-serif;
             font-size: 14px;
         }
         &__input::-webkit-input-placeholder {
             color:#fff;
             font-size: 14px;
-            font-family: "TitilliumWebRegular",serif;
+            font-family: "TitilliumWebRegular",sans-serif;
         }
         &__arrow {
             position: absolute;
@@ -187,7 +187,7 @@ footer {
             border-bottom: 1px solid $greyishbrown;
         }
         &__items {
-            font-family: "TitilliumWebRegular", serif;
+            font-family: "TitilliumWebRegular", sans-serif;
             font-size: 14px;
             color: $verylightpink;
             margin-bottom: 26px;
@@ -200,7 +200,7 @@ footer {
             margin-bottom: 0;
         }
         &__link {
-            font-family: "TitilliumWebRegular", serif;
+            font-family: "TitilliumWebRegular", sans-serif;
             color: $verylightpink;
         }
     }
@@ -208,7 +208,7 @@ footer {
 
 .subfooter {
     background-color: #343434;
-    font-family: "TitilliumWebSemiBold", serif;
+    font-family: "TitilliumWebSemiBold", sans-serif;
     font-size: 12px;
     color: #929292;
     padding: 26px 0;
