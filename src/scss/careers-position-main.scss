@@ -16,7 +16,7 @@ main {
   &-title {
     margin: 0;
     margin-bottom: 10px;
-    font-family: "TitilliumWebBold", sans-sans-serif;
+    font-family: "TitilliumWebBold", sans-serif;
     font-size: 40px;
     font-weight: bold;
     line-height: 1.15;
@@ -164,7 +164,7 @@ main {
       border-radius: 18px;
       background-color: #ffffff;
       &-title {
-        font-family: "TitilliumWebSemiBold", sans-sans-serif;
+        font-family: "TitilliumWebSemiBold", sans-serif;
         font-size: 24px;
         font-weight: bold;
         line-height: 38px;
@@ -173,7 +173,7 @@ main {
         padding-bottom: 20px;
       }
       &-text {
-        font-family: "TitilliumWebRegular", sans-sans-serif;
+        font-family: "TitilliumWebRegular", sans-serif;
         font-size: 16px;
         font-weight: normal;
         line-height: 32px;
@@ -185,30 +185,29 @@ main {
       }
     }
   }
-}
-
-.slick-prev,
-.slick-next {
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-  width: 54px;
-  height: 54px;
-  border: solid 2px $verylightpink;
-  border-radius: 50%;
-  background: transparent;
-  background: url(../img/arrow-right-s-line.svg) no-repeat center;
-}
-.slick-prev:hover,
-.slick-next:hover {
-  border: solid 2px $sunyellow;
-  background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
-  cursor: pointer;
-}
-.slick-prev {
-  right: 67px;
-  transform: rotate(180deg);
-}
-.slick-next {
-  right: 0;
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 54px;
+    height: 54px;
+    border: solid 2px $verylightpink;
+    border-radius: 50%;
+    background: transparent;
+    background: url(../img/arrow-right-s-line.svg) no-repeat center;
+  }
+  .slick-prev:hover,
+  .slick-next:hover {
+    border: solid 2px $sunyellow;
+    background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+    cursor: pointer;
+  }
+  .slick-prev {
+    right: 67px;
+    transform: rotate(180deg);
+  }
+  .slick-next {
+    right: 0;
+  }
 }

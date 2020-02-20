@@ -24,23 +24,17 @@
 
 // ie
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   if (document.querySelector(".homepage")) {  
-//     var banner = document.querySelector(".banner-slider__item");
-//     // if(window.matchMedia("(min-width: 481px)").matches) {
-//     //   banner.style.paddingTop = "120px";
-//     // }
-//     // if(window.matchMedia("(max-width: 480px)").matches) {
-//     //     banner.style.paddingTop = "85px";
-//     // }
-    
-
-//     var img = Array.from(banner.querySelectorAll("img.down"));
-//     img.map(function (e) {
-//       e.classList.remove("down");
-//     });
-//   }
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelector(".homepage")) {  
+    var banner =Array.from(document.querySelectorAll(".banner-slider__item")) ;
+    console.log('banner: ', banner);
+    var img =Array.from(banner[0].querySelectorAll("img")) ;
+    console.log('img: ', img);
+    img.map(function (e) {
+      e.classList.add("down");
+    });
+  }
+});
  
 // anchor
 
@@ -61,3 +55,20 @@ $(window).on('load', function () {
   $svg_anm.fadeOut();
   $preloader.delay(500).fadeOut('slow');
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

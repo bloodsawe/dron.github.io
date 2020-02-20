@@ -92,7 +92,7 @@
             align-items: flex-start;
             max-width: 220px;
             &-name {
-              font-family: TitilliumWebRegular;
+              font-family: TitilliumWebRegular, sans-serif;
               @include font ($weight: normal, $size: 24px, $line-height: 32px, $letter-spacing: normal, $color: $black);
             }
             &-town {
@@ -101,7 +101,7 @@
               padding-bottom: 20px;
             }
             &-location, &-phone, &-mail {
-              font-family: TitilliumWebRegular;
+              font-family: TitilliumWebRegular, sans-serif;
               @include font ($weight: normal, $size: 14px, $line-height: 24px, $letter-spacing: normal, $color: $black); 
               a {
                 color: $black;
@@ -205,7 +205,7 @@
         }
         &-text {
           z-index: 1;
-          font-family: TitilliumWebRegular;
+          font-family: TitilliumWebRegular, sans-serif;
           @include font ($weight: normal, $size: 18px, $line-height: 28px, $letter-spacing: normal, $color: $browngrey);
           max-width: 350px;
           text-align: left;

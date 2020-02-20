@@ -97,7 +97,7 @@
   &-subtext {
     max-width: 445px;
     padding-bottom: 110px;
-    font-family: TitilliumWebRegular;
+    font-family: TitilliumWebRegular, sans-serif;
     font-size: 16px;
     line-height: 32px;
     color: $white;
@@ -110,7 +110,7 @@
   &-careers-video {
     height: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: fill;
   }
 }
 
@@ -330,14 +330,14 @@
     align-items: flex-end;
   }
   &-text-light {
-    font-family: TitilliumWebRegular;
+    font-family: TitilliumWebRegular, sans-serif;
     font-size: 16px;
     line-height: 32px;
     color: #ffffff;
     max-width: 445px;
   }
   &-text-dark {
-    font-family: TitilliumWebRegular;
+    font-family: TitilliumWebRegular, sans-serif;
     font-size: 16px;
     line-height: 32px;
     color: $black;

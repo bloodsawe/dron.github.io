@@ -126,6 +126,49 @@
         width: 60%;
       }
     }
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      z-index: 1;
+      bottom: 11%;
+      width: 54px;
+      height: 54px;
+      border: solid 2px $verylightpink;
+      border-radius: 50%;
+      background: transparent;
+      background: url(../img/arrow-right-s-line.svg) no-repeat center;
+      @media (max-width: 480px) {
+        display: none !important;
+      }
+    }
+    .slick-prev:hover,
+    .slick-next:hover {
+      border: solid 2px $sunyellow;
+      background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+      cursor: pointer;
+    }
+    .slick-prev {
+      left: 10%;
+      transform: rotate(180deg);
+      @media screen and (min-width: 1441px) {
+        left: calc(50% - 1100px / 2);
+      }
+      @media screen and (max-width: 1024px) {
+        left: 5%;
+      }
+    }
+    .slick-next {
+      left: 16%;
+      @media screen and (min-width: 1441px) {
+        left: calc(54% - 1100px / 2);
+      }
+      @media screen and (max-width: 1024px) {
+        left: 14%;
+      }
+      @media screen and (max-width: 600px) {
+        left: 17%;
+      }
+    }
   }
   &-info {
     background-image: url(../img/kisspng-oil-sectors.png),
@@ -467,6 +510,208 @@
       }
     }
   }
+  &-desc {
+    @include flex(space-between, center, row);
+    position: relative;
+    height: 450px;
+    .slick-slider {
+      position: static;
+    }
+    &-img {
+      width: 50%;
+      max-height: 450px;
+      @media screen and (min-width: 1600px) {
+        max-height: none;
+      }
+      img {
+        width: auto;
+        height: 450px;
+        object-fit: cover;
+        @media screen and (min-width: 1600px) {
+          // height: calc((100vw / 2 * 450) / 720);
+          object-fit: fill;
+        }
+        @media screen and (max-width: 480px) {
+          height: 188px;
+        }
+      }
+    }
+    &-slider {
+      width: 50%;
+      &__item {
+        padding: 0 110px;
+      }
+      &__title {
+        font-size: 24px;
+        line-height: 1.33;
+        color: $black;
+        font-family: "TitilliumWebBold", sans-serif;
+      }
+      &__text {
+        max-height: 165px;
+        @media screen and (max-width: 480px) {
+          max-height: 155px;
+        }
+        overflow-y: auto;
+        font-size: 16px;
+        line-height: 2;
+        color: $black;
+        font-family: "TitilliumWebRegular", sans-serif;
+      }
+      &__text::-webkit-scrollbar {
+        width: 5px;
+        background-color: #dcdcdc;
+      }
+      &__text::-webkit-scrollbar-thumb {
+          background-color: $sunyellow;
+      }
+    }
+    &__counter {
+      top: 13%;
+      left: calc(50% + 110px);
+      position: absolute;
+      font-size: 16px;
+      font-family: "TitilliumWebBold", sans-serif;
+    }
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      z-index: 1;
+      bottom: 10%;
+      width: 54px;
+      height: 54px;
+      border: solid 2px $verylightpink;
+      border-radius: 50%;
+      background: transparent;
+      background: url(../img/arrow-right-s-line.svg) no-repeat center;
+    }
+    .slick-prev:hover,
+    .slick-next:hover {
+      border: solid 2px $sunyellow;
+      background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+      cursor: pointer;
+    }
+    .slick-prev {
+      left: calc(50% + 110px);
+      transform: rotate(180deg);
+    }
+    .slick-next {
+      left: calc(54.5% + 110px);
+    }
+    @media screen and (max-width: 1200px) {
+      &-slider {
+        &__item {
+          padding: 0 80px;
+        }
+      }
+
+      &__counter {
+        left: calc(50% + 80px);
+      }
+
+      .slick-prev {
+        left: calc(50% + 80px);
+      }
+
+      .slick-next {
+        left: calc(57% + 80px);
+      }
+    }
+
+    @media screen and (max-width: 968px) {
+      height: 900px;
+      flex-direction: column;
+
+      &-img {
+        width: 100%;
+      }
+
+      &-slider {
+        height: 100%;
+        width: 100%;
+        padding: 0 20%;
+
+        &__item {
+          padding: 74px 0;
+        }
+
+        &__text {
+          padding-top: 10px;
+        }
+      }
+
+      &__counter {
+        top: 54%;
+        left: 20%;
+      }
+
+      .slick-prev {
+        left: 20%;
+      }
+
+      .slick-next {
+        left: 29.5%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      &-slider {
+        padding: 0 15%;
+      }
+
+      &__counter {
+        top: 54%;
+        left: 15%;
+      }
+
+      .slick-prev {
+        left: 15%;
+      }
+
+      .slick-next {
+        left: 28%;
+      }
+
+      .slick-prev,
+      .slick-next {
+        bottom: 7%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      height: 538px;
+
+      &-slider {
+        padding: 0 5%;
+
+        &__item {
+          padding: 54px 0;
+        }
+
+        &__text {
+          font-size: 14px;
+        }
+      }
+
+      &__counter {
+        top: 40%;
+        left: 5%;
+      }
+
+      .slick-prev,
+      .slick-next {
+        bottom: 3%;
+      }
+
+      .slick-prev {
+        left: 5%;
+      }
+
+      .slick-next {
+        left: 23%;
+      }
+    }
+  }
   &-oil,
   &-generation,
   &-grid,
@@ -585,8 +830,8 @@
       }
     }
   }
-  &-generation {
-    .sectors-description {
+  &-generation{
+    .sectors-desc {
       .slick-prev {
         left: calc(0% + 110px);
         transform: rotate(180deg);
@@ -594,7 +839,7 @@
       .slick-next {
         left: calc(4.5% + 110px);
       }
-      &__counter {
+      .sectors-desc__counter {
         left: 110px;
       }
       @media screen and (max-width: 1200px) {
@@ -604,12 +849,12 @@
         .slick-next {
           left: calc(4.5% + 80px);
         }
-        &__counter {
+        .sectors-desc__counter {
           left: 80px;
         }
       }
       @media screen and (max-width: 968px) {
-        &__counter {
+        .sectors-desc__counter {
           top: 4%;
           left: 20%;
         } 
@@ -625,7 +870,7 @@
         
       }
       @media screen and (max-width: 600px) {
-        &__counter {
+        .sectors-desc__counter {
           left: 15%;
         } 
         .slick-prev {
@@ -643,7 +888,7 @@
         
       }
       @media screen and (max-width: 480px) {
-        &__counter {
+        .sectors-desc__counter {
           left: 5%;
         }
   

@@ -228,7 +228,7 @@ main.aboutUs {
     &-video {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: fill;
     }
     &-btn {
       position: absolute;
@@ -701,6 +701,7 @@ main.aboutUs {
     font-size: 18px;
     line-height: 1.56;
     color: $black;
+    cursor: pointer;
     // margin-bottom: 20px;
   }
   &__certificate {
