@@ -278,7 +278,11 @@ main.newsandblog {
   animation: 1s ease-out 0s popup;
   right: 0;
   background-color: #282828;
+  @media (max-width:480px) {
+    width: 300px;
+  }
 }
+
 .popup__content {
   position: relative;
   padding: 40px;
@@ -288,6 +292,9 @@ main.newsandblog {
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 21px;
+  @media (max-width:480px) {
+    font-size: 18px;
+  }
 }
 .popup__close {
   cursor: pointer;

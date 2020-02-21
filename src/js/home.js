@@ -26,10 +26,8 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".homepage")) {  
-    var banner =Array.from(document.querySelectorAll(".banner-slider__item")) ;
-    console.log('banner: ', banner);
-    var img =Array.from(banner[0].querySelectorAll("img")) ;
-    console.log('img: ', img);
+    var banner = Array.from(document.querySelectorAll(".banner-slider__item")) ;
+    var img = Array.from(banner[3].querySelectorAll("img")) ;
     img.map(function (e) {
       e.classList.add("down");
     });
@@ -56,19 +54,6 @@ $(window).on('load', function () {
   $preloader.delay(500).fadeOut('slow');
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 

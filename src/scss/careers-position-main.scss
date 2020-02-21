@@ -30,6 +30,9 @@ main {
 }
 
 .full-info {
+  .list-item {
+    font-family: TitilliumWebRegular,sans-serif;
+  }
   padding: 60px 0;
   @media screen and (max-width: 320px) {
     padding-bottom: 10px;
@@ -38,16 +41,20 @@ main {
     max-width: 730px;
   }
   .text {
+    font-family: TitilliumWebRegular,sans-serif;
     padding-bottom: 20px;
     font-size: 16px;
     line-height: 32px;
-    font-weight: nornal;
+    font-weight: normal;
     text-align: left;
     color: $black;
     &-main {
+      font-family: TitilliumWebRegular,sans-serif;
+    }
+    &-main {
       font-size: 16px;
       line-height: 32px;
-      font-weight: nornal;
+      font-weight: normal;
       text-align: left;
       color: $black;
       @media screen and (max-width: 320px) {
@@ -67,10 +74,9 @@ main {
   .title {
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: "TitilliumWebBold", sans-sans-serif;
+    font-family: "TitilliumWebBold", sans-serif;
     font-size: 24px;
     line-height: 32px;
-    // font-weight: nornal;
     text-align: left;
     color: $black;
     @media screen and (max-width: 320px) {
@@ -87,7 +93,7 @@ main {
       list-style: disc;
       font-size: 16px;
       line-height: 32px;
-      font-weight: nornal;
+      font-weight: normal;
       text-align: left;
       color: $black;
       @media screen and (max-width: 320px) {
@@ -126,7 +132,7 @@ main {
   padding: 60px 0;
   background-color: #f2f3f4;
   &-title {
-    font-family: "TitilliumWebBold", sans-sans-serif;
+    font-family: "TitilliumWebBold", sans-serif;
     font-size: 40px;
     font-weight: bold;
     line-height: 52px;
@@ -134,7 +140,7 @@ main {
     color: $black;
   }
   &-subtitle {
-    font-family: "TitilliumWebSemiBold", sans-sans-serif;
+    font-family: "TitilliumWebSemiBold", sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 28px;
@@ -147,18 +153,10 @@ main {
     padding-bottom: 94px;
     &-item {
       padding: 30px 20px 20px 40px;
-      // @media screen and (max-width: 768px) {
-      //   max-width: 350px;
-      // }
-      // @media screen and (max-width: 768px) {
-      //   max-width: 350px;
-      // }
       max-width: 350px;
       @media screen and (max-width: 320px) {
         max-width: 290px;
       }
-      // max-width: 350px;
-      // max-height: 550px;
       margin: 0 20px;
       height: auto;
       border-radius: 18px;
@@ -209,5 +207,42 @@ main {
   }
   .slick-next {
     right: 0;
+  }
+}
+
+.careers-position-page {
+  .popup-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-property: opacity;
+    transition-duration: 2s;
+    top: 0;
+    bottom: 0;
+    display: none;
+  }
+  .popup {
+    position: absolute;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transform: translate(-50%,-50%);
+    -webkit-animation: 1s ease-out 0s popup;
+    animation: 1s ease-out 0s popup;
+    right: 0;
+    background-color: #282828;
+    @media (max-width:480px) {
+        width: 300px;
+    }
+  }
+  .popup p {
+    @media (max-width:480px) {
+      font-size: 18px;
+    }
   }
 }

@@ -21,6 +21,8 @@ $(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    autoplay: true,
+    autoplaySpeed:6000,
     asNavFor: ".slider-block"
   });
 
@@ -31,7 +33,6 @@ $(function() {
       slidesToShow: 3,
       slidesToScroll: 1,
       rows: 2,
-      autoplay: false,
       dots: false,
       prevArrow: '<div class="slick-prev"></div>',
       nextArrow: '<div class="slick-next"></div>',
@@ -85,11 +86,10 @@ $(function() {
 document.addEventListener("DOMContentLoaded", function() {
   if (
     document.querySelector(
-      ".sectors-oil, sectors-grid, sectors-generation, sectors-construction"
+      ".sectors-oil, .sectors-grid, .sectors-generation, .sectors-construction"
     )
   ) {
-    var sliders = document.querySelectorAll(".sectors-description-slider__item")
-      .length;
+    var sliders = document.querySelectorAll(".sectors-description-slider__item").length;
     var counterSlider = document.querySelector(".counter-slider");
     counterSlider.innerHTML = sliders;
   }
@@ -133,13 +133,12 @@ $(function() {
 document.addEventListener("DOMContentLoaded", function() {
   if (
     document.querySelector(
-      ".sectors-oil, sectors-grid, sectors-generation, sectors-construction"
+      ".sectors-generation"
     )
   ) {
-    var sliders = document.querySelectorAll(".sectors-desc-slider__item")
-      .length;
-    var counterSlider = document.querySelector(".counter-slider");
-    counterSlider.innerHTML = sliders;
+    var slidersDesc = document.querySelectorAll(".sectors-desc-slider__item").length;
+    var counterSlider = document.querySelector(".counter-desc-slider");
+    counterSlider.innerHTML = slidersDesc;
   }
 });
 
