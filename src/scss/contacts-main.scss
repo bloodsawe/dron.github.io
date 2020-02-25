@@ -333,5 +333,36 @@
   svg#worldmapFeedback {
     z-index: 0;
   }
+
+  input.hs-input {
+      width: 100%;
+      border: 0;
+      border-radius: 0;
+      border-bottom: 2px solid #cad5e2;
+      background: none;
+      padding: 0 15px;
+      margin-bottom: 15px;
+      margin-top: 11px;
+      outline: none;
+      color: white;
+  }
+
+  form.hs-form label {
+    font-family: "TitilliumWebRegular",sans-serif;
+    color: white;
+    font-size: 14px;
+  }
+
+  textarea.hs-input {
+    resize: none;
+    margin: 15px 0;
+    width: 100%;
+    background: none;
+    border: 2px solid #cad5e2;
+    color: white;
+  }
+  .hs-richtext.hs-main-font-element {
+    margin-bottom: 15px;
+  }
 }
 

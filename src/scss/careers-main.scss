@@ -539,7 +539,7 @@
 }
 
 .works {
-  padding-top: 30px;
+  // padding-top: 30px;
   background-color: #fff;
   position: relative;
   @media screen and (max-width: 480px) {
@@ -575,6 +575,9 @@
     &:nth-last-child(1) {
       border: none;
     }
+  }
+  &-card:first-child{
+    padding-top: 60px;
   }
   
 }
@@ -815,4 +818,37 @@
       margin-left: 0;
     }
   }
+}
+
+
+
+.hbspt-form .hs-form .hs_email .input .hs-input {
+      width: 100%;
+      border: 0;
+      border-radius: 0;
+      border-bottom: 2px solid #cad5e2;
+      background: none;
+      padding: 0 15px;
+      margin-bottom: 15px;
+      margin-top: 11px;
+      outline: none;
+      color: white;
+}
+
+input.hs-button.primary.large {
+    background: #ffd12d ;
+    border-color: #ffd12d ;
+    color: #282828 ;
+    font-size: 14px ;
+    font-family: 'TitilliumWebBold', sans-serif ;
+    font-weight: 700;
+    padding: 8px 24px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.hs_email label {
+  color: white;
+  font-family: 'TitilliumWebRegular', sans-serif ;
+  font-size: 14px ;
 }
