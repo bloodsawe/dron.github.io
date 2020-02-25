@@ -221,6 +221,7 @@ main {
     top: 0;
     bottom: 0;
     display: none;
+    z-index: 10;
   }
   .popup {
     position: absolute;
@@ -229,6 +230,7 @@ main {
     height: auto;
     left: 50%;
     top: 50%;
+    bottom: initial;
     transition-property: opacity;
     transition-duration: 2s;
     transform: translate(-50%,-50%);
@@ -238,6 +240,51 @@ main {
     background-color: #282828;
     @media (max-width:480px) {
         width: 300px;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+    textarea {
+      resize: none;
+      margin: 15px 0;
+      width: 100%;
+      background: none;
+      border: 2px solid #cad5e2;
+      color: white;
+    }
+    label, .upload {
+      color: #b4b4b4;
+      font-size: 14px;
+      font-family: "TitilliumWebRegular", sans-serif;
+      margin-bottom: 5px;
+    }
+    input.wpcf7-form-control {
+      width: 100%;
+      border: 0;
+      border-radius: 0;
+      border-bottom: 2px solid #cad5e2;
+      background: none;
+      padding: 0 15px;
+      margin-bottom: 15px;
+      margin-top: 11px;
+      outline: none;
+      color: white;
+    }
+    input.wpcf7-submit {
+      background: #ffd12d;
+      border-color: #ffd12d;
+      color: #282828;
+      font-size: 14px;
+      font-family: "TitilliumWebRegular", sans-serif;
+      cursor: pointer;
+      text-align: center;
+      border-style: solid;
+      border-width: 1px;
+      padding: 12px 24px;
+      line-height: 12px;
+      font-weight: 700;
+    }
+    .codedropz-upload-wrapper {
+      margin-top: 10px;
     }
   }
   .popup p {

@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
       
       buttonApply.forEach((e) => {
           e.addEventListener("click", function() {
-              console.log("test");
               popUpWrap.style.display = "block";
               popUpWrap.style.opacity = "1";
               popUp.style.display = "block";
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
         
         
         popUpWrap.addEventListener("click", function(e) {
-            console.log(e.target);
           if (e.target != popUp && e.target != popUp.childNodes) {
             setTimeout(function(){
                 popUpWrap.style.display = "none";
@@ -40,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
           }       
         });
         popUp.addEventListener("click", function(e) {
-            console.log("popUp");
             e.stopPropagation();
         });
   }
