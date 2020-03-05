@@ -71,7 +71,6 @@
       height: 100%;
       top: 0;
       position: absolute;
-      // background: red;
       background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5))!important;
       background-repeat: no-repeat;
       background-size: cover;
@@ -171,8 +170,6 @@
     }
   }
   &-info {
-    background-image: url(../img/kisspng-oil-sectors.png),
-      linear-gradient(to right, $sunyellow 0%, #d2e9ff 100%);
     background-repeat: no-repeat;
     background-position: right 0% bottom;
     position: relative;
@@ -187,8 +184,19 @@
     &__block {
       @include flex(space-between, flex-start, column);
       padding: 83px 0;
+      background-repeat: no-repeat;
+      background-position: right 0% bottom;
+      position: relative;
+      margin-bottom: 80px;
       @media screen and (max-width: 768px) {
         padding: 31px 0;
+      }
+      @media screen and (max-width: 480px) {
+        background-image: linear-gradient(
+          to right,
+          $sunyellow 0%,
+          #d2e9ff 100%
+        ) !important;
       }
     }
     &__inner {
@@ -795,23 +803,28 @@
   }
   &-generation {
     .sectors-info {
-      background-image: url(../img/kisspng-wind-sectors.png),
-        linear-gradient(to right, $sunyellow 0%, #d2e9ff 100%);
+      background-position: right 7% bottom;
+    }
+    .sectors-info__block {
+      padding: 70px 0;
     }
   }
   &-grid {
     .sectors-info {
-      background-image: url(../img/sector-voltage.png),
-        linear-gradient(to right, $sunyellow 0%, #d2e9ff 100%);
+      background-position: right 4% bottom;
+    }
+    .sectors-info__block {
+      padding: 39px 0;
     }
   }
   &-construction {
     .sectors-info {
-      background-image: url(../img/sector-hiclipart.png),
-        linear-gradient(to right, $sunyellow 0%, #d2e9ff 100%);
       &__description:nth-child(2) {
         width: 61%;
       }
+    }
+    .sectors-info__block {
+      padding: 56px 0;
     }
   }
 

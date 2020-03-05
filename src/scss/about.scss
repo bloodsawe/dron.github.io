@@ -311,7 +311,7 @@ main.aboutUs {
       height: 100%;
       padding-top: 65px;
       padding-bottom: 65px;
-      overflow-x: auto;
+      // overflow-x: auto;
 
       @media screen and (max-width: 768px) {
         padding-top: 40px;
@@ -324,13 +324,13 @@ main.aboutUs {
         padding-bottom: 20px;
       }
     }
-    &__container-text::-webkit-scrollbar {
-      width: 5px;
-      background-color: #dcdcdc;
-    }
-    &__container-text::-webkit-scrollbar-thumb {
-      background-color: $sunyellow;
-    }
+    // &__container-text::-webkit-scrollbar {
+    //   width: 5px;
+    //   background-color: #dcdcdc;
+    // }
+    // &__container-text::-webkit-scrollbar-thumb {
+    //   background-color: $sunyellow;
+    // }
     &__container {
       @include flex(space-around, flex-start, column);
       width: 56%;
@@ -359,19 +359,30 @@ main.aboutUs {
       color: $black;
       line-height: 1.58;
       max-width: 345px;
+      padding-bottom: 20px;
       font-family: "TitilliumWebSemiBold", sans-serif;
 
       @media screen and (max-width: 480px) {
         font-size: 18px;
       }
     }
+    &__text::-webkit-scrollbar {
+      width: 5px;
+      background-color: #dcdcdc;
+    }
+    &__text::-webkit-scrollbar-thumb {
+      background-color: $sunyellow;
+    }
     &__text {
       font-size: 16px;
       color: $black;
       line-height: 2;
       font-family: "TitilliumWebregular", sans-serif;
-      padding-top: 20px;
-
+      max-height: 260px;
+      @media screen and (max-width: 1070px) {
+        max-height: 233px;
+      }
+      overflow-x: auto;
       @media screen and (max-width: 480px) {
         font-size: 14px;
       }
