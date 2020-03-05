@@ -1872,10 +1872,11 @@ document.addEventListener("DOMContentLoaded", function() {
   } else if (document.querySelectorAll(".internal__page").length > 0) {
     ScrollReveal({
       reset: true
-    }).reveal("section p,section h4,section a,section img,.internal-banner", {
+    }).reveal("section p,section h4,section img,.internal-banner", {
       delay: delay,
       duration: duration
     });
+    ScrollReveal().sync();
   } else if (document.querySelectorAll(".newsandblog").length > 0) {
     ScrollReveal({
       reset: true
