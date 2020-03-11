@@ -759,6 +759,7 @@
     }
     .watch-description {
       justify-content: flex-start;
+      padding: 80px 0;
       padding-left: 10%;
       &__inner {
         width: 90%;
@@ -769,6 +770,8 @@
       @media screen and (max-width: 768px) {
         justify-content: center;
         padding-left: 0%;
+        height: auto;
+        padding: 40px 0;
         &__inner {
           width: 64%;
         }
