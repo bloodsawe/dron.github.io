@@ -63,10 +63,10 @@ header.out {
       display: flex;
       align-items: center;
       height: 100%;
-      padding: 0 20px;
+      padding: 0 15px;
       position: relative;
       @media screen and (max-width: 820px) {
-        padding: 0 14px;
+        padding: 0 12px;
       }
       @media screen and (max-width: 768px) {
         border-top: none;
@@ -110,8 +110,9 @@ header.out {
       padding: 17px 23px;
       font-size: 14px;
       margin-left: 35px;
-      @media screen and (max-width: 860px) {
+      @media screen and (max-width: 890px) {
         padding: 17px 12px;
+        margin-left: 16px;
       }
       @media screen and (max-width: 768px) {
           margin-left: 0;

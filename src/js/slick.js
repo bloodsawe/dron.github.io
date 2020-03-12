@@ -177,10 +177,37 @@ $(function() {
 });
 
 // news-slider
+// $(function() {
+//   if ($(".news-slider").length > 0) {
+//   }
+//   $(".news-slider").slick({
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: false,
+//     dots: false,
+//     prevArrow: '<div class="slick-prev"></div>',
+//     nextArrow: '<div class="slick-next"></div>',
+//     responsive: [
+//       {
+//         breakpoint: 769,
+//         settings: {
+//           slidesToShow: 2
+//         }
+//       },
+//       {
+//         breakpoint: 468,
+//         settings: {
+//           slidesToShow: 1
+//         }
+//       }
+//     ]
+//   });
+// });
+
 $(function() {
-  if ($(".news-slider").length > 0) {
+  if ($(".wp_rss_retriever_list").length > 0) {
   }
-  $(".news-slider").slick({
+  $(".wp_rss_retriever_list").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
@@ -191,16 +218,16 @@ $(function() {
       {
         breakpoint: 769,
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 468,
         settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
 
