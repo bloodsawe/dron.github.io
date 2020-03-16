@@ -286,7 +286,11 @@
       line-height: 1.56;
     }
     hr {
-      width: 75%;
+      border: none;
+      color: $verylightpink;
+      background-color: $verylightpink;
+      height: 1px;
+      width: 77%;
       @media screen and (max-width: 968px) {
         width: 70%;
       }

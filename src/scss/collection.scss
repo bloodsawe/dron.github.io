@@ -189,6 +189,9 @@
     border: none;
     position: relative;
     margin-bottom: 59px;
+    .main-button__text {
+        padding-right: 0;
+    }
 }
 
 .services,.services-collection,  .sectors-oil, .homepage, .sectors-grid, .sectors-construction, .sectors-generation {
