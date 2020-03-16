@@ -395,7 +395,7 @@ hr {
   }
   &__tabs {
     width: 51.354%;
-    @include flex(space-between, flex-start, row);
+    @include flex(flex-start, flex-start, row);
     @media (max-width: 768px) {
       margin-bottom: 30px;
       width: 73%;
@@ -409,7 +409,7 @@ hr {
     }
   }
   &__item {
-    width: 100%;
+    width: auto;
     position: relative;
     cursor: pointer;
     font-family: "TitilliumWebSemiBold", sans-serif;
