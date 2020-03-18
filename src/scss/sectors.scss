@@ -223,7 +223,8 @@
       font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 18px;
       line-height: 1.58;
-      width: 100%;
+      width: 40%;
+      margin-right: 30px;
       @media screen and (max-width: 768px) {
         margin-right: 0px;
         margin-bottom: 20px;
@@ -786,7 +787,7 @@
       @media screen and (max-width: 480px) {
         justify-content: flex-start;
         padding-left: 5%;
-        height: 350px;
+        // height: 350px;
         padding-top: 30px;
         &__inner {
           width: 98%;
@@ -859,8 +860,9 @@
   }
   &-construction {
     .sectors-info {
-      &__description:nth-child(2) {
-        width: 61%;
+      &__description {
+        width: 100%;
+        margin-right: 0px;
       }
     }
     .sectors-info__block {

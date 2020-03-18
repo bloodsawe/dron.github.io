@@ -66,8 +66,11 @@ document.addEventListener("DOMContentLoaded", function () {
         elem.style.display = "none";
         descriptionText.forEach((elem) => {
           if (elem.getAttribute("data-tab") == selectedBlockDescription) {
+            elem.setAttribute("data-open", true)
             elem.style.maxHeight = "100000px";
             ScrollReveal().sync();
+          } else {
+            elem.setAttribute("data-open", false)
           }
         })
       })
@@ -82,6 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
     descriptionText.forEach(function (elem, i) {
       return elem.setAttribute("data-tab", i);
     });
+    descriptionText.forEach(function (elem, i) {
+      return elem.setAttribute("data-open", false);
+    });
     readMoreBtn.forEach(function (elem, i) {
       return elem.setAttribute("data-tab", i);
     });
@@ -94,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollHeight = (100 / blockTab.length + 0.1).toFixed(1);
     document.querySelector('.collection-scroll__thumb').style.height = "".concat(scrollHeight, "%");
     blockTab.forEach(function (elem) {
+      
       elem.addEventListener("click", function () {
         prevElem = bufferElem;
         nextElem = elem.getAttribute("data-tab");
@@ -103,8 +110,11 @@ document.addEventListener("DOMContentLoaded", function () {
         blockDescription.forEach(function (elem) {
           elem.getAttribute("data-tab") == selectedBlockDescription ? elem.style.display = "block" : elem.style.display = "none";
         });
+        
         descriptionText.forEach(function (elem) {
+          
           if (elem.getAttribute("data-tab") == selectedBlockDescription) {
+            
             if (prevElem < nextElem) {
               elem.style.animation = "down 0.7s linear 0s 1 normal";
               setTimeout(function () {
@@ -117,12 +127,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 elem.style.animation = "";
               }, 1000);
               ScrollReveal().sync();
-            }
+            } 
           } else {
             elem.style.maxHeight = "135px";
             readMoreBtn.forEach(function (elem) {
-              elem.style.display = "block";
+              if (prevElem == nextElem) { 
+                if (descriptionText[nextElem].getAttribute("data-open") === 'true') {
+                  elem.style.display = "none";
+                } else {
+                  elem.style.display = "block";
+                }
+
+              } else {
+                elem.style.display = "block";
+              }
             });
+            elem.setAttribute("data-open", false)
             ScrollReveal().sync();
           }
         });

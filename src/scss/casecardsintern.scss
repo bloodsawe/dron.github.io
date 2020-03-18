@@ -5,7 +5,7 @@
     margin-left: 8%;
   }
   .text-header {
-    padding: 200px 50px 0;
+    padding: 100px 50px 0;
     h1 {
       @media screen and (max-width: 480px) {
         padding: 0;
@@ -24,10 +24,10 @@
     }
     @media screen and (max-width: 480px) {
       // padding: 0;
-      padding: 140px 0 0;
+      padding: 70px 0 0;
     }
     @media screen and (max-width: $tabletwiev) {
-      padding: 200px 0 0;
+      padding: 100px 0 0;
     }
   }
   .banner-slider__title {
@@ -152,9 +152,11 @@
       }
     }
     .main-button {
+      width: 216px;
       position: absolute;
       top: 50%;
       left: 50%;
+      padding-right: 28px;
       transform: translate(-50%, -50%);
       img {
         width: initial;
@@ -360,7 +362,7 @@
         height: 54px;
         border: solid 2px $verylightpink;
         border-radius: 50%;
-        background: transparent;
+        // background: transparent;
         background: url(../img/arrow-right-s-line.svg) no-repeat center;
         @media screen and (max-width: $tabletwiev) {
           // display: none !important;

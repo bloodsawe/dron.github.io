@@ -32,7 +32,7 @@ $(function() {
     $(".slider-block").slick({
       slidesToShow: 3,
       slidesToScroll: 1,
-      rows: 2,
+      // rows: 2,
       dots: false,
       prevArrow: '<div class="slick-prev"></div>',
       nextArrow: '<div class="slick-next"></div>',

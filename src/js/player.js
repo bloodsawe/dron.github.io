@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded",function() {
       _video = document.getElementById("video");
       _video.addEventListener("pause", () => _playBtn.style.display = 'block')
       _video.addEventListener("play", () =>_playBtn.style.display = 'none')
+      _video.addEventListener("seeking", () =>_playBtn.style.display = 'none')
       _playBtn = document.getElementById("playBtn");
       _pauseBtn = document.getElementById("pauseBtn");
     }

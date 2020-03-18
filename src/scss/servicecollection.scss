@@ -11,29 +11,32 @@
         object-fit: fill;
     }
     &__baner {
-        height: 700px;
+        position: relative;
+        max-height: 700px;
         display: flex;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         @media screen and (min-width:2400px) {
-            height: 800px;
+            max-height: 1000px;
+            height: 1000px;
         }
         @media screen and (max-width:480px) {
-            height: 500px;
+            // height: 500px;
         }
         .main-button {
             position: absolute;
-            top: 640px;
+            // top: 640px;
+            bottom: 60px;
             right: calc((100vw - 1110px)/2);
             width: 183px;
             color: #ffffff;
             background: transparent;
             border: solid 2px #ffffff;
             color: #ffffff;
-            @media screen and (min-width:2400px) {
-                top: 740px;
-            }
+            // @media screen and (min-width:2400px) {
+            //     top: 740px;
+            // }
             @media screen and (max-width:1440px) {
                 right: 10%;
             }
