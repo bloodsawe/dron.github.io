@@ -1,5 +1,6 @@
 main.aboutUs {
   background: none;
+  overflow-x: hidden;
 }
 
 .about-company {
@@ -1844,7 +1845,6 @@ main {
   height: 54px;
   border: solid 2px #dcdcdc;
   border-radius: 50%;
-  background: transparent;
   background: url(../img/arrow-right-s-line.svg) no-repeat center;
 }
 
@@ -3978,6 +3978,7 @@ header.out {
 }
 
 .banner-slider__container {
+  position: relative;
   z-index: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3997,6 +3998,7 @@ header.out {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 60%;
+  overflow: hidden;
 }
 
 .banner-slider__title {
@@ -4022,6 +4024,12 @@ header.out {
 .banner-slider__img {
   height: 100%;
   width: 100%;
+}
+
+.banner-slider__trim {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .banner-slider .slick-prev,
@@ -4819,10 +4827,10 @@ header.out {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -4848,11 +4856,8 @@ header.out {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 100%;
-  margin: 184px 0 41px;
+  width: 50%;
   z-index: 10;
-  padding-left: 20%;
-  padding-right: 10%;
 }
 
 .last-block__inner .main-button {
@@ -5941,7 +5946,6 @@ main {
 
 .main-button:focus {
   background-color: #ffd84b;
-  border: 1px solid black;
   outline: none;
 }
 
@@ -8747,6 +8751,17 @@ template {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .banner-slider__item {
+    padding-top: 125px;
+  }
+
+  .banner-slider__container {
+    width: 1000px;
+    max-height: 343px;
+  }
+}
+
 @media (min-width: 1440px) {
   .cards-block__item:nth-child(2) .cards-block__img img {
     width: 203px;
@@ -8763,6 +8778,12 @@ template {
   .cards-block__item:nth-child(4) .cards-block__img img {
     width: 179px;
     height: 342px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .services-collection__baner {
+    max-height: 850px;
   }
 }
 
@@ -8831,12 +8852,6 @@ template {
 
   .join.wrapper {
     margin-left: 0;
-  }
-
-  .last-block__inner {
-    padding-left: -webkit-calc((100vw - 1110px)/2);
-    padding-left: calc((100vw - 1110px)/2);
-    padding-right: 10%;
   }
 
   .last-block-right {
@@ -8947,14 +8962,25 @@ template {
   }
 }
 
+@media screen and (min-width: 1650px) {
+  .services-collection__baner {
+    max-height: 950px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .services-collection__baner {
+    max-height: 1080px;
+  }
+}
+
 @media screen and (min-width: 2400px) {
   .services__baner {
     height: 800px;
   }
 
   .services-collection__baner {
-    max-height: 1000px;
-    height: 1000px;
+    max-height: 1200px;
   }
 }
 
@@ -9040,6 +9066,15 @@ template {
 
   .watch-player {
     width: 100%;
+    padding-top: 56.25%;
+  }
+
+  .watch-player-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 
   .team {
@@ -9329,10 +9364,6 @@ template {
     margin-bottom: 40px;
   }
 
-  .banner-slider__item {
-    padding-top: 60px;
-  }
-
   .banner-slider__container {
     width: 87%;
   }
@@ -9390,8 +9421,7 @@ template {
   }
 
   .last-block__inner {
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 79%;
   }
 
   .last-block-right {
@@ -10292,10 +10322,6 @@ template {
     margin-right: 18px;
   }
 
-  .collection-block__text {
-    margin-bottom: 65px;
-  }
-
   .contacts-page .main-offices-list__item {
     margin: 40px 0px 10px 0px;
     width: 32%;
@@ -10383,6 +10409,12 @@ template {
 
   .banner-slider__container {
     width: 100%;
+    max-height: 360px;
+  }
+
+  .banner-slider__title {
+    font-size: 36px;
+    line-height: 1.33;
   }
 
   .company .main-block {
@@ -10476,9 +10508,7 @@ template {
   }
 
   .last-block__inner {
-    width: 61%;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 60px 0;
   }
 
   .last-block-right {
@@ -10578,6 +10608,12 @@ template {
     width: 50%;
   }
 
+  .sectors-info__description:nth-child(2) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
   .sectors-oil .watch-description,
   .sectors-generation .watch-description,
   .sectors-grid .watch-description,
@@ -10611,7 +10647,6 @@ template {
   }
 
   .sectors-oil .sectors-info {
-    background-position: 180% 0%;
     background-size: contain;
   }
 
@@ -10858,7 +10893,15 @@ template {
   }
 
   .banner-slider__item {
+    padding-top: 105px;
+  }
+
+  .banner-slider__item {
     padding-top: 125px;
+  }
+
+  .banner-slider__container {
+    max-height: 343px;
   }
 
   .banner-slider__text {
@@ -10884,6 +10927,10 @@ template {
 
   .sectors-banner .slick-next {
     left: 17%;
+  }
+
+  .sectors-info__description {
+    width: 100%;
   }
 
   .sectors-description-slider {
@@ -12108,10 +12155,6 @@ template {
     font-size: 14px;
   }
 
-  .last-block__inner {
-    width: 90%;
-  }
-
   .last-block__text {
     font-size: 16px;
   }
@@ -12317,7 +12360,6 @@ template {
     -ms-flex-pack: start;
     justify-content: flex-start;
     padding-left: 5%;
-    height: 350px;
     padding-top: 30px;
   }
 

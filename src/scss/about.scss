@@ -2,6 +2,7 @@
 
 main.aboutUs {
   background: none;
+  overflow-x: hidden;
 }
 
 .about-company {
@@ -218,19 +219,24 @@ main.aboutUs {
     width: 50%;
     @media screen and (max-width: 1200px) {
       width: 100%;
-      // height: 441px;
-    }
-    @media screen and (max-width: 480px) {
-      // height: 302px;
+      padding-top: 56.25%;
     }
     &-video {
       width: 100%;
       height: 100%;
       object-fit: fill;
+
+      @media screen and (max-width: 1200px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
     }
     &-btn {
       position: absolute;
-      
+
       top: calc(50% - 42px);
       left: calc(50% - 42px);
       width: 84px;

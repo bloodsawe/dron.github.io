@@ -18,11 +18,16 @@
         background-position: center;
         background-size: cover;
         @media screen and (min-width:2400px) {
-            max-height: 1000px;
-            height: 1000px;
+            max-height: 1200px;
         }
-        @media screen and (max-width:480px) {
-            // height: 500px;
+        @media screen and (min-width:1920px) {
+            max-height: 1080px;
+        }
+        @media screen and (min-width:1650px) {
+            max-height: 950px;
+        }
+        @media screen and (min-width:1440px) {
+            max-height: 850px;
         }
         .main-button {
             position: absolute;
