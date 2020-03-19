@@ -13,8 +13,7 @@
       // @media screen and (max-width: 480px) {
       //   margin-bottom: 40px;
       // }
-      background: url(../img/world-map.png) no-repeat;
-      background-size: contain;
+      background: url(../img/world-map.png) no-repeat center / contain;
       
       .wrapper {
         display: flex;

@@ -101,6 +101,7 @@
   &__container {
     position: relative;
     z-index: 1;
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
     @include flex(flex-start, center, column);
     width: 60%;
     overflow: hidden;
@@ -111,6 +112,11 @@
     @media screen and (min-width: 1400px) {
       width: 1000px;
       max-height: 343px;
+      height: 343px;
+    }
+    @media screen and (max-width: 1400px) {
+      max-height: 353px;
+      height: 353px;
     }
     @media screen and (max-width: 1300px) {
       width: 74%;
@@ -119,11 +125,13 @@
       width: 87%;
     }
     @media screen and (max-width: 768px) {
-      width: 100%;
+      width: 90%;
       max-height: 360px;
+      height: 360px;
     }
     @media screen and (max-width: 600px) {
       max-height: 343px;
+      height: 343px;
     }
   }
   &__title {

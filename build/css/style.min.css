@@ -157,7 +157,6 @@ main.aboutUs {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  min-height: 450px;
 }
 
 .watch-description {
@@ -183,7 +182,7 @@ main.aboutUs {
 }
 
 .watch-description__inner {
-  width: 62%;
+  width: 65%;
 }
 
 .watch-description__title {
@@ -2834,8 +2833,7 @@ hr {
 .contacts-page .main-offices {
   margin-top: 30px;
   margin-bottom: 40px;
-  background: url(../img/world-map.png) no-repeat;
-  background-size: contain;
+  background: url(../img/world-map.png) no-repeat center/contain;
 }
 
 .contacts-page .main-offices .wrapper {
@@ -3980,6 +3978,8 @@ header.out {
 .banner-slider__container {
   position: relative;
   z-index: 1;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, black), to(transparent));
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7073,7 +7073,7 @@ main.newsandblog {
 }
 
 .sectors-info__description:nth-child(2) {
-  width: 33%;
+  width: 24%;
 }
 
 .sectors-heading__text {
@@ -7492,7 +7492,7 @@ main.newsandblog {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 80px 0;
+  padding: 20px 0;
   padding-left: 10%;
 }
 
@@ -7534,16 +7534,12 @@ main.newsandblog {
   margin-top: 60px;
 }
 
-.sectors-generation .sectors-info {
-  background-position: right 7% bottom;
-}
-
 .sectors-generation .sectors-info__block {
   padding: 70px 0;
 }
 
-.sectors-grid .sectors-info {
-  background-position: right 4% bottom;
+.sectors-generation .sectors-info__description:nth-child(2) {
+  width: 33%;
 }
 
 .sectors-grid .sectors-info__block {
@@ -7551,7 +7547,7 @@ main.newsandblog {
 }
 
 .sectors-construction .sectors-info__description {
-  width: 100%;
+  width: 86%;
   margin-right: 0px;
 }
 
@@ -8759,6 +8755,7 @@ template {
   .banner-slider__container {
     width: 1000px;
     max-height: 343px;
+    height: 343px;
   }
 }
 
@@ -8883,6 +8880,10 @@ template {
     left: calc(54% - 1100px / 2);
   }
 
+  .sectors-info {
+    background-position: right 18% bottom;
+  }
+
   .sectors-oil .watch-description,
   .sectors-generation .watch-description,
   .sectors-grid .watch-description,
@@ -8963,28 +8964,71 @@ template {
 }
 
 @media screen and (min-width: 1650px) {
+  .sectors-info {
+    background-position: right 21% bottom;
+  }
+
   .services-collection__baner {
-    max-height: 950px;
+    max-height: 900px;
   }
 }
 
 @media screen and (min-width: 1920px) {
+  .sectors-info {
+    background-position: right 26% bottom;
+  }
+
   .services-collection__baner {
-    max-height: 1080px;
+    max-height: none;
+    height: -webkit-calc(100vh - 100px);
+    height: calc(100vh - 100px);
   }
 }
 
 @media screen and (min-width: 2400px) {
+  .sectors-info {
+    background-position: right 35% bottom;
+  }
+
   .services__baner {
     height: 800px;
   }
 
   .services-collection__baner {
-    max-height: 1200px;
+    max-height: none;
+    height: -webkit-calc(100vh - 100px);
+    height: calc(100vh - 100px);
   }
 }
 
 @media screen and (max-width: 1440px) {
+  .watch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .watch-description {
+    width: 100%;
+    height: 441px;
+  }
+
+  .watch-player {
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  .watch-player-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
   .casecards .join-item {
     max-width: 80%;
   }
@@ -9003,6 +9047,10 @@ template {
 
   .join-block {
     padding-right: 10%;
+  }
+
+  .watch-description__text {
+    max-width: 685px;
   }
 
   .services__baner .main-button {
@@ -9039,6 +9087,13 @@ template {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .banner-slider__container {
+    max-height: 353px;
+    height: 353px;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .banner-slider__container {
     width: 74%;
@@ -9049,34 +9104,21 @@ template {
   }
 }
 
+@media (max-width: 1200px) {
+  .innovations-block__img_position {
+    left: 88px;
+  }
+
+  .services .callback-block__img {
+    right: 5%;
+  }
+
+  .services-collection .callback-block__img {
+    right: 5%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
-  .watch {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-bottom: 0px;
-  }
-
-  .watch-description {
-    width: 100%;
-    height: 441px;
-  }
-
-  .watch-player {
-    width: 100%;
-    padding-top: 56.25%;
-  }
-
-  .watch-player-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
-
   .team {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -9133,26 +9175,12 @@ template {
   }
 
   .sectors-generation .sectors-desc .slick-next {
-    left: -webkit-calc(4.5% + 80px);
-    left: calc(4.5% + 80px);
+    left: -webkit-calc(7% + 80px);
+    left: calc(7% + 80px);
   }
 
   .sectors-generation .sectors-desc .sectors-desc__counter {
     left: 80px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .innovations-block__img_position {
-    left: 88px;
-  }
-
-  .services .callback-block__img {
-    right: 5%;
-  }
-
-  .services-collection .callback-block__img {
-    right: 5%;
   }
 }
 
@@ -9597,10 +9625,10 @@ template {
   .sectors-desc {
     height: 900px;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .sectors-desc-img {
@@ -9635,18 +9663,18 @@ template {
   }
 
   .sectors-generation .sectors-desc .sectors-desc__counter {
-    top: 4%;
+    bottom: 4%;
     left: 20%;
   }
 
   .sectors-generation .sectors-desc .slick-prev {
     left: 20%;
-    top: 34%;
+    bottom: 10%;
   }
 
   .sectors-generation .sectors-desc .slick-next {
     left: 29.5%;
-    top: 34%;
+    bottom: 10%;
   }
 }
 
@@ -9851,7 +9879,7 @@ template {
 
 @media screen and (max-width: 890px) {
   .header-nav__button {
-    padding: 17px 12px;
+    padding: 17px 11px;
     margin-left: 16px;
   }
 }
@@ -10408,8 +10436,9 @@ template {
   }
 
   .banner-slider__container {
-    width: 100%;
+    width: 90%;
     max-height: 360px;
+    height: 360px;
   }
 
   .banner-slider__title {
@@ -10902,6 +10931,7 @@ template {
 
   .banner-slider__container {
     max-height: 343px;
+    height: 343px;
   }
 
   .banner-slider__text {
@@ -10927,6 +10957,12 @@ template {
 
   .sectors-banner .slick-next {
     left: 17%;
+  }
+
+  .sectors-info {
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffd12d), to(#d2e9ff)) !important;
+    background-image: -o-linear-gradient(left, #ffd12d 0%, #d2e9ff 100%) !important;
+    background-image: linear-gradient(to right, #ffd12d 0%, #d2e9ff 100%) !important;
   }
 
   .sectors-info__description {
@@ -12243,12 +12279,6 @@ template {
     line-height: 1.71;
   }
 
-  .sectors-info {
-    background-image: -webkit-gradient(linear, left top, right top, from(#ffd12d), to(#d2e9ff)) !important;
-    background-image: -o-linear-gradient(left, #ffd12d 0%, #d2e9ff 100%) !important;
-    background-image: linear-gradient(to right, #ffd12d 0%, #d2e9ff 100%) !important;
-  }
-
   .sectors-info__block {
     background-image: -webkit-gradient(linear, left top, right top, from(#ffd12d), to(#d2e9ff)) !important;
     background-image: -o-linear-gradient(left, #ffd12d 0%, #d2e9ff 100%) !important;
@@ -12393,7 +12423,7 @@ template {
 
   .sectors-generation .sectors-desc .slick-prev,
   .sectors-generation .sectors-desc .slick-next {
-    top: 49%;
+    bottom: 1%;
   }
 
   .sectors-generation .sectors-desc .slick-prev {

@@ -158,8 +158,8 @@ main.aboutUs {
 
 .watch {
   @include flex(space-between, stretch, row);
-  min-height: 450px;
-  @media screen and (max-width: 1200px) {
+  // min-height: 450px;
+  @media screen and (max-width: 1440px) {
     flex-direction: column;
     margin-bottom: 0px;
   }
@@ -171,7 +171,7 @@ main.aboutUs {
     }
     background-color: #282828;
     width: 50%;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1440px) {
       width: 100%;
       height: 441px;
     }
@@ -179,7 +179,7 @@ main.aboutUs {
       height: 382px;
     }
     &__inner {
-      width: 62%;
+      width: 65%;
       @media screen and (max-width: 480px) {
         width: 90%;
       }
@@ -217,7 +217,7 @@ main.aboutUs {
   &-player {
     position: relative;
     width: 50%;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1440px) {
       width: 100%;
       padding-top: 56.25%;
     }
@@ -226,7 +226,7 @@ main.aboutUs {
       height: 100%;
       object-fit: fill;
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1440px) {
         position: absolute;
         top: 0;
         left: 0;
@@ -251,7 +251,7 @@ main.aboutUs {
       height: 100%;
     }
   }
-}
+}  
 @supports (-webkit-appearance:none) {
   .watch-player-btn {
     top: calc(50% - 54px);

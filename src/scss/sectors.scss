@@ -175,7 +175,19 @@
     background-position: right 0% bottom;
     position: relative;
     margin-bottom: 80px;
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 1441px) {
+      background-position: right 18% bottom;
+    }
+    @media screen and (min-width: 1650px) {
+      background-position: right 21% bottom;
+    }
+    @media screen and (min-width: 1920px) {
+      background-position: right 26% bottom;
+    }
+    @media screen and (min-width: 2400px) {
+      background-position: right 35% bottom;
+    }
+    @media screen and (max-width: 600px) {
       background-image: linear-gradient(
         to right,
         $sunyellow 0%,
@@ -255,7 +267,7 @@
       }
     }
     &__description:nth-child(2) {
-      width: 33%;
+      width: 24%;
       @media screen and (max-width: 768px) {
         margin-right: 0px;
         margin-bottom: 20px;
@@ -661,7 +673,7 @@
 
     @media screen and (max-width: 968px) {
       height: 900px;
-      flex-direction: column;
+      flex-direction: column-reverse;
 
       &-img {
         width: 100%;
@@ -792,7 +804,7 @@
     }
     .watch-description {
       justify-content: flex-start;
-      padding: 80px 0;
+      padding: 20px 0;
       padding-left: 10%;
       &__inner {
         width: 90%;
@@ -868,17 +880,20 @@
     }
   }
   &-generation {
-    .sectors-info {
-      background-position: right 7% bottom;
-    }
+    // .sectors-info {
+    //   background-position: right 7% bottom;
+    // }
     .sectors-info__block {
       padding: 70px 0;
     }
+    .sectors-info__description:nth-child(2) {
+      width: 33%;
+  }
   }
   &-grid {
-    .sectors-info {
-      background-position: right 4% bottom;
-    }
+    // .sectors-info {
+    //   background-position: right 4% bottom;
+    // }
     .sectors-info__block {
       padding: 39px 0;
     }
@@ -886,7 +901,7 @@
   &-construction {
     .sectors-info {
       &__description {
-        width: 100%;
+        width: 86%;
         margin-right: 0px;
       }
     }
@@ -927,7 +942,7 @@
           left: calc(0% + 80px);
         }
         .slick-next {
-          left: calc(4.5% + 80px);
+          left: calc(7% + 80px);
         }
         .sectors-desc__counter {
           left: 80px;
@@ -935,17 +950,18 @@
       }
       @media screen and (max-width: 968px) {
         .sectors-desc__counter {
-          top: 4%;
+          bottom: 4%;
           left: 20%;
         } 
         .slick-prev {
           left: 20%;
-          top: 34%;
+          bottom: 10%;
         }
   
         .slick-next {
           left: 29.5%;
-          top: 34%;
+          bottom: 10%;
+
         }
         
       }
@@ -974,7 +990,7 @@
   
         .slick-prev,
         .slick-next {
-          top: 49%;
+          bottom: 1%;
         }
   
         .slick-prev {
@@ -995,6 +1011,9 @@
 .watch-description__text {
   font-size: 24px;
   max-width: 535px;
+  @media screen and (max-width:1440px) {
+    max-width:685px;
+  }
 }
 
 .sub-description__header {
