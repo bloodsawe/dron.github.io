@@ -51,29 +51,26 @@
   @media screen and (max-width: 1440px) {
     flex-direction: column;
   }
-  
+
   .container {
-    width: 50.0%;
+    width: 50%;
     padding-right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1440px) {
       width: 100%;
-      padding-right: 0px;
+      padding-right: 10%;
       align-items: center;
     }
-    
-    
+
     padding-left: 10%;
-    @media screen and (min-width:1441px) {
-      padding-left: calc((100vw - 1100px)/2);
-    }
-    @media screen and (max-width:1024px) {
-      padding-left: 5%;
+    @media screen and (min-width: 1441px) {
+      padding-left: calc((100vw - 1100px) / 2);
     }
     @media screen and (max-width: 480px) {
+      padding-right: 5%;
       padding-right: 5%;
     }
   }
@@ -85,6 +82,10 @@
     line-height: 38px;
     color: $white;
     padding-bottom: 20px;
+    @media screen and (max-width: 1440px) {
+      max-width: 100%;
+      padding-top: 80px;
+    }
     @media screen and (max-width: 480px) {
       padding-top: 60px;
       font-size: 18px;
@@ -98,6 +99,10 @@
     font-size: 16px;
     line-height: 32px;
     color: $white;
+    @media screen and (max-width: 1440px) {
+      max-width: 100%;
+      padding-bottom: 80px;
+    }
     @media screen and (max-width: 480px) {
       padding-bottom: 45px;
       font-size: 14px;

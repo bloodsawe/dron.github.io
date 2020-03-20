@@ -183,7 +183,7 @@ $(document).ready(
 );
 
 // news-slider
-$(document).ready(
+var timerId = setTimeout(() => {
   $(function() {
     if ($(".wp_rss_retriever_list").length > 0) {
       $(".wp_rss_retriever_list").slick({
@@ -208,9 +208,10 @@ $(document).ready(
           }
         ]
       });
+      clearInterval(timerId);
     }
-  })
-);
+  });
+}, 100);
 
 // blog-slider
 $(document).ready(

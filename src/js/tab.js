@@ -55,7 +55,8 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (document.querySelector(".homepage, .services-collection, .services, .sectors-oil, .sectors-grid, .sectors-generation")) {
+  
+  if (document.querySelector(".homepage, .services-collection, .services, .sectors-oil, .sectors-grid, .sectors-construction, .sectors-generation")) {
     var blockDescription = Array.from(document.querySelectorAll(".collection-block__description"));
     var blockTab = Array.from(document.querySelectorAll(".select-block__item"));
     var descriptionText = Array.from(document.querySelectorAll(".collection-block__text-animation"));
@@ -75,7 +76,21 @@ document.addEventListener("DOMContentLoaded", function () {
         })
       })
     });
+
+    // descriptionText.forEach(function (elem, i) {
+    //   console.log(elem.clientHeight);
+    // })
+
+    readMoreBtn.forEach(function (elem, i) {
+      if (descriptionText[i].clientHeight < 135 ) {
+        elem.style.display = "none";
+      }
+    })
     
+    
+
+
+
     blockDescription.forEach(function (elem, i) {
       return elem.setAttribute("data-tab", i);
     });
@@ -112,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         
         descriptionText.forEach(function (elem) {
-          
           if (elem.getAttribute("data-tab") == selectedBlockDescription) {
             
             if (prevElem < nextElem) {
@@ -130,16 +144,19 @@ document.addEventListener("DOMContentLoaded", function () {
             } 
           } else {
             elem.style.maxHeight = "135px";
-            readMoreBtn.forEach(function (elem) {
-              if (prevElem == nextElem) { 
+            readMoreBtn.forEach(function (elem, i) {
+              
+              if (prevElem == nextElem ) { 
                 if (descriptionText[nextElem].getAttribute("data-open") === 'true') {
                   elem.style.display = "none";
                 } else {
                   elem.style.display = "block";
                 }
-
               } else {
                 elem.style.display = "block";
+              }
+              if (descriptionText[i].clientHeight < 135 ) {  
+                elem.style.display = "none";
               }
             });
             elem.setAttribute("data-open", false)

@@ -853,7 +853,7 @@ main.show-before::before {
 }
 
 .team .container {
-  width: 50.0%;
+  width: 50%;
   padding-right: 30px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7634,9 +7634,7 @@ main.newsandblog {
 }
 
 .services__baner-img {
-  position: absolute;
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -8792,8 +8790,8 @@ template {
   }
 
   .team .container {
-    padding-left: -webkit-calc((100vw - 1100px)/2);
-    padding-left: calc((100vw - 1100px)/2);
+    padding-left: -webkit-calc((100vw - 1100px) / 2);
+    padding-left: calc((100vw - 1100px) / 2);
   }
 
   .location-section {
@@ -9014,6 +9012,25 @@ template {
     flex-direction: column;
   }
 
+  .team .container {
+    width: 100%;
+    padding-right: 10%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .team-text {
+    max-width: 100%;
+    padding-top: 80px;
+  }
+
+  .team-subtext {
+    max-width: 100%;
+    padding-bottom: 80px;
+  }
+
   .casecards .join-item {
     max-width: 80%;
   }
@@ -9094,6 +9111,11 @@ template {
     left: 88px;
   }
 
+  .services__img {
+    width: 50%;
+    left: 25%;
+  }
+
   .services .callback-block__img {
     right: 5%;
   }
@@ -9168,10 +9190,6 @@ template {
 }
 
 @media screen and (max-width: 1024px) {
-  .team .container {
-    padding-left: 5%;
-  }
-
   .location-section {
     padding-right: 5%;
     padding-left: 5%;
@@ -9523,16 +9541,6 @@ template {
 @media (max-width: 1024px) {
   .blog-slider__item .main-button {
     right: 5%;
-  }
-
-  .services__img {
-    width: 50%;
-    left: 25%;
-  }
-
-  .services__img {
-    width: 50%;
-    left: 25%;
   }
 
   .services .callback-block__img {
@@ -10104,8 +10112,8 @@ template {
   }
 
   .services__img {
-    width: 75%;
-    left: 12%;
+    width: 52%;
+    left: 24%;
   }
 
   .services .callback {
@@ -10192,15 +10200,6 @@ template {
     left: 0px;
     max-width: 450px;
     border-radius: 0 18px 18px 0;
-  }
-
-  .team .container {
-    width: 100%;
-    padding-right: 0px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 
   .location-section {
@@ -11457,9 +11456,7 @@ template {
   }
 
   .services__img {
-    width: 100%;
-    left: 0%;
-    bottom: -33px;
+    display: none;
   }
 
   .services .callback-block__img {
@@ -11619,6 +11616,7 @@ template {
   }
 
   .team .container {
+    padding-right: 5%;
     padding-right: 5%;
   }
 
@@ -12413,10 +12411,6 @@ template {
 
   .sub-description__text {
     font-size: 18px;
-  }
-
-  .services__baner {
-    height: 500px;
   }
 
   .services-info {
