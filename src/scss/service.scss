@@ -35,15 +35,15 @@
     }
     &__baner {
         // background: url(../img/bg-about-team-drone.jpg);
-        height: 700px;
+        // height: 700px;
         display: flex;
         position: relative;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        @media screen and (min-width:2400px) {
-            height: 800px;
-        }
+        // @media screen and (min-width:2400px) {
+        //     height: 800px;
+        // }
         @media screen and (max-width:480px) {
             height: 500px;
         }
@@ -62,7 +62,7 @@
         .main-button {
             position: absolute;
             z-index: 1;
-            bottom: 10%;
+            bottom: 15%;
             right: calc((100vw - 1110px)/2);
             width: 183px;
             color: #ffffff;

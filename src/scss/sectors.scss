@@ -364,7 +364,7 @@
   &-description {
     @include flex(space-between, center, row);
     position: relative;
-    height: 450px;
+    // height: 450px;
     .slick-slider {
       position: static;
     }
@@ -376,7 +376,7 @@
       }
       img {
         width: auto;
-        height: 450px;
+        height: 100%;
         object-fit: cover;
         @media screen and (min-width: 1600px) {
           // height: calc((100vw / 2 * 450) / 720);
@@ -566,7 +566,7 @@
   &-desc {
     @include flex(space-between, center, row);
     position: relative;
-    height: 450px;
+    // height: 450px;
     .slick-slider {
       position: static;
     }
@@ -578,7 +578,7 @@
       }
       img {
         width: auto;
-        height: 450px;
+        // height: 450px;
         object-fit: cover;
         @media screen and (min-width: 1600px) {
           // height: calc((100vw / 2 * 450) / 720);

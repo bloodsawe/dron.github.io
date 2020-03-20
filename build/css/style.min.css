@@ -7185,7 +7185,6 @@ main.newsandblog {
   -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  height: 450px;
 }
 
 .sectors-description .slick-slider {
@@ -7199,7 +7198,7 @@ main.newsandblog {
 
 .sectors-description-img img {
   width: auto;
-  height: 450px;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -7298,7 +7297,6 @@ main.newsandblog {
   -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  height: 450px;
 }
 
 .sectors-desc .slick-slider {
@@ -7312,7 +7310,6 @@ main.newsandblog {
 
 .sectors-desc-img img {
   width: auto;
-  height: 450px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -7626,7 +7623,6 @@ main.newsandblog {
 }
 
 .services__baner {
-  height: 700px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7648,7 +7644,7 @@ main.newsandblog {
 .services__baner .main-button {
   position: absolute;
   z-index: 1;
-  bottom: 10%;
+  bottom: 15%;
   right: -webkit-calc((100vw - 1110px)/2);
   right: calc((100vw - 1110px)/2);
   width: 183px;
@@ -7864,7 +7860,7 @@ main.newsandblog {
 
 .services-collection__baner .main-button {
   position: absolute;
-  bottom: 60px;
+  bottom: 80px;
   right: -webkit-calc((100vw - 1110px)/2);
   right: calc((100vw - 1110px)/2);
   width: 183px;
@@ -8780,7 +8776,8 @@ template {
 
 @media screen and (min-width: 1440px) {
   .services-collection__baner {
-    max-height: 850px;
+    max-height: none;
+    height: auto;
   }
 }
 
@@ -8967,37 +8964,17 @@ template {
   .sectors-info {
     background-position: right 21% bottom;
   }
-
-  .services-collection__baner {
-    max-height: 900px;
-  }
 }
 
 @media screen and (min-width: 1920px) {
   .sectors-info {
     background-position: right 26% bottom;
   }
-
-  .services-collection__baner {
-    max-height: none;
-    height: -webkit-calc(100vh - 100px);
-    height: calc(100vh - 100px);
-  }
 }
 
 @media screen and (min-width: 2400px) {
   .sectors-info {
     background-position: right 35% bottom;
-  }
-
-  .services__baner {
-    height: 800px;
-  }
-
-  .services-collection__baner {
-    max-height: none;
-    height: -webkit-calc(100vh - 100px);
-    height: calc(100vh - 100px);
   }
 }
 
@@ -9027,6 +9004,14 @@ template {
     left: 0;
     bottom: 0;
     right: 0;
+  }
+
+  .team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .casecards .join-item {
@@ -9119,14 +9104,6 @@ template {
 }
 
 @media screen and (max-width: 1200px) {
-  .team {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
   .wp_rss_retriever .slick-prev {
     right: 9.5%;
   }
