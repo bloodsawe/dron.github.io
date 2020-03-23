@@ -48,7 +48,7 @@
   background-color: $black;
   display: flex;
   flex-direction: row;
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 910px) {
     flex-direction: column;
   }
 
@@ -59,14 +59,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    @media screen and (max-width: 1440px) {
-      width: 35%;
+    @media screen and (max-width: 910px) {
       padding-right: 0;
       padding-left: 0;
       align-items: center;
       margin: 0 auto;
-    }
-    @media screen and (max-width: 1440px) {
       width: 50%;
     }
     @media screen and (max-width: 768px) {
@@ -87,15 +84,19 @@
   }
   &-text {
     max-width: 445px;
-    padding-top: 110px;
+    // padding-top: 110px;
     font-family: TitilliumWebSemiBold;
     font-size: 24px;
     line-height: 38px;
     color: $white;
     padding-bottom: 20px;
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 910px) {
       max-width: 100%;
       padding-top: 80px;
+    }
+    @media screen and (min-width: 910px) and (max-width: 1200px) {
+      font-size: 19px;
+      line-height: 29px;
     }
     @media screen and (max-width: 480px) {
       padding-top: 60px;
@@ -105,14 +106,18 @@
   }
   &-subtext {
     max-width: 445px;
-    padding-bottom: 110px;
+    // padding-bottom: 110px;
     font-family: TitilliumWebRegular, sans-serif;
     font-size: 16px;
     line-height: 32px;
     color: $white;
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 910px) {
       max-width: 100%;
       padding-bottom: 80px;
+    }
+    @media screen and (min-width: 910px) and (max-width: 1200px) {
+      font-size: 14px;
+      line-height: 24px;
     }
     @media screen and (max-width: 480px) {
       padding-bottom: 45px;

@@ -380,12 +380,23 @@
         width: auto;
         height: 100%;
         object-fit: cover;
-        @media screen and (min-width: 1600px) {
+        @media screen and (max-width: 2880px) {
           // height: calc((100vw / 2 * 450) / 720);
           object-fit: fill;
+          max-height: 698px;
+        }
+        @media screen and (max-width: 1440px) {
+          // height: calc((100vw / 2 * 450) / 720);
+          object-fit: fill;
+          max-height: 349px;
+        }
+        @media screen and (max-width: 768px) {
+          // height: calc((100vw / 2 * 450) / 720);
+          object-fit: fill;
+          max-height: 307px;
         }
         @media screen and (max-width: 480px) {
-          height: 188px;
+          height: 233px;
         }
       }
     }
@@ -811,6 +822,23 @@
       &__inner {
         width: 90%;
       }
+      &__text {
+        max-height: 312px;
+        overflow-x: hidden;
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+      &__text::-webkit-scrollbar {
+        width: 5px;
+        background-color: #dcdcdc;
+      }
+      &__text::-webkit-scrollbar-thumb {
+        background-color: $sunyellow;
+      }
       @media screen and (min-width: 1441px) {
         padding-left: calc((100vw - 1100px) / 2);
       }
@@ -876,9 +904,9 @@
     }
     @media screen and (max-width: 768px) {
       .sectors-info__description:nth-child(2) {
-    margin-right: 0px;
-    margin-bottom: 20px;
-    width: 53%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        width: 53%;
       }
     }
     @media screen and (max-width: 600px) {

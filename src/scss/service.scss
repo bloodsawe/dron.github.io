@@ -223,7 +223,10 @@
     .watch {
         margin-bottom: 60px;
         &-description__text {
-            font-size: 18px;
+            font-size: 16px;
+            @media screen and (max-width: 480px) {
+                font-size: 14px;
+            }
         }
         &-description__text_yellow {
             font-size: 18px;

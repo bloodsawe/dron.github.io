@@ -138,6 +138,27 @@
           }
     }
     .watch-description {
+        @media screen and (max-width: 480px) {
+            padding: 0;
+            height: 382px;
+        }
+        &__text {
+            max-height: 180px;
+            overflow-x: hidden;
+            @media screen and (max-width: 768px) {
+                font-size: 22px;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+            }
+        }
+        &__text::-webkit-scrollbar {
+            width: 5px;
+            background-color: #dcdcdc;
+          }
+        &__text::-webkit-scrollbar-thumb {
+            background-color: $sunyellow;
+        }
         .main-button {
             width: 171px;
         }

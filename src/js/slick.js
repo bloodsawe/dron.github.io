@@ -183,35 +183,32 @@ $(document).ready(
 );
 
 // news-slider
-var timerId = setTimeout(() => {
-  $(function() {
-    if ($(".wp_rss_retriever_list").length > 0) {
-      $(".wp_rss_retriever_list").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        dots: false,
-        prevArrow: '<div class="slick-prev"></div>',
-        nextArrow: '<div class="slick-next"></div>',
-        responsive: [
-          {
-            breakpoint: 769,
-            settings: {
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 468,
-            settings: {
-              slidesToShow: 1
-            }
+var timerId = setInterval(() => {
+  if ($(".wp_rss_retriever_list").length > 0) {
+    $(".wp_rss_retriever_list").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: false,
+      dots: false,
+      prevArrow: '<div class="slick-prev"></div>',
+      nextArrow: '<div class="slick-next"></div>',
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2
           }
-        ]
-      });
-      clearInterval(timerId);
-      ScrollReveal().sync();
-    }
-  });
+        },
+        {
+          breakpoint: 468,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+    clearInterval(timerId);
+  }
 }, 100);
 
 // blog-slider
