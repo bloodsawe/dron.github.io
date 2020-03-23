@@ -377,9 +377,15 @@
       .slick-prev {
         right: 67px;
         transform: rotate(180deg);
+        @media screen and (max-width: 480px) {
+          right: 77px;
+        }
       }
       .slick-next {
         right: 0;
+        @media screen and (max-width: 480px) {
+          right: 10px;
+        }
       }
       @media screen and (max-width: $tabletwiev) {
         transform: translate(-6%, 0%);

@@ -110,6 +110,7 @@ hr {
         font-size: 16px;
         line-height: 1.75;
         margin-bottom: unset;
+        max-height: 253px;
         @media screen and (max-width: 480px) {
           margin-bottom: 20px;
         }
@@ -189,7 +190,7 @@ hr {
       .wrapper {
         // width: 60.5%;
         width: 61.9%;
-        margin-bottom: 0px !important;
+        margin-bottom: 5px !important;
         hr {
           display: none;
         }

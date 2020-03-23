@@ -254,10 +254,11 @@
       line-height: 1.58;
       width: 40%;
       margin-right: 30px;
+      color: #282828;
       @media screen and (max-width: 768px) {
         margin-right: 0px;
         margin-bottom: 20px;
-        width: 65%;
+        width: 58%;
       }
       @media screen and (max-width: 600px) {
         width: 100%;
@@ -268,10 +269,11 @@
     }
     &__description:nth-child(2) {
       width: 24%;
+      color: #282828;
       @media screen and (max-width: 768px) {
         margin-right: 0px;
         margin-bottom: 20px;
-        width: 50%;
+        width: 58%;
       }
       @media screen and (max-width: 768px) {
         margin-right: 0px;
@@ -871,6 +873,18 @@
   &-oil {
     .news {
       margin-top: 60px;
+    }
+    @media screen and (max-width: 768px) {
+      .sectors-info__description:nth-child(2) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    width: 53%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .sectors-info__description:nth-child(2) {
+    width: 100%;
+      }
     }
     @media screen and (max-width: 768px) {
       .sectors-info {

@@ -60,19 +60,30 @@
     justify-content: center;
     align-items: flex-start;
     @media screen and (max-width: 1440px) {
-      width: 100%;
-      padding-right: 10%;
+      width: 35%;
+      padding-right: 0;
+      padding-left: 0;
       align-items: center;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 1440px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 63%;
+    }
+    @media screen and (max-width: 480px) {
+      width: 88%;
     }
 
     padding-left: 10%;
     @media screen and (min-width: 1441px) {
       padding-left: calc((100vw - 1100px) / 2);
     }
-    @media screen and (max-width: 480px) {
-      padding-right: 5%;
-      padding-right: 5%;
-    }
+    // @media screen and (max-width: 480px) {
+    //   padding-right: 5%;
+    //   padding-right: 5%;
+    // }
   }
   &-text {
     max-width: 445px;

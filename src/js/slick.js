@@ -209,6 +209,7 @@ var timerId = setTimeout(() => {
         ]
       });
       clearInterval(timerId);
+      ScrollReveal().sync();
     }
   });
 }, 100);

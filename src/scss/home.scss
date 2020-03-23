@@ -28,9 +28,6 @@
       padding-top: 95px;
     }
     @media screen and (max-width: 600px) {
-      padding-top: 105px;
-    }
-    @media screen and (max-width: 600px) {
       padding-top: 125px;
     }
     .main-button {
@@ -132,6 +129,11 @@
     @media screen and (max-width: 600px) {
       max-height: 343px;
       height: 343px;
+    }
+    @media screen and (max-width: 480px) {
+      max-height: none;
+      height: auto;
+    -webkit-mask-image: none;
     }
   }
   &__title {
