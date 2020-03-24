@@ -10,9 +10,6 @@
     &-offices {
       margin-top: 30px;
       margin-bottom: 40px;
-      // @media screen and (max-width: 480px) {
-      //   margin-bottom: 40px;
-      // }
       background: url(../img/world-map.png) no-repeat center / contain;
       
       .wrapper {
@@ -66,12 +63,10 @@
             margin: 40px 0px 10px 0px;
             width: 32%;
           }
-          @media screen and (max-width: 700px) {
-            
+          @media screen and (max-width: 700px) {          
             width: 50%;
           }
-          @media screen and (max-width: 480px) {
-            
+          @media screen and (max-width: 480px) {            
             width: 100%;  
             .main-offices-list__item-card {
               width: 220px;
@@ -79,11 +74,6 @@
             display: flex;
             justify-content: center;
           }
-          // max-width: 240px;
-          // display: flex;
-          // flex-direction: column;
-          // justify-content: flex-start;
-          // align-items: center;
           &-card {
             display: flex;
             flex-direction: column;

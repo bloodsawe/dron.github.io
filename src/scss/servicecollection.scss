@@ -17,25 +17,12 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        // @media screen and (min-width:2400px) {
-        //     // max-height: 1200px;
-        //     max-height: none;
-        //     height: calc(100vh - 100px);
-        // }
-        // @media screen and (min-width:1920px) {
-        //     max-height: none;
-        //     height: calc(100vh - 100px);
-        // }
-        // @media screen and (min-width:1650px) {
-        //     max-height: 900px;
-        // }
         @media screen and (min-width:1440px) {
             max-height: none;
             height: auto;
         }
         .main-button {
             position: absolute;
-            // top: 640px;
             bottom: 80px;
             right: calc((100vw - 1110px)/2);
             width: 183px;
@@ -43,9 +30,6 @@
             background: transparent;
             border: solid 2px #ffffff;
             color: #ffffff;
-            // @media screen and (min-width:2400px) {
-            //     top: 740px;
-            // }
             @media screen and (max-width:1440px) {
                 right: 10%;
             }

@@ -7,7 +7,6 @@
       position: relative;
       background-size: contain;
       height: 600px !important;
-      // padding-top: 180px;
       display: flex !important;
       justify-content: center;
       align-items: center;
@@ -194,23 +193,6 @@
         #d2e9ff 100%
       ) !important;
     }
-    // &__img {
-    //   position: absolute;
-    //   height: 100%;
-    //   right: 10%;
-    //   @media screen and (min-width:1441px) {
-    //     right: calc((100vw - 1100px)/2);
-    //   }
-    //   @media screen and (max-width:1024px) {
-    //     right: 5%;
-    //   }
-    //   @media screen and (max-width:768px) {
-    //     right: 0%;
-    //   }
-    //   @media screen and (max-width:600px) {
-    //     display: none;
-    //   }
-    // }
     &__block {
       @include flex(space-between, flex-start, column);
       padding: 83px 0;
@@ -366,7 +348,6 @@
   &-description {
     @include flex(space-between, center, row);
     position: relative;
-    // height: 450px;
     .slick-slider {
       position: static;
     }
@@ -383,9 +364,6 @@
         @media screen and (min-width: 480px) {
           height: 450px!important;
         }
-        // @media screen and (min-width: 768px) {
-        //   height: 450px!important;
-        // }
       }
       @media screen and (min-width: 1600px) {
         max-height: none;
@@ -395,17 +373,14 @@
         height: 100%;
         object-fit: cover;
         @media screen and (max-width: 2880px) {
-          // height: calc((100vw / 2 * 450) / 720);
           object-fit: fill;
           max-height: 698px;
         }
         @media screen and (max-width: 1440px) {
-          // height: calc((100vw / 2 * 450) / 720);
           object-fit: fill;
           max-height: 349px;
         }
         @media screen and (max-width: 768px) {
-          // height: calc((100vw / 2 * 450) / 720);
           object-fit: fill;
           max-height: 307px;
         }
@@ -593,7 +568,6 @@
   &-desc {
     @include flex(space-between, center, row);
     position: relative;
-    // height: 450px;
     .slick-slider {
       position: static;
     }
@@ -610,19 +584,14 @@
         @media screen and (min-width: 480px) {
           height: 450px!important;
         }
-        // @media screen and (min-width: 768px) {
-        //   height: 450px!important;
-        // }
       }
       @media screen and (min-width: 1600px) {
         max-height: none;
       }
       img {
         width: auto;
-        // height: 450px;
         object-fit: cover;
         @media screen and (min-width: 1600px) {
-          // height: calc((100vw / 2 * 450) / 720);
           object-fit: fill;
         }
         @media screen and (max-width: 480px) {
@@ -882,7 +851,6 @@
       @media screen and (max-width: 480px) {
         justify-content: flex-start;
         padding-left: 5%;
-        // height: 350px;
         padding-top: 30px;
         &__inner {
           width: 98%;
@@ -897,31 +865,19 @@
     .sub-description {
       justify-content: flex-start;
       padding: 40px 0;
-      // padding-left: 10%;
-      // width: 100%;
       &__inner {
-        // width: 90%;
         width: 100%;
       }
       @media screen and (min-width: 1441px) {
-        // padding-left: calc((100vw - 1100px) / 2);
       }
       @media screen and (max-width: 768px) {
         justify-content: center;
-        // padding-left: 0%;
         height: auto;
         padding: 40px 0;
-        &__inner {
-          // width: 64%;
-        }
       }
       @media screen and (max-width: 480px) {
         justify-content: flex-start;
-        // padding-left: 5%;
         padding-top: 30px;
-        &__inner {
-          // width: 98%;
-        }
       }
     }
   }
@@ -949,15 +905,11 @@
     }
     @media screen and (max-width: 768px) {
       .sectors-info {
-        // background-position: 180% 0%;
         background-size: contain;
       }
     }
   }
   &-generation {
-    // .sectors-info {
-    //   background-position: right 7% bottom;
-    // }
     .sectors-info__block {
       padding: 70px 0;
     }
@@ -966,9 +918,6 @@
   }
   }
   &-grid {
-    // .sectors-info {
-    //   background-position: right 4% bottom;
-    // }
     .sectors-info__block {
       padding: 39px 0;
     }

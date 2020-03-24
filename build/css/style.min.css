@@ -2251,6 +2251,15 @@ main {
   font-family: "TitilliumWebRegular", sans-serif;
 }
 
+.intern .block-text-slider .block-with-text::-webkit-scrollbar {
+  width: 5px;
+  background-color: #dcdcdc;
+}
+
+.intern .block-text-slider .block-with-text::-webkit-scrollbar-thumb {
+  background-color: #ffd12d;
+}
+
 hr {
   color: #dcdcdc;
 }
@@ -8790,6 +8799,11 @@ template {
   .careers-filter-block {
     width: 80%;
     max-width: 1110px;
+  }
+
+  .intern .block-text-slider .block-with-text {
+    overflow-x: hidden;
+    max-height: 522px;
   }
 
   .case-filter-block {

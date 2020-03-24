@@ -77,14 +77,9 @@
     @media screen and (min-width: 1441px) {
       padding-left: calc((100vw - 1100px) / 2);
     }
-    // @media screen and (max-width: 480px) {
-    //   padding-right: 5%;
-    //   padding-right: 5%;
-    // }
   }
   &-text {
     max-width: 445px;
-    // padding-top: 110px;
     font-family: TitilliumWebSemiBold;
     font-size: 24px;
     line-height: 38px;
@@ -106,7 +101,6 @@
   }
   &-subtext {
     max-width: 445px;
-    // padding-bottom: 110px;
     font-family: TitilliumWebRegular, sans-serif;
     font-size: 16px;
     line-height: 32px;
@@ -562,7 +556,6 @@
 }
 
 .works {
-  // padding-top: 30px;
   background-color: #fff;
   position: relative;
   @media screen and (max-width: 480px) {
