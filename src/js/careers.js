@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let popUpWrap = document.querySelector(".popup-wrap");
       let popUp = document.querySelector(".popup");
       let popUpContent = document.querySelector(".popup__content");
+      let body = document.querySelector("body");
       
       
       buttonApply.forEach((e) => {
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
               popUpWrap.style.opacity = "1";
               popUp.style.display = "block";
               popUp.style.opacity = "1";
+              body.style.overflow = "hidden"
             })
         })
         
@@ -24,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },1000)
             popUpWrap.style.opacity = "0";
             popUp.style.opacity = "0";
+            body.style.overflow = "auto"
         });
         
         
@@ -35,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },1000)
             popUp.style.opacity = "0";
             popUpWrap.style.opacity = "0";
+            body.style.overflow = "auto"
           }       
         });
         popUp.addEventListener("click", function(e) {

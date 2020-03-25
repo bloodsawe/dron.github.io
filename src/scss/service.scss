@@ -28,14 +28,10 @@
         }
     }
     &__baner {
-        display: flex;
         position: relative;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         &-img {
             width: 100%;
-            object-fit: cover;
+            vertical-align: bottom;
         }
         .main-button {
             position: absolute;
@@ -246,5 +242,10 @@
     }
     .adv__img {
         width: 100%;
+    }
+    .advantages {
+        .wrapper {
+            display: block;
+        }
     }
 }

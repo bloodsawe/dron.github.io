@@ -250,6 +250,7 @@ main {
     textarea {
       resize: none;
       margin: 15px 0;
+      max-height: 110px;
       width: 100%;
       background: none;
       border: 2px solid #cad5e2;
@@ -286,6 +287,9 @@ main {
       padding: 12px 24px;
       line-height: 12px;
       font-weight: 700;
+    }
+    div.wpcf7-response-output {
+      margin: 1em 0.5em 1em;
     }
     .codedropz-upload-wrapper {
       margin-top: 10px;

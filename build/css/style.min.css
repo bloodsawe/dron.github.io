@@ -742,6 +742,21 @@ main.aboutUs {
   line-height: 38px;
 }
 
+video::--webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
 main.homepage {
   z-index: 1;
   position: relative;
@@ -1910,6 +1925,7 @@ main {
 .careers-position-page .popup textarea {
   resize: none;
   margin: 15px 0;
+  max-height: 110px;
   width: 100%;
   background: none;
   border: 2px solid #cad5e2;
@@ -1950,6 +1966,10 @@ main {
   padding: 12px 24px;
   line-height: 12px;
   font-weight: 700;
+}
+
+.careers-position-page .popup div.wpcf7-response-output {
+  margin: 1em 0.5em 1em;
 }
 
 .careers-position-page .popup .codedropz-upload-wrapper {
@@ -6565,7 +6585,7 @@ main.newsandblog {
 
 .popup__content {
   position: relative;
-  padding: 40px;
+  padding: 20px 40px;
 }
 
 .modal-title-form {
@@ -7586,8 +7606,8 @@ main.newsandblog {
 }
 
 .sectors-construction .sectors-info__description {
-  width: 86%;
-  margin-right: 0px;
+  width: 44%;
+  margin-right: 30px;
 }
 
 .sectors-construction .sectors-info__block {
@@ -7671,20 +7691,12 @@ main.newsandblog {
 }
 
 .services__baner {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .services__baner-img {
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  vertical-align: bottom;
 }
 
 .services__baner .main-button {
@@ -7876,6 +7888,10 @@ main.newsandblog {
 
 .services .adv__img {
   width: 100%;
+}
+
+.services .advantages .wrapper {
+  display: block;
 }
 
 .services-collection {
@@ -9060,7 +9076,7 @@ template {
 
 @media screen and (min-width: 2400px) {
   .sectors-info {
-    background-position: right 35% bottom;
+    background-position: right 32% bottom;
   }
 }
 
@@ -11115,6 +11131,18 @@ template {
     width: 100%;
   }
 
+  .sectors-grid .sectors-info__description:nth-child(2) {
+    width: 100%;
+  }
+
+  .sectors-construction .sectors-info__description {
+    width: 100%;
+  }
+
+  .sectors-construction .sectors-info__description:nth-child(2) {
+    width: 100%;
+  }
+
   .sectors-generation .sectors-desc .sectors-desc__counter {
     left: 15%;
   }
@@ -12780,6 +12808,12 @@ template {
 @media screen and (min-width: 1200px) and (max-width: 1360px) {
   .sectors-oil .watch-description__text {
     font-size: 18px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1441px) {
+  .sectors-generation .sectors__info {
+    background-position: right 11% bottom;
   }
 }
 /*# sourceMappingURL=style.min.css.map */

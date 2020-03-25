@@ -4,30 +4,27 @@ document.addEventListener("DOMContentLoaded",function() {
       _video = document.getElementById("video");
 
       // Show loading animation.
-      var playPromise = _video.play();
+
+      // var playPromise = _video.play();
     
-      if (playPromise !== undefined) {
-        playPromise.then(_ => {
-          // Automatic playback started!
-          // Show playing UI.
-          // We can now safely pause video...
-          _video.pause();
-        })
-        .catch(error => {
-          // Auto-play was prevented
-          // Show paused UI.
-        });
-      }
+      // if (playPromise !== undefined) {
+      //   playPromise.then(_ => {
+      //     _video.pause();
+      //   })
+      //   .catch(error => {});
+      // }
 
+      setTimeout(() => {
+        _video.play(); 
+        _video.pause();
+      }, 1000)
 
-      // _video.play(); 
-      // _video.pause();
       _video.addEventListener("pause", () => _playBtn.style.display = 'block')
       _video.addEventListener("play", () =>_playBtn.style.display = 'none')
       _video.addEventListener("seeking", () =>_playBtn.style.display = 'none')
-      // _video.addEventListener("loadeddata", () => { _video.play(); _video.pause(); })
       _playBtn = document.getElementById("playBtn");
       _pauseBtn = document.getElementById("pauseBtn");
+      _video.addEventListener("loadeddata", () => { ScrollReveal().sync() })
     }
     document.addEventListener("DOMContentLoaded", init(), false);
   }

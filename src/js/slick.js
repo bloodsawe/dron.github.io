@@ -207,6 +207,13 @@ var timerId = setInterval(() => {
         }
       ]
     });
+    ScrollReveal().sync();
+    Array.from(document.querySelectorAll('a[target="_blank"]')).forEach(
+      link => {
+        link.removeAttribute("target");
+      }
+    );
+
     clearInterval(timerId);
   }
 }, 100);

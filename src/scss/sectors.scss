@@ -184,7 +184,7 @@
       background-position: right 26% bottom;
     }
     @media screen and (min-width: 2400px) {
-      background-position: right 35% bottom;
+      background-position: right 32% bottom;
     }
     @media screen and (max-width: 600px) {
       background-image: linear-gradient(
@@ -910,23 +910,41 @@
     }
   }
   &-generation {
+    .sectors__info {
+      @media screen and (min-width:1200px) and (max-width: 1441px) {
+        background-position: right 11% bottom;
+      }
+    }
     .sectors-info__block {
       padding: 70px 0;
     }
     .sectors-info__description:nth-child(2) {
       width: 33%;
-  }
+    }
   }
   &-grid {
     .sectors-info__block {
       padding: 39px 0;
     }
+    @media screen and (max-width: 600px) {
+      .sectors-info__description:nth-child(2) {
+        width: 100%;
+      }  
+    }
   }
   &-construction {
     .sectors-info {
       &__description {
-        width: 86%;
-        margin-right: 0px;
+        width: 44%;
+        margin-right: 30px;
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+      }
+      &__description:nth-child(2) {
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
       }
     }
     .sectors-info__block {

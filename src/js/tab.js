@@ -3,7 +3,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   
-  if (document.querySelector(".homepage, .services-collection, .services, .sectors-oil, .sectors-grid, .sectors-construction, .sectors-generation")) {
+  if (document.querySelector(".homepage, .services-collection, .services, .sectors-oil, .sectors-grid, .sectors-generation")) {
     var blockDescription = Array.from(document.querySelectorAll(".collection-block__description"));
     var blockTab = Array.from(document.querySelectorAll(".select-block__item"));
     var descriptionText = Array.from(document.querySelectorAll(".collection-block__text-animation"));
