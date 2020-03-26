@@ -106,7 +106,7 @@ $(document).ready(
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 8000,
       arrows: false,
       fade: true,
       asNavFor: ".sectors-description-slider"
@@ -115,7 +115,7 @@ $(document).ready(
       let descriptionSlider = $(".sectors-description-slider").slick({
         slidesToShow: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 8000,
         dots: false,
         prevArrow: '<div class="slick-prev"></div>',
         nextArrow: '<div class="slick-next"></div>',
@@ -152,7 +152,7 @@ $(document).ready(
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 8000,
       arrows: false,
       fade: true,
       asNavFor: ".sectors-desc-slider"
@@ -161,7 +161,7 @@ $(document).ready(
       let descriptionSlider = $(".sectors-desc-slider").slick({
         slidesToShow: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 8000,
         dots: false,
         prevArrow: '<div class="slick-prev"></div>',
         nextArrow: '<div class="slick-next"></div>',
