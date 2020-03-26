@@ -7830,11 +7830,18 @@ main.newsandblog {
 }
 
 .services .watch-description__text {
+  margin-bottom: 5px;
   font-size: 16px;
 }
 
 .services .watch-description__text_yellow {
   font-size: 18px;
+}
+
+.services .watch .main-button {
+  margin-bottom: 10px;
+  width: 171px;
+  height: 50px;
 }
 
 .services .collection-block__title {
@@ -8002,6 +8009,7 @@ main.newsandblog {
 .services-collection .watch-description__text {
   max-height: 180px;
   overflow-x: hidden;
+  font-size: 18px;
 }
 
 .services-collection .watch-description__text::-webkit-scrollbar {
@@ -8967,7 +8975,7 @@ template {
   }
 
   .sectors-info {
-    background-position: right 18% bottom;
+    background-position: right 13% bottom;
   }
 
   .sectors-oil .watch-description,
@@ -9046,19 +9054,19 @@ template {
 
 @media screen and (min-width: 1650px) {
   .sectors-info {
-    background-position: right 21% bottom;
+    background-position: right 18% bottom;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .sectors-info {
-    background-position: right 26% bottom;
+    background-position: right 23% bottom;
   }
 }
 
 @media screen and (min-width: 2400px) {
   .sectors-info {
-    background-position: right 32% bottom;
+    background-position: right 29% bottom;
   }
 }
 
@@ -9545,6 +9553,10 @@ template {
 
   .services-info__description {
     width: auto;
+  }
+
+  .services .watch-description__text_yellow {
+    font-size: 16px;
   }
 
   .services-collection__baner .main-button {
@@ -10842,14 +10854,6 @@ template {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 63px 50px 63px 66px;
-  }
-
-  .services-collection .watch-description__text {
-    font-size: 22px;
-  }
-
-  .services-collection .watch-description__text {
-    font-size: 18px;
   }
 
   .services-collection .callback-block__text {

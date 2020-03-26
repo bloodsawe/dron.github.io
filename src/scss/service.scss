@@ -200,6 +200,7 @@
     .watch {
         margin-bottom: 60px;
         &-description__text {
+            margin-bottom: 5px;
             font-size: 16px;
             @media screen and (max-width: 480px) {
                 font-size: 14px;
@@ -207,9 +208,17 @@
         }
         &-description__text_yellow {
             font-size: 18px;
+            @media screen and (max-width: 1024px) {
+                font-size: 16px;
+            }
         }
         @media screen and (max-width: 480px) {
             margin-bottom: 20px;
+        }
+        .main-button {
+            margin-bottom: 10px;
+            width: 171px;
+            height: 50px;
         }
     }
     .collection-block__title {
