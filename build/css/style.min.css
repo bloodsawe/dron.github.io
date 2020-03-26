@@ -742,21 +742,6 @@ main.aboutUs {
   line-height: 38px;
 }
 
-video::--webkit-media-controls-play-button {
-  display: none !important;
-  -webkit-appearance: none;
-}
-
-video::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none;
-}
-
-video::-webkit-media-controls-panel {
-  display: none !important;
-  -webkit-appearance: none;
-}
-
 main.homepage {
   z-index: 1;
   position: relative;
@@ -7906,15 +7891,12 @@ main.newsandblog {
   height: auto;
   -o-object-fit: fill;
   object-fit: fill;
+  vertical-align: bottom;
 }
 
 .services-collection__baner {
   position: relative;
   max-height: 700px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
