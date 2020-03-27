@@ -173,7 +173,7 @@
     background-repeat: no-repeat;
     background-position: right 0% bottom;
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     @media screen and (min-width: 1441px) {
       background-position: right 13% bottom;
     }
@@ -199,7 +199,6 @@
       background-repeat: no-repeat;
       background-position: right 0% bottom;
       position: relative;
-      margin-bottom: 80px;
       @media screen and (max-width: 768px) {
         padding: 31px 0;
       }
@@ -933,6 +932,76 @@
     }
   }
   &-construction {
+    .advantages {
+      padding-top: 0;
+      padding-bottom: 0;
+      &-card {
+        padding: 0 20px;
+        margin-bottom: 0;
+      }
+      &-card-title {
+        display: block;
+        text-align: center;
+      }
+      &-card-text {
+        width: 88%;
+        margin: 0 auto;
+        max-height: 140px;
+        overflow-x: hidden;
+      }
+      
+      &-card-text::-webkit-scrollbar {
+        width: 5px;
+        background-color: #dcdcdc;
+      }
+      &-card-text::-webkit-scrollbar-thumb {
+        background-color: $sunyellow;
+      }
+      .slick-prev,
+      .slick-next {
+        position: absolute;
+        z-index: 1;
+        bottom: 50%;
+        width: 54px;
+        height: 54px;
+        border: solid 2px $verylightpink;
+        border-radius: 50%;
+        background: transparent;
+        background: url(../img/arrow-right-s-line.svg) no-repeat center;
+        @media (max-width: 480px) {
+          // display: none !important;
+          bottom: 35%;
+        }
+      }
+      .slick-prev:hover,
+      .slick-next:hover {
+        border: solid 2px $sunyellow;
+        background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+        cursor: pointer;
+      }
+      .slick-prev {
+        left: -5%;
+        transform: rotate(180deg);
+        @media screen and (min-width: 1441px) {
+          left: calc(44% - 1100px / 2);
+        }
+        // @media screen and (max-width: 1024px) {
+        //   left: 5%;
+        // }
+      }
+      .slick-next {
+        right: -5%;
+        @media screen and (min-width: 1441px) {
+          right: calc(44% - 1100px / 2);
+        }
+        // @media screen and (max-width: 1024px) {
+        //   left: 14%;
+        // }
+        // @media screen and (max-width: 600px) {
+        //   left: 17%;
+        // }
+      }
+    }
     .sectors-info {
       &__description {
         width: 44%;

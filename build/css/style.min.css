@@ -7015,7 +7015,7 @@ main.newsandblog {
   background-repeat: no-repeat;
   background-position: right 0% bottom;
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .sectors-info__block {
@@ -7040,7 +7040,6 @@ main.newsandblog {
   background-repeat: no-repeat;
   background-position: right 0% bottom;
   position: relative;
-  margin-bottom: 80px;
 }
 
 .sectors-info__inner {
@@ -7589,6 +7588,68 @@ main.newsandblog {
 
 .sectors-grid .sectors-info__block {
   padding: 39px 0;
+}
+
+.sectors-construction .advantages {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sectors-construction .advantages-card {
+  padding: 0 20px;
+  margin-bottom: 0;
+}
+
+.sectors-construction .advantages-card-title {
+  display: block;
+  text-align: center;
+}
+
+.sectors-construction .advantages-card-text {
+  width: 88%;
+  margin: 0 auto;
+  max-height: 140px;
+  overflow-x: hidden;
+}
+
+.sectors-construction .advantages-card-text::-webkit-scrollbar {
+  width: 5px;
+  background-color: #dcdcdc;
+}
+
+.sectors-construction .advantages-card-text::-webkit-scrollbar-thumb {
+  background-color: #ffd12d;
+}
+
+.sectors-construction .advantages .slick-prev,
+.sectors-construction .advantages .slick-next {
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  width: 54px;
+  height: 54px;
+  border: solid 2px #dcdcdc;
+  border-radius: 50%;
+  background: transparent;
+  background: url(../img/arrow-right-s-line.svg) no-repeat center;
+}
+
+.sectors-construction .advantages .slick-prev:hover,
+.sectors-construction .advantages .slick-next:hover {
+  border: solid 2px #ffd12d;
+  background: url(../img/arrow-right-s-line-hover.svg) no-repeat center;
+  cursor: pointer;
+}
+
+.sectors-construction .advantages .slick-prev {
+  left: -5%;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.sectors-construction .advantages .slick-next {
+  right: -5%;
 }
 
 .sectors-construction .sectors-info__description {
@@ -8989,6 +9050,16 @@ template {
   .sectors-construction .watch-description {
     padding-left: -webkit-calc((100vw - 1100px) / 2);
     padding-left: calc((100vw - 1100px) / 2);
+  }
+
+  .sectors-construction .advantages .slick-prev {
+    left: -webkit-calc(44% - 1100px / 2);
+    left: calc(44% - 1100px / 2);
+  }
+
+  .sectors-construction .advantages .slick-next {
+    right: -webkit-calc(44% - 1100px / 2);
+    right: calc(44% - 1100px / 2);
   }
 }
 
@@ -11593,6 +11664,11 @@ template {
 
   .sectors-slider__text {
     font-size: 14px;
+  }
+
+  .sectors-construction .advantages .slick-prev,
+  .sectors-construction .advantages .slick-next {
+    bottom: 35%;
   }
 
   .services__img {
