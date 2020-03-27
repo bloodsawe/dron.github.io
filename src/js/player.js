@@ -2,18 +2,18 @@ document.addEventListener("DOMContentLoaded",function() {
   if(document.querySelector(".aboutUs, .services, .careers-page, .sectors-oil, .sectors-grid, .sectors-generation, .sectors-construction, .services-collection")) {
     function init() {
       _video = document.getElementById("video");
-      _video.play(); 
-      _video.pause();
+      // _video.play(); 
+      // _video.pause();
 
 
 
-      // var playPromise = _video.play();
-      // if (playPromise !== undefined) {
-      //   playPromise.then(_ => {
-      //     _video.pause();
-      //   })
-      //   .catch(error => {});
-      // }
+      var playPromise = _video.play();
+      if (playPromise !== undefined) {
+        playPromise.then(_ => {
+          _video.pause();
+        })
+        .catch(error => {});
+      }
 
 
 
@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded",function() {
       // _pauseBtn = document.getElementById("pauseBtn");
       _video.addEventListener("loadeddata", () => { ScrollReveal().sync() })
 
-      if (navigator.userAgent.search(/Safari/) && navigator.userAgent.search(/Mobile/) && window.outerWidth <= 375) {
-        // alert('Safari Mobile');
-        _playBtn.style.display = 'none';
-      }
+      // if (window.outerWidth <= 768) {
+      //   // alert('Safari Mobile');
+      //   _playBtn.style.display = 'none';
+      // }
 
     }
     document.addEventListener("DOMContentLoaded", init(), false);

@@ -218,6 +218,7 @@ main.aboutUs {
 }
 
 .watch-player-video {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: fill;
@@ -7821,6 +7822,10 @@ main.newsandblog {
   z-index: 1;
 }
 
+.services .callback-block .main-button {
+  z-index: 1;
+}
+
 .services .cards .main-block__title {
   margin: 0;
 }
@@ -10225,13 +10230,8 @@ template {
     left: 24%;
   }
 
-  .services .callback {
-    background: url(../img/bg-ihawk-tablet-request.jpg) no-repeat center/cover;
-  }
-
   .services .callback-block__img {
     right: -222px;
-    display: none;
   }
 
   .services-collection .callback-block__img {
@@ -11599,10 +11599,6 @@ template {
     display: none;
   }
 
-  .services .callback-block__img {
-    display: none;
-  }
-
   .services .callback-block .main-button {
     margin: 0;
   }
@@ -11676,6 +11672,10 @@ template {
 
   .watch-description__text {
     font-size: 18px;
+  }
+
+  .watch-player-btn {
+    display: none !important;
   }
 
   .promise-block__container-text {

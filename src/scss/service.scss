@@ -141,9 +141,9 @@
         background: url(../img/service-bg.png) no-repeat center/cover;
         min-height: 450px;
         @include flex(center,center,column);
-        @media (max-width: 768px) {   
-            background: url(../img/bg-ihawk-tablet-request.jpg) no-repeat center/cover;
-        }
+        // @media (max-width: 768px) {   
+        //     background: url(../img/bg-ihawk-tablet-request.jpg) no-repeat center/cover;
+        // }
     }
     .callback-block {
         padding: 0;
@@ -168,11 +168,11 @@
             }
             @media (max-width: 768px) {   
                 right: -222px;
-                display: none;
+                // display: none;
             }
-            @media (max-width: 480px) {
-                display: none;
-            }
+            // @media (max-width: 480px) {
+            //     display: none;
+            // }
         }
         &__text {
             width: 50%;
@@ -187,6 +187,7 @@
             }
         }
         .main-button {
+            z-index: 1;
             @media (max-width: 480px) {
                 margin: 0;
             }

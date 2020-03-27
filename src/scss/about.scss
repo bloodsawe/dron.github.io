@@ -238,10 +238,10 @@ main.aboutUs {
       padding-top: 56.25%;
     }
     &-video {
-      width: 100%;
-      height: 100%;
-      object-fit: fill;
-
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;  
       @media screen and (max-width: 910px) {
         position: absolute;
         top: 0;
@@ -278,6 +278,11 @@ main.aboutUs {
   .watch-player-btn {
     top: calc(50% - 42px);
     left: calc(50% - 42px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .watch-player-btn {
+    display: none!important;
   }
 }
 .promise {
