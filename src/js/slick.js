@@ -5,7 +5,7 @@ $(document).ready(
       $(".banner-slider").slick({
         slidesToShow: 1,
         autoplay: true,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 15000,
         pauseOnHover: true,
         dots: false,
         fade: true,
@@ -90,7 +90,7 @@ $(document).ready(
 document.addEventListener("DOMContentLoaded", function() {
   if (
     document.querySelector(
-      ".sectors-oil, .sectors-grid, .sectors-generation, .sectors-construction"
+      ".services, .services-collection, .sectors-oil, .sectors-grid, .sectors-generation, .sectors-construction"
     )
   ) {
     var sliders = document.querySelectorAll(".sectors-description-slider__item")
@@ -114,7 +114,7 @@ $(document).ready(
     if ($(".sectors-description-slider").length > 0) {
       let descriptionSlider = $(".sectors-description-slider").slick({
         slidesToShow: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 8000,
         dots: false,
         prevArrow: '<div class="slick-prev"></div>',
@@ -151,7 +151,7 @@ $(document).ready(
     $(".sectors-desc-img").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 8000,
       arrows: false,
       fade: true,
@@ -208,7 +208,7 @@ var timerId = setInterval(() => {
       ]
     });
     ScrollReveal().sync();
-    Array.from(document.querySelectorAll('a[target="_blank"]')).forEach(
+    Array.from(document.querySelectorAll('.wp_rss_retriever_item a[target="_blank"]')).forEach(
       link => {
         link.removeAttribute("target");
       }

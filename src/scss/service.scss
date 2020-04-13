@@ -199,7 +199,7 @@
         }
     }
     .watch {
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
         &-description__text {
             margin-bottom: 5px;
             font-size: 16px;
@@ -213,13 +213,19 @@
                 font-size: 16px;
             }
         }
-        @media screen and (max-width: 480px) {
-            margin-bottom: 20px;
-        }
+        // @media screen and (max-width: 480px) {
+        //     margin-bottom: 20px;
+        // }
         .main-button {
             margin-bottom: 10px;
             width: 171px;
             height: 50px;
+        }
+    }
+    .sectors-description {
+        margin-bottom: 60px;
+        @media screen and (max-width: 480px) {
+            margin-bottom: 20px;
         }
     }
     .collection-block__title {
@@ -259,3 +265,5 @@
         }
     }
 }
+
+

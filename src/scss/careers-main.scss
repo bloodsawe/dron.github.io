@@ -849,6 +849,9 @@
       margin-top: 11px;
       outline: none;
       color: white;
+      @media (max-width:1200px) {
+        max-width: 300px;
+      }
 }
 
 input.hs-button.primary.large {

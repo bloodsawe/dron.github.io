@@ -29,7 +29,7 @@ main.aboutUs {
   background-image: url(../img/about-background.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left top;
+  background-position: center;
 }
 
 .about-header {
@@ -2847,7 +2847,10 @@ hr {
 .contacts-page .main-offices {
   margin-top: 30px;
   margin-bottom: 40px;
-  background: url(../img/world-map.png) no-repeat center/contain;
+  background-image: url(../img/world-map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .contacts-page .main-offices .wrapper {
@@ -3592,12 +3595,13 @@ footer {
   font-family: "TitilliumWebRegular", sans-serif;
   font-size: 14px;
   color: #dcdcdc;
-  margin-bottom: 26px;
   line-height: 2;
 }
 
 .block-subscribe__items span {
+  display: block;
   color: #505050;
+  margin: 16px 0;
 }
 
 .block-subscribe__items:last-child {
@@ -7891,10 +7895,6 @@ main.newsandblog {
   margin: 0;
 }
 
-.services .watch {
-  margin-bottom: 60px;
-}
-
 .services .watch-description__text {
   margin-bottom: 5px;
   font-size: 16px;
@@ -7908,6 +7908,10 @@ main.newsandblog {
   margin-bottom: 10px;
   width: 171px;
   height: 50px;
+}
+
+.services .sectors-description {
+  margin-bottom: 60px;
 }
 
 .services .collection-block__title {
@@ -8135,7 +8139,7 @@ main.newsandblog {
   margin: 0;
 }
 
-.services-collection .watch {
+.services-collection .sectors-description {
   margin-bottom: 60px;
 }
 
@@ -9234,6 +9238,10 @@ template {
     left: 88px;
   }
 
+  .hbspt-form .hs-form .hs_email .input .hs-input {
+    max-width: 300px;
+  }
+
   .services__img {
     width: 50%;
     left: 25%;
@@ -10316,9 +10324,7 @@ template {
 
 @media screen and (max-width: 768px) {
   .about {
-    background-image: url(../img/about-background-tablet.png);
-    background-size: auto;
-    background-position: right 60px;
+    background-position: top;
   }
 
   .about-block__count {
@@ -10508,6 +10514,12 @@ template {
   .case-filter-block__item {
     padding: 0 17px;
     margin-right: 18px;
+  }
+
+  .contacts-page .main-offices {
+    background-image: url(../img/world-map-tablet.png);
+    background-size: auto;
+    background-position: right 60px;
   }
 
   .contacts-page .main-offices-list__item {
@@ -11668,6 +11680,7 @@ template {
 
   .sectors-construction .advantages .slick-prev,
   .sectors-construction .advantages .slick-next {
+    display: none !important;
     bottom: 35%;
   }
 
@@ -11710,10 +11723,6 @@ template {
 }
 
 @media screen and (max-width: 480px) {
-  .about {
-    background-position: right 50px;
-  }
-
   .about-description__title {
     font-size: 18px;
   }
@@ -12207,6 +12216,10 @@ template {
     }
 }
 
+  .contacts-page .main-offices {
+    background-position: right 50px;
+  }
+
   .contacts-page .main-offices-title {
     font-size: 24px;
     font-weight: 600;
@@ -12667,7 +12680,7 @@ template {
     font-size: 14px;
   }
 
-  .services .watch {
+  .services .sectors-description {
     margin-bottom: 20px;
   }
 
@@ -12701,7 +12714,7 @@ template {
     width: 100%;
   }
 
-  .services-collection .watch {
+  .services-collection .sectors-description {
     margin-bottom: 20px;
   }
 

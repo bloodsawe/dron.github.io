@@ -116,6 +116,7 @@ footer {
     }
     &-subscribe {
         &__address {
+            // margin-bottom: 26px;
             @media screen and (max-width:600px) {
                 margin-bottom: 40px;
             }
@@ -189,10 +190,12 @@ footer {
             font-family: "TitilliumWebRegular", sans-serif;
             font-size: 14px;
             color: $verylightpink;
-            margin-bottom: 26px;
+            // margin-bottom: 26px;
             line-height: 2;
             span {
+                display: block;
                 color: $greyishbrown;
+                margin: 16px 0;
             }
         }
         &__items:last-child {

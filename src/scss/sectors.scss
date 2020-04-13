@@ -928,7 +928,7 @@
     @media screen and (max-width: 600px) {
       .sectors-info__description:nth-child(2) {
         width: 100%;
-      }  
+      }
     }
   }
   &-construction {
@@ -949,7 +949,6 @@
         max-height: 140px;
         overflow-x: hidden;
       }
-      
       &-card-text::-webkit-scrollbar {
         width: 5px;
         background-color: #dcdcdc;
@@ -969,7 +968,7 @@
         background: transparent;
         background: url(../img/arrow-right-s-line.svg) no-repeat center;
         @media (max-width: 480px) {
-          // display: none !important;
+          display: none !important;
           bottom: 35%;
         }
       }

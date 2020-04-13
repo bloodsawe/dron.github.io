@@ -23,16 +23,16 @@ main.aboutUs {
   background-image: url(../img/about-background.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left top;
+  background-position: center;
+
+  // @media screen and (max-width: 768px) {
+  //   background-image: url(../img/about-background-tablet.png);
+  //   background-size: auto;
+  //   background-position: right 60px;
+  // }
 
   @media screen and (max-width: 768px) {
-    background-image: url(../img/about-background-tablet.png);
-    background-size: auto;
-    background-position: right 60px;
-  }
-
-  @media screen and (max-width: 480px) {
-    background-position: right 50px;
+    background-position: top;
   }
 
   &-header {

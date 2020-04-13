@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         arrow.classList.toggle("rotate");
         ScrollReveal().sync();
       });
-    }); 
+    });
   }
 });
 
@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         arrow.classList.toggle("rotate");
         ScrollReveal().sync();
       });
-    }); 
+    });
   }
 });
+
