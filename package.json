@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0-9",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^4.0.2",

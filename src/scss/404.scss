@@ -1,0 +1,129 @@
+@import "help/vars_and_mixins";
+
+.error-page {
+  padding: 180px 0 85px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width:480px) {
+    padding: 83px 0 45px 0;
+
+  }
+}
+
+.error {
+  width: 53%;
+  margin:0 auto;
+  @include flex(center,center,column);
+  @media screen and (max-width:1400px) {
+    width: 92%;
+  }
+  &__block {
+    position: relative;
+  }
+  &__404 {
+    font-family: "TitilliumWebSemiBold", sans-serif;
+    font-size: 288px;
+    color: #ffcf45;
+    margin: 0;
+    @media screen and (max-width:920px) {
+      font-size: 240px;
+    }
+    @media screen and (max-width:480px) {
+      font-size: 138px;
+    }
+  }
+  &__ops {
+    position: absolute;
+    font-family: "TitilliumWebSemiBold", sans-serif;
+    font-size: 32px;
+    color: #000000;
+    transform: rotate(90deg);
+    top: 97px;
+    left: 50%;
+    right: 49%;
+    @media screen and (max-width:920px) {
+      top: 72px;
+    }
+    @media screen and (max-width:480px) {
+      font-size: 21px;
+      top: 35px;
+    }
+  }
+  &__title {
+    font-family: "TitilliumWebSemiBold", sans-serif;
+    font-size: 64px;
+    color:#282828;
+    margin-bottom: 23px;
+    @media screen and (max-width:480px) {
+      font-size: 40px;
+    }
+  }
+  &__text {
+    font-family: "TitilliumWebRegular", sans-serif;
+    font-size: 36px;
+    color: #282828;
+    margin-bottom: 23px;
+    @media screen and (max-width:920px) {
+      font-size: 28px;
+    }
+    @media screen and (max-width:480px) {
+      font-size: 18px;
+    }
+  }
+  &__list {
+    margin-bottom: 43px;
+    @media screen and (max-width:480px) {
+      margin-bottom: 22px;
+    }
+  }
+  &__item {
+    position: relative;
+    font-family: "TitilliumWebRegular", sans-serif;
+    font-size: 24px;
+    color: #282828;
+    margin-bottom: 10px;
+    text-align-last: left;
+    @media screen and (max-width:920px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width:480px) {
+      font-size: 14px;
+    }
+    a {
+      font-family: "TitilliumWebBold", sans-serif;
+      color: #282828;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  &__item:before {
+    content:"";
+    position: absolute;
+    top: 6px;
+    left: -23px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #282828;
+    @media screen and (max-width:480px) {
+      top: 4px;
+      width: 7px;
+      height: 7px;
+      left: -12px;
+    }
+  }
+
+  .main-button {
+    width: 351px;
+    margin: 0 auto;
+    font-family: "TitilliumWebSemiBold", sans-serif;
+    font-size: 24px;
+    color:#282828;
+    padding: 10px 24px;
+    @media screen and (max-width:480px) {
+      width: 271px;
+      font-size: 20px;
+    }
+  }
+}

@@ -2,6 +2,9 @@
 
 .terms {
     padding-top: 100px;
+    a[href] {
+        color: #282828;
+    }
     .wrapper {
         width: 50%;
         @media (max-width:768px) {

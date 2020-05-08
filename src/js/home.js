@@ -1,6 +1,11 @@
 // ie
 
 document.addEventListener("DOMContentLoaded", function () {
+  (function($){
+    $('.header-nav__item-insert a').addClass('header-nav__link-insert');
+    $('.footer-nav__list a').addClass('block-info__link');
+  })(jQuery);
+  
   if (document.querySelector(".homepage")) {
     var banner = Array.from(document.querySelectorAll(".banner-slider__item")) ;
     var img = Array.from(banner[3].querySelectorAll("img")) ;

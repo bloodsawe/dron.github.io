@@ -270,15 +270,33 @@ $(document).ready(
 
 //casecardsintern-slider
 $(document).ready(
-  $(function() {
+  $(function () {
     if ($(".intern .slider").length > 0) {
       let arr = [];
-      document.querySelectorAll(".slider__block img").forEach(e => {
-        if (e.src.indexOf("case_studies") + 1 != 0) arr.push(e);
-      });
-      arr.forEach(e => {
-        e.parentElement.remove();
-      });
+      // document.querySelectorAll(".slider__block img").forEach((e) => {
+      //   if (e.src.indexOf("case_studies")) {
+      //     arr.push(e);
+      //   }
+      // });
+      for (
+        let i = 0;
+        i < document.querySelectorAll(".slider__block img");
+        i++
+      ) {
+        if (
+          document
+            .querySelector(".slider__block img")
+            [i].src.indexOf("case_studies")
+        ) {
+          arr.push(document.querySelector(".slider__block img")[i]);
+        }
+      }
+      for (let i = 0; i < arr.length; i++) {
+        arr[i].parentElement.remove();
+      }
+      // arr.forEach((e) => {
+      //   e.parentElement.remove();
+      // });
       if (document.querySelector(".slider-elm").children.length == 0) {
         document.querySelector(".slider").style.visibility = "hidden";
         document.querySelector(".slider").style.width = "initial";
@@ -303,17 +321,22 @@ $(document).ready(
             breakpoint: 769,
             settings: {
               // slidesToShow: 2
-            }
+            },
           },
           {
             breakpoint: 468,
             settings: {
               // slidesToShow: 1
-            }
-          }
-        ]
+            },
+          },
+        ],
       });
-      slider.on("afterChange", function(event, slick, currentSlide, nextSlide) {
+      slider.on("afterChange", function (
+        event,
+        slick,
+        currentSlide,
+        nextSlide
+      ) {
         document.querySelectorAll(".counter span")[0].textContent =
           currentSlide + 1;
       });
@@ -416,3 +439,27 @@ $(document).ready(
     }
   })
 );
+
+// delete
+
+$(document).ready(
+  $(function() {
+    if ($(".sl").length > 0) {
+      $(".sl").slick({
+        infinite:false,
+        edgeFriction:true,
+        slidesToShow: 3,
+        slidesToScroll:1,
+        dots: false,
+        arrows:false,
+        focusOnSelect:true,
+        // fade:true,
+        cssEase: "linear",
+        draggable: true,
+        centerMode:true,
+        centerPadding: "0px",
+      });
+    }
+  })
+);
+

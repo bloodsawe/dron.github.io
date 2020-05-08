@@ -1,0 +1,31 @@
+.case-filter-block__item-insert.filter1_active,
+.case-filter-block__item-insert.filter2_active,
+.case-filter-block__item-insert.filter3_active{
+    color: #ffd12d;
+}
+.content-container.casecards-wrap.filterDiv.show{
+    display: block;
+}
+.content-container.casecards-wrap.filterDiv{
+    display: none;
+}
+.works-card{
+    display: none;
+}
+.works-card.show{
+    display: block;
+    opacity: 1;
+}
+
+a#inifiniteLoader{
+    position: relative;
+    z-index: 2;
+    bottom: 15px;
+    right: 10px;
+    display: none;
+    max-width: 50px;
+    margin: auto;
+}
+a#inifiniteLoader img{
+    width: 50px;
+}

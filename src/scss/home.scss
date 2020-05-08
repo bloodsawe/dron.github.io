@@ -79,6 +79,7 @@
     height: 100%;
     position: absolute;
     top: 0;
+    left: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
     background-repeat: no-repeat;
     background-size: cover;
@@ -434,7 +435,7 @@
       background-color: $sunyellow;
       width: 270px;
       height: 355px;
-      transition: all 0.6s linear;
+      // transition: all 0.6s linear;
       @media screen and (max-width: 1439px) {
         width: 24.2%;
       }
@@ -689,6 +690,7 @@
       font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 18px;
       line-height: 1.56;
+      width: 100%;
       @media screen and (max-width: 1024px) {
         width: auto;
       }
@@ -712,6 +714,7 @@
       font-family: "TitilliumWebSemiBold", sans-serif;
       font-size: 18px;
       line-height: 1.56;
+      width: 100%;
       @media screen and (max-width: 1024px) {
         width: auto;
       }
@@ -983,6 +986,7 @@
       font-size: 18px;
       line-height: 1.56;
       color: #fff;
+      width: 100%;
       font-family: "TitilliumWebSemiBold",sans-serif;
       margin-bottom: 30px;
       @media screen and (max-width:480px) {
@@ -1036,6 +1040,7 @@
       &__text {
         font-size: 18px;
         line-height: 1.56;
+        width: 100%;
         color: $black;
         font-family: "TitilliumWebSemiBold",sans-serif;
         @media screen and (max-width:480px) {
@@ -1049,6 +1054,7 @@
     width: 100%;
     height: 100%;
     top: 0;
+    left: 0;
     position: absolute;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
     background-repeat: no-repeat;
@@ -1166,4 +1172,16 @@
   .slick-next {
     right: 2.5%;
   }
+}
+
+#menu-resources-header-menu li:first-child, #menu-resources li.menu-item:first-child {
+  display: none;
+}
+
+.admin-bar #menu-resources-header-menu li:first-child, .admin-bar #menu-resources li.menu-item:first-child {
+  display: block;
+}
+
+div.wpcf7-response-output {
+  color: #b4b4b4!important;
 }

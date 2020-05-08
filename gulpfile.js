@@ -162,9 +162,9 @@ gulp.task("scripts", () => {
       // .pipe(babel("main.js"))
 
       //Минификация JS
-      //.pipe(uglify({
+      // .pipe(uglify({
       //   toplevel: true
-      //}))
+      // }))
       .pipe(
         rename({
           suffix: ".min"
