@@ -11194,12 +11194,12 @@ header.out {
   font-family: "TitilliumWebSemiBold", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  width: inherit;
+  width: 100%;
   padding: 0 20px 10px;
 }
 
 .wp_rss_retriever_image {
-  width: inherit !important;
+  width: 100% !important;
   height: 260px !important;
   border-radius: 15px;
   margin: 0;
@@ -11211,7 +11211,7 @@ header.out {
 
 .wp_rss_retriever_item_wrapper {
   position: relative;
-  width: inherit;
+  width: 100%;
 }
 
 .wp_rss_retriever .slick-prev,
@@ -14478,18 +14478,11 @@ main.newsandblog {
   height: 100%;
   width: 255px;
   max-height: 355px;
+  min-height: 355px;
+  background-position: center;
   width: 100%;
   border-radius: 10%;
   margin-bottom: 20px;
-}
-
-.team-page .block-with-employee .block .image img {
-  min-height: 355px;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 10%;
 }
 
 .team-page .block-with-employee .block .text h3 {
@@ -19992,10 +19985,6 @@ template {
     margin-bottom: 48px;
   }
 
-  .team-page .block-with-employee .block .image img {
-    min-height: 292px;
-  }
-
   .team-page .block-with-employee .block .image {
     max-height: 292px;
   }
@@ -20376,10 +20365,6 @@ template {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-
-  .team-page .block-with-employee .block .image img {
-    min-height: 190px;
   }
 
   .team-page .block-with-employee .block .image {

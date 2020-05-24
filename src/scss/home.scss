@@ -1111,12 +1111,12 @@
     font-family: "TitilliumWebSemiBold", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    width: inherit;
+    width: 100%;
     padding: 0 20px 10px;
   }
 
   &_image {
-    width: inherit !important;
+    width: 100% !important;
     height: 260px !important;
     border-radius: 15px;
     margin: 0;
@@ -1128,7 +1128,7 @@
 
   &_item_wrapper {
     position: relative;
-    width: inherit;
+    width: 100%;
   }
 
   .slick-prev,
