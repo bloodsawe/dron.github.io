@@ -1,4 +1,4 @@
-
+// Library for map on contacts page
 document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".main-feedback")) {
     var renderer, scene, camera, ww, wh, particles;

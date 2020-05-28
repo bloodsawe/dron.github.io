@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".casecards")) {
-
-    // #### Click function on Filters
+    //Click function on Filters
     $( ".case-filter-block__item" ).click(function (event) {
       if (!jQuery(event.target).closest("li.case-filter-block__item-insert").length) {
         $('ul.case-filter-block__list-insert').removeClass("active");
@@ -9,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-}); // anchor
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".careers-page")) {
@@ -20,4 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-}); // anchor
+}); 
+

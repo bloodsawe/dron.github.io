@@ -1,5 +1,6 @@
 // anchor
 
+// Adaptiv autoposition for yellow block, when he cover on cards
 document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelectorAll(".contacts-page").length > 0) {
     var getCoords = function getCoords(elem) {
@@ -12,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var cards = Array.from(document.querySelectorAll('.main-offices-list__item-card'));
     var answ = document.querySelector('.main-callback-answ');
     var lastCard = cards[cards.length - 1];
-    // console.log(lastCard)
     var cardX = getCoords(lastCard).left + lastCard.offsetWidth;
     var cardY = getCoords(lastCard).top + lastCard.offsetHeight;
     var answX = getCoords(answ).left;

@@ -1,5 +1,4 @@
-// close popup
-
+//Popup
 document.addEventListener("DOMContentLoaded", function() {
   if (document.querySelectorAll(".careers-position-page").length > 0) {
       let buttonApply = Array.from(document.querySelectorAll(".modal-button"));
@@ -8,8 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let popUp = document.querySelector(".popup");
       let popUpContent = document.querySelector(".popup__content");
       let body = document.querySelector("body");
-      
-      
+           
       buttonApply.forEach((e) => {
           e.addEventListener("click", function() {
               popUpWrap.style.display = "block";
@@ -28,8 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
             popUp.style.opacity = "0";
             body.style.overflow = "auto"
         });
-        
-        
+               
         popUpWrap.addEventListener("click", function(e) {
           if (e.target != popUp && e.target != popUp.childNodes) {
             setTimeout(function(){

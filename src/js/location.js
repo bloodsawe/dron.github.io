@@ -16386,6 +16386,7 @@ var yCords = [
   "218.6"
 ];
 
+// Library for map in the footer
 window.addEventListener("DOMContentLoaded", function () {
   function worldMap(id, color) {
     if (document.querySelectorAll("section.location").length) {

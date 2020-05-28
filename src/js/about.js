@@ -1,6 +1,5 @@
-// ie
-
 document.addEventListener("DOMContentLoaded", function () {
+  // Create function for Dropdown
   function Dropdown(dropDown) {
     dropDown.forEach(function (elem, index) {
       elem.addEventListener("click", function (e) {
@@ -8,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         list.classList.toggle("active");
         var arrow = document.querySelectorAll(".awards__arrow")[index];
         arrow.classList.toggle("rotate");
+        // Call animation from scrollLibrary.js
         ScrollReveal().sync();
       });
     });
@@ -19,4 +19,3 @@ document.addEventListener("DOMContentLoaded", function () {
     Dropdown(dropDownArrow)
   }
 });
-

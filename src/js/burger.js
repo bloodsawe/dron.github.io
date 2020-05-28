@@ -1,6 +1,5 @@
-// ie
-
 document.addEventListener("DOMContentLoaded", function() {
+  // Open mobile navigation
   (function($) {
     $(function() {
       $(".header-nav__burger").on("click", function() {
@@ -11,10 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   })(jQuery);
 
+  // Animation navBurger
   var burger = document.querySelector(".header-nav__burger");
   burger.addEventListener("click", function() {
     burger.classList.toggle("toggle");
   });
+
+  // Disabled navigation after 100px scrolled
   var header = $("header");
   scrollPrev = 0;
   $(window).scroll(function() {

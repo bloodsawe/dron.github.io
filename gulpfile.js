@@ -121,12 +121,12 @@ gulp.task("styles", () => {
       .pipe(gcmq())
 
       //Минификация CSS
-      // .pipe(
-      //   cleanCSS({ level: { 1: { specialComments: 0 } } }, details => {
-      //     console.log(`${details.name}: ${details.stats.originalSize}`);
-      //     console.log(`${details.name}: ${details.stats.minifiedSize}`);
-      //   })
-      // )
+      .pipe(
+        cleanCSS({ level: { 1: { specialComments: 0 } } }, details => {
+          console.log(`${details.name}: ${details.stats.originalSize}`);
+          console.log(`${details.name}: ${details.stats.minifiedSize}`);
+        })
+      )
 
       //Добавление суфикса к сжатым файлам
       .pipe(rename({ suffix: ".min", prefix: "" }))
@@ -162,9 +162,7 @@ gulp.task("scripts", () => {
       // .pipe(babel("main.js"))
 
       //Минификация JS
-      // .pipe(uglify({
-      //   toplevel: true
-      // }))
+      .pipe(uglify())
       .pipe(
         rename({
           suffix: ".min"

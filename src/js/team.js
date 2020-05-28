@@ -1,5 +1,4 @@
-// ie
-
+// Tabs for team page
 document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".team-page")) {
     document.querySelector(".button").classList.add("active-button");
@@ -19,7 +18,12 @@ function openSelection(evt) {
   var i;
   type = event.target.getAttribute("data-categories");
   document.querySelector(".".concat(button)).classList.remove("".concat(button));
-  if (evt.target.classList.contains("".concat(button))) evt.target.classList.remove("".concat(button));else evt.target.classList.add("".concat(button));
+  if (evt.target.classList.contains("".concat(button))) {
+    evt.target.classList.remove("".concat(button));
+  } else {
+    evt.target.classList.add("".concat(button));
+  } 
+    
   var x = document.getElementsByClassName("".concat(blockThatNeedToOpen));
 
   for (i = 0; i < x.length; i++) {

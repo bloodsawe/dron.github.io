@@ -1,4 +1,4 @@
-
+// Customization animation in the block on home page
 document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelectorAll("section.animation").length > 0) {
     if (screen.availWidth >= 300) {

@@ -90,7 +90,7 @@ $(document).ready(
 document.addEventListener("DOMContentLoaded", function() {
   if (
     document.querySelector(
-      ".services, .services-collection, .sectors-oil, .sectors-grid, .sectors-generation, .sectors-construction"
+      " .sectors-oil, .sectors-grid, .sectors-generation, .sectors-construction"
     )
   ) {
     var sliders = document.querySelectorAll(".sectors-description-slider__item")
@@ -273,11 +273,6 @@ $(document).ready(
   $(function () {
     if ($(".intern .slider").length > 0) {
       let arr = [];
-      // document.querySelectorAll(".slider__block img").forEach((e) => {
-      //   if (e.src.indexOf("case_studies")) {
-      //     arr.push(e);
-      //   }
-      // });
       for (
         let i = 0;
         i < document.querySelectorAll(".slider__block img");
@@ -294,9 +289,6 @@ $(document).ready(
       for (let i = 0; i < arr.length; i++) {
         arr[i].parentElement.remove();
       }
-      // arr.forEach((e) => {
-      //   e.parentElement.remove();
-      // });
       if (document.querySelector(".slider-elm").children.length == 0) {
         document.querySelector(".slider").style.visibility = "hidden";
         document.querySelector(".slider").style.width = "initial";
@@ -319,15 +311,9 @@ $(document).ready(
         responsive: [
           {
             breakpoint: 769,
-            settings: {
-              // slidesToShow: 2
-            },
           },
           {
             breakpoint: 468,
-            settings: {
-              // slidesToShow: 1
-            },
           },
         ],
       });
@@ -453,7 +439,6 @@ $(document).ready(
         dots: false,
         arrows:false,
         focusOnSelect:true,
-        // fade:true,
         cssEase: "linear",
         draggable: true,
         centerMode:true,
