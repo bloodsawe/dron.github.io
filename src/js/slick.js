@@ -94,9 +94,16 @@ document.addEventListener("DOMContentLoaded", function() {
     )
   ) {
     var sliders = document.querySelectorAll(".sectors-description-slider__item")
-      .length;
+    .length;
     var counterSlider = document.querySelector(".counter-slider");
-    counterSlider.innerHTML = sliders;
+    if(sliders % 2 == 0) {
+      counterSlider.innerHTML = sliders/2 ; 
+    } else {
+      counterSlider.innerHTML = Math.floor(sliders/2);
+    }
+    console.log('sliders: ', sliders);
+    
+    
   }
 });
 
@@ -140,9 +147,16 @@ $(document).ready(
 document.addEventListener("DOMContentLoaded", function() {
   if (document.querySelector(".sectors-generation")) {
     var slidersDesc = document.querySelectorAll(".sectors-desc-slider__item")
-      .length;
+    .length;
+    console.log('slidersDesc: ', slidersDesc);
     var counterSlider = document.querySelector(".counter-desc-slider");
+    if(slidersDesc % 2 == 0) {
+      counterSlider.innerHTML = sliders/2 ; 
+    } else {
+      counterSlider.innerHTML = Math.floor(sliders/2);
+    }
     counterSlider.innerHTML = slidersDesc;
+
   }
 });
 
@@ -272,59 +286,49 @@ $(document).ready(
 $(document).ready(
   $(function () {
     if ($(".intern .slider").length > 0) {
-      let arr = [];
-      for (
-        let i = 0;
-        i < document.querySelectorAll(".slider__block img");
-        i++
-      ) {
-        if (
-          document
-            .querySelector(".slider__block img")
-            [i].src.indexOf("case_studies")
-        ) {
-          arr.push(document.querySelector(".slider__block img")[i]);
-        }
+      var arr = [];
+      // document.querySelectorAll(".slider__block img").forEach(function (e) {
+      //   if (e.src.indexOf("case_studies") + 1 != 0) arr.push(e);
+      // });
+      for(let i=0;i< document.querySelectorAll(".slider__block img").length; i++){
+        if (document.querySelectorAll(".slider__block img")[i].src.indexOf("case_studies") + 1 != 0) arr.push(document.querySelectorAll(".slider__block img")[i]);
       }
-      for (let i = 0; i < arr.length; i++) {
+      for(let i=0;i<arr.length;i++){
         arr[i].parentElement.remove();
       }
+      // arr.forEach(function (e) {
+      //   e.parentElement.remove();
+      // });
+  
       if (document.querySelector(".slider-elm").children.length == 0) {
         document.querySelector(".slider").style.visibility = "hidden";
         document.querySelector(".slider").style.width = "initial";
-        document.querySelector(".block-with-text").style.marginRight =
-          "calc((100vw - 112%) / 2)";
-        document
-          .querySelector(".block-text-slider")
-          .classList.add("class-for-slider-without-content");
+        document.querySelector(".block-with-text").style.marginRight = "calc((100vw - 112%) / 2)";
+        document.querySelector(".block-text-slider").classList.add("class-for-slider-without-content");
         return;
       }
-      let length = $(".intern .slider .slider__block").length;
+  
+      var length = $(".intern .slider .slider__block").length;
       document.querySelectorAll(".counter span")[1].textContent = length;
-      let slider = $(".intern .slider-elm").slick({
+      var slider = $(".intern .slider-elm").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
         dots: false,
         prevArrow: '<div class="slick-prev"></div>',
         nextArrow: '<div class="slick-next"></div>',
-        responsive: [
-          {
-            breakpoint: 769,
-          },
-          {
-            breakpoint: 468,
-          },
-        ],
+        responsive: [{
+          breakpoint: 769,
+          settings: {// slidesToShow: 2
+          }
+        }, {
+          breakpoint: 468,
+          settings: {// slidesToShow: 1
+          }
+        }]
       });
-      slider.on("afterChange", function (
-        event,
-        slick,
-        currentSlide,
-        nextSlide
-      ) {
-        document.querySelectorAll(".counter span")[0].textContent =
-          currentSlide + 1;
+      slider.on("afterChange", function (event, slick, currentSlide, nextSlide) {
+        document.querySelectorAll(".counter span")[0].textContent = currentSlide + 1;
       });
     }
   })
